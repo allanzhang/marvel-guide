@@ -1,15 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { readFileSync } from 'node:fs';
+import { sortedEras, sortedMovies, characters, charById, posterUrl } from '../lib/data.mjs';
 
-const read = (p) => JSON.parse(readFileSync(`${process.cwd()}/content/${p}`, 'utf8'));
-const eras = read('eras.json').sort((a, b) => a.startYear - b.startYear);
-const movies = read('movies.json').sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));
-const characters = read('characters.json');
-const charById = Object.fromEntries(characters.map((c) => [c.id, c]));
-
-const moviesOf = (eraId) => movies.filter((m) => m.eraId === eraId);
-const posterUrl = (id) => `/posters/poster-${id}.svg`;
+const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
 ---
 
 <Base title="时间线 · 漫威电影世界图鉴">
@@ -21,7 +14,7 @@ const posterUrl = (id) => `/posters/poster-${id}.svg`;
   </section>
 
   {
-    eras.map((era) => {
+    sortedEras.map((era) => {
       const eraMovies = moviesOf(era.id);
       const isEven = eras.indexOf(era) % 2 === 1;
       return (
