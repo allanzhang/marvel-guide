@@ -18,10 +18,10 @@ export const portraitUrl = (id) => `/portraits/portrait-${id}.svg`;
 
 // 人物分组顺序定义（人物墙用）
 export const groupOrder = [
-  ['avengers-core', '复仇者核心'],
-  ['solo', '独行英雄'],
-  ['guardians', '银河护卫队'],
-  ['mystic', '神域与魔法'],
-  ['villains', '反派堂'],
-  ['support', '重要配角'],
+  ['avengers-core', '复仇者核心', 'The Avengers'],
+  ['solo', '独行英雄', 'Solo Heroes'],
+  ['guardians', '银河护卫队', 'Guardians of the Galaxy'],
+  ['mystic', '神域与魔法', 'Mystic Arts'],
+  ['villains', '反派堂', 'Villains'],
+  ['support', '重要配角', 'Key Support'],
 ];

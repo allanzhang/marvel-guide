@@ -5,9 +5,9 @@ import Base from '../layouts/Base.astro';
   <!-- 全屏 hero -->
   <section class="hero">
     <div class="hero__inner">
-      <p class="hero__kicker">面向非漫威迷的剧情时序图鉴</p>
+      <p class="hero__kicker">面向非漫威迷的剧情时序图鉴 · MCU GUIDE</p>
       <h1 class="hero__title">漫威电影<br />世界图鉴</h1>
-      <p class="hero__desc">几十部电影，上百位英雄，一条线串起来的故事。<br />在这里，顺着读就能看懂整个漫威电影世界。</p>
+      <p class="hero__desc">Marvel 电影世界（Marvel Cinematic Universe）——几十部电影，上百位英雄，一条线串起来的故事。<br />在这里，顺着读就能看懂整个漫威电影世界。</p>
     </div>
   </section>
 
@@ -15,14 +15,14 @@ import Base from '../layouts/Base.astro';
   <section class="entries container-wide">
     <a class="entry-card" href="/timeline">
       <span class="entry-card__num">01</span>
-      <h2 class="entry-card__title">时间线</h2>
-      <p class="entry-card__desc">按故事发生的先后，从二战一路讲到多元宇宙。每段都有导读，建立大框架。</p>
+      <h2 class="entry-card__title">时间线 <span class="en">Timeline</span></h2>
+      <p class="entry-card__desc">按故事发生的先后，从二战一路讲到多元宇宙（the Multiverse）。每段都有导读，建立大框架。</p>
       <span class="entry-card__go">开始顺读 →</span>
     </a>
     <a class="entry-card" href="/characters">
       <span class="entry-card__num">02</span>
-      <h2 class="entry-card__title">人物墙</h2>
-      <p class="entry-card__desc">从复仇者核心到反派堂，认识每个重要角色——他是谁、他的作用、他的故事线。</p>
+      <h2 class="entry-card__title">人物墙 <span class="en">Characters</span></h2>
+      <p class="entry-card__desc">从复仇者（the Avengers）核心到反派堂，认识每个重要角色——他是谁、他的作用、他的故事线。</p>
       <span class="entry-card__go">认识人物 →</span>
     </a>
   </section>
@@ -35,14 +35,14 @@ import Base from '../layouts/Base.astro';
         <span class="guide__step-num">01</span>
         <div>
           <h3>先读时间线第一章</h3>
-          <p>从《美国队长》的二战年代看起，这是整个故事最早的起点。</p>
+          <p>从《美国队长（Captain America）》的二战年代看起，这是整个故事最早的起点。</p>
         </div>
       </li>
       <li>
         <span class="guide__step-num">02</span>
         <div>
           <h3>认识复仇者核心六人</h3>
-          <p>钢铁侠、美队、雷神、浩克、黑寡妇、鹰眼——他们撑起了整个世界的骨架。</p>
+          <p>钢铁侠（Iron Man）、美队（Captain America）、雷神（Thor）、浩克（Hulk）、黑寡妇（Black Widow）、鹰眼（Hawkeye）——他们撑起了整个世界的骨架。</p>
         </div>
       </li>
       <li>
@@ -105,6 +105,7 @@ import Base from '../layouts/Base.astro';
   .entry-card:hover { transform: translateY(-4px); box-shadow: 0 12px 34px rgba(0,0,0,0.12); }
   .entry-card__num { font-family: var(--font-serif); font-size: var(--fs-small); color: var(--accent); font-weight: 700; }
   .entry-card__title { font-size: var(--fs-title); margin: 14px 0 12px; }
+  .entry-card__title .en { font-size: 0.55em; font-weight: 600; letter-spacing: 1px; color: var(--ink-soft); display: block; margin-top: 4px; }
   .entry-card__desc { color: var(--ink-soft); line-height: 1.9; flex: 1; }
   .entry-card__go { margin-top: 28px; font-weight: 600; color: var(--accent); }
 

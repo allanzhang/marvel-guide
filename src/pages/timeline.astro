@@ -8,9 +8,9 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
 <Base title="时间线 · 漫威电影世界图鉴">
   <!-- 页面大标题 -->
   <section class="tl-hero container-wide">
-    <p class="tl-kicker">剧情时序 · 顺着读就懂</p>
-    <h1 class="tl-page-title">漫威电影世界的时间线</h1>
-    <p class="tl-page-desc">以下按故事发生的先后排列，从二战前一直讲到多元宇宙时代。每个篇章都有一段导读，帮你在开始前先建立大框架。</p>
+    <p class="tl-kicker">剧情时序 · 顺着读就懂 · TIMELINE</p>
+    <h1 class="tl-page-title">漫威电影世界的时间线 <span class="en">The Marvel Timeline</span></h1>
+    <p class="tl-page-desc">以下按故事发生的先后排列，从二战前一直讲到多元宇宙（the Multiverse）时代。每个篇章都有一段导读，帮你在开始前先建立大框架。</p>
   </section>
 
   {
@@ -91,6 +91,7 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
     font-weight: 600;
   }
   .tl-page-title { font-size: var(--fs-hero); line-height: 1.1; }
+  .tl-page-title .en { font-size: 0.5em; letter-spacing: 2px; color: var(--ink-soft); font-weight: 600; display: block; margin-top: 10px; }
   .tl-page-desc {
     margin-top: 20px;
     color: var(--ink-soft);

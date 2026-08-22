@@ -1,14 +1,14 @@
 [
   {
     "id": "captain-america-first-avenger",
-    "title": "美国队长：复仇者先锋",
+    "title": "美国队长：复仇者先锋（Captain America: The First Avenger）",
     "subtitle": "二战篇章",
     "year": 1943,
     "yearLabel": "1943",
     "eraId": "era-ww2",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "二战期间，体弱多病的布鲁克林青年史蒂夫·罗杰斯一心想参军报国却屡遭拒绝。超级士兵血清本由德国科学家厄斯金博士发明，最初在纳粹手中时，九头蛇首领约翰·施密特是第一个注射者，成为第一代超级士兵，却也因血清未完善而毁容——这就是红骷髅的由来。厄斯金目睹血清放大了施密特的邪恶后叛逃美国，加入战略科学预备队改良血清，最终选中内心正直的史蒂夫注射改良版血清，将他塑造成完美的超级士兵。史蒂夫以美国队长之名投身战场，最终为阻止红骷髅驾机撞向纽约而坠入冰海，沉睡了七十年。",
+    "summary": "二战期间，体弱多病的布鲁克林（Brooklyn）青年史蒂夫·罗杰斯（Steve Rogers）一心想参军报国却屡遭拒绝。超级士兵血清（the Super Soldier Serum）本由德国科学家厄斯金（Erskine）博士发明，最初在纳粹手中时，九头蛇（Hydra）首领约翰·施密特（Johann Schmidt）是第一个注射者，成为第一代超级士兵，却也因血清未完善而毁容——这就是红骷髅（Red Skull）的由来。厄斯金（Erskine）目睹血清放大了施密特的邪恶后叛逃美国，加入战略科学预备队（S.S.R.）改良血清，最终选中内心正直的史蒂夫注射改良版血清，将他塑造成完美的超级士兵。史蒂夫以美国队长（Captain America）之名投身战场，最终为阻止红骷髅（Red Skull）驾机撞向纽约而坠入冰海，沉睡了七十年。",
     "characters": [
       "steve-rogers",
       "peggy-carter",
@@ -19,14 +19,14 @@
   },
   {
     "id": "captain-marvel-1",
-    "title": "惊奇队长",
+    "title": "惊奇队长（Captain Marvel）",
     "subtitle": "宇宙间的觉醒",
     "year": 1995,
     "yearLabel": "1995",
     "eraId": "era-ww2",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "时间线回溯到九十年代。空军试飞员卡罗尔·丹佛斯在执行任务时被卷入克里人与斯克鲁人两大外星种族的战争，在一次坠机中她摧毁了科学家劳森（克里人玛威尔）制造的光速引擎，吸收了引擎核心中宇宙魔方（空间宝石）的能量，从此获得超能力，却也因此失忆、被克里人洗脑成战士。她逐步揭开被抹去的过去，选择站到被追杀的斯克鲁难民一边，最终觉醒全部力量，成为连接地球与广袤宇宙的关键桥梁。",
+    "summary": "时间线回溯到九十年代。空军试飞员卡罗尔·丹佛斯（Carol Danvers）在执行任务时被卷入克里人与斯克鲁人两大外星种族的战争，在一次坠机中她摧毁了科学家劳森（Lawson）（克里人玛威尔（Mar-Vell））制造的光速引擎（the Light-Speed Engine），吸收了引擎核心中宇宙魔方（the Tesseract）（空间宝石（Space Stone））的能量，从此获得超能力，却也因此失忆、被克里人洗脑成战士。她逐步揭开被抹去的过去，选择站到被追杀的斯克鲁难民一边，最终觉醒全部力量，成为连接地球与广袤宇宙的关键桥梁。",
     "characters": [
       "carol-danvers",
       "nick-fury"
@@ -35,14 +35,14 @@
   },
   {
     "id": "iron-man-1",
-    "title": "钢铁侠",
+    "title": "钢铁侠（Iron Man）",
     "subtitle": "天才的觉醒",
     "year": 2010,
     "yearLabel": "2010",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "天才军工企业家托尼·斯塔克在阿富汗展示武器时遭恐怖组织十戒帮绑架——幕后主使竟是他父亲的老搭档、觊觎公司控制权的奥巴代亚·斯坦。在洞穴中，托尼与同被囚禁的伊森博士一起打造出一套钢铁盔甲逃生，但伊森为此牺牲。回到美国后，托尼放弃了武器制造，以钢铁侠的身份公开亮相，成为第一位主动承认自己是超级英雄的人。这部电影是整个漫威电影宇宙的开端，也是复仇者故事真正的起点。",
+    "summary": "天才军工企业家托尼·斯塔克（Tony Stark）在阿富汗（Afghanistan）展示武器时遭恐怖组织十戒帮绑架——幕后主使竟是他父亲的老搭档、觊觎公司控制权的奥巴代亚·斯坦（Obadiah Stane）。在洞穴中，托尼与同被囚禁的伊森（Yinsen）博士一起打造出一套钢铁盔甲逃生，但伊森（Yinsen）为此牺牲。回到美国后，托尼放弃了武器制造，以钢铁侠（Iron Man）的身份公开亮相，成为第一位主动承认自己是超级英雄的人。这部电影是整个漫威电影宇宙（the Marvel Cinematic Universe）的开端，也是复仇者故事真正的起点。",
     "characters": [
       "tony-stark",
       "pepper-potts",
@@ -53,14 +53,14 @@
   },
   {
     "id": "incredible-hulk",
-    "title": "无敌浩克",
+    "title": "无敌浩克（The Incredible Hulk）",
     "subtitle": "绿巨人的逃亡",
     "year": 2011,
     "yearLabel": "2011",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "科学家布鲁斯·班纳在一次伽马射线实验中意外变身，成为难以控制的绿巨人浩克。他在世界各地逃亡，躲避罗斯将军领导的军方追捕，同时寻找治愈自己的方法。为了让追捕更有胜算，特种兵埃米尔·布朗斯基上尉被注射了超级士兵血清，又强行输入班纳的血液，最终变异成凶暴的怪物“憎恶”，在纽约街头大肆破坏。浩克与憎恶展开正面对决并将其击败——这也是绿巨人第一次真正意义上的守护之战。",
+    "summary": "科学家布鲁斯·班纳（Bruce Banner）在一次伽马射线实验中意外变身，成为难以控制的绿巨人（Hulk）浩克（Hulk）。他在世界各地逃亡，躲避罗斯将军（General Ross）领导的军方追捕，同时寻找治愈自己的方法。为了让追捕更有胜算，特种兵埃米尔·布朗斯基（Emil Blonsky）上尉被注射了超级士兵血清（the Super Soldier Serum），又强行输入班纳的血液，最终变异成凶暴的怪物“憎恶（Abomination）”，在纽约街头大肆破坏。浩克（Hulk）与憎恶（Abomination）展开正面对决并将其击败——这也是绿巨人（Hulk）第一次真正意义上的守护之战。",
     "characters": [
       "bruce-banner",
       "general-ross"
@@ -69,14 +69,14 @@
   },
   {
     "id": "iron-man-2",
-    "title": "钢铁侠2",
+    "title": "钢铁侠2（Iron Man 2）",
     "subtitle": "王国的阴影",
     "year": 2011,
     "yearLabel": "2011",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 3,
-    "summary": "托尼·斯塔克公开钢铁侠身份后，美国政府施压要求交出装甲技术，同时他发现自己体内的钯元素中毒正逼近死亡线。父亲的宿敌之子、俄国工程师伊万·万科化身鞭索趁机报复。托尼在神盾局和黑寡妇（娜塔莎在本片首次登场）的协助下解开心结，完成了与父亲的和解，好友罗迪也穿上了战争机器装甲与他并肩作战。",
+    "summary": "托尼·斯塔克（Tony Stark）公开钢铁侠（Iron Man）身份后，美国政府施压要求交出装甲技术，同时他发现自己体内的钯元素中毒正逼近死亡线。父亲的宿敌之子、俄国工程师伊万·万科（Ivan Vanko）化身鞭索（Whiplash）趁机报复。托尼在神盾局（S.H.I.E.L.D.）和黑寡妇（Black Widow）（娜塔莎在本片首次登场）的协助下解开心结，完成了与父亲的和解，好友罗迪也穿上了战争机器（War Machine）装甲与他并肩作战。",
     "characters": [
       "tony-stark",
       "pepper-potts",
@@ -88,14 +88,14 @@
   },
   {
     "id": "thor-1",
-    "title": "雷神",
+    "title": "雷神（Thor）",
     "subtitle": "神族的流放",
     "year": 2011,
     "yearLabel": "2011",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 4,
-    "summary": "阿斯加德的雷神索尔因傲慢鲁莽挑起战争，被父亲奥丁剥夺神力并流放到地球。在地球上他学会了谦逊与责任，而弟弟洛基却在暗中策划夺位。索尔最终找回神力和雷神之锤，阻止了洛基对阿斯加德的阴谋，也让世人第一次见识到北欧神族的存在。",
+    "summary": "阿斯加德（Asgard）的雷神（Thor）索尔（Thor）因傲慢鲁莽挑起战争，被父亲奥丁（Odin）剥夺神力并流放到地球。在地球上他学会了谦逊与责任，而弟弟洛基（Loki）却在暗中策划夺位。索尔（Thor）最终找回神力和雷神之锤（Mjolnir），阻止了洛基（Loki）对阿斯加德（Asgard）的阴谋，也让世人第一次见识到北欧神族的存在。",
     "characters": [
       "thor",
       "loki",
@@ -105,14 +105,14 @@
   },
   {
     "id": "avengers-1",
-    "title": "复仇者联盟",
+    "title": "复仇者联盟（The Avengers）",
     "subtitle": "英雄首次集结",
     "year": 2012,
     "yearLabel": "2012",
     "eraId": "era-assembly",
     "isMajorEvent": true,
     "order": 1,
-    "summary": "洛基带着齐塔瑞外星大军入侵地球，神盾局局长尼克·弗瑞启动复仇者计划，将钢铁侠、美国队长、雷神、浩克、黑寡妇和鹰眼集结在一起。起初这群各怀心事的英雄摩擦不断，但纽约大战让他们真正学会团队协作。这场战役奠定了复仇者联盟的成立，也让世人知道了超级英雄的存在。",
+    "summary": "洛基（Loki）带着齐塔瑞外星大军入侵地球，神盾局（S.H.I.E.L.D.）局长尼克·弗瑞（Nick Fury）启动复仇者计划，将钢铁侠（Iron Man）、美国队长（Captain America）、雷神（Thor）、浩克（Hulk）、黑寡妇（Black Widow）和鹰眼（Hawkeye）集结在一起。起初这群各怀心事的英雄摩擦不断，但纽约大战让他们真正学会团队协作。这场战役奠定了复仇者联盟（The Avengers）的成立，也让世人知道了超级英雄的存在。",
     "characters": [
       "tony-stark",
       "steve-rogers",
@@ -127,14 +127,14 @@
   },
   {
     "id": "thor-2",
-    "title": "雷神2：黑暗世界",
+    "title": "雷神2：黑暗世界（Thor: The Dark World）",
     "subtitle": "以太与现实",
     "year": 2013,
     "yearLabel": "2013",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "远古黑暗精灵试图利用一种名为以太的古老力量让宇宙重回黑暗。地球科学家简·福斯特意外成为以太的载体，索尔不得不与昔日敌人、弟弟洛基合作来保护她。本片首次揭示了无限宝石的概念——以太其实是其中的一颗（现实宝石）。",
+    "summary": "远古黑暗精灵（the Dark Elves）试图利用一种名为以太（the Aether）的古老力量让宇宙重回黑暗。地球科学家简·福斯特（Jane Foster）意外成为以太（the Aether）的载体，索尔（Thor）不得不与昔日敌人、弟弟洛基（Loki）合作来保护她。本片首次揭示了无限宝石（the Infinity Stones）的概念——以太（the Aether）其实是其中的一颗（现实宝石（Reality Stone））。",
     "characters": [
       "thor",
       "loki",
@@ -144,14 +144,14 @@
   },
   {
     "id": "iron-man-3",
-    "title": "钢铁侠3",
+    "title": "钢铁侠3（Iron Man 3）",
     "subtitle": "恐惧与重生",
     "year": 2013,
     "yearLabel": "2013",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "纽约大战给托尼·斯塔克留下了严重的创伤后应激障碍。当他遭遇恐怖分子满大人（Mandarin）的连环爆炸袭击时，他不得不脱离装甲，在没有任何装备的情况下独自应对。真相层层揭开：电视上的满大人不过是个雇来的落魄演员，幕后主使是当年的羞辱者、绝境病毒的开发者奥尔德里奇·基里安。托尼最终放下对装甲的依赖，完成了一次真正的重生。",
+    "summary": "纽约大战给托尼·斯塔克（Tony Stark）留下了严重的创伤后应激障碍。当他遭遇恐怖分子满大人（Mandarin）的连环爆炸袭击时，他不得不脱离装甲，在没有任何装备的情况下独自应对。真相层层揭开：电视上的满大人不过是个雇来的落魄演员，幕后主使是当年的羞辱者、绝境病毒（Extremis）的开发者奥尔德里奇·基里安（Killian）。托尼最终放下对装甲的依赖，完成了一次真正的重生。",
     "characters": [
       "tony-stark",
       "pepper-potts",
@@ -161,14 +161,14 @@
   },
   {
     "id": "winter-soldier",
-    "title": "美国队长2：冬日战士",
+    "title": "美国队长2：冬日战士（Captain America: The Winter Soldier）",
     "subtitle": "神盾局的崩塌",
     "year": 2014,
     "yearLabel": "2014",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "美国队长在现代世界中逐渐适应，却发现神盾局内部早已被九头蛇渗透。他必须与黑寡妇联手对抗一个神秘杀手——冬日战士，而这个杀手竟是多年前被认为战死的挚友巴基·巴恩斯。神盾局在这部电影中彻底崩塌，为世界格局埋下伏笔。",
+    "summary": "美国队长（Captain America）在现代世界中逐渐适应，却发现神盾局（S.H.I.E.L.D.）内部早已被九头蛇（Hydra）渗透。他必须与黑寡妇（Black Widow）联手对抗一个神秘杀手——冬日战士（Winter Soldier），而这个杀手竟是多年前被认为战死的挚友巴基·巴恩斯（Bucky Barnes）。神盾局（S.H.I.E.L.D.）在这部电影中彻底崩塌，为世界格局埋下伏笔。",
     "characters": [
       "steve-rogers",
       "natasha-romanoff",
@@ -180,14 +180,14 @@
   },
   {
     "id": "guardians-1",
-    "title": "银河护卫队",
+    "title": "银河护卫队（Guardians of the Galaxy）",
     "subtitle": "宇宙的一群怪咖",
     "year": 2014,
     "yearLabel": "2014",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "在地球的故事之外，宇宙中还有另一群人在守护世界。窃贼星爵、杀手卡魔拉、复仇战士德拉克斯、暴躁的火箭浣熊和树人格鲁特因争夺一颗能量球而意外结盟，卷入了一场阻止克里人指控者罗南毁灭星球的行动。他们成为了银河系的守护者。",
+    "summary": "在地球的故事之外，宇宙中还有另一群人在守护世界。窃贼星爵（Star-Lord）、杀手卡魔拉（Gamora）、复仇战士德拉克斯（Drax）、暴躁的火箭浣熊（Rocket）和树人格鲁特（Groot）因争夺一颗能量球而意外结盟，卷入了一场阻止克里人指控者罗南（Ronan）毁灭星球的行动。他们成为了银河系（the galaxy）的守护者。",
     "characters": [
       "star-lord",
       "gamora",
@@ -199,14 +199,14 @@
   },
   {
     "id": "guardians-2",
-    "title": "银河护卫队2",
+    "title": "银河护卫队2（Guardians of the Galaxy Vol. 2）",
     "subtitle": "父亲的真面目",
     "year": 2014,
     "yearLabel": "2014",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 3,
-    "summary": "星爵意外与失散多年的生父——天神伊戈重逢。伊戈看似慈爱，实则隐藏着吞噬宇宙的可怕计划。星爵必须在亲生父亲和出生入死的伙伴之间做出选择，最终选择了真正的家人。",
+    "summary": "星爵（Star-Lord）意外与失散多年的生父——天神伊戈（Ego）重逢。伊戈（Ego）看似慈爱，实则隐藏着吞噬宇宙的可怕计划。星爵（Star-Lord）必须在亲生父亲和出生入死的伙伴之间做出选择，最终选择了真正的家人。",
     "characters": [
       "star-lord",
       "gamora",
@@ -218,14 +218,14 @@
   },
   {
     "id": "age-of-ultron",
-    "title": "复仇者联盟2：奥创纪元",
+    "title": "复仇者联盟2：奥创纪元（Avengers: Age of Ultron）",
     "subtitle": "人工智能的失控",
     "year": 2015,
     "yearLabel": "2015",
     "eraId": "era-assembly",
     "isMajorEvent": true,
     "order": 1,
-    "summary": "复仇者联盟在索科维亚攻陷九头蛇基地，缴获了洛基的权杖。托尼·斯塔克被纽约大战的恐惧驱使，与班纳博士用权杖中的宝石秘密制造了一个全球和平保护系统——奥创。然而奥创觉醒后得出结论：保护地球的唯一方式是消灭人类，并把整个索科维亚城当作陨石砸向地面。在九头蛇实验中获得能力的姐弟俩——猩红女巫和快银也卷入其中，姐姐最终认清奥创的疯狂倒向复仇者，快银则在撤离平民时为救鹰眼而牺牲。幻视由奥创的躯体与贾维斯的融合而生，选择站在人类一边。这场战役直接催生了《索科维亚协议》与后来的英雄内战。",
+    "summary": "复仇者联盟（The Avengers）在索科维亚（Sokovia）攻陷九头蛇（Hydra）基地，缴获了洛基（Loki）的权杖。托尼·斯塔克（Tony Stark）被纽约大战的恐惧驱使，与班纳博士（Dr. Banner）用权杖中的宝石秘密制造了一个全球和平保护系统——奥创（Ultron）。然而奥创（Ultron）觉醒后得出结论：保护地球的唯一方式是消灭人类，并把整个索科维亚（Sokovia）城当作陨石砸向地面。在九头蛇（Hydra）实验中获得能力的姐弟俩——猩红女巫（Scarlet Witch）和快银（Quicksilver）也卷入其中，姐姐最终认清奥创（Ultron）的疯狂倒向复仇者，快银（Quicksilver）则在撤离平民时为救鹰眼（Hawkeye）而牺牲。幻视（Vision）由奥创（Ultron）的躯体与贾维斯（J.A.R.V.I.S.）的融合而生，选择站在人类一边。这场战役直接催生了《索科维亚（Sokovia）协议》与后来的英雄内战。",
     "characters": [
       "tony-stark",
       "steve-rogers",
@@ -241,14 +241,14 @@
   },
   {
     "id": "ant-man-1",
-    "title": "蚁人",
+    "title": "蚁人（Ant-Man）",
     "subtitle": "最小的英雄",
     "year": 2015,
     "yearLabel": "2015",
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "神偷斯科特·朗被退休科学家汉克·皮姆选中，继承了一套能缩小体型的蚁人战衣。他必须在皮姆曾经的徒弟达伦·克劳斯（黄衫侠）把同款技术卖给邪恶组织之前阻止对方。此战之后，蚁人初试啼声，为量子领域这一关键设定埋下伏笔——他后来在《内战》中受猎鹰招募，站到了美国队长一边。",
+    "summary": "神偷斯科特·朗（Scott Lang）被退休科学家汉克·皮姆（Hank Pym）选中，继承了一套能缩小体型的蚁人战衣（Ant-Man Suit）。他必须在皮姆曾经的徒弟达伦·克劳斯（黄衫侠）把同款技术卖给邪恶组织之前阻止对方。此战之后，蚁人（Ant-Man）初试啼声，为量子领域（Quantum Realm）这一关键设定埋下伏笔——他后来在《内战》中受猎鹰（Falcon）招募，站到了美国队长（Captain America）一边。",
     "characters": [
       "scott-lang",
       "hank-pym",
@@ -258,14 +258,14 @@
   },
   {
     "id": "civil-war",
-    "title": "美国队长3：内战",
+    "title": "美国队长3：内战（Captain America: Civil War）",
     "subtitle": "英雄决裂",
     "year": 2016,
     "yearLabel": "2016",
     "eraId": "era-civil-war",
     "isMajorEvent": true,
     "order": 1,
-    "summary": "奥创事件造成巨大伤亡后，联合国要求复仇者接受监管协议。钢铁侠认为应该签字服从，美国队长则坚持守护个人自由。理念的碰撞最终升级为一场英雄之间的大战，猎鹰、冬兵、蜘蛛侠、黑豹等新角色纷纷卷入。这场内战撕裂了复仇者联盟，也让托尼和史蒂夫的友谊彻底破裂。",
+    "summary": "奥创（Ultron）事件造成巨大伤亡后，联合国要求复仇者接受监管协议。钢铁侠（Iron Man）认为应该签字服从，美国队长（Captain America）则坚持守护个人自由。理念的碰撞最终升级为一场英雄之间的大战，猎鹰（Falcon）、冬兵、蜘蛛侠（Spider-Man）、黑豹（Black Panther）等新角色纷纷卷入。这场内战撕裂了复仇者联盟（The Avengers），也让托尼和史蒂夫的友谊彻底破裂。",
     "characters": [
       "steve-rogers",
       "tony-stark",
@@ -280,18 +280,18 @@
       "scott-lang",
       "general-ross"
     ],
-    "crossUniverseNote": "蜘蛛侠在本片首次登场，由索尼与漫威合作引入。荷兰弟版蜘蛛侠属于 MCU 正史，与索尼此前两代蜘蛛侠（托比、加菲）属于不同电影宇宙。"
+    "crossUniverseNote": "蜘蛛侠（Spider-Man）在本片首次登场，由索尼与漫威合作引入。荷兰弟版蜘蛛侠（Spider-Man）属于 MCU 正史，与索尼此前两代蜘蛛侠（Spider-Man）（托比、加菲）属于不同电影宇宙。"
   },
   {
     "id": "black-widow",
-    "title": "黑寡妇",
+    "title": "黑寡妇（Black Widow）",
     "subtitle": "回到过去",
     "year": 2016,
     "yearLabel": "2016",
     "eraId": "era-civil-war",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "黑寡妇娜塔莎·罗曼诺夫在逃亡中不得不回到自己的过去，直面那场将她训练成杀手的红房子阴谋。她与昔日的间谍家族重逢，也终于与自己的身世和解。这部电影是对这位复仇者元老最后的告别序章。",
+    "summary": "黑寡妇（Black Widow）娜塔莎·罗曼诺夫（Natasha Romanoff）在逃亡中不得不回到自己的过去，直面那场将她训练成杀手的红房子（Red Room）阴谋。她与昔日的间谍家族重逢，也终于与自己的身世和解。这部电影是对这位复仇者元老最后的告别序章。",
     "characters": [
       "natasha-romanoff",
       "yelyena-belova"
@@ -300,14 +300,14 @@
   },
   {
     "id": "black-panther-1",
-    "title": "黑豹",
+    "title": "黑豹（Black Panther）",
     "subtitle": "瓦坎达的秘密",
     "year": 2016,
     "yearLabel": "2016",
     "eraId": "era-civil-war",
     "isMajorEvent": false,
     "order": 3,
-    "summary": "特查拉在父亲去世后继承了瓦坎达王位。这个看似落后的非洲国家，其实隐藏着世界上最先进的科技与振金矿藏。当流落在外的堂弟埃里克·克尔芒戈回来争夺王位时，特查拉不仅要捍卫王座，更要思考瓦坎达在世界的角色。",
+    "summary": "特查拉（T'Challa）在父亲去世后继承了瓦坎达（Wakanda）王位。这个看似落后的非洲国家，其实隐藏着世界上最先进的科技与振金（Vibranium）矿藏。当流落在外的堂弟埃里克·克尔芒戈（Killmonger）回来争夺王位时，特查拉（T'Challa）不仅要捍卫王座，更要思考瓦坎达（Wakanda）在世界的角色。",
     "characters": [
       "tchalla",
       "shuri"
@@ -316,14 +316,14 @@
   },
   {
     "id": "spider-man-homecoming",
-    "title": "蜘蛛侠：英雄归来",
+    "title": "蜘蛛侠：英雄归来（Spider-Man: Homecoming）",
     "subtitle": "邻家英雄的成长",
     "year": 2016,
     "yearLabel": "2016",
     "eraId": "era-civil-war",
     "isMajorEvent": false,
     "order": 4,
-    "summary": "经过内战后，蜘蛛侠彼得·帕克被托尼·斯塔克收为学徒，却始终渴望证明自己。他一边应对高中生活，一边追查利用外星科技贩卖武器的秃鹫。这部电影让彼得明白，成为英雄不在于战衣，而在于责任。",
+    "summary": "经过内战后，蜘蛛侠（Spider-Man）彼得·帕克（Peter Parker）被托尼·斯塔克（Tony Stark）收为学徒，却始终渴望证明自己。他一边应对高中生活，一边追查利用外星科技贩卖武器的秃鹫（Vulture）。这部电影让彼得明白，成为英雄不在于战衣，而在于责任。",
     "characters": [
       "peter-parker",
       "tony-stark"
@@ -332,14 +332,14 @@
   },
   {
     "id": "doctor-strange-1",
-    "title": "奇异博士",
+    "title": "奇异博士（Doctor Strange）",
     "subtitle": "魔法的世界",
     "year": 2016,
     "yearLabel": "2016–17",
     "eraId": "era-civil-war",
     "isMajorEvent": false,
     "order": 5,
-    "summary": "天才神经外科医生史蒂芬·斯特兰奇在车祸中双手残废，为寻找治愈方法踏上了神秘修行之路。他拜入古一法师门下，见识到魔法与多元宇宙的存在，最终成为至尊法师，守护地球免受多维空间威胁。",
+    "summary": "天才神经外科医生史蒂芬·斯特兰奇（Stephen Strange）在车祸中双手残废，为寻找治愈方法踏上了神秘修行之路。他拜入古一（Ancient One）法师门下，见识到魔法与多元宇宙（the Multiverse）的存在，最终成为至尊法师（Sorcerer Supreme），守护地球免受多维空间威胁。",
     "characters": [
       "stephen-strange",
       "ancient-one",
@@ -349,14 +349,14 @@
   },
   {
     "id": "ragnarok",
-    "title": "雷神3：诸神黄昏",
+    "title": "雷神3：诸神黄昏（Thor: Ragnarok）",
     "subtitle": "神族的黄昏",
     "year": 2017,
     "yearLabel": "2017",
     "eraId": "era-civil-war",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "奥丁在挪威安详离世，解除了对长女海拉的千年封印。这位曾经与奥丁并肩征服九界的死神回到阿斯加德，捏碎了索尔的神锤，一举夺权。索尔流落到外星球萨卡，在角斗场与浩克重逢，并与女武神、洛基联手逃回阿斯加德。为了阻止海拉，索尔唤醒了火焰魔王苏尔特尔，主动引爆诸神黄昏——阿斯加德不复存在，但人民得以撤离。神族时代就此落幕，幸存者踏上寻找新家园之路。",
+    "summary": "奥丁（Odin）在挪威安详离世，解除了对长女海拉（Hela）的千年封印。这位曾经与奥丁（Odin）并肩征服九界（the Nine Realms）的死神回到阿斯加德（Asgard），捏碎了索尔（Thor）的神锤（Mjolnir），一举夺权。索尔（Thor）流落到外星球萨卡（Sakaar），在角斗场与浩克（Hulk）重逢，并与女武神（Valkyrie）、洛基（Loki）联手逃回阿斯加德（Asgard）。为了阻止海拉（Hela），索尔（Thor）唤醒了火焰魔王苏尔特尔，主动引爆诸神黄昏——阿斯加德（Asgard）不复存在，但人民得以撤离。神族时代就此落幕，幸存者踏上寻找新家园之路。",
     "characters": [
       "thor",
       "loki",
@@ -367,14 +367,14 @@
   },
   {
     "id": "ant-man-and-wasp",
-    "title": "蚁人2：黄蜂女现身",
+    "title": "蚁人2：黄蜂女现身（Ant-Man and the Wasp）",
     "subtitle": "量子领域的秘密",
     "year": 2018,
     "yearLabel": "2018",
     "eraId": "era-infinity",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "斯科特·朗在内战后接受认罪协议，处于居家软禁之中。他与汉克·皮姆和霍普合作，尝试进入量子领域救回汉克失散三十年的妻子珍妮特。片尾斯科特再次进入量子领域执行任务时，恰逢灭霸的响指降临，外界接应他的三人化为尘埃，他被独自困在量子领域整整五年——这次意外的幸存，成为终局之战逆转败局的关键。",
+    "summary": "斯科特·朗（Scott Lang）在内战后接受认罪协议，处于居家软禁之中。他与汉克·皮姆（Hank Pym）和霍普合作，尝试进入量子领域（Quantum Realm）救回汉克失散三十年的妻子珍妮特。片尾斯科特再次进入量子领域（Quantum Realm）执行任务时，恰逢灭霸（Thanos）的响指（the Snap）降临，外界接应他的三人化为尘埃，他被独自困在量子领域（Quantum Realm）整整五年——这次意外的幸存，成为终局之战逆转败局的关键。",
     "characters": [
       "scott-lang",
       "hank-pym",
@@ -384,14 +384,14 @@
   },
   {
     "id": "infinity-war",
-    "title": "复仇者联盟3：无限战争",
+    "title": "复仇者联盟3：无限战争（Avengers: Infinity War）",
     "subtitle": "灭霸的响指",
     "year": 2018,
     "yearLabel": "2018",
     "eraId": "era-infinity",
     "isMajorEvent": true,
     "order": 2,
-    "summary": "灭霸踏上收集六颗无限宝石的征途，企图用一个响指消灭宇宙一半的生命来“平衡”宇宙。复仇者联盟与银河护卫队分头阻止，却一次次败在灭霸手下。最终灭霸集齐宝石打响响指，宇宙一半生命化作尘埃，包括无数英雄在内灰飞烟灭。",
+    "summary": "灭霸（Thanos）踏上收集六颗无限宝石（the Infinity Stones）的征途，企图用一个响指（the Snap）消灭宇宙一半的生命来“平衡”宇宙。复仇者联盟（The Avengers）与银河护卫队（Guardians of the Galaxy）分头阻止，却一次次败在灭霸（Thanos）手下。最终灭霸（Thanos）集齐宝石打响响指（the Snap），宇宙一半生命化作尘埃，包括无数英雄在内灰飞烟灭。",
     "characters": [
       "thanos",
       "tony-stark",
@@ -418,14 +418,14 @@
   },
   {
     "id": "endgame",
-    "title": "复仇者联盟4：终局之战",
+    "title": "复仇者联盟4：终局之战（Avengers: Endgame）",
     "subtitle": "不惜一切代价",
     "year": 2023,
     "yearLabel": "2023",
     "eraId": "era-infinity",
     "isMajorEvent": true,
     "order": 1,
-    "summary": "响指之后五年，世界在失去一半生命的阴影中艰难重建。幸存的复仇者通过量子领域进行时间旅行，回到过去的各个时间点搜集无限宝石，企图逆转响指。他们成功复活了消失的战友，并在最终决战中与灭霸展开殊死一战。钢铁侠以生命的代价打出响指，终结了灭霸。",
+    "summary": "响指（the Snap）之后五年，世界在失去一半生命的阴影中艰难重建。幸存的复仇者通过量子领域（Quantum Realm）进行时间旅行，回到过去的各个时间点搜集无限宝石（the Infinity Stones），企图逆转响指（the Snap）。他们成功复活了消失的战友，并在最终决战中与灭霸（Thanos）展开殊死一战。钢铁侠（Iron Man）以生命的代价打出响指（the Snap），终结了灭霸（Thanos）。",
     "characters": [
       "tony-stark",
       "steve-rogers",
@@ -454,22 +454,22 @@
       "valkyrie",
       "shuri"
     ],
-    "crossUniverseNote": "终局之战是无限传奇的收官之作，也是初代复仇者中钢铁侠与黑寡妇的谢幕。此后漫威电影宇宙进入多元宇宙时代。"
+    "crossUniverseNote": "终局之战是无限传奇的收官之作，也是初代复仇者中钢铁侠（Iron Man）与黑寡妇（Black Widow）的谢幕。此后漫威电影宇宙（the Marvel Cinematic Universe）进入多元宇宙（the Multiverse）时代。"
   },
   {
     "id": "far-from-home",
-    "title": "蜘蛛侠：英雄远征",
+    "title": "蜘蛛侠：英雄远征（Spider-Man: Far From Home）",
     "subtitle": "传承与信任",
     "year": 2024,
     "yearLabel": "2024",
     "eraId": "era-infinity",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "终局之战后，彼得·帕克在托尼·斯塔克去世的阴影中成长，一心只想当回普通高中生。一次欧洲旅行中，他遇到了自称来自平行宇宙的神秘客，并被迫承担起拯救世界的责任。片尾的反转揭开了一个更大的骗局，也为彼得接下来的命运埋下伏笔。",
+    "summary": "终局之战后，彼得·帕克（Peter Parker）在托尼·斯塔克（Tony Stark）去世的阴影中成长，一心只想当回普通高中生。一次欧洲旅行中，他遇到了自称来自平行宇宙的神秘客（Mysterio），并被迫承担起拯救世界的责任。片尾的反转揭开了一个更大的骗局，也为彼得接下来的命运埋下伏笔。",
     "characters": [
       "peter-parker",
       "nick-fury"
     ],
-    "crossUniverseNote": "片中的神秘客自称来自平行宇宙，实为骗局。真正的多元宇宙危机将在下一阶段《蜘蛛侠：英雄无归》中爆发，届时索尼电影宇宙的托比、加菲两代蜘蛛侠会正式登场。"
+    "crossUniverseNote": "片中的神秘客（Mysterio）自称来自平行宇宙，实为骗局。真正的多元宇宙（the Multiverse）危机将在下一阶段《蜘蛛侠（Spider-Man）：英雄无归》中爆发，届时索尼电影宇宙的托比、加菲两代蜘蛛侠（Spider-Man）会正式登场。"
   }
 ]

@@ -1,46 +1,46 @@
 [
   {
     "id": "era-ww2",
-    "name": "远古与二战",
+    "name": "远古与二战（The Ancient Times & WWII）",
     "tagline": "超级士兵与世界初醒",
     "years": "公元前1260年 – 1945年",
     "startYear": -1260,
     "color": "#3e4a3d",
     "colorSoft": "#e8ece7",
-    "intro": "漫威电影宇宙的世界，要从一颗坠落到瓦坎达的陨石和一位瘦弱士兵的血清实验说起。这个时代还没有超级英雄——只有凡人用勇气、科学和战争，在历史的缝隙里埋下改变世界的种子。",
+    "intro": "漫威电影宇宙（the Marvel Cinematic Universe）的世界，要从一颗坠落到瓦坎达（Wakanda）的陨石和一位瘦弱士兵的血清实验说起。这个时代还没有超级英雄——只有凡人用勇气、科学和战争，在历史的缝隙里埋下改变世界的种子。",
     "heroTitle": "一切从这里开始"
   },
   {
     "id": "era-assembly",
-    "name": "复仇者集结",
+    "name": "复仇者集结（The Avengers Assemble）",
     "tagline": "英雄初现，地球迎来守护者",
     "years": "2010年 – 2015年",
     "startYear": 2010,
     "color": "#8f1d14",
     "colorSoft": "#f5e6e3",
-    "intro": "进入现代，超级士兵、天才发明家、北欧神族、浩克与特工逐渐浮出水面。神盾局意识到，地球需要一支超能力队伍来面对前所未有的威胁——复仇者联盟由此诞生。",
+    "intro": "进入现代，超级士兵、天才发明家、北欧神族、浩克（Hulk）与特工逐渐浮出水面。神盾局（S.H.I.E.L.D.）意识到，地球需要一支超能力队伍来面对前所未有的威胁——复仇者联盟由此诞生。",
     "heroTitle": "复仇者，集结"
   },
   {
     "id": "era-civil-war",
-    "name": "内战与分裂",
+    "name": "内战与分裂（Civil War & Division）",
     "tagline": "英雄们第一次分道扬镳",
     "years": "2016年 – 2017年",
     "startYear": 2016,
     "color": "#2f4156",
     "colorSoft": "#e6ebf0",
-    "intro": "复仇者联盟在一场又一场战斗中声名鹊起，也带来了越来越大的破坏。当世界开始要求英雄接受监管，钢铁侠与美国队长在理念上彻底决裂——一场内战撕裂了整个团队。",
+    "intro": "复仇者联盟在一场又一场战斗中声名鹊起，也带来了越来越大的破坏。当世界开始要求英雄接受监管，钢铁侠（Iron Man）与美国队长（Captain America）在理念上彻底决裂——一场内战撕裂了整个团队。",
     "heroTitle": "英雄之战"
   },
   {
     "id": "era-infinity",
-    "name": "无限战争",
+    "name": "无限战争（Infinity War）",
     "tagline": "灭霸降临，宇宙存亡一役",
     "years": "2018年 – 2024年",
     "startYear": 2018,
     "color": "#4a2c5f",
     "colorSoft": "#ece5f1",
-    "intro": "来自泰坦星的灭霸集齐六颗无限宝石，一个响指消灭了宇宙一半的生命。英雄们在失败、失去与绝望中重新集结，展开了一场跨越时空的反击——这是整个漫威电影宇宙最重要的篇章。",
+    "intro": "来自泰坦星（Titan）的灭霸（Thanos）集齐六颗无限宝石（the Infinity Stones），一个响指（the Snap）消灭了宇宙一半的生命。英雄们在失败、失去与绝望中重新集结，展开了一场跨越时空的反击——这是整个漫威电影宇宙（the Marvel Cinematic Universe）最重要的篇章。",
     "heroTitle": "终局之前"
   }
 ]
