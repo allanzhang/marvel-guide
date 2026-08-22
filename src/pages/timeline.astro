@@ -47,6 +47,14 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
                     <p class="entry__summary">{m.summary}</p>
+                    {m.quotes && m.quotes.length > 0 && (
+                      <div class="entry__quotes">
+                        <span class="entry__quotes-label">经典台词 · Iconic Quotes</span>
+                        {m.quotes.map((q) => (
+                          <blockquote class="quote">{q}</blockquote>
+                        ))}
+                      </div>
+                    )}
                     {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
                     <div class="entry__chars">
                       {m.characters.map((cid) => <a class="char-chip" href={`/characters/${cid}`}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
@@ -64,6 +72,14 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
                     <p class="entry__summary">{m.summary}</p>
+                    {m.quotes && m.quotes.length > 0 && (
+                      <div class="entry__quotes">
+                        <span class="entry__quotes-label">经典台词 · Iconic Quotes</span>
+                        {m.quotes.map((q) => (
+                          <blockquote class="quote">{q}</blockquote>
+                        ))}
+                      </div>
+                    )}
                     {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
                     <div class="entry__chars">
                       {m.characters.map((cid) => <a class="char-chip" href={`/characters/${cid}`}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
@@ -194,6 +210,54 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
     transition: border-color 0.15s, color 0.15s;
   }
   .char-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ===== 经典台词 ===== */
+  .entry__quotes {
+    margin-top: 24px;
+    max-width: 560px;
+  }
+  .entry--major__body .entry__quotes { max-width: 720px; }
+  .entry__quotes-label {
+    display: inline-block;
+    font-size: var(--fs-tiny);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .entry__quotes .quote {
+    position: relative;
+    margin-top: 14px;
+    padding: 18px 22px 18px 48px;
+    background: var(--era-soft);
+    border-left: 3px solid var(--era-color);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: var(--fs-sub);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+  .entry__quotes .quote::before {
+    content: "\201C";
+    position: absolute;
+    left: 14px;
+    top: 4px;
+    font-size: 44px;
+    line-height: 1;
+    color: var(--era-color);
+    opacity: 0.55;
+    font-family: Georgia, serif;
+  }
+  /* rtl 翻转条目里的台词边框保持朝左（内容左对齐） */
+  .entry--flip .entry__quotes .quote {
+    border-left: 3px solid var(--era-color);
+    border-right: 0;
+    text-align: left;
+  }
+  .entry--major__body .entry__quotes .quote { padding: 22px 28px 22px 60px; }
+  .entry--major__body .entry__quotes .quote::before { left: 18px; font-size: 56px; }
 
   /* ===== 大事件特别条目 ===== */
   .entry--major {

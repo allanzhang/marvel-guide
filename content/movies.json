@@ -15,7 +15,11 @@
       "red-skull",
       "bucky-barnes"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I can do this all day.",
+      "The price of freedom is high, and I can pay that price."
+    ]
   },
   {
     "id": "captain-marvel-1",
@@ -31,7 +35,11 @@
       "carol-danvers",
       "nick-fury"
     ],
-    "crossUniverseNote": "本片中的斯克鲁人（Skrull）是漫威漫画中的经典外星种族，首次在电影宇宙登场。他们在本片中被塑造为被追杀的一方，这一设定在后续剧集《秘密入侵》中会再次反转。"
+    "crossUniverseNote": "本片中的斯克鲁人（Skrull）是漫威漫画中的经典外星种族，首次在电影宇宙登场。他们在本片中被塑造为被追杀的一方，这一设定在后续剧集《秘密入侵》中会再次反转。",
+    "quotes": [
+      "I have nothing to prove to you.",
+      "Higher, further, faster, baby!"
+    ]
   },
   {
     "id": "iron-man-1",
@@ -49,7 +57,11 @@
       "james-rhodes",
       "nick-fury"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I am Iron Man.",
+      "My armor was never a distraction or a hobby; it was a cocoon, and now I'm a changed man."
+    ]
   },
   {
     "id": "incredible-hulk",
@@ -65,7 +77,10 @@
       "bruce-banner",
       "general-ross"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "Hulk smash!"
+    ]
   },
   {
     "id": "iron-man-2",
@@ -84,7 +99,11 @@
       "nick-fury",
       "natasha-romanoff"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "If you're nothing without this suit, then you shouldn't have it.",
+      "Sometimes you gotta run before you can walk."
+    ]
   },
   {
     "id": "thor-1",
@@ -101,7 +120,11 @@
       "loki",
       "jane-foster"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "Whosoever holds this hammer, if he be worthy, shall possess the power of Thor.",
+      "I'm not worthy."
+    ]
   },
   {
     "id": "avengers-1",
@@ -123,7 +146,12 @@
       "loki",
       "nick-fury"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "That's my secret, Captain. I'm always angry.",
+      "There's only one God, ma'am, and I'm pretty sure he doesn't dress like that.",
+      "You want to protect the Earth? You better plan on coming out of the shadows and telling people who you are."
+    ]
   },
   {
     "id": "thor-2",
@@ -140,7 +168,11 @@
       "loki",
       "jane-foster"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "Trust my rage.",
+      "You'd be surprised what people will do when they think they have nothing left to lose."
+    ]
   },
   {
     "id": "iron-man-3",
@@ -157,7 +189,11 @@
       "pepper-potts",
       "james-rhodes"
     ],
-    "crossUniverseNote": "片中满大人的真实身份在片尾反转，其真正设定涉及漫威漫画中的经典反派。电影版与漫画版差别较大，此处以电影呈现为准。"
+    "crossUniverseNote": "片中满大人的真实身份在片尾反转，其真正设定涉及漫威漫画中的经典反派。电影版与漫画版差别较大，此处以电影呈现为准。",
+    "quotes": [
+      "You know who I am? I'm the guy who kills the Mandarin.",
+      "I'm happy to say I am Iron Man."
+    ]
   },
   {
     "id": "winter-soldier",
@@ -176,7 +212,11 @@
       "nick-fury",
       "sam-wilson"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I don't know if I'm worth all of this, Steve.",
+      "But you're not. You're a target. I need you to trust me."
+    ]
   },
   {
     "id": "guardians-1",
@@ -195,7 +235,11 @@
       "rocket",
       "groot"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "We are Groot.",
+      "You're welcome? ... The great thing about your sacrifice is you get to hear it. No, wait, that's dying."
+    ]
   },
   {
     "id": "guardians-2",
@@ -214,7 +258,11 @@
       "rocket",
       "groot"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "He's not my dad, he's my father.",
+      "Sometimes the thing you're looking for your whole life is right there beside you all along."
+    ]
   },
   {
     "id": "age-of-ultron",
@@ -237,7 +285,11 @@
       "vision",
       "ultron"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I'm going to present it to him in the strongest possible way.",
+      "You're not going to be a jolly green giant, you're going to need to be a hero."
+    ]
   },
   {
     "id": "ant-man-1",
@@ -254,7 +306,11 @@
       "hank-pym",
       "hope-van-dyne"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I don't answer to you, I don't fly. Wait, no, I do fly.",
+      "It's not about saving our world, it's about saving their world."
+    ]
   },
   {
     "id": "civil-war",
@@ -280,7 +336,11 @@
       "scott-lang",
       "general-ross"
     ],
-    "crossUniverseNote": "蜘蛛侠（Spider-Man）在本片首次登场，由索尼与漫威合作引入。荷兰弟版蜘蛛侠（Spider-Man）属于 MCU 正史，与索尼此前两代蜘蛛侠（Spider-Man）（托比、加菲）属于不同电影宇宙。"
+    "crossUniverseNote": "蜘蛛侠（Spider-Man）在本片首次登场，由索尼与漫威合作引入。荷兰弟版蜘蛛侠（Spider-Man）属于 MCU 正史，与索尼此前两代蜘蛛侠（Spider-Man）（托比、加菲）属于不同电影宇宙。",
+    "quotes": [
+      "I can do this all day.",
+      "So was I."
+    ]
   },
   {
     "id": "black-widow",
@@ -296,7 +356,11 @@
       "natasha-romanoff",
       "yelyena-belova"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I've got red in my ledger. I'd like to wipe it out.",
+      "I don't want the red in my ledger. I want to wipe it out."
+    ]
   },
   {
     "id": "black-panther-1",
@@ -312,7 +376,11 @@
       "tchalla",
       "shuri"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "Wakanda forever!",
+      "I never yielded, and as you can plainly see, I am not dead."
+    ]
   },
   {
     "id": "spider-man-homecoming",
@@ -328,7 +396,11 @@
       "peter-parker",
       "tony-stark"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "If you're nothing without the suit, then you shouldn't have it.",
+      "I just have to say, I cannot afford you. But I need you on this."
+    ]
   },
   {
     "id": "doctor-strange-1",
@@ -345,7 +417,11 @@
       "ancient-one",
       "wong"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I am Dr. Strange.",
+      "The bill comes due, and it always comes due."
+    ]
   },
   {
     "id": "ragnarok",
@@ -363,7 +439,11 @@
       "bruce-banner",
       "valkyrie"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "Get help!",
+      "Asgard is not a place, it's a people."
+    ]
   },
   {
     "id": "ant-man-and-wasp",
@@ -380,7 +460,11 @@
       "hank-pym",
       "hope-van-dyne"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "I connect with some ants, I shrink. I fly. It's a whole thing.",
+      "Time is so much more complicated than I realized."
+    ]
   },
   {
     "id": "infinity-war",
@@ -414,7 +498,11 @@
       "wong",
       "shuri"
     ],
-    "crossUniverseNote": ""
+    "crossUniverseNote": "",
+    "quotes": [
+      "Mr. Stark, I don't feel so good.",
+      "You should have gone for the head."
+    ]
   },
   {
     "id": "endgame",
@@ -454,7 +542,12 @@
       "valkyrie",
       "shuri"
     ],
-    "crossUniverseNote": "终局之战是无限传奇的收官之作，也是初代复仇者中钢铁侠（Iron Man）与黑寡妇（Black Widow）的谢幕。此后漫威电影宇宙（the Marvel Cinematic Universe）进入多元宇宙（the Multiverse）时代。"
+    "crossUniverseNote": "终局之战是无限传奇的收官之作，也是初代复仇者中钢铁侠（Iron Man）与黑寡妇（Black Widow）的谢幕。此后漫威电影宇宙（the Marvel Cinematic Universe）进入多元宇宙（the Multiverse）时代。",
+    "quotes": [
+      "Whatever it takes.",
+      "I am Iron Man.",
+      "I love you 3000."
+    ]
   },
   {
     "id": "far-from-home",
@@ -470,6 +563,10 @@
       "peter-parker",
       "nick-fury"
     ],
-    "crossUniverseNote": "片中的神秘客（Mysterio）自称来自平行宇宙，实为骗局。真正的多元宇宙（the Multiverse）危机将在下一阶段《蜘蛛侠（Spider-Man）：英雄无归》中爆发，届时索尼电影宇宙的托比、加菲两代蜘蛛侠（Spider-Man）会正式登场。"
+    "crossUniverseNote": "片中的神秘客（Mysterio）自称来自平行宇宙，实为骗局。真正的多元宇宙（the Multiverse）危机将在下一阶段《蜘蛛侠（Spider-Man）：英雄无归》中爆发，届时索尼电影宇宙的托比、加菲两代蜘蛛侠（Spider-Man）会正式登场。",
+    "quotes": [
+      "With great power comes great responsibility.",
+      "The whole world's gonna know my name."
+    ]
   }
 ]
