@@ -1,0 +1,231 @@
+---
+import Base from '../layouts/Base.astro';
+import { readFileSync } from 'node:fs';
+
+const read = (p) => JSON.parse(readFileSync(`${process.cwd()}/content/${p}`, 'utf8'));
+const eras = read('eras.json').sort((a, b) => a.startYear - b.startYear);
+const movies = read('movies.json').sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));
+const characters = read('characters.json');
+const charById = Object.fromEntries(characters.map((c) => [c.id, c]));
+
+const moviesOf = (eraId) => movies.filter((m) => m.eraId === eraId);
+const posterUrl = (id) => `/posters/poster-${id}.svg`;
+---
+
+<Base title="时间线 · 漫威电影世界图鉴">
+  <!-- 页面大标题 -->
+  <section class="tl-hero container-wide">
+    <p class="tl-kicker">剧情时序 · 顺着读就懂</p>
+    <h1 class="tl-page-title">漫威电影世界的时间线</h1>
+    <p class="tl-page-desc">以下按故事发生的先后排列，从二战前一直讲到多元宇宙时代。每个篇章都有一段导读，帮你在开始前先建立大框架。</p>
+  </section>
+
+  {
+    eras.map((era) => {
+      const eraMovies = moviesOf(era.id);
+      const isEven = eras.indexOf(era) % 2 === 1;
+      return (
+        <section
+          class="era"
+          id={era.id}
+          style={`--era-color:${era.color};--era-soft:${era.colorSoft}`}
+        >
+          <!-- 篇章头图（全宽） -->
+          <div class="era-hero full-bleed">
+            <span class="era-hero__year-bg" aria-hidden="true">{era.startYear < 0 ? '远古' : Math.abs(era.startYear)}</span>
+            <div class="era-hero__inner">
+              <p class="era-hero__tag">{era.name}</p>
+              <h2 class="era-hero__title">{era.heroTitle}</h2>
+              <p class="era-hero__years">{era.years}</p>
+              <p class="era-hero__intro">{era.intro}</p>
+            </div>
+          </div>
+
+          <!-- 篇章内条目 -->
+          <div class="era-entries container-wide">
+            {eraMovies.map((m, i) => (
+              m.isMajorEvent ? (
+                <!-- 大事件全宽特别条目 -->
+                <article class="entry entry--major" id={m.id}>
+                  <div class="entry--major__media" style={`background:linear-gradient(160deg,${era.color} 0%,#000 160%)`}>
+                    <img src={posterUrl(m.id)} alt={m.title} />
+                  </div>
+                  <div class="entry--major__body">
+                    <span class="entry__year">{m.yearLabel}</span>
+                    <h3 class="entry__title">{m.title}</h3>
+                    <p class="entry__subtitle">{m.subtitle}</p>
+                    <p class="entry__summary">{m.summary}</p>
+                    {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
+                    <div class="entry__chars">
+                      {m.characters.map((cid) => <a class="char-chip" href={`/characters/${cid}`}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
+                    </div>
+                  </div>
+                </article>
+              ) : (
+                <!-- 常规条目（左右交替） -->
+                <article class="entry" id={m.id} class:list={[{ 'entry--flip': i % 2 === 1 }]}>
+                  <div class="entry__media">
+                    <img src={posterUrl(m.id)} alt={m.title} />
+                  </div>
+                  <div class="entry__body">
+                    <span class="entry__year">{m.yearLabel}</span>
+                    <h3 class="entry__title">{m.title}</h3>
+                    <p class="entry__subtitle">{m.subtitle}</p>
+                    <p class="entry__summary">{m.summary}</p>
+                    {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
+                    <div class="entry__chars">
+                      {m.characters.map((cid) => <a class="char-chip" href={`/characters/${cid}`}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
+                    </div>
+                  </div>
+                </article>
+              )
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
+</Base>
+
+<style>
+  /* ===== 页面大标题 ===== */
+  .tl-hero { padding: 88px 48px 48px; }
+  .tl-kicker {
+    font-size: var(--fs-tiny);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .tl-page-title { font-size: var(--fs-hero); line-height: 1.1; }
+  .tl-page-desc {
+    margin-top: 20px;
+    color: var(--ink-soft);
+    max-width: 640px;
+    font-size: var(--fs-sub);
+  }
+
+  /* ===== 篇章 ===== */
+  .era { margin-top: 96px; }
+
+  /* ===== 篇章头图（全宽） ===== */
+  .era-hero {
+    position: relative;
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+      radial-gradient(120% 100% at 80% 0%, var(--era-color) 0%, transparent 55%),
+      linear-gradient(160deg, var(--era-color) 0%, #0e0f10 130%);
+    color: #fff;
+  }
+  .era-hero__year-bg {
+    position: absolute;
+    right: -0.03em;
+    bottom: -0.22em;
+    font-family: var(--font-serif);
+    font-size: var(--fs-year-bg);
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.14);
+    letter-spacing: -0.02em;
+    pointer-events: none;
+    user-select: none;
+  }
+  .era-hero__inner { max-width: var(--w-wide); margin: 0 auto; padding: 120px 48px; position: relative; }
+  .era-hero__tag {
+    display: inline-block;
+    font-size: var(--fs-small);
+    letter-spacing: 4px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 999px;
+    padding: 6px 18px;
+    margin-bottom: 24px;
+  }
+  .era-hero__title { font-size: clamp(36px, 5vw, 72px); max-width: 700px; }
+  .era-hero__years { margin-top: 16px; font-family: var(--font-serif); font-size: var(--fs-sub); opacity: 0.85; }
+  .era-hero__intro { margin-top: 24px; max-width: 620px; font-size: var(--fs-body); line-height: 2; opacity: 0.92; }
+
+  /* ===== 常规条目 ===== */
+  .era-entries { display: flex; flex-direction: column; gap: 88px; padding-top: 88px; }
+  .entry {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 64px;
+    align-items: center;
+    width: min(1080px, 100%);
+  }
+  .entry--flip { direction: rtl; }
+  .entry--flip > * { direction: ltr; }
+  .entry__media {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .entry__media img { width: 100%; height: auto; display: block; }
+  .entry__body { min-width: 0; }
+  .entry__year {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: var(--fs-section);
+    font-weight: 700;
+    color: var(--era-color);
+    margin-bottom: 10px;
+  }
+  .entry__title { font-size: var(--fs-title); margin-bottom: 4px; }
+  .entry__subtitle { color: var(--ink-soft); font-size: var(--fs-sub); margin-bottom: 20px; }
+  .entry__summary { color: var(--ink); line-height: 2; max-width: 560px; }
+  .entry__note {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: var(--era-soft);
+    color: var(--ink-soft);
+    font-size: var(--fs-small);
+    line-height: 1.8;
+    border-radius: var(--radius);
+    border-left: 3px solid var(--era-color);
+    max-width: 560px;
+  }
+  .entry__chars { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .char-chip {
+    font-size: var(--fs-small);
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    background: #fff;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .char-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ===== 大事件特别条目 ===== */
+  .entry--major {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #fff;
+    box-shadow: var(--shadow);
+  }
+  .entry--major__media { position: relative; }
+  .entry--major__media img { width: 100%; max-height: 640px; object-fit: cover; object-position: center top; }
+  .entry--major__body { padding: 56px 64px 64px; }
+  .entry--major__body .entry__year { font-size: var(--fs-title); }
+  .entry--major__body .entry__title { font-size: clamp(40px, 5vw, 64px); }
+  .entry--major__body .entry__summary { font-size: var(--fs-sub); line-height: 2; }
+
+  /* ===== 移动端 ===== */
+  @media (max-width: 820px) {
+    .tl-hero { padding: 56px 20px 32px; }
+    .era-hero__inner { padding: 96px 20px; }
+    .era-entries { gap: 56px; padding-top: 56px; }
+    .entry { grid-template-columns: 1fr; gap: 28px; width: 100%; }
+    .entry--flip { direction: ltr; }
+    .entry__media { order: -1; }
+    .entry--major__body { padding: 32px 24px 40px; }
+  }
+</style>
