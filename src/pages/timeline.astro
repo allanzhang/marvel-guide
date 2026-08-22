@@ -16,7 +16,6 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
   {
     sortedEras.map((era) => {
       const eraMovies = moviesOf(era.id);
-      const isEven = eras.indexOf(era) % 2 === 1;
       return (
         <section
           class="era"
