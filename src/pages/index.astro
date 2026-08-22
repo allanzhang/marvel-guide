@@ -2,8 +2,124 @@
 import Base from '../layouts/Base.astro';
 ---
 <Base title="漫威电影世界图鉴">
-  <div class="container-wide" style="padding:80px 48px;">
-    <h1 style="font-size:var(--fs-hero);">漫威电影世界图鉴</h1>
-    <p style="margin-top:24px;color:var(--ink-soft);max-width:640px;">构建管线验证占位页。后续将替换为正式首页。</p>
-  </div>
+  <!-- 全屏 hero -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="hero__kicker">面向非漫威迷的剧情时序图鉴</p>
+      <h1 class="hero__title">漫威电影<br />世界图鉴</h1>
+      <p class="hero__desc">几十部电影，上百位英雄，一条线串起来的故事。<br />在这里，顺着读就能看懂整个漫威电影世界。</p>
+    </div>
+  </section>
+
+  <!-- 双入口 -->
+  <section class="entries container-wide">
+    <a class="entry-card" href="/timeline">
+      <span class="entry-card__num">01</span>
+      <h2 class="entry-card__title">时间线</h2>
+      <p class="entry-card__desc">按故事发生的先后，从二战一路讲到多元宇宙。每段都有导读，建立大框架。</p>
+      <span class="entry-card__go">开始顺读 →</span>
+    </a>
+    <a class="entry-card" href="/characters">
+      <span class="entry-card__num">02</span>
+      <h2 class="entry-card__title">人物墙</h2>
+      <p class="entry-card__desc">从复仇者核心到反派堂，认识每个重要角色——他是谁、他的作用、他的故事线。</p>
+      <span class="entry-card__go">认识人物 →</span>
+    </a>
+  </section>
+
+  <!-- 新手指引 -->
+  <section class="guide container-text">
+    <h2 class="guide__title">刚接触漫威？从这里开始</h2>
+    <ol class="guide__steps">
+      <li>
+        <span class="guide__step-num">01</span>
+        <div>
+          <h3>先读时间线第一章</h3>
+          <p>从《美国队长》的二战年代看起，这是整个故事最早的起点。</p>
+        </div>
+      </li>
+      <li>
+        <span class="guide__step-num">02</span>
+        <div>
+          <h3>认识复仇者核心六人</h3>
+          <p>钢铁侠、美队、雷神、浩克、黑寡妇、鹰眼——他们撑起了整个世界的骨架。</p>
+        </div>
+      </li>
+      <li>
+        <span class="guide__step-num">03</span>
+        <div>
+          <h3>按年份顺读时间线</h3>
+          <p>不用一次性看完，想补哪段点哪段，随时回来都能接上。</p>
+        </div>
+      </li>
+    </ol>
+  </section>
 </Base>
+
+<style>
+  /* ===== Hero ===== */
+  .hero {
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+      radial-gradient(90% 80% at 85% 10%, rgba(176, 42, 30, 0.28) 0%, transparent 55%),
+      linear-gradient(160deg, #121316 0%, #1b1c1f 60%, #20212a 100%);
+    color: #fff;
+    overflow: hidden;
+  }
+  .hero__inner { max-width: var(--w-wide); margin: 0 auto; padding: 120px 48px; width: 100%; }
+  .hero__kicker {
+    font-size: var(--fs-small);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 28px;
+  }
+  .hero__title {
+    font-size: clamp(52px, 9vw, 120px);
+    line-height: 1.05;
+    font-weight: 900;
+  }
+  .hero__desc {
+    margin-top: 32px;
+    font-size: clamp(18px, 2.2vw, 24px);
+    line-height: 1.9;
+    color: rgba(255,255,255,0.85);
+    max-width: 560px;
+  }
+
+  /* ===== 双入口 ===== */
+  .entries { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding: 96px 48px 0; }
+  .entry-card {
+    border-radius: var(--radius);
+    padding: 44px 40px 40px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .entry-card:hover { transform: translateY(-4px); box-shadow: 0 12px 34px rgba(0,0,0,0.12); }
+  .entry-card__num { font-family: var(--font-serif); font-size: var(--fs-small); color: var(--accent); font-weight: 700; }
+  .entry-card__title { font-size: var(--fs-title); margin: 14px 0 12px; }
+  .entry-card__desc { color: var(--ink-soft); line-height: 1.9; flex: 1; }
+  .entry-card__go { margin-top: 28px; font-weight: 600; color: var(--accent); }
+
+  /* ===== 新手指引 ===== */
+  .guide { padding-top: 110px; }
+  .guide__title { font-size: var(--fs-section); margin-bottom: 40px; }
+  .guide__steps { display: flex; flex-direction: column; gap: 40px; }
+  .guide__steps li { display: flex; gap: 28px; align-items: flex-start; }
+  .guide__step-num { font-family: var(--font-serif); font-size: var(--fs-title); color: var(--line); font-weight: 700; flex-shrink: 0; }
+  .guide__steps h3 { font-family: var(--font-serif); font-size: var(--fs-sub); margin-bottom: 6px; }
+  .guide__steps p { color: var(--ink-soft); }
+
+  @media (max-width: 820px) {
+    .hero__inner { padding: 96px 20px; }
+    .entries { grid-template-columns: 1fr; padding: 64px 20px 0; }
+    .guide { padding-top: 80px; }
+  }
+</style>
