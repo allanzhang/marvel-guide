@@ -1,0 +1,18 @@
+[
+  {
+    "id": "captain-america-first-avenger",
+    "title": "美国队长：复仇者先锋",
+    "subtitle": "二战篇章",
+    "year": 1943,
+    "yearLabel": "1943",
+    "eraId": "era-ww2",
+    "isMajorEvent": false,
+    "order": 1,
+    "summary": "二战期间，体弱多病的布鲁克林青年史蒂夫·罗杰斯一心想参军报国却屡遭拒绝。科学家厄斯金博士选中他注射超级士兵血清，将他塑造成体格完美的超级士兵。然而血清方案被九头蛇窃取，红骷髅由此崛起。史蒂夫以美国队长之名投身战场，最终为阻止红骷髅的飞机坠入冰海，沉睡了七十年。",
+    "characters": [
+      "steve-rogers",
+      "peggy-carter"
+    ],
+    "crossUniverseNote": ""
+  }
+]
