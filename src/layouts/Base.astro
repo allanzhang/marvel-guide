@@ -1,0 +1,45 @@
+---
+// 全站基础布局：head + 顶部导航 + 页脚
+import '../styles/global.css';
+const { title = '漫威电影世界图鉴' } = Astro.props;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/', label: '首页' },
+  { href: '/timeline', label: '时间线' },
+  { href: '/characters', label: '人物墙' },
+];
+const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="面向非漫威迷的 MCU 剧情时序图鉴——顺着读就能看懂整个漫威电影世界。" />
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="inner">
+      <a class="brand" href="/">漫威<em>图鉴</em></a>
+      <nav class="links">
+        {nav.map((n) => <a href={n.href} class:list={['', { active: isActive(n.href) }]}>{n.label}</a>)}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>漫威电影世界图鉴 · 面向非漫威迷的剧情时序百科</span>
+      <span>内容整理自公开资料 · 仅供学习参考</span>
+    </div>
+  </footer>
+</body>
+</html>
