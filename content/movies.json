@@ -568,5 +568,309 @@
       "With great power comes great responsibility.",
       "The whole world's gonna know my name."
     ]
+  },
+  {
+    "id": "shang-chi-1",
+    "title": "尚气与十环传奇（Shang-Chi and the Legend of the Ten Rings）",
+    "subtitle": "十环的继承者",
+    "year": 2024,
+    "yearLabel": "2024",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 1,
+    "summary": "隐姓埋名的青年尚气（Shang-Chi）在旧金山过着普通生活，却被卷入父亲文武（Wenwu）的十环帮往事。文武是活了千年的传奇武者，手握十枚威力无穷的十环，他试图召唤早已去世的妻子——却误入了神秘村落塔罗的结界，惊动了传说中的神龙。尚气必须在父亲的执念与保护塔罗之间做出抉择，最终真正继承十环的力量。本片首次将神秘的十环组织（Ten Rings）带回主线——它正是当年绑架托尼·斯塔克的组织。",
+    "characters": [
+      "shang-chi"
+    ],
+    "crossUniverseNote": "",
+    "quotes": [
+      "You're a warrior, whether you like it or not."
+    ]
+  },
+  {
+    "id": "eternals-1",
+    "title": "永恒族（Eternals）",
+    "subtitle": "隐藏的神族",
+    "year": 2024,
+    "yearLabel": "2024",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 2,
+    "summary": "七千年来，一群被称为永恒族（Eternals）的外星造物一直隐藏在地球，默默保护人类免受变异族（Deviants）的侵害。响指事件让他们的使命第一次受到动摇——他们开始质疑：为什么自己从不干预人类自相残杀的大事件？当最后的变异族苏醒、天神族（Celestials）的真实意图浮出水面时，永恒族被迫分崩离析。本片把视角拉高到宇宙尺度，解释了地球上诸多隐藏种族的存在，也为多元宇宙时代埋下更宏大的伏笔。",
+    "characters": [
+      "ikaris",
+      "sersi"
+    ],
+    "crossUniverseNote": "永恒族（Eternals）与天神族（Celestials）是漫威宇宙最古老的种族设定之一。本片风格与主线复仇者电影差异较大，独立成章，但交代了地球隐藏的更古老历史。",
+    "quotes": [
+      "To be worthy of this planet, we must rise above the shadows of our past."
+    ]
+  },
+  {
+    "id": "spider-man-no-way-home",
+    "title": "蜘蛛侠：英雄无归（Spider-Man: No Way Home）",
+    "subtitle": "多元宇宙的裂缝",
+    "year": 2024,
+    "yearLabel": "2024",
+    "eraId": "era-multiverse",
+    "isMajorEvent": true,
+    "order": 3,
+    "summary": "神秘客临终前公开了蜘蛛侠的真实身份，彼得·帕克（Peter Parker）的生活彻底崩塌。走投无路的他请求奇异博士（Doctor Strange）施展遗忘咒语，却因反复修改咒语撕开了多元宇宙的裂缝——来自其他宇宙的「蜘蛛侠宿敌」接连涌入。更惊人的是，这些反派都来自另外两个平行宇宙，而那两个宇宙的蜘蛛侠——托比·马奎尔版与安德鲁·加菲尔德版——也一同出现。三版蜘蛛侠并肩作战，彼得最终让全世界忘记自己，独自背负英雄之名。这是多元宇宙真正打开大门的时刻。",
+    "characters": [
+      "peter-parker",
+      "stephen-strange"
+    ],
+    "crossUniverseNote": "本片是多元宇宙时代的开篇。托比（Tobey Maguire）与加菲（Andrew Garfield）两代蜘蛛侠来自索尼影业的平行宇宙，与荷兰弟（Tom Holland）版并非同一人，但同属「蜘蛛侠」的多重变体。漫威与索尼的合作关系让三版同框成为可能。",
+    "quotes": [
+      "With great power comes great responsibility.",
+      "No one deserves this."
+    ]
+  },
+  {
+    "id": "doctor-strange-2",
+    "title": "奇异博士2：疯狂多元宇宙（Doctor Strange in the Multiverse of Madness）",
+    "subtitle": "疯狂多元宇宙",
+    "year": 2025,
+    "yearLabel": "2025",
+    "eraId": "era-multiverse",
+    "isMajorEvent": true,
+    "order": 1,
+    "summary": "英雄无归留下的多元宇宙裂缝引来了新的危机。来自另一宇宙的少女阿美莉卡·查韦斯（America Chavez）拥有穿越多元宇宙的能力，成为各方争夺的目标。奇异博士（Doctor Strange）在追查中惊觉，真正操控这一切的竟是曾经并肩作战的旺达——她被黑暗之书（Darkhold）腐蚀，化身绯红女巫（Scarlet Witch），试图夺取阿美莉卡的力量去往另一个宇宙与自己的孩子团聚。奇异博士不得不直面自己最黑暗的另一面，在多元宇宙的疯狂中守护现实。",
+    "characters": [
+      "stephen-strange",
+      "wanda-maximoff"
+    ],
+    "crossUniverseNote": "本片正式展开多元宇宙叙事。绯红女巫（Scarlet Witch）的失控源于剧集《旺达幻视》（WandaVision）中失去孩子与爱人的创伤，建议先看该剧再观影，更理解她的动机。",
+    "quotes": [
+      "I can't change what happened. I can only try to protect it.",
+      "The dreams are not real. They're versions of you from other universes."
+    ]
+  },
+  {
+    "id": "thor-4",
+    "title": "雷神4：爱与雷霆（Thor: Love and Thunder）",
+    "subtitle": "爱与雷霆",
+    "year": 2025,
+    "yearLabel": "2025",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 2,
+    "summary": "诸神黄昏后，索尔（Thor）与银河护卫队结伴流浪宇宙，寻找内心的平静。但他很快迎来新的宿敌——屠神者格尔（Gorr the God Butcher），一位因失去女儿而憎恨所有神明的疯狂屠夫。更让索尔震惊的是，他的前女友简·福斯特（Jane Foster）身患绝症，却因与雷神之锤（Mjolnir）的碎片共鸣而成为「神威雷神」。两人并肩对抗格尔，索尔也在爱与责任中找到了新的人生意义。",
+    "characters": [
+      "thor",
+      "jane-foster",
+      "valkyrie"
+    ],
+    "crossUniverseNote": "",
+    "quotes": [
+      "I need you to be what I never could be: a god worth loving."
+    ]
+  },
+  {
+    "id": "black-panther-2",
+    "title": "黑豹2：瓦坎达万岁（Black Panther: Wakanda Forever）",
+    "subtitle": "瓦坎达的传承",
+    "year": 2025,
+    "yearLabel": "2025",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 3,
+    "summary": "特查拉国王骤然离世后，瓦坎达在悲痛中面对新的威胁——隐藏在海底的古老国度塔洛坎（Talokan）浮出水面。塔洛坎之王纳摩（Namor）以振金（Vibranium）为筹码向世界宣战，瓦坎达则在苏睿（Shuri）的带领下艰难接过黑豹的衣钵。本片既是对逝者的深情告别，也是瓦坎达走向世界、传承意志的新篇章。",
+    "characters": [
+      "shuri",
+      "tchalla"
+    ],
+    "crossUniverseNote": "本片是查德维克·博斯曼（Chadwick Boseman）去世后的传承之作，黑豹（Black Panther）的衣钵在片中正式传给苏睿（Shuri）。",
+    "quotes": [
+      "Show them who we are."
+    ]
+  },
+  {
+    "id": "ant-man-3",
+    "title": "蚁人3：量子狂潮（Ant-Man and the Wasp: Quantumania）",
+    "subtitle": "量子领域的深处",
+    "year": 2025,
+    "yearLabel": "2025",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 1,
+    "summary": "斯科特·朗（Scott Lang）一家被意外吸入量子领域（Quantum Realm），在那里遇见了被放逐的征服者康（Kang the Conqueror）——一个能操控时间线的可怕存在。康在量子领域中被困多年，试图借助斯科特一家的皮姆粒子（Pym Particles）逃回现实。本片正式把「康」这位多元宇宙时代的大反派引入主线，也暗示了时间线战争的逼近。",
+    "characters": [
+      "scott-lang",
+      "hank-pym",
+      "hope-van-dyne",
+      "kang"
+    ],
+    "crossUniverseNote": "征服者康（Kang the Conqueror）是多元宇宙时代的核心反派，本质是无数个「康」的变体散布在不同时间线。他与《洛基》（Loki）剧集中的「遗留之人」密切相关，建议结合剧集理解。",
+    "quotes": [
+      "I am Kang. And I have conquered more worlds than you can imagine."
+    ]
+  },
+  {
+    "id": "guardians-3",
+    "title": "银河护卫队3（Guardians of the Galaxy Vol. 3）",
+    "subtitle": "最后的告别",
+    "year": 2025,
+    "yearLabel": "2025",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 2,
+    "summary": "火箭浣熊（Rocket）的身世之谜终于揭开——他是由疯狂的科学家至高进化（High Evolutionary）改造实验的产物。当火箭重伤垂危，银河护卫队踏上了拯救队友、直面进化狂人、直面火箭过去的旅途。本片是银河护卫队系列的收官之作，队员们各自找到归宿，完成了对这支宇宙「怪咖家庭」的深情告别。",
+    "characters": [
+      "star-lord",
+      "gamora",
+      "drax",
+      "rocket",
+      "groot"
+    ],
+    "crossUniverseNote": "",
+    "quotes": [
+      "I didn't have a family until you guys showed up. And now I know what I'm fighting for."
+    ]
+  },
+  {
+    "id": "the-marvels",
+    "title": "惊奇队长2（The Marvels）",
+    "subtitle": "光速羁绊",
+    "year": 2026,
+    "yearLabel": "2026",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 1,
+    "summary": "卡罗尔·丹佛斯（Carol Danvers）与两个「继承者」产生了神秘的光速纠缠——少女莫妮卡·兰博（Monica Rambeau）和惊奇少女卡玛拉·汗（Kamala Khan）。只要她们同时使用超能力，就会彼此互换位置。为了阻止一场跨星系的战争，三人被迫组队协作，也在并肩作战中理解了彼此。本片串联起《惊奇队长》《惊奇女士》与《旺达幻视》三条人物线。",
+    "characters": [
+      "carol-danvers",
+      "kamala-khan",
+      "monica-rambeau"
+    ],
+    "crossUniverseNote": "莫妮卡·兰博（Monica Rambeau）在《惊奇队长》中是孩童，成年后于剧集《旺达幻视》（WandaVision）中觉醒能力；卡玛拉·汗（Kamala Khan）则在剧集《惊奇女士》（Ms. Marvel）中登场。建议先看两部剧集更连贯。",
+    "quotes": [
+      "Higher, further, faster, baby!"
+    ]
+  },
+  {
+    "id": "deadpool-3",
+    "title": "死侍与金刚狼（Deadpool & Wolverine）",
+    "subtitle": "两种贱客闯多元宇宙",
+    "year": 2024,
+    "yearLabel": "2024",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 4,
+    "summary": "死侍（Deadpool）所在的宇宙面临被时间变异管理局（TVA）抹除的危机，他不得不跨越宇宙去寻找那位来自《金刚狼》（X-Men）系列的老搭档——金刚狼（Wolverine）。两个满嘴俏皮话的变种人一边互怼一边并肩作战，对抗时间变异管理局派来的杀手，也直面了「英雄谢幕」的宿命。这是福克斯（Fox）变种人宇宙角色首次正式并入漫威电影宇宙，充满对老版 X 战警系列的致敬与告别。",
+    "characters": [
+      "deadpool",
+      "wolverine"
+    ],
+    "crossUniverseNote": "本片是跨宇宙/版权方人物最密集的作品。死侍（Deadpool）与金刚狼（Wolverine）原属福克斯（Fox）的 X 战警宇宙，与 MCU 是平行世界；在迪士尼收购福克斯后，两个宇宙通过多元宇宙正式打通。片中大量老角色客串（如《刀锋战士》《夜魔侠》旧版），属于情怀彩蛋。",
+    "quotes": [
+      "I'm the best at what I do, and what I do is change the rules.",
+      "It's not what I am. It's who I am."
+    ]
+  },
+  {
+    "id": "captain-america-4",
+    "title": "美国队长4：勇敢新世界（Captain America: Brave New World）",
+    "subtitle": "新美队的抉择",
+    "year": 2026,
+    "yearLabel": "2026",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 2,
+    "summary": "接过盾牌的山姆·威尔逊（Sam Wilson）成为新任美国队长（Captain America），却在就任后卷入一场国际阴谋——新任美国总统罗斯（Thaddeus Ross）在《无敌浩克》中的伽马实验后患上了重病，而一场针对总统的暗杀与外星振金（Vibranium）的争夺，让山姆必须在不依赖超能力的情况下证明：任何人都能成为英雄，只要你心中有信念。",
+    "characters": [
+      "sam-wilson",
+      "general-ross"
+    ],
+    "crossUniverseNote": "",
+    "quotes": [
+      "I'm not Steve Rogers. But that doesn't mean I can't be Captain America."
+    ]
+  },
+  {
+    "id": "thunderbolts",
+    "title": "雷霆特攻队（Thunderbolts*）",
+    "subtitle": "反派组成的队伍",
+    "year": 2026,
+    "yearLabel": "2026",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 3,
+    "summary": "当世界需要一支「可牺牲」的队伍时，瓦伦蒂娜伯爵夫人召集了一群各怀心思的「反派」——叶莲娜（Yelena）、巴基（Bucky）、幽灵、红色守卫等组成雷霆特攻队（Thunderbolts）。这支由前恶人组成的特别行动队，在任务中逐渐发现自己或许也能成为英雄。本片把多部前作的反派/边缘角色凑成一支队伍，展现「坏人也想当好」的群像。",
+    "characters": [
+      "yelyena-belova",
+      "bucky-barnes"
+    ],
+    "crossUniverseNote": "",
+    "quotes": [
+      "We may not be heroes. But we're what the world has."
+    ]
+  },
+  {
+    "id": "fantastic-four-1",
+    "title": "神奇四侠：初露锋芒（The Fantastic Four: First Steps）",
+    "subtitle": "第一家庭登场",
+    "year": 2025,
+    "yearLabel": "2025",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 1,
+    "summary": "在另一个平行宇宙的六十年代风格世界中，科学家里德·理查兹（Reed Richards）、苏·斯托姆（Sue Storm）、约翰尼·斯托姆（Johnny Storm）和本·格林（Ben Grimm）在一次太空实验中被宇宙射线照射，分别获得伸缩、隐形、火焰与岩石之力，成为「神奇四侠」（Fantastic Four）。当吞噬星球的宇宙级威胁逼近，这个「第一家庭」必须挺身而出——而他们的宇宙，正与 MCU 主宇宙产生神秘的连接。",
+    "characters": [
+      "reed-richards",
+      "sue-storm"
+    ],
+    "crossUniverseNote": "神奇四侠（Fantastic Four）是漫威漫画的「第一家庭」，此前已有福克斯（Fox）的三版电影。本片首次由漫威影业亲自制作，主角团来自另一个平行宇宙，是多元宇宙时代的关键新力量。",
+    "quotes": [
+      "When the world's in trouble, the Fantastic Four answer the call."
+    ]
+  },
+  {
+    "id": "spider-man-brand-new-day",
+    "title": "蜘蛛侠4：全新日（Spider-Man: Brand New Day）",
+    "subtitle": "全新的开始",
+    "year": 2026,
+    "yearLabel": "2026",
+    "eraId": "era-multiverse",
+    "isMajorEvent": false,
+    "order": 2,
+    "summary": "英雄无归之后，全世界都忘记了彼得·帕克（Peter Parker）是蜘蛛侠。他重新以普通高中生的身份开始生活，却在全新的城市与新的威胁相遇。当一段尘封的记忆与新的敌人出现，彼得必须在「平凡的生活」与「英雄的责任」之间再次做出选择。这是蜘蛛侠故事的全新篇章。",
+    "characters": [
+      "peter-parker"
+    ],
+    "crossUniverseNote": "",
+    "quotes": [
+      "I choose to be Spider-Man. I always have."
+    ]
+  },
+  {
+    "id": "avengers-doomsday",
+    "title": "复仇者：毁灭日（Avengers: Doomsday）",
+    "subtitle": "康之王朝",
+    "year": 2026,
+    "yearLabel": "2026 · 待上映",
+    "eraId": "era-multiverse",
+    "isMajorEvent": true,
+    "order": 3,
+    "summary": "预告中：征服者康（Kang the Conqueror）的变体军团席卷多元宇宙，新一代复仇者被迫重新集结。面对时间线的终局，英雄们将在毁灭日的阴影下做出最后的抉择。（本片未上映，内容待上映后补全）",
+    "characters": [
+      "kang"
+    ],
+    "crossUniverseNote": "",
+    "quotes": []
+  },
+  {
+    "id": "avengers-secret-wars",
+    "title": "复仇者：秘密战争（Avengers: Secret Wars）",
+    "subtitle": "多元宇宙终局",
+    "year": 2027,
+    "yearLabel": "2027 · 待上映",
+    "eraId": "era-multiverse",
+    "isMajorEvent": true,
+    "order": 4,
+    "summary": "预告中：多元宇宙的碰撞将无数平行世界卷入一场终极战争。所有宇宙的英雄与反派将在「秘密战争」中决出最后的命运。（本片未上映，内容待上映后补全）",
+    "characters": [],
+    "crossUniverseNote": "",
+    "quotes": []
   }
 ]
