@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { sortedEras, sortedEntries, characters, charById, posterUrl, isSeries, linkConcepts } from '../lib/data.mjs';
+import { sortedEras, sortedEntries, characters, charById, posterUrl, workBackdropUrl, isSeries, linkConcepts } from '../lib/data.mjs';
 
 const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 ---
@@ -49,8 +49,9 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
               m.isMajorEvent ? (
                 <!-- 大事件全宽特别条目 -->
                 <article class="entry entry--major" id={m.id}>
-                  <div class="entry--major__media" style={`background:linear-gradient(160deg,${era.color} 0%,#000 160%)`}>
-                    <img src={posterUrl(m.id)} alt={m.title} />
+                  <div class="entry--major__media">
+                    <img class="entry--major__img" src={workBackdropUrl(m.id)} alt={m.title} />
+                    <div class="entry--major__veil"></div>
                   </div>
                   <div class="entry--major__body">
                     <span class="entry__year">{m.yearLabel}</span>
@@ -401,8 +402,14 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     background: #fff;
     box-shadow: var(--shadow);
   }
-  .entry--major__media { position: relative; }
-  .entry--major__media img { width: 100%; max-height: 640px; object-fit: cover; object-position: center top; }
+  .entry--major__media { position: relative; overflow: hidden; }
+  .entry--major__img { width: 100%; max-height: 640px; object-fit: cover; object-position: center 30%; display: block; }
+  .entry--major__veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10,10,12,0.12) 0%, rgba(10,10,12,0.05) 45%, rgba(10,10,12,0.72) 100%);
+    pointer-events: none;
+  }
   .entry--major__body { padding: 56px 64px 64px; }
   .entry--major__body .entry__year { font-size: var(--fs-title); }
   .entry--major__body .entry__title { font-size: clamp(40px, 5vw, 64px); }

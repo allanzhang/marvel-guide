@@ -36,6 +36,8 @@ export const isSeries = (item) => item.type === 'series';
 export const posterUrl = (id) => `/posters/poster-${id}.webp`;
 export const portraitUrl = (id) => `/portraits/portrait-${id}.webp`;
 export const backdropUrl = (name) => `/backdrops/${name}.webp`;
+// 大事件条目的横版剧照（仅大事件作品已拉取）
+export const workBackdropUrl = (id) => `/backdrops/work-${id}.webp`;
 
 // 概念词链接：把正文中的「概念中文名（English）」替换为指向概念库的链接
 // 规则：长词优先；仅匹配概念名（人物名由 chip 处理）；已带链接的不重复
