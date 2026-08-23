@@ -30,7 +30,7 @@
     "eraId": "era-ww2",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "时间线回溯到九十年代。空军试飞员卡罗尔·丹佛斯（Carol Danvers）在执行任务时被卷入克里人与斯克鲁人两大外星种族的战争，在一次坠机中她摧毁了科学家劳森（Lawson）（克里人玛威尔（Mar-Vell））制造的光速引擎（the Light-Speed Engine），吸收了引擎核心中宇宙魔方（the Tesseract）（空间宝石（Space Stone））的能量，从此获得超能力，却也因此失忆、被克里人洗脑成战士。她逐步揭开被抹去的过去，选择站到被追杀的斯克鲁难民一边，最终觉醒全部力量，成为连接地球与广袤宇宙的关键桥梁。",
+    "summary": "时间线回溯到九十年代。空军试飞员卡罗尔·丹佛斯（Carol Danvers）在执行任务时被卷入克里人与斯克鲁人两大外星种族的战争，在一次坠机中她摧毁了科学家劳森（Lawson），即克里人玛威尔（Mar-Vell））制造的光速引擎（the Light-Speed Engine），吸收了引擎核心中宇宙魔方（the Tesseract），即空间宝石（Space Stone））的能量，从此获得超能力，却也因此失忆、被克里人洗脑成战士。她逐步揭开被抹去的过去，选择站到被追杀的斯克鲁难民一边，最终觉醒全部力量，成为连接地球与广袤宇宙的关键桥梁。",
     "characters": [
       "carol-danvers",
       "nick-fury"
@@ -91,7 +91,7 @@
     "eraId": "era-assembly",
     "isMajorEvent": false,
     "order": 3,
-    "summary": "托尼·斯塔克（Tony Stark）公开钢铁侠（Iron Man）身份后，美国政府施压要求交出装甲技术，同时他发现自己体内的钯元素中毒正逼近死亡线。父亲的宿敌之子、俄国工程师伊万·万科（Ivan Vanko）化身鞭索（Whiplash）趁机报复。托尼在神盾局（S.H.I.E.L.D.）和黑寡妇（Black Widow）（娜塔莎在本片首次登场）的协助下解开心结，完成了与父亲的和解，好友罗迪也穿上了战争机器（War Machine）装甲与他并肩作战。",
+    "summary": "托尼·斯塔克（Tony Stark）公开钢铁侠（Iron Man）身份后，美国政府施压要求交出装甲技术，同时他发现自己体内的钯元素中毒正逼近死亡线。父亲的宿敌之子、俄国工程师伊万·万科（Ivan Vanko）化身鞭索（Whiplash）趁机报复。托尼在神盾局（S.H.I.E.L.D.）和黑寡妇（Black Widow）——娜塔莎在本片首次登场）的协助下解开心结，完成了与父亲的和解，好友罗迪也穿上了战争机器（War Machine）装甲与他并肩作战。",
     "characters": [
       "tony-stark",
       "pepper-potts",
@@ -347,7 +347,7 @@
       "scott-lang",
       "general-ross"
     ],
-    "crossUniverseNote": "蜘蛛侠（Spider-Man）在本片首次登场，由索尼与漫威合作引入。荷兰弟版蜘蛛侠（Spider-Man）属于 MCU 正史，与索尼此前两代蜘蛛侠（Spider-Man）（托比、加菲）属于不同电影宇宙。",
+    "crossUniverseNote": "蜘蛛侠（Spider-Man）在本片首次登场，由索尼与漫威合作引入。荷兰弟版蜘蛛侠（Spider-Man）属于 MCU 正史，与索尼此前两代蜘蛛侠（Spider-Man）——托比、加菲版——属于不同电影宇宙。",
     "quotes": [
       "I can do this all day.",
       "So was I."

@@ -29,7 +29,7 @@
     "isCoreSix": true,
     "universe": "sacred",
     "who": "才华横溢却又自负傲慢的亿万富翁发明家。被绑架后为自己打造了钢铁战衣，从此以钢铁侠（Iron Man）的身份守护世界。他聪明、毒舌、玩世不恭，却拥有最深的担当与责任感。",
-    "role": "复仇者联盟的科技核心与资金支持。他制造了奥创（Ultron）（引发危机），也牺牲自己打响了逆转灭霸（Thanos）的响指（the Snap）。他是整个漫威电影宇宙（the Marvel Cinematic Universe）从起点到终点的灵魂人物，以凡人之躯比肩神明。",
+    "role": "复仇者联盟的科技核心与资金支持。他制造了奥创（Ultron）引发危机，也牺牲自己打响了逆转灭霸（Thanos）的响指（the Snap）。他是整个漫威电影宇宙（the Marvel Cinematic Universe）从起点到终点的灵魂人物，以凡人之躯比肩神明。",
     "storyline": "2010年成为钢铁侠（Iron Man），2011年公开身份并卷入美俄技术较量，2012年纽约大战中首次扛起核弹冲入虫洞，从此背负创伤。2015年制造奥创（Ultron）引发危机，2016年与美队（Cap）决裂，2018年无限战争中被困外星，2023年终局之战中打响响指（the Snap）、牺牲自己拯救宇宙。",
     "movies": [
       "iron-man-1",
@@ -194,7 +194,7 @@
     "group": "solo",
     "isCoreSix": false,
     "universe": "sacred",
-    "who": "前美国空军试飞员，在一次坠机中摧毁了克里人制造的光速引擎（the Light-Speed Engine），吸收了引擎核心中宇宙魔方（the Tesseract）（空间宝石（Space Stone））的能量，成为拥有近乎无敌力量的惊奇队长（Captain Marvel）。她是漫威电影宇宙（the Marvel Cinematic Universe）目前战力最强的英雄之一。",
+    "who": "前美国空军试飞员，在一次坠机中摧毁了克里人制造的光速引擎（the Light-Speed Engine），吸收了引擎核心中宇宙魔方（the Tesseract），即空间宝石（Space Stone））的能量，成为拥有近乎无敌力量的惊奇队长（Captain Marvel）。她是漫威电影宇宙（the Marvel Cinematic Universe）目前战力最强的英雄之一。",
     "role": "连接地球与广袤宇宙的关键桥梁，也是灭霸（Thanos）最忌惮的对手之一。她常年在外太空守护星域，在关键时刻回到地球支援。",
     "storyline": "1995年觉醒力量、与尼克·弗瑞（Nick Fury）相识，成为神盾局（S.H.I.E.L.D.）早期的重要盟友，此后长期活跃在宇宙中。2018年无限战争后被尼克·弗瑞（Nick Fury）的传呼机召回地球，2023年参与终局决战、正面撼动灭霸（Thanos）。",
     "movies": [
@@ -402,7 +402,7 @@
     "isCoreSix": false,
     "universe": "sacred",
     "who": "本名约翰·施密特（Johann Schmidt），纳粹军官、九头蛇（Hydra）组织的首领。他是超级士兵血清（the Super Soldier Serum）的第一个注射者，成为第一代超级士兵，却因血清未完善而面部毁容、形如红色骷髅。血清不仅强化了他的力量，也放大了他内心的野心与邪恶。",
-    "role": "美国队长（Captain America）最早的宿敌，也是无限宝石（the Infinity Stones）的源头之一。他窃取并利用宇宙魔方（the Tesseract）（空间宝石（Space Stone））的力量，其执念贯穿了整个二战篇章，也是史蒂夫·罗杰斯（Steve Rogers）成为美国队长（Captain America）的直接动因。",
+    "role": "美国队长（Captain America）最早的宿敌，也是无限宝石（the Infinity Stones）的源头之一。他窃取并利用宇宙魔方（the Tesseract），即空间宝石（Space Stone））的力量，其执念贯穿了整个二战篇章，也是史蒂夫·罗杰斯（Steve Rogers）成为美国队长（Captain America）的直接动因。",
     "storyline": "1940年作为第一个注射超级士兵血清（the Super Soldier Serum）的人成为红骷髅（Red Skull），1943年与完成血清的美国队长（Captain America）在二战中正面对决，最终在美队（Cap）1的最终一战中被宇宙魔方（the Tesseract）放逐到沃米尔（Vormir）星，此后成为灵魂宝石（Soul Stone）的守护者，在无限战争中再次登场。",
     "movies": [
       "captain-america-first-avenger",
@@ -661,7 +661,7 @@
     "isCoreSix": false,
     "universe": "sacred",
     "who": "天体物理学家，索尔（Thor）在地球的爱人。她以科学视角研究雷神（Thor）与宇宙现象，成为连接阿斯加德（Asgard）与地球的桥梁。",
-    "role": "索尔（Thor）的感情线核心。她意外成为以太（the Aether）（现实宝石（Reality Stone））的载体，牵动了雷神（Thor）2的主线剧情。",
+    "role": "索尔（Thor）的感情线核心。她意外成为以太（the Aether），即现实宝石（Reality Stone））的载体，牵动了雷神（Thor）2的主线剧情。",
     "storyline": "2011年与索尔（Thor）相识相爱，2013年成为以太（the Aether）的载体、与索尔（Thor）并肩对抗黑暗精灵（the Dark Elves），此后淡出主线，其命运在后续阶段再度展开。",
     "movies": [
       "thor-1",
