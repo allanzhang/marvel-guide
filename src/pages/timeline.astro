@@ -5,13 +5,21 @@ import { sortedEras, sortedEntries, characters, charById, posterUrl, isSeries } 
 const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 ---
 
-<Base title="时间线 · 漫威电影世界图鉴">
+<Base title="时间线 · 漫威电影世界图鉴" description="漫威电影宇宙剧情时间线：从二战到多元宇宙时代，按故事顺序排列的电影与剧集全览，每部附剧情导读与经典台词。">
   <!-- 页面大标题 -->
   <section class="tl-hero container-wide">
     <p class="tl-kicker">剧情时序 · 顺着读就懂 · TIMELINE</p>
     <h1 class="tl-page-title">漫威电影世界的时间线 <span class="en">The Marvel Timeline</span></h1>
     <p class="tl-page-desc">以下按故事发生的先后排列，从二战前一直讲到多元宇宙（the Multiverse）时代。每个篇章都有一段导读，帮你在开始前先建立大框架。</p>
   </section>
+
+  <!-- 篇章快速跳转侧栏（sticky） -->
+  <nav class="era-rail" aria-label="篇章跳转">
+    <span class="era-rail__label">篇章</span>
+    {sortedEras.map((era) => (
+      <a class="era-rail__link" href={`#${era.id}`}>{era.name.split('（')[0]}</a>
+    ))}
+  </nav>
 
   {
     sortedEras.map((era) => {
@@ -114,6 +122,46 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 </Base>
 
 <style>
+  /* ===== 篇章快速跳转侧栏 ===== */
+  .era-rail {
+    position: fixed;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 10px;
+    background: rgba(247, 246, 243, 0.9);
+    backdrop-filter: saturate(1.4) blur(8px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .era-rail__label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--ink-soft);
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 4px;
+  }
+  .era-rail__link {
+    font-size: 12px;
+    color: var(--ink-soft);
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: color 0.15s, background 0.15s;
+  }
+  .era-rail__link:hover { color: var(--accent); background: rgba(176, 42, 30, 0.06); }
+
+  /* ===== 锚点滚动补偿（避免被 sticky 导航遮挡） ===== */
+  .era, .entry { scroll-margin-top: 88px; }
+
   /* ===== 页面大标题 ===== */
   .tl-hero { padding: 88px 48px 48px; }
   .tl-kicker {
@@ -344,6 +392,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
   /* ===== 移动端 ===== */
   @media (max-width: 820px) {
     .tl-hero { padding: 56px 20px 32px; }
+    .era-rail { display: none; }
     .era-hero__inner { padding: 96px 20px; }
     .era-entries { gap: 56px; padding-top: 56px; }
     .entry { grid-template-columns: 1fr; gap: 28px; width: 100%; }

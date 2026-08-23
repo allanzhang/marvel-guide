@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /posters/
+Disallow: /portraits/
+
+Sitemap: https://example.com/sitemap.xml
