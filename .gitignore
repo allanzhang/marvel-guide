@@ -4,3 +4,6 @@ dist/
 .DS_Store
 *.local
 .env.local
+
+.workbuddy/
+public/sitemap.xml
