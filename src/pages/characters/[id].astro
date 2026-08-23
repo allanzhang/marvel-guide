@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries, linkConcepts } from '../../lib/data.mjs';
+import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries, linkConcepts, pageUrl } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return characters.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -67,7 +67,7 @@ const universeEn = {
       <p class="pd-films__sub">按故事时序排列，点击可跳回时间线对应条目。</p>
       <div class="pd-films__grid">
         {cWorks.map((m) => (
-          <a class="film" href={`/timeline#${m.id}`}>
+          <a class="film" href={pageUrl(`timeline#${m.id}`)}>
             <div class="film__media">
               <img src={posterUrl(m.id)} alt={m.title} loading="lazy" />
             </div>

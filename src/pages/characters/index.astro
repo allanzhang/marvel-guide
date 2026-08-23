@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { characters, groupOrder, portraitUrl } from '../../lib/data.mjs';
+import { characters, groupOrder, portraitUrl, pageUrl } from '../../lib/data.mjs';
 
 const byGroup = (gid) => characters.filter((c) => c.group === gid);
 const displayName = (c) => (c.alias ? `${c.name} · ${c.alias}` : c.name);
@@ -22,7 +22,7 @@ const displayName = (c) => (c.alias ? `${c.name} · ${c.alias}` : c.name);
           <h2 class="group__title">{gname}<span class="group__en">{gen}</span><span class="group__count">{members.length}</span></h2>
           <div class="group__grid">
             {members.map((c) => (
-              <a class:list={['card', { 'card--big': c.isCoreSix }]} href={`/characters/${c.id}`}>
+              <a class:list={['card', { 'card--big': c.isCoreSix }]} href={pageUrl(`characters/${c.id}`)}>
                 <div class="card__media">
                   <img src={portraitUrl(c.id)} alt={displayName(c)} loading="lazy" />
                 </div>

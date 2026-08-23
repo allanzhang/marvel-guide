@@ -31,6 +31,7 @@ jobs:
         run: npm run build
         env:
           SITE_URL: https://allanzhang.github.io/marvel-guide
+          BASE_PATH: /marvel-guide/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

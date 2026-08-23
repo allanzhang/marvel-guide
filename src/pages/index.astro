@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+const BASE = import.meta.env.BASE_URL || '/';
 ---
 <Base title="漫威电影世界图鉴" description="面向非漫威迷的 MCU 剧情时序图鉴：按故事顺序读懂整个漫威电影世界，从二战到多元宇宙，英雄人物、经典台词一站掌握。">
   <!-- 全屏 hero -->
@@ -13,19 +14,19 @@ import Base from '../layouts/Base.astro';
 
   <!-- 三入口 -->
   <section class="entries container-wide">
-    <a class="entry-card" href="/timeline">
+    <a class="entry-card" href={`${BASE}timeline`}>
       <span class="entry-card__num">01</span>
       <h2 class="entry-card__title">时间线 <span class="en">Timeline</span></h2>
       <p class="entry-card__desc">按故事发生的先后，从二战一路讲到多元宇宙（the Multiverse）。每段都有导读，建立大框架。</p>
       <span class="entry-card__go">开始顺读 →</span>
     </a>
-    <a class="entry-card" href="/characters">
+    <a class="entry-card" href={`${BASE}characters`}>
       <span class="entry-card__num">02</span>
       <h2 class="entry-card__title">人物墙 <span class="en">Characters</span></h2>
       <p class="entry-card__desc">从复仇者（the Avengers）核心到反派堂，认识每个重要角色——他是谁、他的作用、他的故事线。</p>
       <span class="entry-card__go">认识人物 →</span>
     </a>
-    <a class="entry-card" href="/concepts">
+    <a class="entry-card" href={`${BASE}concepts`}>
       <span class="entry-card__num">03</span>
       <h2 class="entry-card__title">概念库 <span class="en">Concepts</span></h2>
       <p class="entry-card__desc">无限宝石、魔法体系、神秘组织与重要事件——看懂剧情前，先弄懂这些设定名词。</p>

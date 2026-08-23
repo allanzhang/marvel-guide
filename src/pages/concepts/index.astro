@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { concepts, conceptOrder } from '../../lib/data.mjs';
+import { concepts, conceptOrder, pageUrl } from '../../lib/data.mjs';
 
 const byCat = (cat) => concepts.filter((c) => c.category === cat);
 ---
@@ -21,7 +21,7 @@ const byCat = (cat) => concepts.filter((c) => c.category === cat);
           <h2 class="cgroup__title">{cname}<span class="cgroup__en">{cen}</span><span class="cgroup__count">{members.length}</span></h2>
           <div class="cgroup__grid">
             {members.map((c) => (
-              <a class="ccard" href={`/concepts/${c.id}`}>
+              <a class="ccard" href={pageUrl(`concepts/${c.id}`)}>
                 <div class="ccard__body">
                   <h3 class="ccard__name">{c.name}</h3>
                   <p class="ccard__summary">{c.summary}</p>

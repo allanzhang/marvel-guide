@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { sortedEras, sortedEntries, characters, charById, posterUrl, workBackdropUrl, isSeries, linkConcepts } from '../lib/data.mjs';
+import { sortedEras, sortedEntries, characters, charById, posterUrl, workBackdropUrl, isSeries, linkConcepts, pageUrl } from '../lib/data.mjs';
 
 const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 ---
@@ -77,7 +77,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                     )}
                     {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
                     <div class="entry__chars">
-                      {m.characters.map((cid) => <a class="char-chip" href={`/characters/${cid}`}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
+                      {m.characters.map((cid) => <a class="char-chip" href={pageUrl(`characters/${cid}`)}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
                     </div>
                   </div>
                 </article>
@@ -111,7 +111,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                     )}
                     {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
                     <div class="entry__chars">
-                      {m.characters.map((cid) => <a class="char-chip" href={`/characters/${cid}`}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
+                      {m.characters.map((cid) => <a class="char-chip" href={pageUrl(`characters/${cid}`)}>{charById[cid]?.alias || charById[cid]?.name}</a>)}
                     </div>
                   </div>
                 </article>

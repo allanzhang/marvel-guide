@@ -4,14 +4,16 @@ import '../styles/global.css';
 const { title = '漫威电影世界图鉴', description = '面向非漫威迷的 MCU 剧情时序图鉴——顺着读就能看懂整个漫威电影世界。' } = Astro.props;
 const path = Astro.url.pathname;
 const SITE = import.meta.env.SITE || 'https://example.com';
-const canonical = `${SITE}${path === '/' ? '/' : path}`;
+const BASE = import.meta.env.BASE_URL || '/';
+// canonical 用 origin（纯域名）+ pathname（Astro 已含 base），避免双 base
+const canonical = `${Astro.url.origin}${path === '/' ? '/' : path}`;
 const nav = [
-  { href: '/', label: '首页' },
-  { href: '/timeline', label: '时间线' },
-  { href: '/characters', label: '人物墙' },
-  { href: '/concepts', label: '概念库' },
+  { href: `${BASE}`, label: '首页' },
+  { href: `${BASE}timeline`, label: '时间线' },
+  { href: `${BASE}characters`, label: '人物墙' },
+  { href: `${BASE}concepts`, label: '概念库' },
 ];
-const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href));
+const isActive = (href) => (href === `${BASE}` ? path === `${BASE}` : path.startsWith(href));
 ---
 
 <!doctype html>
@@ -21,14 +23,14 @@ const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href))
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <meta name="theme-color" content="#b02a1e" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href={`${BASE}favicon.svg`} />
   <link rel="canonical" href={canonical} />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="漫威电影世界图鉴" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <meta property="og:image" content={`${SITE}/og-cover.svg`} />
+  <meta property="og:image" content={`${Astro.url.origin}${BASE}og-cover.svg`} />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
@@ -39,7 +41,7 @@ const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href))
 <body>
   <header class="site-nav">
     <div class="inner">
-      <a class="brand" href="/">漫威<em>图鉴</em></a>
+      <a class="brand" href={`${BASE}`}>漫威<em>图鉴</em></a>
       <nav class="links">
         {nav.map((n) => <a href={n.href} class:list={['', { active: isActive(n.href) }]}>{n.label}</a>)}
       </nav>

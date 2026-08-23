@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { concepts, conceptById, charById, workById, linkConcepts, backdropUrl } from '../../lib/data.mjs';
+import { concepts, conceptById, charById, workById, linkConcepts, backdropUrl, pageUrl } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return concepts.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -42,7 +42,7 @@ const cBackdrop = backdropUrl(c.id);
         <h2 class="cd-works__title">出现在</h2>
         <div class="cd-works__chips">
           {appearances.map((w) => (
-            <a class="chip" href={`/timeline#${w.id}`}>{w.title}</a>
+            <a class="chip" href={pageUrl(`timeline#${w.id}`)}>{w.title}</a>
           ))}
         </div>
       </div>
@@ -55,12 +55,12 @@ const cBackdrop = backdropUrl(c.id);
         <h2 class="cd-related__title">相关词条</h2>
         <div class="cd-related__grid">
           {relatedConcepts.map((r) => (
-            <a class="rlink" href={`/concepts/${r.id}`}>
+            <a class="rlink" href={pageUrl(`concepts/${r.id}`)}>
               <span class="rlink__tag">概念</span>{r.name}
             </a>
           ))}
           {relatedChars.map((r) => (
-            <a class="rlink" href={`/characters/${r.id}`}>
+            <a class="rlink" href={pageUrl(`characters/${r.id}`)}>
               <span class="rlink__tag">人物</span>{r.alias || r.name}
             </a>
           ))}
