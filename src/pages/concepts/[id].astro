@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { concepts, conceptById, charById, workById, linkConcepts } from '../../lib/data.mjs';
+import { concepts, conceptById, charById, workById, linkConcepts, backdropUrl } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return concepts.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -10,10 +10,12 @@ const { c } = Astro.props;
 const relatedConcepts = (c.related || []).map((id) => conceptById[id]).filter(Boolean);
 const relatedChars = (c.relatedChars || []).map((id) => charById[id]).filter(Boolean);
 const appearances = (c.appearances || []).map((id) => workById[id]).filter(Boolean);
+const cBackdrop = backdropUrl(c.id);
 ---
 
 <Base title={`${c.name} · 漫威概念库`} description={`${c.summary}——${c.name}的来源、背景与在漫威电影宇宙中的出现。`}>
   <section class="cd-hero full-bleed">
+    <img class="cd-hero__bg" src={cBackdrop} alt="" aria-hidden="true" />
     <div class="cd-hero__shade"></div>
     <div class="cd-hero__inner">
       <p class="cd-hero__kicker">概念词条 · LORE</p>
@@ -81,7 +83,16 @@ const appearances = (c.appearances || []).map((id) => workById[id]).filter(Boole
       radial-gradient(90% 80% at 85% 10%, rgba(176, 42, 30, 0.3) 0%, transparent 55%),
       linear-gradient(160deg, #1b1c1f 0%, #2f2f38 100%);
   }
-  .cd-hero__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%); }
+  .cd-hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    opacity: 0.6;
+  }
+  .cd-hero__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.65) 100%); }
   .cd-hero__inner { position: relative; width: 100%; max-width: var(--w-wide); margin: 0 auto; padding: 0 48px 56px; }
   .cd-hero__kicker {
     font-size: var(--fs-tiny);

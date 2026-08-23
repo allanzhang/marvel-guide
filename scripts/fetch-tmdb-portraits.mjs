@@ -8,7 +8,7 @@ const env = Object.fromEntries(
 );
 const KEY = env.TMDB_API_KEY;
 const API = 'https://api.tmdb.org/3';
-const IMG = 'https://image.tmdb.org/t/p/w400';
+const IMG = 'https://image.tmdb.org/t/p/w780';
 const OUT = 'public/portraits';
 const PY = '/Users/allan/.workbuddy/binaries/python/envs/default/bin/python';
 
@@ -50,7 +50,7 @@ function download(url, outPath) {
   try {
     execSync(`env -u https_proxy -u http_proxy -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u all_proxy curl -s --max-time 25 -o "${tmp}" "${url}"`, { encoding: 'utf8' });
     if (!existsSync(tmp)) return false;
-    execSync(`"${PY}" -c "from PIL import Image; im=Image.open('${tmp}').convert('RGB'); im.thumbnail((400, 600)); im.save('${outPath}', 'WEBP', quality=82)"`, { encoding: 'utf8' });
+    execSync(`"${PY}" -c "from PIL import Image; im=Image.open('${tmp}').convert('RGB'); im.thumbnail((780, 1170)); im.save('${outPath}', 'WEBP', quality=82)"`, { encoding: 'utf8' });
     execSync(`rm -f "${tmp}"`);
     return true;
   } catch (e) {

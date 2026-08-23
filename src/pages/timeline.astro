@@ -32,6 +32,8 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
         >
           <!-- 篇章头图（全宽） -->
           <div class="era-hero full-bleed">
+            {era.backdropUrl && <img class="era-hero__bg" src={era.backdropUrl} alt="" aria-hidden="true" />}
+            <div class="era-hero__shade"></div>
             <span class="era-hero__year-bg" aria-hidden="true">{era.startYear < 0 ? '远古' : Math.abs(era.startYear)}</span>
             <div class="era-hero__inner">
               <p class="era-hero__tag">{era.name}</p>
@@ -196,6 +198,23 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
       linear-gradient(160deg, var(--era-color) 0%, #0e0f10 130%);
     color: #fff;
   }
+  .era-hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    opacity: 0.5;
+  }
+  .era-hero__shade {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(10, 10, 12, 0.78) 0%, rgba(10, 10, 12, 0.35) 55%, rgba(10, 10, 12, 0.15) 100%),
+      linear-gradient(0deg, var(--era-color) 0%, transparent 40%);
+  }
+  .era-hero__inner { position: relative; z-index: 2; }
   .era-hero__year-bg {
     position: absolute;
     right: -0.03em;
