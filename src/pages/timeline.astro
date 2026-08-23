@@ -59,20 +59,20 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
                     <p class="entry__summary" set:html={linkConcepts(m.summary)}>
-                    {m.backgroundNote && (
-                      <div class="entry__know">
-                        <span class="entry__know-label">观众须知 · Viewer's Guide</span>
-                        <p class="entry__know-item"><b>背景</b><span set:html={linkConcepts(m.backgroundNote)}></span></p>
-                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b><span set:html={linkConcepts(m.relationsNote)}></span></p>}
-                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b><span set:html={linkConcepts(m.timelineNote)}></span></p>}
-                      </div>
-                    )}
                     {m.quotes && m.quotes.length > 0 && (
                       <div class="entry__quotes">
                         <span class="entry__quotes-label">经典台词 · Iconic Quotes</span>
                         {m.quotes.map((q) => (
                           <blockquote class="quote">{q}</blockquote>
                         ))}
+                      </div>
+                    )}
+                    {m.backgroundNote && (
+                      <div class="entry__know">
+                        <span class="entry__know-label">观众须知 · Viewer's Guide</span>
+                        <p class="entry__know-item"><b>背景</b><span set:html={linkConcepts(m.backgroundNote)}></span></p>
+                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b><span set:html={linkConcepts(m.relationsNote)}></span></p>}
+                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b><span set:html={linkConcepts(m.timelineNote)}></span></p>}
                       </div>
                     )}
                     {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
@@ -93,20 +93,20 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
                     <p class="entry__summary" set:html={linkConcepts(m.summary)}>
-                    {m.backgroundNote && (
-                      <div class="entry__know">
-                        <span class="entry__know-label">观众须知 · Viewer's Guide</span>
-                        <p class="entry__know-item"><b>背景</b><span set:html={linkConcepts(m.backgroundNote)}></span></p>
-                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b><span set:html={linkConcepts(m.relationsNote)}></span></p>}
-                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b><span set:html={linkConcepts(m.timelineNote)}></span></p>}
-                      </div>
-                    )}
                     {m.quotes && m.quotes.length > 0 && (
                       <div class="entry__quotes">
                         <span class="entry__quotes-label">经典台词 · Iconic Quotes</span>
                         {m.quotes.map((q) => (
                           <blockquote class="quote">{q}</blockquote>
                         ))}
+                      </div>
+                    )}
+                    {m.backgroundNote && (
+                      <div class="entry__know">
+                        <span class="entry__know-label">观众须知 · Viewer's Guide</span>
+                        <p class="entry__know-item"><b>背景</b><span set:html={linkConcepts(m.backgroundNote)}></span></p>
+                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b><span set:html={linkConcepts(m.relationsNote)}></span></p>}
+                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b><span set:html={linkConcepts(m.timelineNote)}></span></p>}
                       </div>
                     )}
                     {m.crossUniverseNote && <p class="entry__note">{m.crossUniverseNote}</p>}
@@ -273,19 +273,27 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
   }
   .entry__title { font-size: var(--fs-title); margin-bottom: 4px; }
   .entry__subtitle { color: var(--ink-soft); font-size: var(--fs-sub); margin-bottom: 20px; }
-  .entry__summary { color: var(--ink); line-height: 2; max-width: 560px; }
+  .entry__summary { color: var(--ink); line-height: 1.95; max-width: 600px; }
   .entry__note {
-    margin-top: 20px;
+    margin-top: 28px;
     padding: 16px 20px;
     background: var(--era-soft);
     color: var(--ink-soft);
     font-size: var(--fs-small);
-    line-height: 1.8;
+    line-height: 1.9;
     border-radius: var(--radius);
     border-left: 3px solid var(--era-color);
-    max-width: 560px;
+    max-width: 600px;
   }
-  .entry__chars { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .entry__chars {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+  }
   .char-chip {
     font-size: var(--fs-small);
     padding: 6px 14px;
@@ -313,12 +321,12 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 
   /* ===== 观众须知 ===== */
   .entry__know {
-    margin-top: 24px;
-    max-width: 560px;
+    margin-top: 28px;
+    max-width: 600px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: #fff;
-    padding: 18px 22px;
+    padding: 20px 22px;
   }
   .entry--major__body .entry__know { max-width: 720px; }
   .entry__know-label {
@@ -328,12 +336,12 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     text-transform: uppercase;
     color: var(--ink-soft);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .entry__know-item {
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: var(--fs-small);
-    line-height: 1.8;
+    line-height: 1.9;
     color: var(--ink-soft);
   }
   .entry__know-item b {
@@ -347,8 +355,8 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 
   /* ===== 经典台词 ===== */
   .entry__quotes {
-    margin-top: 24px;
-    max-width: 560px;
+    margin-top: 28px;
+    max-width: 600px;
   }
   .entry--major__body .entry__quotes { max-width: 720px; }
   .entry__quotes-label {
@@ -358,7 +366,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     text-transform: uppercase;
     color: var(--ink-soft);
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   .entry__quotes .quote {
     position: relative;
@@ -370,7 +378,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     font-family: var(--font-serif);
     font-style: italic;
     font-size: var(--fs-sub);
-    line-height: 1.7;
+    line-height: 1.9;
     color: var(--ink);
   }
   .entry__quotes .quote::before {
