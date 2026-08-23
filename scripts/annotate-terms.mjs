@@ -16,6 +16,19 @@ const MOVIE_TITLES = {
   '复仇者联盟4：终局之战': 'Avengers: Endgame',
   '蜘蛛侠：英雄归来': 'Spider-Man: Homecoming',
   '蜘蛛侠：英雄远征': 'Spider-Man: Far From Home',
+  '蜘蛛侠：英雄无归': 'Spider-Man: No Way Home',
+  '奇异博士2：疯狂多元宇宙': 'Doctor Strange in the Multiverse of Madness',
+  '雷神4：爱与雷霆': 'Thor: Love and Thunder',
+  '黑豹2：瓦坎达万岁': 'Black Panther: Wakanda Forever',
+  '蚁人3：量子狂潮': 'Ant-Man and the Wasp: Quantumania',
+  '银河护卫队3': 'Guardians of the Galaxy Vol. 3',
+  '惊奇队长2': 'The Marvels',
+  '死侍与金刚狼': 'Deadpool & Wolverine',
+  '美国队长4：勇敢新世界': 'Captain America: Brave New World',
+  '神奇四侠：初露锋芒': 'The Fantastic Four: First Steps',
+  '蜘蛛侠4：全新日': 'Spider-Man: Brand New Day',
+  '复仇者：毁灭日': 'Avengers: Doomsday',
+  '复仇者：秘密战争': 'Avengers: Secret Wars',
   '雷神2：黑暗世界': 'Thor: The Dark World',
   '雷神3：诸神黄昏': 'Thor: Ragnarok',
   '蚁人2：黄蜂女现身': 'Ant-Man and the Wasp',
@@ -53,6 +66,10 @@ const PEOPLE = {
   '罗南': 'Ronan', '伊戈': 'Ego', '克尔芒戈': 'Killmonger', '埃里克·克尔芒戈': 'Killmonger', '秃鹫': 'Vulture', '神秘客': 'Mysterio', '奥巴代亚·斯坦': 'Obadiah Stane', '基里安': 'Killian', '玛威尔': 'Mar-Vell', '劳森': 'Lawson', '伊森': 'Yinsen', '厄斯金': 'Erskine',
   '奥丁': 'Odin', '快银': 'Quicksilver', '佩姬·卡特': 'Peggy Carter', '佩吉·卡特': 'Peggy Carter',
   '汉克·皮姆': 'Hank Pym', '霍普·凡·戴恩': 'Hope van Dyne', '黄蜂女': 'Wasp', '山姆·威尔逊': 'Sam Wilson', '猎鹰': 'Falcon', '巴基·巴恩斯': 'Bucky Barnes', '冬日战士': 'Winter Soldier', '尼克·弗瑞': 'Nick Fury', '战争机器': 'War Machine', '詹姆斯·罗德斯': 'James Rhodes', '小辣椒': 'Pepper Potts', '佩珀·波茨': 'Pepper Potts', '苏睿': 'Shuri', '女武神': 'Valkyrie', '瓦尔基里': 'Valkyrie', '简·福斯特': 'Jane Foster', '叶莲娜·贝洛娃': 'Yelena Belova', '罗斯将军': 'General Ross', '撒迪厄斯·罗斯': 'Thaddeus Ross', '伊万·万科': 'Ivan Vanko', '鞭索': 'Whiplash', '贾维斯': 'J.A.R.V.I.S.',
+  '尚气': 'Shang-Chi', '文武': 'Wenwu', '永恒族': 'Eternals', '伊卡瑞斯': 'Ikaris', '瑟西': 'Sersi', '变异族': 'Deviants', '天神族': 'Celestials',
+  '征服者康': 'Kang the Conqueror', '康': 'Kang', '遗留之人': 'He Who Remains', '卡玛拉·汗': 'Kamala Khan', '惊奇女士': 'Ms. Marvel', '莫妮卡·兰博': 'Monica Rambeau', '光谱': 'Photon',
+  '死侍': 'Deadpool', '韦德·威尔逊': 'Wade Wilson', '金刚狼': 'Wolverine', '詹姆斯·豪利特': 'James Howlett', '神奇先生': 'Mister Fantastic', '里德·理查兹': 'Reed Richards', '隐形女': 'Invisible Woman', '苏·斯托姆': 'Sue Storm', '屠神者格尔': 'Gorr the God Butcher', '纳摩': 'Namor',
+  '雷霆特攻队': 'Thunderbolts', '塔洛坎': 'Talokan',
 };
 
 // 地点 / 组织 / 星球
@@ -63,6 +80,8 @@ const PLACES = {
   '神盾局': 'S.H.I.E.L.D.', '九头蛇': 'Hydra', '红房子': 'Red Room', '斯塔克工业': 'Stark Industries',
   '战略科学预备队': 'S.S.R.', '银河系': 'the galaxy', '天上地球': 'Midgard',
   '漫威电影宇宙': 'the Marvel Cinematic Universe', '多元宇宙': 'the Multiverse',
+  '时间变异管理局': 'the Time Variance Authority', '神圣时间线': 'the Sacred Timeline',
+  '西景镇': 'Westview', '昆仑': 'K\'un-Lun', '地狱厨房': 'Hell\'s Kitchen', '手合会': 'the Hand',
 };
 
 // 道具 / 武器 / 概念
@@ -90,6 +109,7 @@ function toTerms(map){
 function annotate(text, terms){
   // 单趟最长匹配：从左到右扫描每个位置，匹配最长的术语并整体跳过后继字符。
   // 保证短词不会破坏长词（长词整体被吞掉）。
+  // 幂等保护：若该词后紧跟「（英文）」形态，视为已标注，跳过不重复标注。
   let result = '';
   let i = 0;
   const n = text.length;
@@ -97,6 +117,9 @@ function annotate(text, terms){
     let matchedLen = 0, matchedEn = null;
     for (const [zh, en] of terms){
       if (text.startsWith(zh, i)){
+        // 幂等检查：zh 之后紧跟「（英文）」则跳过（已标注过）
+        const rest = text.slice(i + zh.length);
+        if (/^\s*[（(][A-Za-z][^）)]*[)）]/.test(rest)) { break; }
         matchedLen = zh.length;
         matchedEn = en;
         break; // terms 已按长度降序，第一个命中即最长
@@ -119,6 +142,7 @@ const ERA_NAME = {
   '复仇者集结': 'The Avengers Assemble',
   '内战与分裂': 'Civil War & Division',
   '无限战争': 'Infinity War',
+  '多元宇宙时代': 'The Multiverse Era',
 };
 
 const FIELD_PLAN = [
@@ -126,6 +150,8 @@ const FIELD_PLAN = [
   { file: 'movies.json', fields: ['title'], terms: toTerms(MOVIE_TITLES) },
   { file: 'movies.json', fields: ['summary','crossUniverseNote'], terms: toTerms({ ...MOVIE_TITLES, ...PEOPLE, ...PLACES, ...ITEMS }) },
   { file: 'characters.json', fields: ['name','alias','who','role','storyline'], terms: toTerms({ ...PEOPLE, ...PLACES, ...ITEMS }) },
+  { file: 'series.json', fields: ['title'], terms: toTerms(MOVIE_TITLES) },
+  { file: 'series.json', fields: ['summary','backgroundNote','relationsNote','timelineNote'], terms: toTerms({ ...MOVIE_TITLES, ...PEOPLE, ...PLACES, ...ITEMS }) },
 ];
 
 for (const plan of FIELD_PLAN){

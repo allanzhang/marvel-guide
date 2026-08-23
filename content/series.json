@@ -16,5 +16,324 @@
     "summary": "",
     "characters": [],
     "quotes": []
+  },
+  {
+    "id": "loki",
+    "title": "洛基（Loki）",
+    "subtitle": "剧集 · 2 季",
+    "year": 2023,
+    "yearLabel": "S1 2021 · S2 2023",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1–S2",
+    "isMajorEvent": true,
+    "order": 1,
+    "backgroundNote": "观众须知·背景：终局之战中，2012年纽约大战的洛基（Loki）带着宇宙魔方（the Tesseract）逃走，被时间变异管理局（the Time Variance Authority）（TVA）逮捕——本剧是这条分支洛基（Loki）的故事，发生在主时间线之外。",
+    "relationsNote": "人物关系：本剧主角是「另一条时间线的洛基（Loki）」，与电影中的洛基（Loki）并非同一个；关键人物包括时间变异管理局（the Time Variance Authority）特工莫比乌斯（Mobius）、女版洛基（Loki）希尔维（Sylvie），以及贯穿多元宇宙（the Multiverse）的「遗留之人（He Who Remains）」——即康（Kang）（Kang the Conqueror）的一个变体。",
+    "timelineNote": "时间线衔接：本剧是理解多元宇宙（the Multiverse）与康（Kang）的关键。看完《复仇者联盟（The Avengers）4》后看本剧，再看《蚁人（Ant-Man）3》《奇异博士（Doctor Strange）2》会更懂时间线分支的由来。",
+    "summary": "复联4中逃走的洛基（Loki）被时间变异管理局（the Time Variance Authority）（TVA）抓获——这个机构负责维护神圣时间线（the Sacred Timeline），防止时间线分支失控。洛基（Loki）在追查时间线异常时遇见了自己的女版变体希尔维，两人一路揭开 TVA 的真相：神圣时间线（the Sacred Timeline）由「遗留之人（He Who Remains）」掌控，而他的死亡释放了无数时间线分支，多元宇宙（the Multiverse）随之开启。第二季中，洛基（Loki）为修复不断崩坏的时间线，最终承担起守护者的责任。本剧是整个多元宇宙（the Multiverse）时代最重要的基石。",
+    "characters": [
+      "loki"
+    ],
+    "quotes": [
+      "I am Loki of Asgard, and I am burdened with glorious purpose.",
+      "For all time. Always."
+    ]
+  },
+  {
+    "id": "wandavision",
+    "title": "旺达幻视（WandaVision）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2023,
+    "yearLabel": "2021",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": true,
+    "order": 2,
+    "backgroundNote": "观众须知·背景：故事发生在《复仇者联盟4：终局之战（Avengers: Endgame）》之后，旺达（绯红女巫）因失去幻视（Vision）与两个孩子，用混沌魔法（Chaos Magic）在郊区小镇西景镇（Westview）制造了一片虚构的「情景喜剧」世界。",
+    "relationsNote": "人物关系：本剧解释旺达如何从复仇者变成《奇异博士（Doctor Strange）2》中的反派绯红女巫（Scarlet Witch）；幻视（Vision）以被旺达重塑的形态登场；莫妮卡·兰博（Monica Rambeau）在本剧觉醒能力，为《惊奇队长2（The Marvels）》铺垫。",
+    "timelineNote": "时间线衔接：建议在《奇异博士2：疯狂多元宇宙（Doctor Strange in the Multiverse of Madness）》之前观看本剧，否则无法理解旺达为何黑化。",
+    "summary": "终局之战后，旺达与幻视（Vision）在一座叫西景镇（Westview）的小镇过着看似完美的家庭生活——但这一切都透着诡异：他们像情景喜剧一样过着上世纪各年代的生活，而镇上的居民其实全被旺达控制。随着真相揭开，旺达的悲伤被混沌魔法（Chaos Magic）放大，她制造了一个现实扭曲的「乐园」。本剧是旺达从复仇者到绯红女巫的转折点。",
+    "characters": [
+      "wanda-maximoff",
+      "vision",
+      "monica-rambeau"
+    ],
+    "quotes": [
+      "What is grief, if not love persevering?"
+    ]
+  },
+  {
+    "id": "falcon-winter-soldier",
+    "title": "猎鹰与冬兵（The Falcon and the Winter Soldier）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2023,
+    "yearLabel": "2021",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 3,
+    "backgroundNote": "观众须知·背景：承接《终局之战》结尾——美国队长（Captain America）把盾牌交给了猎鹰（Falcon）山姆·威尔逊（Sam Wilson）。本剧讲述他是否接任美队（Cap）的心路历程。",
+    "relationsNote": "人物关系：主角是猎鹰（Falcon）（Sam Wilson）与冬兵巴基（Bucky Barnes）；反派是「旗帜粉碎者」组织。本剧为《美国队长（Captain America）4》中山姆正式成为新美队（Cap）做铺垫。",
+    "timelineNote": "时间线衔接：看完《复仇者联盟（The Avengers）4》后看本剧，再看《美国队长4：勇敢新世界（Captain America: Brave New World）》更连贯。",
+    "summary": "终局之战后，世界秩序重建，但「响指（the Snap）五年」留下的人口危机让民间滋生了暴力组织。山姆·威尔逊（Sam Wilson）接过了美国队长（Captain America）的盾牌却充满自我怀疑，与冬兵巴基联手追查新威胁。两人从互看不顺眼到成为战友，山姆也最终确认了自己能成为什么样的美国队长（Captain America）——不靠血清，靠信念。",
+    "characters": [
+      "sam-wilson",
+      "bucky-barnes"
+    ],
+    "quotes": [
+      "I am Captain America."
+    ]
+  },
+  {
+    "id": "hawkeye",
+    "title": "鹰眼（Hawkeye）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2024,
+    "yearLabel": "2021",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 4,
+    "backgroundNote": "观众须知·背景：圣诞节前的纽约，鹰眼（Hawkeye）克林特·巴顿（Clint Barton）想和家人过个普通节日，却被年轻女孩凯特·毕肖普（Kate Bishop）卷入一场阴谋。",
+    "relationsNote": "人物关系：引入新角色凯特·毕肖普（Kate Bishop），她是鹰眼（Hawkeye）的继承人；反派涉及叶莲娜·贝洛娃（Yelena Belova）——她在追查姐姐黑寡妇（Black Widow）之死的真相。",
+    "timelineNote": "时间线衔接：紧接《复仇者联盟（The Avengers）4》，建议先看过《黑寡妇（Black Widow）》电影再观看，能理解叶莲娜的动机。",
+    "summary": "鹰眼（Hawkeye）克林特·巴顿（Clint Barton）在圣诞前夕卷入一场涉及昔日黑帮身份「浪人」（Ronin）的阴谋，同时被年轻射手凯特·毕肖普纠缠。两人被迫联手查明真相，而叶莲娜·贝洛娃（Yelena Belova）（黑寡妇（Black Widow）的妹妹）也在暗中追踪鹰眼（Hawkeye）。本剧既是鹰眼（Hawkeye）向新一代的传承，也是节日的温馨小插曲。",
+    "characters": [
+      "clint-barton",
+      "yelyena-belova"
+    ],
+    "quotes": [
+      "It's Christmas. I should be home with my family."
+    ]
+  },
+  {
+    "id": "moon-knight",
+    "title": "月光骑士（Moon Knight）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2024,
+    "yearLabel": "2022",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 5,
+    "backgroundNote": "观众须知·背景：本剧引入埃及神系。主人公史蒂文·格兰特（Steven Grant）患有解离性身份障碍，体内住着雇佣兵马克·斯佩克特（Marc Spector）——他们共同成为月神孔舒（Khonshu）的化身月光骑士。",
+    "relationsNote": "人物关系：核心是史蒂文/马克的双重人格与月神孔舒；反派亚瑟·哈罗（Arthur Harrow）与埃及女神阿米特相关。本剧独立成篇，与复仇者主线关联较少。",
+    "timelineNote": "时间线衔接：本剧世界观相对独立，观众不了解它也能看懂电影主线；但它扩展了 MCU 的神话体系，对理解多元宇宙（the Multiverse）时代的多神设定有帮助。",
+    "summary": "温文尔雅的礼品店店员史蒂文·格兰特总在深夜失忆，醒来后发现身上有神秘的伤。他逐渐意识到自己体内住着另一个灵魂——雇佣兵马克·斯佩克特，两人共享一副躯体，共同被埃及月神孔舒选中成为「月光骑士」。本剧以惊悚和身份探讨为特色，展现了 MCU 中埃及神系的暗面。",
+    "characters": [],
+    "quotes": [
+      "I'm not a hero. I'm a monster. But that's what you need."
+    ]
+  },
+  {
+    "id": "ms-marvel",
+    "title": "惊奇女士（Ms. Marvel）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2024,
+    "yearLabel": "2022",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 6,
+    "backgroundNote": "观众须知·背景：讲述卡玛拉·汗（Kamala Khan）如何从一个追星少女成为超级英雄，是《惊奇队长2（The Marvels）》的直接前传。",
+    "relationsNote": "人物关系：主角卡玛拉是惊奇队长（Captain Marvel）的粉丝，她的能力源于一条神秘手镯——与多元宇宙（the Multiverse）有关。本剧引入的新角色卡玛拉在《惊奇队长2（The Marvels）》中与卡罗尔组队。",
+    "timelineNote": "时间线衔接：建议在《惊奇队长2（The Marvels）》之前观看本剧，否则不理解卡玛拉为何拥有超能力。",
+    "summary": "泽西城的巴基斯坦裔少女卡玛拉·汗（Kamala Khan）是惊奇队长（Captain Marvel）的铁杆粉丝，她一边应付家庭与学业，一边在校园漫展上戴着自制战服cosplay。一次意外让她被一只神秘手镯选中，获得了操控光能的能力。她一边摸索成为英雄的代价，一边发现自己与惊奇队长（Captain Marvel）的联系远比自己想象的深。",
+    "characters": [
+      "kamala-khan"
+    ],
+    "quotes": [
+      "You have to be the hero of your own story."
+    ]
+  },
+  {
+    "id": "secret-invasion",
+    "title": "秘密入侵（Secret Invasion）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2025,
+    "yearLabel": "2023",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 7,
+    "backgroundNote": "观众须知·背景：承接《惊奇队长（Captain Marvel）》——斯克鲁人（Skrull）是被追杀的难民，但本剧揭示部分斯克鲁人早已潜入地球高层多年，策划一场无声的入侵。",
+    "relationsNote": "人物关系：核心是尼克·弗瑞（Nick Fury）回到地球处理斯克鲁危机；塔洛斯（Talos）等斯克鲁角色从《惊奇队长（Captain Marvel）》延续。本剧解释了为何弗瑞多年不在场。",
+    "timelineNote": "时间线衔接：建议先看《惊奇队长（Captain Marvel）》了解斯克鲁人设定，再看本剧。本剧与主线复仇者的关联相对松散。",
+    "summary": "斯克鲁人（Skrull）——那些能随意变形的外星难民，部分早已在地球生活多年。如今他们中的激进派「格拉维克派」决定不再等待，而是逐步替换地球各国高层，策划一场无声的入侵。尼克·弗瑞（Nick Fury）从太空回到地球，在信任崩塌的情况下艰难应对：连他最亲近的人，都可能早已不是本人。",
+    "characters": [
+      "nick-fury"
+    ],
+    "quotes": [
+      "Who do you trust?"
+    ]
+  },
+  {
+    "id": "agent-carter",
+    "title": "特工卡特（Agent Carter）",
+    "subtitle": "剧集 · 2 季",
+    "year": 1946,
+    "yearLabel": "S1 2015 · S2 2016",
+    "eraId": "era-ww2",
+    "type": "series",
+    "seasons": "S1–S2",
+    "isMajorEvent": false,
+    "order": 1,
+    "backgroundNote": "观众须知·背景：1946年二战结束后，佩吉·卡特（Peggy Carter）在美国队长（Captain America）失踪后继续为战略科学预备队（S.S.R.）（SSR）工作——本剧是美队（Cap）1与神盾局（S.H.I.E.L.D.）成立之间的补白。",
+    "relationsNote": "人物关系：主角是佩吉·卡特（Peggy Carter），她是神盾局（S.H.I.E.L.D.）的奠基人之一，也是美国队长（Captain America）最深的牵挂。",
+    "timelineNote": "时间线衔接：适合在看完《美国队长（Captain America）1》后观看，帮助理解神盾局（S.H.I.E.L.D.）的起源与佩吉的一生。",
+    "summary": "二战结束后，佩吉·卡特（Peggy Carter）在美国队长（Captain America）坠海、男同事纷纷返乡的背景下，独自在战略科学预备队（S.S.R.）（SSR）与性别偏见和隐藏的阴谋周旋。她一边调查新威胁，一边继续着对美国队长（Captain America）的思念，展现了这位传奇特工从战争到冷战时代的成长。",
+    "characters": [
+      "peggy-carter"
+    ],
+    "quotes": [
+      "I know my value. Anyone else's opinion doesn't really matter to me."
+    ]
+  },
+  {
+    "id": "she-hulk",
+    "title": "女浩克（She-Hulk: Attorney at Law）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2024,
+    "yearLabel": "2022",
+    "eraId": "era-multiverse",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 2,
+    "backgroundNote": "观众须知·背景：班纳博士（Dr. Banner）的表妹詹妮弗·沃尔特斯（Jennifer Walters）因车祸接受班纳的输血，意外获得浩克（Hulk）之力。本剧是一部法庭喜剧。",
+    "relationsNote": "人物关系：主角是詹妮弗（女浩克（Hulk）），表哥是绿巨人（Hulk）浩克（Hulk）；剧中客串了大量 MCU 角色，并留下关于「改写宇宙」的元叙事彩蛋。",
+    "timelineNote": "时间线衔接：本剧为背景补充型，不影响主线理解；对理解浩克（Hulk）家族的后续有轻微帮助。",
+    "summary": "詹妮弗·沃尔特斯是一名出色的律师，因表兄班纳博士（Dr. Banner）的一次输血意外获得了变身「女浩克（Hulk）」（She-Hulk）的能力。她没有成为全职英雄，而是继续做律师——专接超人类相关的案件。本剧以职场喜剧形式展现超级英雄的日常，也探讨了「能力越大，责任越大」的另一种诠释。",
+    "characters": [],
+    "quotes": [
+      "I don't need a costume to be me."
+    ]
+  },
+  {
+    "id": "daredevil",
+    "title": "夜魔侠（Daredevil）",
+    "subtitle": "剧集 · 3 季",
+    "year": 2015,
+    "yearLabel": "2015–2018",
+    "eraId": "era-assembly",
+    "type": "series",
+    "seasons": "S1–S3",
+    "isMajorEvent": false,
+    "order": 0,
+    "backgroundNote": "观众须知·背景：马特·默多克（Matt Murdock）幼年失明，却在事故中获得超常感官。白天他是盲人律师，夜晚他是地狱厨房（Hell's Kitchen）的守护者「夜魔侠」。本剧原是 Netflix 制作，属于纽约街头英雄线。",
+    "relationsNote": "人物关系：核心是马特·默多克与宿敌金并（Kingpin）；与杰西卡·琼斯、卢克·凯奇、铁拳共同组成「捍卫者」联盟。夜魔侠已确认回归 MCU 主宇宙。",
+    "timelineNote": "时间线衔接：本剧为背景补充型，不影响主线理解；但夜魔侠已确认进入 MCU，其风格与《蜘蛛侠：英雄无归（Spider-Man: No Way Home）》等作品有联动。",
+    "summary": "马特·默多克幼年因化学事故失明，却意外获得超常感官。白天他是地狱厨房（Hell's Kitchen）的律师，夜晚他化身「夜魔侠」与城市地下的罪恶搏斗。本剧以写实、黑暗的风格著称，塑造了漫威影视中公认最具深度的反派之一——金并（Kingpin）。",
+    "characters": [],
+    "quotes": [
+      "I'm not seeking penance for what I've done, Father. I'm seeking penance for what I'm about to do."
+    ]
+  },
+  {
+    "id": "jessica-jones",
+    "title": "杰西卡·琼斯（Jessica Jones）",
+    "subtitle": "剧集 · 3 季",
+    "year": 2015,
+    "yearLabel": "2015–2019",
+    "eraId": "era-assembly",
+    "type": "series",
+    "seasons": "S1–S3",
+    "isMajorEvent": false,
+    "order": 0,
+    "backgroundNote": "观众须知·背景：杰西卡·琼斯（Jessica Jones）是拥有超强力量的私家侦探，曾受控于能操控人心的反派紫人（Kilgrave）。本剧原是 Netflix 制作，属于纽约街头英雄线。",
+    "relationsNote": "人物关系：杰西卡是「捍卫者」（Defenders）成员之一，与卢克·凯奇有情感纠葛。",
+    "timelineNote": "时间线衔接：本剧为背景补充型，不影响主线理解。",
+    "summary": "杰西卡·琼斯在摆脱了能操控人心的紫人（Kilgrave）控制后，开了一家私家侦探所，用一身怪力与满身伤痕对抗城市里见不得光的罪恶。本剧以成人向的心理惊悚风格著称，探讨创伤、控制与挣脱，是 MCU 中最「不超级英雄」的作品之一。",
+    "characters": [],
+    "quotes": [
+      "I'm not a hero. I'm just a really angry person."
+    ]
+  },
+  {
+    "id": "luke-cage",
+    "title": "卢克·凯奇（Luke Cage）",
+    "subtitle": "剧集 · 2 季",
+    "year": 2016,
+    "yearLabel": "2016–2018",
+    "eraId": "era-assembly",
+    "type": "series",
+    "seasons": "S1–S2",
+    "isMajorEvent": false,
+    "order": 0,
+    "backgroundNote": "观众须知·背景：卢克·凯奇（Luke Cage）因实验获得刀枪不入的超人身体，在纽约哈莱姆区守护社区。本剧原是 Netflix 制作，属于纽约街头英雄线。",
+    "relationsNote": "人物关系：卢克是「捍卫者」（Defenders）成员之一，与杰西卡·琼斯有过感情线。",
+    "timelineNote": "时间线衔接：本剧为背景补充型，不影响主线理解。",
+    "summary": "卢克·凯奇在一次实验中获得了刀枪不入的身体，成为纽约哈莱姆区街头流传的传说。他不追逐名利，只想守护自己的社区，却一次次被卷入权力与罪恶的漩涡。本剧以布鲁斯音乐、黑人文化与街头正义为底色，风格鲜明。",
+    "characters": [],
+    "quotes": [
+      "I am not a weapon. I am a man."
+    ]
+  },
+  {
+    "id": "iron-fist",
+    "title": "铁拳（Iron Fist）",
+    "subtitle": "剧集 · 2 季",
+    "year": 2017,
+    "yearLabel": "2017–2018",
+    "eraId": "era-assembly",
+    "type": "series",
+    "seasons": "S1–S2",
+    "isMajorEvent": false,
+    "order": 0,
+    "backgroundNote": "观众须知·背景：丹尼·兰德（Danny Rand）在喜马拉雅山的神秘城市昆仑（K'un-Lun）接受训练，成为能召唤神龙之力的「铁拳」。本剧原是 Netflix 制作，属于纽约街头英雄线。",
+    "relationsNote": "人物关系：丹尼是「捍卫者」（Defenders）成员之一，铁拳之力守护着昆仑（K'un-Lun）与地球。",
+    "timelineNote": "时间线衔接：本剧为背景补充型，不影响主线理解。",
+    "summary": "亿万富翁之子丹尼·兰德在空难中幸存，被昆仑（K'un-Lun）的神秘武僧救起，习得召唤神龙之力的「铁拳」（Iron Fist）。十五年后他回到纽约，既要夺回家族企业，也要履行守护昆仑（K'un-Lun）的使命。本剧融合武术与都市商业斗争，是捍卫者宇宙中风格最东方的作品。",
+    "characters": [],
+    "quotes": [
+      "I am the Iron Fist, sworn enemy of the Hand."
+    ]
+  },
+  {
+    "id": "defenders",
+    "title": "捍卫者（The Defenders）",
+    "subtitle": "剧集 · 1 季",
+    "year": 2017,
+    "yearLabel": "2017",
+    "eraId": "era-assembly",
+    "type": "series",
+    "seasons": "S1",
+    "isMajorEvent": false,
+    "order": 0,
+    "backgroundNote": "观众须知·背景：Netflix 街头英雄线的集结篇。夜魔侠、杰西卡·琼斯、卢克·凯奇、铁拳四人首次联手，对抗忍者组织「手合会（the Hand）」（The Hand）。",
+    "relationsNote": "人物关系：集结了四位街头英雄——夜魔侠（Daredevil）、杰西卡·琼斯（Jessica Jones）、卢克·凯奇（Luke Cage）与铁拳（Iron Fist）。",
+    "timelineNote": "时间线衔接：建议先看完四部个人剧集再观看本剧；为背景补充型，不影响主线理解。",
+    "summary": "纽约地下冒出一个古老的忍者组织「手合会（the Hand）」（The Hand），而夜魔侠、杰西卡·琼斯、卢克·凯奇与铁拳四位性格迥异的街头英雄被迫聚在一起。他们互不信任却必须联手，对抗一个比黑帮更古老的威胁。本剧是 Netflix 街头英雄线的迷你复联。",
+    "characters": [],
+    "quotes": [
+      "I don't like your face. But I respect you."
+    ]
+  },
+  {
+    "id": "punisher",
+    "title": "惩罚者（The Punisher）",
+    "subtitle": "剧集 · 2 季",
+    "year": 2017,
+    "yearLabel": "2017–2019",
+    "eraId": "era-assembly",
+    "type": "series",
+    "seasons": "S1–S2",
+    "isMajorEvent": false,
+    "order": 0,
+    "backgroundNote": "观众须知·背景：弗兰克·卡斯特（Frank Castle）全家被杀后，他化身「惩罚者」以暴制暴。本剧原是 Netflix 制作，源自《夜魔侠》第二季衍生。",
+    "relationsNote": "人物关系：主角是惩罚者，最初登场于《夜魔侠》第二季；与夜魔侠的「不杀生」信条形成鲜明对照。",
+    "timelineNote": "时间线衔接：本剧为背景补充型，不影响主线理解。",
+    "summary": "前海军陆战队员弗兰克·卡斯特的妻儿被黑帮杀害，法律无法为他伸张正义，他决定亲自成为审判者——以最暴烈的方式惩罚罪犯。本剧以枪战与复仇为基调，是漫威影视中尺度最大的成人向作品之一，展现了「英雄」信条的极端另一面。",
+    "characters": [],
+    "quotes": [
+      "God's gonna sit this one out. You and me, right here, right now."
+    ]
   }
 ]

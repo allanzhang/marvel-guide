@@ -578,7 +578,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "隐姓埋名的青年尚气（Shang-Chi）在旧金山过着普通生活，却被卷入父亲文武（Wenwu）的十环帮往事。文武是活了千年的传奇武者，手握十枚威力无穷的十环，他试图召唤早已去世的妻子——却误入了神秘村落塔罗的结界，惊动了传说中的神龙。尚气必须在父亲的执念与保护塔罗之间做出抉择，最终真正继承十环的力量。本片首次将神秘的十环组织（Ten Rings）带回主线——它正是当年绑架托尼·斯塔克的组织。",
+    "summary": "隐姓埋名的青年尚气（Shang-Chi）在旧金山过着普通生活，却被卷入父亲文武（Wenwu）的十环帮往事。文武（Wenwu）是活了千年的传奇武者，手握十枚威力无穷的十环，他试图召唤早已去世的妻子——却误入了神秘村落塔罗的结界，惊动了传说中的神龙。尚气（Shang-Chi）必须在父亲的执念与保护塔罗之间做出抉择，最终真正继承十环的力量。本片首次将神秘的十环组织（Ten Rings）带回主线——它正是当年绑架托尼·斯塔克（Tony Stark）的组织。",
     "characters": [
       "shang-chi"
     ],
@@ -596,7 +596,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "七千年来，一群被称为永恒族（Eternals）的外星造物一直隐藏在地球，默默保护人类免受变异族（Deviants）的侵害。响指事件让他们的使命第一次受到动摇——他们开始质疑：为什么自己从不干预人类自相残杀的大事件？当最后的变异族苏醒、天神族（Celestials）的真实意图浮出水面时，永恒族被迫分崩离析。本片把视角拉高到宇宙尺度，解释了地球上诸多隐藏种族的存在，也为多元宇宙时代埋下更宏大的伏笔。",
+    "summary": "七千年来，一群被称为永恒族（Eternals）的外星造物一直隐藏在地球，默默保护人类免受变异族（Deviants）的侵害。响指（the Snap）事件让他们的使命第一次受到动摇——他们开始质疑：为什么自己从不干预人类自相残杀的大事件？当最后的变异族（Deviants）苏醒、天神族（Celestials）的真实意图浮出水面时，永恒族（Eternals）被迫分崩离析。本片把视角拉高到宇宙尺度，解释了地球上诸多隐藏种族的存在，也为多元宇宙（the Multiverse）时代埋下更宏大的伏笔。",
     "characters": [
       "ikaris",
       "sersi"
@@ -615,12 +615,12 @@
     "eraId": "era-multiverse",
     "isMajorEvent": true,
     "order": 3,
-    "summary": "神秘客临终前公开了蜘蛛侠的真实身份，彼得·帕克（Peter Parker）的生活彻底崩塌。走投无路的他请求奇异博士（Doctor Strange）施展遗忘咒语，却因反复修改咒语撕开了多元宇宙的裂缝——来自其他宇宙的「蜘蛛侠宿敌」接连涌入。更惊人的是，这些反派都来自另外两个平行宇宙，而那两个宇宙的蜘蛛侠——托比·马奎尔版与安德鲁·加菲尔德版——也一同出现。三版蜘蛛侠并肩作战，彼得最终让全世界忘记自己，独自背负英雄之名。这是多元宇宙真正打开大门的时刻。",
+    "summary": "神秘客（Mysterio）临终前公开了蜘蛛侠（Spider-Man）的真实身份，彼得·帕克（Peter Parker）的生活彻底崩塌。走投无路的他请求奇异博士（Doctor Strange）施展遗忘咒语，却因反复修改咒语撕开了多元宇宙（the Multiverse）的裂缝——来自其他宇宙的「蜘蛛侠（Spider-Man）宿敌」接连涌入。更惊人的是，这些反派都来自另外两个平行宇宙，而那两个宇宙的蜘蛛侠（Spider-Man）——托比·马奎尔版与安德鲁·加菲尔德版——也一同出现。三版蜘蛛侠（Spider-Man）并肩作战，彼得最终让全世界忘记自己，独自背负英雄之名。这是多元宇宙（the Multiverse）真正打开大门的时刻。",
     "characters": [
       "peter-parker",
       "stephen-strange"
     ],
-    "crossUniverseNote": "本片是多元宇宙时代的开篇。托比（Tobey Maguire）与加菲（Andrew Garfield）两代蜘蛛侠来自索尼影业的平行宇宙，与荷兰弟（Tom Holland）版并非同一人，但同属「蜘蛛侠」的多重变体。漫威与索尼的合作关系让三版同框成为可能。",
+    "crossUniverseNote": "本片是多元宇宙（the Multiverse）时代的开篇。托比（Tobey Maguire）与加菲（Andrew Garfield）两代蜘蛛侠（Spider-Man）来自索尼影业的平行宇宙，与荷兰弟（Tom Holland）版并非同一人，但同属「蜘蛛侠（Spider-Man）」的多重变体。漫威与索尼的合作关系让三版同框成为可能。",
     "quotes": [
       "With great power comes great responsibility.",
       "No one deserves this."
@@ -635,12 +635,12 @@
     "eraId": "era-multiverse",
     "isMajorEvent": true,
     "order": 1,
-    "summary": "英雄无归留下的多元宇宙裂缝引来了新的危机。来自另一宇宙的少女阿美莉卡·查韦斯（America Chavez）拥有穿越多元宇宙的能力，成为各方争夺的目标。奇异博士（Doctor Strange）在追查中惊觉，真正操控这一切的竟是曾经并肩作战的旺达——她被黑暗之书（Darkhold）腐蚀，化身绯红女巫（Scarlet Witch），试图夺取阿美莉卡的力量去往另一个宇宙与自己的孩子团聚。奇异博士不得不直面自己最黑暗的另一面，在多元宇宙的疯狂中守护现实。",
+    "summary": "英雄无归留下的多元宇宙（the Multiverse）裂缝引来了新的危机。来自另一宇宙的少女阿美莉卡·查韦斯（America Chavez）拥有穿越多元宇宙（the Multiverse）的能力，成为各方争夺的目标。奇异博士（Doctor Strange）在追查中惊觉，真正操控这一切的竟是曾经并肩作战的旺达——她被黑暗之书（Darkhold）腐蚀，化身绯红女巫（Scarlet Witch），试图夺取阿美莉卡的力量去往另一个宇宙与自己的孩子团聚。奇异博士（Doctor Strange）不得不直面自己最黑暗的另一面，在多元宇宙（the Multiverse）的疯狂中守护现实。",
     "characters": [
       "stephen-strange",
       "wanda-maximoff"
     ],
-    "crossUniverseNote": "本片正式展开多元宇宙叙事。绯红女巫（Scarlet Witch）的失控源于剧集《旺达幻视》（WandaVision）中失去孩子与爱人的创伤，建议先看该剧再观影，更理解她的动机。",
+    "crossUniverseNote": "本片正式展开多元宇宙（the Multiverse）叙事。绯红女巫（Scarlet Witch）的失控源于剧集《旺达幻视（Vision）》（WandaVision）中失去孩子与爱人的创伤，建议先看该剧再观影，更理解她的动机。",
     "quotes": [
       "I can't change what happened. I can only try to protect it.",
       "The dreams are not real. They're versions of you from other universes."
@@ -655,7 +655,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "诸神黄昏后，索尔（Thor）与银河护卫队结伴流浪宇宙，寻找内心的平静。但他很快迎来新的宿敌——屠神者格尔（Gorr the God Butcher），一位因失去女儿而憎恨所有神明的疯狂屠夫。更让索尔震惊的是，他的前女友简·福斯特（Jane Foster）身患绝症，却因与雷神之锤（Mjolnir）的碎片共鸣而成为「神威雷神」。两人并肩对抗格尔，索尔也在爱与责任中找到了新的人生意义。",
+    "summary": "诸神黄昏后，索尔（Thor）与银河护卫队（Guardians of the Galaxy）结伴流浪宇宙，寻找内心的平静。但他很快迎来新的宿敌——屠神者格尔（Gorr the God Butcher），一位因失去女儿而憎恨所有神明的疯狂屠夫。更让索尔（Thor）震惊的是，他的前女友简·福斯特（Jane Foster）身患绝症，却因与雷神之锤（Mjolnir）的碎片共鸣而成为「神威雷神（Thor）」。两人并肩对抗格尔，索尔（Thor）也在爱与责任中找到了新的人生意义。",
     "characters": [
       "thor",
       "jane-foster",
@@ -675,7 +675,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 3,
-    "summary": "特查拉国王骤然离世后，瓦坎达在悲痛中面对新的威胁——隐藏在海底的古老国度塔洛坎（Talokan）浮出水面。塔洛坎之王纳摩（Namor）以振金（Vibranium）为筹码向世界宣战，瓦坎达则在苏睿（Shuri）的带领下艰难接过黑豹的衣钵。本片既是对逝者的深情告别，也是瓦坎达走向世界、传承意志的新篇章。",
+    "summary": "特查拉（T'Challa）国王骤然离世后，瓦坎达（Wakanda）在悲痛中面对新的威胁——隐藏在海底的古老国度塔洛坎（Talokan）浮出水面。塔洛坎（Talokan）之王纳摩（Namor）以振金（Vibranium）为筹码向世界宣战，瓦坎达（Wakanda）则在苏睿（Shuri）的带领下艰难接过黑豹（Black Panther）的衣钵。本片既是对逝者的深情告别，也是瓦坎达（Wakanda）走向世界、传承意志的新篇章。",
     "characters": [
       "shuri",
       "tchalla"
@@ -694,14 +694,14 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "斯科特·朗（Scott Lang）一家被意外吸入量子领域（Quantum Realm），在那里遇见了被放逐的征服者康（Kang the Conqueror）——一个能操控时间线的可怕存在。康在量子领域中被困多年，试图借助斯科特一家的皮姆粒子（Pym Particles）逃回现实。本片正式把「康」这位多元宇宙时代的大反派引入主线，也暗示了时间线战争的逼近。",
+    "summary": "斯科特·朗（Scott Lang）一家被意外吸入量子领域（Quantum Realm），在那里遇见了被放逐的征服者康（Kang the Conqueror）——一个能操控时间线的可怕存在。康（Kang）在量子领域（Quantum Realm）中被困多年，试图借助斯科特一家的皮姆粒子（Pym Particles）逃回现实。本片正式把「康（Kang）」这位多元宇宙（the Multiverse）时代的大反派引入主线，也暗示了时间线战争的逼近。",
     "characters": [
       "scott-lang",
       "hank-pym",
       "hope-van-dyne",
       "kang"
     ],
-    "crossUniverseNote": "征服者康（Kang the Conqueror）是多元宇宙时代的核心反派，本质是无数个「康」的变体散布在不同时间线。他与《洛基》（Loki）剧集中的「遗留之人」密切相关，建议结合剧集理解。",
+    "crossUniverseNote": "征服者康（Kang the Conqueror）是多元宇宙（the Multiverse）时代的核心反派，本质是无数个「康（Kang）」的变体散布在不同时间线。他与《洛基（Loki）》（Loki）剧集中的「遗留之人（He Who Remains）」密切相关，建议结合剧集理解。",
     "quotes": [
       "I am Kang. And I have conquered more worlds than you can imagine."
     ]
@@ -715,7 +715,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "火箭浣熊（Rocket）的身世之谜终于揭开——他是由疯狂的科学家至高进化（High Evolutionary）改造实验的产物。当火箭重伤垂危，银河护卫队踏上了拯救队友、直面进化狂人、直面火箭过去的旅途。本片是银河护卫队系列的收官之作，队员们各自找到归宿，完成了对这支宇宙「怪咖家庭」的深情告别。",
+    "summary": "火箭浣熊（Rocket）的身世之谜终于揭开——他是由疯狂的科学家至高进化（High Evolutionary）改造实验的产物。当火箭（Rocket）重伤垂危，银河护卫队（Guardians of the Galaxy）踏上了拯救队友、直面进化狂人、直面火箭（Rocket）过去的旅途。本片是银河护卫队（Guardians of the Galaxy）系列的收官之作，队员们各自找到归宿，完成了对这支宇宙「怪咖家庭」的深情告别。",
     "characters": [
       "star-lord",
       "gamora",
@@ -737,13 +737,13 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "卡罗尔·丹佛斯（Carol Danvers）与两个「继承者」产生了神秘的光速纠缠——少女莫妮卡·兰博（Monica Rambeau）和惊奇少女卡玛拉·汗（Kamala Khan）。只要她们同时使用超能力，就会彼此互换位置。为了阻止一场跨星系的战争，三人被迫组队协作，也在并肩作战中理解了彼此。本片串联起《惊奇队长》《惊奇女士》与《旺达幻视》三条人物线。",
+    "summary": "卡罗尔·丹佛斯（Carol Danvers）与两个「继承者」产生了神秘的光速纠缠——少女莫妮卡·兰博（Monica Rambeau）和惊奇少女卡玛拉·汗（Kamala Khan）。只要她们同时使用超能力，就会彼此互换位置。为了阻止一场跨星系的战争，三人被迫组队协作，也在并肩作战中理解了彼此。本片串联起《惊奇队长（Captain Marvel）》《惊奇女士（Ms. Marvel）》与《旺达幻视（Vision）》三条人物线。",
     "characters": [
       "carol-danvers",
       "kamala-khan",
       "monica-rambeau"
     ],
-    "crossUniverseNote": "莫妮卡·兰博（Monica Rambeau）在《惊奇队长》中是孩童，成年后于剧集《旺达幻视》（WandaVision）中觉醒能力；卡玛拉·汗（Kamala Khan）则在剧集《惊奇女士》（Ms. Marvel）中登场。建议先看两部剧集更连贯。",
+    "crossUniverseNote": "莫妮卡·兰博（Monica Rambeau）在《惊奇队长（Captain Marvel）》中是孩童，成年后于剧集《旺达幻视（Vision）》（WandaVision）中觉醒能力；卡玛拉·汗（Kamala Khan）则在剧集《惊奇女士（Ms. Marvel）》（Ms. Marvel）中登场。建议先看两部剧集更连贯。",
     "quotes": [
       "Higher, further, faster, baby!"
     ]
@@ -757,12 +757,12 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 4,
-    "summary": "死侍（Deadpool）所在的宇宙面临被时间变异管理局（TVA）抹除的危机，他不得不跨越宇宙去寻找那位来自《金刚狼》（X-Men）系列的老搭档——金刚狼（Wolverine）。两个满嘴俏皮话的变种人一边互怼一边并肩作战，对抗时间变异管理局派来的杀手，也直面了「英雄谢幕」的宿命。这是福克斯（Fox）变种人宇宙角色首次正式并入漫威电影宇宙，充满对老版 X 战警系列的致敬与告别。",
+    "summary": "死侍（Deadpool）所在的宇宙面临被时间变异管理局（the Time Variance Authority）（TVA）抹除的危机，他不得不跨越宇宙去寻找那位来自《金刚狼（Wolverine）》（X-Men）系列的老搭档——金刚狼（Wolverine）。两个满嘴俏皮话的变种人一边互怼一边并肩作战，对抗时间变异管理局（the Time Variance Authority）派来的杀手，也直面了「英雄谢幕」的宿命。这是福克斯（Fox）变种人宇宙角色首次正式并入漫威电影宇宙（the Marvel Cinematic Universe），充满对老版 X 战警系列的致敬与告别。",
     "characters": [
       "deadpool",
       "wolverine"
     ],
-    "crossUniverseNote": "本片是跨宇宙/版权方人物最密集的作品。死侍（Deadpool）与金刚狼（Wolverine）原属福克斯（Fox）的 X 战警宇宙，与 MCU 是平行世界；在迪士尼收购福克斯后，两个宇宙通过多元宇宙正式打通。片中大量老角色客串（如《刀锋战士》《夜魔侠》旧版），属于情怀彩蛋。",
+    "crossUniverseNote": "本片是跨宇宙/版权方人物最密集的作品。死侍（Deadpool）与金刚狼（Wolverine）原属福克斯（Fox）的 X 战警宇宙，与 MCU 是平行世界；在迪士尼收购福克斯后，两个宇宙通过多元宇宙（the Multiverse）正式打通。片中大量老角色客串（如《刀锋战士》《夜魔侠》旧版），属于情怀彩蛋。",
     "quotes": [
       "I'm the best at what I do, and what I do is change the rules.",
       "It's not what I am. It's who I am."
@@ -777,7 +777,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "接过盾牌的山姆·威尔逊（Sam Wilson）成为新任美国队长（Captain America），却在就任后卷入一场国际阴谋——新任美国总统罗斯（Thaddeus Ross）在《无敌浩克》中的伽马实验后患上了重病，而一场针对总统的暗杀与外星振金（Vibranium）的争夺，让山姆必须在不依赖超能力的情况下证明：任何人都能成为英雄，只要你心中有信念。",
+    "summary": "接过盾牌的山姆·威尔逊（Sam Wilson）成为新任美国队长（Captain America），却在就任后卷入一场国际阴谋——新任美国总统罗斯（Thaddeus Ross）在《无敌浩克（The Incredible Hulk）》中的伽马实验后患上了重病，而一场针对总统的暗杀与外星振金（Vibranium）的争夺，让山姆必须在不依赖超能力的情况下证明：任何人都能成为英雄，只要你心中有信念。",
     "characters": [
       "sam-wilson",
       "general-ross"
@@ -820,7 +820,7 @@
       "reed-richards",
       "sue-storm"
     ],
-    "crossUniverseNote": "神奇四侠（Fantastic Four）是漫威漫画的「第一家庭」，此前已有福克斯（Fox）的三版电影。本片首次由漫威影业亲自制作，主角团来自另一个平行宇宙，是多元宇宙时代的关键新力量。",
+    "crossUniverseNote": "神奇四侠（Fantastic Four）是漫威漫画的「第一家庭」，此前已有福克斯（Fox）的三版电影。本片首次由漫威影业亲自制作，主角团来自另一个平行宇宙，是多元宇宙（the Multiverse）时代的关键新力量。",
     "quotes": [
       "When the world's in trouble, the Fantastic Four answer the call."
     ]
@@ -834,7 +834,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 2,
-    "summary": "英雄无归之后，全世界都忘记了彼得·帕克（Peter Parker）是蜘蛛侠。他重新以普通高中生的身份开始生活，却在全新的城市与新的威胁相遇。当一段尘封的记忆与新的敌人出现，彼得必须在「平凡的生活」与「英雄的责任」之间再次做出选择。这是蜘蛛侠故事的全新篇章。",
+    "summary": "英雄无归之后，全世界都忘记了彼得·帕克（Peter Parker）是蜘蛛侠（Spider-Man）。他重新以普通高中生的身份开始生活，却在全新的城市与新的威胁相遇。当一段尘封的记忆与新的敌人出现，彼得必须在「平凡的生活」与「英雄的责任」之间再次做出选择。这是蜘蛛侠（Spider-Man）故事的全新篇章。",
     "characters": [
       "peter-parker"
     ],
@@ -852,7 +852,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": true,
     "order": 3,
-    "summary": "预告中：征服者康（Kang the Conqueror）的变体军团席卷多元宇宙，新一代复仇者被迫重新集结。面对时间线的终局，英雄们将在毁灭日的阴影下做出最后的抉择。（本片未上映，内容待上映后补全）",
+    "summary": "预告中：征服者康（Kang the Conqueror）的变体军团席卷多元宇宙（the Multiverse），新一代复仇者被迫重新集结。面对时间线的终局，英雄们将在毁灭日的阴影下做出最后的抉择。（本片未上映，内容待上映后补全）",
     "characters": [
       "kang"
     ],
@@ -868,7 +868,7 @@
     "eraId": "era-multiverse",
     "isMajorEvent": true,
     "order": 4,
-    "summary": "预告中：多元宇宙的碰撞将无数平行世界卷入一场终极战争。所有宇宙的英雄与反派将在「秘密战争」中决出最后的命运。（本片未上映，内容待上映后补全）",
+    "summary": "预告中：多元宇宙（the Multiverse）的碰撞将无数平行世界卷入一场终极战争。所有宇宙的英雄与反派将在「秘密战争」中决出最后的命运。（本片未上映，内容待上映后补全）",
     "characters": [],
     "crossUniverseNote": "",
     "quotes": []
