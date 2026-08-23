@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { characters, movies, eraById, posterUrl, portraitUrl, sortedMovies } from '../../lib/data.mjs';
+import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return characters.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -9,6 +9,8 @@ export async function getStaticPaths() {
 const { c } = Astro.props;
 const displayName = c.alias ? `${c.name} · ${c.alias}` : c.name;
 const cMovies = sortedMovies.filter((m) => c.movies.includes(m.id));
+const cSeries = sortedSeries.filter((s) => (c.series || []).includes(s.id));
+const cWorks = [...cMovies, ...cSeries].sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));
 const isCrossUniverse = c.universe && c.universe !== 'sacred';
 const universeLabel = {
   sacred: '神圣时间线',
@@ -60,13 +62,14 @@ const universeEn = {
       <h2 class="pd-films__title">出演作品</h2>
       <p class="pd-films__sub">按故事时序排列，点击可跳回时间线对应条目。</p>
       <div class="pd-films__grid">
-        {cMovies.map((m) => (
+        {cWorks.map((m) => (
           <a class="film" href={`/timeline#${m.id}`}>
             <div class="film__media">
               <img src={posterUrl(m.id)} alt={m.title} loading="lazy" />
             </div>
             <div class="film__info">
               <span class="film__year">{m.yearLabel}</span>
+              {isSeries(m) && <span class="film__badge">剧集</span>}
               <h3 class="film__title">{m.title}</h3>
             </div>
           </a>
@@ -153,6 +156,17 @@ const universeEn = {
   .film__media img { width: 100%; height: 100%; object-fit: cover; }
   .film__info { padding: 14px 16px 18px; }
   .film__year { font-family: var(--font-serif); font-size: var(--fs-small); color: var(--accent); font-weight: 700; }
+  .film__badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 1px 8px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
   .film__title { font-family: var(--font-serif); font-size: var(--fs-sub); margin-top: 4px; line-height: 1.35; overflow-wrap: break-word; word-break: break-word; }
 
   @media (max-width: 820px) {

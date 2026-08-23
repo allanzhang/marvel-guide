@@ -1,8 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { sortedEras, sortedMovies, characters, charById, posterUrl } from '../lib/data.mjs';
+import { sortedEras, sortedEntries, characters, charById, posterUrl, isSeries } from '../lib/data.mjs';
 
-const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
+const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 ---
 
 <Base title="时间线 · 漫威电影世界图鉴">
@@ -15,7 +15,7 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
 
   {
     sortedEras.map((era) => {
-      const eraMovies = moviesOf(era.id);
+      const eraEntries = entriesOf(era.id);
       return (
         <section
           class="era"
@@ -35,7 +35,7 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
 
           <!-- 篇章内条目 -->
           <div class="era-entries container-wide">
-            {eraMovies.map((m, i) => (
+            {eraEntries.map((m, i) => (
               m.isMajorEvent ? (
                 <!-- 大事件全宽特别条目 -->
                 <article class="entry entry--major" id={m.id}>
@@ -44,9 +44,18 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
                   </div>
                   <div class="entry--major__body">
                     <span class="entry__year">{m.yearLabel}</span>
+                    {isSeries(m) && <span class="entry__series-badge">剧集 · {m.seasons}</span>}
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
                     <p class="entry__summary">{m.summary}</p>
+                    {m.backgroundNote && (
+                      <div class="entry__know">
+                        <span class="entry__know-label">观众须知 · Viewer's Guide</span>
+                        <p class="entry__know-item"><b>背景</b>{m.backgroundNote}</p>
+                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b>{m.relationsNote}</p>}
+                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b>{m.timelineNote}</p>}
+                      </div>
+                    )}
                     {m.quotes && m.quotes.length > 0 && (
                       <div class="entry__quotes">
                         <span class="entry__quotes-label">经典台词 · Iconic Quotes</span>
@@ -69,9 +78,18 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
                   </div>
                   <div class="entry__body">
                     <span class="entry__year">{m.yearLabel}</span>
+                    {isSeries(m) && <span class="entry__series-badge">剧集 · {m.seasons}</span>}
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
                     <p class="entry__summary">{m.summary}</p>
+                    {m.backgroundNote && (
+                      <div class="entry__know">
+                        <span class="entry__know-label">观众须知 · Viewer's Guide</span>
+                        <p class="entry__know-item"><b>背景</b>{m.backgroundNote}</p>
+                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b>{m.relationsNote}</p>}
+                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b>{m.timelineNote}</p>}
+                      </div>
+                    )}
                     {m.quotes && m.quotes.length > 0 && (
                       <div class="entry__quotes">
                         <span class="entry__quotes-label">经典台词 · Iconic Quotes</span>
@@ -210,6 +228,54 @@ const moviesOf = (eraId) => sortedMovies.filter((m) => m.eraId === eraId);
     transition: border-color 0.15s, color 0.15s;
   }
   .char-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ===== 剧集徽标 ===== */
+  .entry__series-badge {
+    display: inline-block;
+    font-size: var(--fs-tiny);
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--era-color);
+    border-radius: 999px;
+    padding: 3px 12px;
+    margin: 0 0 10px 12px;
+    vertical-align: middle;
+  }
+
+  /* ===== 观众须知 ===== */
+  .entry__know {
+    margin-top: 24px;
+    max-width: 560px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: #fff;
+    padding: 18px 22px;
+  }
+  .entry--major__body .entry__know { max-width: 720px; }
+  .entry__know-label {
+    display: block;
+    font-size: var(--fs-tiny);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .entry__know-item {
+    margin-top: 8px;
+    font-size: var(--fs-small);
+    line-height: 1.8;
+    color: var(--ink-soft);
+  }
+  .entry__know-item b {
+    display: inline-block;
+    color: var(--era-color);
+    margin-right: 8px;
+    font-weight: 600;
+  }
+  .entry__know-item:first-of-type { margin-top: 0; }
+  .entry--flip .entry__know { text-align: left; }
 
   /* ===== 经典台词 ===== */
   .entry__quotes {
