@@ -321,7 +321,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 
   /* ===== 观众须知 ===== */
   .entry__know {
-    margin-top: 28px;
+    margin-top: 40px;
     max-width: 600px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -355,7 +355,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 
   /* ===== 经典台词 ===== */
   .entry__quotes {
-    margin-top: 28px;
+    margin-top: 36px;
     max-width: 600px;
   }
   .entry--major__body .entry__quotes { max-width: 720px; }
@@ -366,27 +366,27 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     text-transform: uppercase;
     color: var(--ink-soft);
     font-weight: 600;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
   .entry__quotes .quote {
     position: relative;
-    margin-top: 14px;
-    padding: 18px 22px 18px 48px;
+    margin-top: 10px;
+    padding: 10px 16px 10px 36px;
     background: var(--era-soft);
     border-left: 3px solid var(--era-color);
     border-radius: 0 var(--radius) var(--radius) 0;
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: var(--fs-sub);
-    line-height: 1.9;
+    font-size: 16px;
+    line-height: 1.55;
     color: var(--ink);
   }
   .entry__quotes .quote::before {
     content: "\201C";
     position: absolute;
-    left: 14px;
-    top: 4px;
-    font-size: 44px;
+    left: 10px;
+    top: 2px;
+    font-size: 30px;
     line-height: 1;
     color: var(--era-color);
     opacity: 0.55;
@@ -398,8 +398,8 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     border-right: 0;
     text-align: left;
   }
-  .entry--major__body .entry__quotes .quote { padding: 22px 28px 22px 60px; }
-  .entry--major__body .entry__quotes .quote::before { left: 18px; font-size: 56px; }
+  .entry--major__body .entry__quotes .quote { padding: 12px 20px 12px 44px; }
+  .entry--major__body .entry__quotes .quote::before { left: 12px; font-size: 34px; }
 
   /* ===== 大事件特别条目 ===== */
   .entry--major {
