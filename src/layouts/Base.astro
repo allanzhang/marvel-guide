@@ -3,7 +3,7 @@
 import '../styles/global.css';
 const { title = '漫威电影世界图鉴', description = '面向非漫威迷的 MCU 剧情时序图鉴——顺着读就能看懂整个漫威电影世界。' } = Astro.props;
 const path = Astro.url.pathname;
-const SITE = 'https://example.com';
+const SITE = import.meta.env.SITE || 'https://example.com';
 const canonical = `${SITE}${path === '/' ? '/' : path}`;
 const nav = [
   { href: '/', label: '首页' },

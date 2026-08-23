@@ -2,7 +2,7 @@
 import { readdirSync, writeFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
-const SITE = 'https://example.com';
+const SITE = process.env.SITE_URL || 'https://example.com';
 const DIST = `${process.cwd()}/dist`;
 const urls = [];
 
