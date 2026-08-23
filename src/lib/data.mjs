@@ -5,6 +5,7 @@ const read = (p) => JSON.parse(readFileSync(`${process.cwd()}/content/${p}`, 'ut
 
 export const eras = read('eras.json');
 export const movies = read('movies.json');
+export const series = read('series.json');
 export const characters = read('characters.json');
 
 export const charById = Object.fromEntries(characters.map((c) => [c.id, c]));
@@ -12,6 +13,12 @@ export const eraById = Object.fromEntries(eras.map((e) => [e.id, e]));
 
 export const sortedEras = [...eras].sort((a, b) => a.startYear - b.startYear);
 export const sortedMovies = [...movies].sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));
+export const sortedSeries = [...series].sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));
+// 电影+剧集合并按剧情时序（同一年份电影优先，order 次之）
+export const sortedEntries = [...movies, ...series].sort(
+  (a, b) => a.year - b.year || (a.order || 0) - (b.order || 0)
+);
+export const isSeries = (item) => item.type === 'series';
 
 export const posterUrl = (id) => `/posters/poster-${id}.svg`;
 export const portraitUrl = (id) => `/portraits/portrait-${id}.svg`;

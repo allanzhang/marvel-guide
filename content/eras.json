@@ -42,5 +42,16 @@
     "colorSoft": "#ece5f1",
     "intro": "来自泰坦星（Titan）的灭霸（Thanos）集齐六颗无限宝石（the Infinity Stones），一个响指（the Snap）消灭了宇宙一半的生命。英雄们在失败、失去与绝望中重新集结，展开了一场跨越时空的反击——这是整个漫威电影宇宙（the Marvel Cinematic Universe）最重要的篇章。",
     "heroTitle": "终局之前"
+  },
+  {
+    "id": "era-multiverse",
+    "name": "多元宇宙时代（The Multiverse Era）",
+    "tagline": "时间线失控，宇宙不止一个",
+    "years": "2024年 – 2027年",
+    "startYear": 2024,
+    "color": "#1d6f8f",
+    "colorSoft": "#e3eef3",
+    "intro": "终局之战（Endgame）之后，时间线被打破，平行宇宙接连显现。蜘蛛侠（Spider-Man）身份暴露、奇异博士（Doctor Strange）打开多元宇宙的裂缝、征服者康（Kang the Conqueror）在时间尽头崛起——这个时代的故事，才刚刚开始。",
+    "heroTitle": "多元宇宙的裂缝"
   }
 ]
