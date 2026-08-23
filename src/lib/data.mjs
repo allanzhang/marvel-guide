@@ -42,29 +42,97 @@ export const workBackdropUrl = (id) => `${BASE}backdrops/work-${id}.webp`;
 // 页面链接 helper（加 base 前缀）
 export const pageUrl = (path) => `${BASE}${path.replace(/^\//, '')}`;
 
-// 概念词链接：把正文中的「概念中文名（English）」替换为指向概念库的链接
-// 规则：长词优先；仅匹配概念名（人物名由 chip 处理）；已带链接的不重复
-const conceptLinks = concepts
-  .map((c) => {
-    const zh = c.name.replace(/（.*$/, '').trim();
-    return { zh, en: c.name, href: pageUrl(`concepts/${c.id}`) };
-  })
-  .filter((x) => x.zh.length >= 2)
-  .sort((a, b) => b.zh.length - a.zh.length);
+// 正文词链接：把「概念中文名」与「角色名/名号」替换为指向对应页面的链接。
+// 规则：长词优先；概念词优先于角色词（同名时指向概念页）；已带链接的不重复。
+const zhPart = (s) => (s || '').replace(/（.*$/, '').trim();
+
+// 干净名号：形如「中文（English）」且括号后无其他描述（排除「神盾局（S.H.I.E.L.D.）局长」这类含概念词的描述性角色）
+const isCleanAlias = (s) => /^[^（）]*（[^（）]*）$/.test((s || '').trim());
+
+const conceptTerms = concepts
+  .map((c) => ({ zh: zhPart(c.name), href: pageUrl(`concepts/${c.id}`) }))
+  .filter((x) => x.zh.length >= 2);
+
+const charTerms = characters
+  .flatMap((c) => {
+    const terms = [];
+    const name = zhPart(c.name);
+    const alias = zhPart(c.alias);
+    if (name.length >= 2) terms.push({ zh: name, href: pageUrl(`characters/${c.id}`) });
+    // 仅收录「干净名号」，避免把「九头蛇首领」「神盾局局长」这类描述误判为角色
+    if (isCleanAlias(c.alias) && alias.length >= 2) terms.push({ zh: alias, href: pageUrl(`characters/${c.id}`) });
+    return terms;
+  });
+
+// 合并：概念词优先（同名冲突时指向概念页），再按中文长度降序，保证长词优先匹配
+const linkTerms = (() => {
+  const byZh = new Map();
+  for (const t of charTerms) if (!byZh.has(t.zh)) byZh.set(t.zh, t);
+  for (const t of conceptTerms) byZh.set(t.zh, t); // 概念覆盖同名角色
+  return [...byZh.values()].sort((a, b) => b.zh.length - a.zh.length);
+})();
 
 export function linkConcepts(text) {
   if (!text) return text;
-  let out = text;
-  // 单趟扫描：从左到右找最长概念词匹配，输出时包链接
-  // 用分隔符 \u0001 \u0002 标记已替换段，防止二次命中
-  for (const { zh, en, href } of conceptLinks) {
-    const esc = zh.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    // 匹配「中文（English）」或「中文」，但排除已被 \u0001 包裹的段落
-    const re = new RegExp(`(?<![\\u0001a-zA-Z0-9])${esc}(（[A-Za-z][^）]*）)?(?![\\u0002])`, 'g');
-    out = out.replace(re, (m) => `\u0001<a class="c-link" href="${href}">${m}</a>\u0002`);
+  // 单遍扫描：在每一处只取「当前位置命中且最长的词」，连同其括号英文一起吞掉并前进。
+  // 这样绝不会在已生成的锚点内部二次匹配，可避免「雷神之锤」被拆成「雷神」+「之锤」。
+  // linkTerms 已按中文长度降序，故首个 startsWith 命中即是最长词。
+  let out = '';
+  let i = 0;
+  outer: while (i < text.length) {
+    for (const { zh, href } of linkTerms) {
+      if (!text.startsWith(zh, i)) continue;
+      // 尝试吞掉紧邻的括号英文（形式与数据一致：全角括号 + 拉丁开头）
+      let end = i + zh.length;
+      let en = '';
+      const m = /^（[A-Za-z][^）]*）/.exec(text.slice(end));
+      if (m) {
+        en = m[0];
+        end += m[0].length;
+      }
+      const enSpan = en ? `<span class="c-en">${en}</span>` : '';
+      out += `<a class="c-link" href="${href}">${zh}${enSpan}</a>`;
+      i = end;
+      continue outer;
+    }
+    out += text[i];
+    i += 1;
   }
-  // 还原分隔符
-  return out.replace(/\u0001|\u0002/g, '');
+  return out;
+}
+
+// 括号英文弱化：把正文/标题里的「（English）」或「(English)」包成辅助注音，
+// 让中文成为阅读主线（与概念库 c-en 风格一致）。已包裹的 c-en 跳过，避免二次嵌套。
+function softenParens(html) {
+  if (!html) return html;
+  const saved = [];
+  let out = html.replace(/<span class="c-en">([^<]*)<\/span>/g, (m) => {
+    saved.push(m);
+    return `\u0003${saved.length - 1}\u0004`;
+  });
+  out = out.replace(/([（(])([A-Za-z][A-Za-z0-9 ,.'&:;·\-/]*?)([）)])/g, (_m, open, inner, close) => {
+    return `<span class="c-en">${open}${inner}${close}</span>`;
+  });
+  out = out.replace(/\u0003(\d+)\u0004/g, (_m, n) => saved[Number(n)]);
+  return out;
+}
+
+// 正文富文本：先做概念链接，再弱化剩余括号英文
+export function enrichText(text) {
+  return softenParens(linkConcepts(text));
+}
+
+// 纯文本（如标题）：先转义 HTML 特殊字符，再弱化括号英文（不做概念链接）
+export function softenText(text) {
+  if (!text) return text;
+  const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return softenParens(escaped);
+}
+
+// 去掉「观众须知」条目正文开头的冗余标签前缀（框内已有加粗标签 + 框标题）
+export function cleanNote(text) {
+  if (!text) return text;
+  return text.replace(/^(观众须知·背景|人物关系|时间线衔接)[：:]\s*/, '');
 }
 
 // 人物分组顺序定义（人物墙用）

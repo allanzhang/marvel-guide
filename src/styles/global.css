@@ -50,15 +50,41 @@ img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 
-/* 正文内概念词链接（概念库互链） */
+/* 正文内词链接（概念互链 + 角色名）：与正文同色、不突兀；
+   用一层细腻的主题色下划线标示可点击，悬停时才过渡到主题红 */
 .c-link {
-  color: var(--accent);
+  color: inherit;
+  font-weight: 500;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  text-decoration-color: rgba(176, 42, 30, 0.35);
-  transition: text-decoration-color 0.15s;
+  text-decoration-color: rgba(176, 42, 30, 0.32);
+  transition: color 0.15s, text-decoration-color 0.15s;
 }
-.c-link:hover { text-decoration-color: var(--accent); }
+.c-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* 概念词后的英文注音：中文为主，英文退为辅助，降低段落里的杂糅噪声 */
+.c-link .c-en {
+  font-weight: 400;
+  font-size: 0.82em;
+  color: var(--ink-soft);
+  opacity: 0.72;
+  margin-left: 1px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* 正文/标题里被弱化的括号英文注音（softenText / enrichText 生成）：
+   与概念库 c-en 同一视觉语言，但允许自然换行避免溢出 */
+.c-en {
+  font-weight: 400;
+  font-size: 0.8em;
+  color: var(--ink-soft);
+  opacity: 0.66;
+}
 
 h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 700; line-height: 1.2; }
 
