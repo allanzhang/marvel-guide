@@ -1,0 +1,623 @@
+[
+  {
+    "id": "infinity-stones",
+    "name": "无限宝石（the Infinity Stones）",
+    "category": "gem",
+    "summary": "六颗掌控宇宙基本法则的神级宝石，集齐即可一个响指（the Snap）实现任何愿望。",
+    "definition": "无限宝石（the Infinity Stones）是漫威电影宇宙（the Marvel Cinematic Universe）中最早存在的六颗神级宝石，分别掌控空间、时间、现实、力量、心灵与灵魂六大宇宙基本法则。每一颗都拥有改写相应领域现实的恐怖力量；当六颗宝石被装入无限手套（the Infinity Gauntlet）时，持有者理论上可以为所欲为。",
+    "origin": "宝石诞生于宇宙创世之初，由宇宙大爆炸的能量凝聚而成，散落各处。它们分别以不同形态出现：空间宝石（Space Stone）曾寄宿于宇宙魔方（the Tesseract）、现实宝石（Reality Stone）即以太（the Aether）、时间宝石（Time Stone）藏于阿戈摩托之眼。灭霸（Thanos）为「平衡宇宙」而收集六颗，在《无限战争》中打响了响指（the Snap）。",
+    "appearances": [
+      "thor-2",
+      "guardians-1",
+      "avengers-1",
+      "captain-marvel-1",
+      "doctor-strange-1",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "space-stone",
+      "time-stone",
+      "reality-stone",
+      "power-stone",
+      "mind-stone",
+      "soul-stone",
+      "infinity-gauntlet"
+    ]
+  },
+  {
+    "id": "space-stone",
+    "name": "空间宝石（the Space Stone）",
+    "category": "gem",
+    "summary": "掌控空间与传送的蓝色宝石，长期以宇宙魔方（the Tesseract）形态存在。",
+    "definition": "空间宝石（the Space Stone）是六颗无限宝石（the Infinity Stones）之一，呈蓝色，掌握空间之力，可以让持有者瞬间移动到宇宙的任何角落，也能打开跨星系传送门。它的常规形态是宇宙魔方（the Tesseract）——一个能无限输出能量的立方体。",
+    "origin": "空间宝石（Space Stone）与宇宙魔方（the Tesseract）同源。二战时期被九头蛇（Hydra）窃取用于研发武器；《美队（Cap）1》结局中红骷髅（Red Skull）被它传送到沃米尔（Vormir）星；此后几经辗转，最终在《无限战争》中被灭霸（Thanos）取出装入无限手套（the Infinity Gauntlet），用于传送灭霸（Thanos）军团。",
+    "appearances": [
+      "captain-america-first-avenger",
+      "captain-marvel-1",
+      "avengers-1",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones",
+      "tesseract"
+    ],
+    "relatedChars": [
+      "red-skull"
+    ]
+  },
+  {
+    "id": "time-stone",
+    "name": "时间宝石（the Time Stone）",
+    "category": "gem",
+    "summary": "掌控时间的绿色宝石，历代由至尊法师（Sorcerer Supreme）保管。",
+    "definition": "时间宝石（the Time Stone）是六颗无限宝石（the Infinity Stones）之一，呈绿色，能操控时间——倒流、加速、循环甚至窥探未来。它在法师界以「阿戈摩托之眼」（the Eye of Agamotto）的形态存在，由卡玛泰姬（Kamar-Taj）的至尊法师（Sorcerer Supreme）世代守护。",
+    "origin": "时间宝石（Time Stone）藏于阿戈摩托之眼，古一（the Ancient One）与奇异博士（Doctor Strange）先后保管。奇异博士（Doctor Strange）用它困住多玛姆（Dormammu）谈判、窥视多元宇宙（the Multiverse）的未来，最终在《无限战争》中主动交给灭霸（Thanos）以换取托尼·斯塔克（Tony Stark）的性命。",
+    "appearances": [
+      "doctor-strange-1",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones",
+      "sorcerer-supreme",
+      "kamar-taj"
+    ],
+    "relatedChars": []
+  },
+  {
+    "id": "reality-stone",
+    "name": "现实宝石（the Reality Stone）",
+    "category": "gem",
+    "summary": "能改写现实的红色宝石，以液态以太（the Aether）形态存在。",
+    "definition": "现实宝石（the Reality Stone）是六颗无限宝石（the Infinity Stones）之一，呈红色，能扭曲和改写现实本身——让幻想成真、让物质变性。它与其他宝石不同，以液态「以太（the Aether）」（the Aether）的形态存在，会主动寄生在宿主身上。",
+    "origin": "以太（the Aether）由远古黑暗精灵（the Dark Elves）以现实宝石（Reality Stone）锻造，意图让宇宙回归黑暗。简·福斯特（Jane Foster）曾意外成为它的宿主；《雷神（Thor）2》结局后它被交给收藏家（the Collector）保管，最终在《无限战争》中被灭霸（Thanos）取得。",
+    "appearances": [
+      "thor-2",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones",
+      "reality-stone",
+      "reality-stone"
+    ]
+  },
+  {
+    "id": "power-stone",
+    "name": "力量宝石（the Power Stone）",
+    "category": "gem",
+    "summary": "蕴含毁灭之力的紫色宝石，单独触碰即可灰飞烟灭。",
+    "definition": "力量宝石（the Power Stone）是六颗无限宝石（the Infinity Stones）之一，呈紫色，蕴含纯粹的毁灭能量。它威力巨大，未经许可的凡人直接触碰会瞬间灰飞烟灭，因此常被封存在防护装置中。持有者可用它摧毁整颗星球。",
+    "origin": "力量宝石（Power Stone）藏在废弃行星莫拉格的球体封印中，被星爵（Star-Lord）盗走，随后引发银河护卫队（Guardians of the Galaxy）与指控者罗南（Ronan）的争夺。罗南（Ronan）曾短暂持有它险些摧毁山达尔星，最终在《无限战争》中落入灭霸（Thanos）之手。",
+    "appearances": [
+      "guardians-1",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones"
+    ],
+    "relatedChars": [
+      "star-lord"
+    ]
+  },
+  {
+    "id": "mind-stone",
+    "name": "心灵宝石（the Mind Stone）",
+    "category": "gem",
+    "summary": "掌控心智的黄色宝石，曾寄宿在洛基（Loki）的权杖与幻视（Vision）的额头。",
+    "definition": "心灵宝石（the Mind Stone）是六颗无限宝石（the Infinity Stones）之一，呈黄色，能操控思维、赋予智慧与意识。它曾寄宿在洛基（Loki）的权杖中（神盾局（S.H.I.E.L.D.）曾用它实验出快银（Quicksilver）与绯红女巫的能力），后被植入幻视（Vision）的额头，成为他的能量核心。",
+    "origin": "灭霸（Thanos）将心灵宝石（Mind Stone）托付给洛基（Loki）用于入侵地球。权杖在《奥创（Ultron）纪元》中被托尼·斯塔克（Tony Stark）研究，催生了奥创（Ultron）与幻视（Vision）。幻视（Vision）在《无限战争》中为阻止灭霸（Thanos），由旺达亲手将其摧毁。",
+    "appearances": [
+      "avengers-1",
+      "age-of-ultron",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones"
+    ],
+    "relatedChars": [
+      "vision",
+      "wanda-maximoff"
+    ]
+  },
+  {
+    "id": "soul-stone",
+    "name": "灵魂宝石（the Soul Stone）",
+    "category": "gem",
+    "summary": "最神秘的橙色宝石，需以挚爱之魂为代价才能获得。",
+    "definition": "灵魂宝石（the Soul Stone）是六颗无限宝石（the Infinity Stones）中最神秘的一颗，呈橙色，掌控灵魂与生命。它隐藏于沃米尔（Vormir）星（Vormir），由红骷髅（Red Skull）的化身看守。获得它的唯一条件：献祭自己挚爱之人的灵魂——这是一个不可逆转的残酷交易。",
+    "origin": "沃米尔（Vormir）星的灵魂宝石（Soul Stone）由红骷髅（Red Skull）守护。灭霸（Thanos）为得到它献祭了养女卡魔拉（Gamora）；《终局之战》中，黑寡妇（Black Widow）在沃米尔（Vormir）星为换取宝石而牺牲，鹰眼（Hawkeye）带着它离开。",
+    "appearances": [
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones"
+    ],
+    "relatedChars": [
+      "thanos",
+      "gamora"
+    ],
+    "relatedWorks": [
+      "black-widow"
+    ]
+  },
+  {
+    "id": "infinity-gauntlet",
+    "name": "无限手套（the Infinity Gauntlet）",
+    "category": "item",
+    "summary": "容纳六颗无限宝石（the Infinity Stones）的金色手套，戴上它即可打出响指（the Snap）。",
+    "definition": "无限手套（the Infinity Gauntlet）是专门为容纳六颗无限宝石（the Infinity Stones）而锻造的金色手套，由矮人王国的铸匠（如《雷神（Thor）3》中的锻造者）打造。当六颗宝石全部镶嵌时，佩戴者获得掌控宇宙的力量，只需一个响指（the Snap）即可实现愿望。",
+    "origin": "无限手套（the Infinity Gauntlet）是为灭霸（Thanos）打造的计划的一部分。灭霸（Thanos）在《无限战争》中集齐宝石并打响响指（the Snap）；《终局之战》中，托尼·斯塔克（Tony Stark）将宝石转移到自己的纳米装甲上，以自身生命为代价打出了拯救宇宙的响指（the Snap）。",
+    "appearances": [
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-stones",
+      "the-snap"
+    ],
+    "relatedChars": [
+      "thanos"
+    ]
+  },
+  {
+    "id": "tesseract",
+    "name": "宇宙魔方（the Tesseract）",
+    "category": "item",
+    "summary": "空间宝石（Space Stone）的立方体容器，无限能量的源泉。",
+    "definition": "宇宙魔方（the Tesseract）是空间宝石（Space Stone）的常规载体，一个蓝色发光的立方体。它既是无限能源——二战时期被用来研发武器——也是打开空间传送门的关键钥匙。",
+    "origin": "宇宙魔方（the Tesseract）早期被九头蛇（Hydra）用于武器研发（《美队（Cap）1》），后由神盾局（S.H.I.E.L.D.）保管。它在《复仇者联盟1》中被洛基（Loki）用来开启齐塔瑞入侵的传送门；1995年惊奇队长（Captain Marvel）吸收过它的能量。",
+    "appearances": [
+      "captain-america-first-avenger",
+      "captain-marvel-1",
+      "avengers-1",
+      "endgame"
+    ],
+    "related": [
+      "space-stone",
+      "hydra",
+      "shield"
+    ]
+  },
+  {
+    "id": "mjolnir",
+    "name": "雷神之锤（Mjolnir）",
+    "category": "item",
+    "summary": "索尔（Thor）的标志性武器，唯有「有资格」者方能举起。",
+    "definition": "雷神之锤（Mjolnir）是索尔（Thor）的标志性武器，由矮人锻造、奥丁（Odin）施加咒语：「凡持此锤者，若拥有资格，即得雷神（Thor）之力」。它不仅是武器，更是阿斯加德（Asgard）王权的象征与索尔（Thor）成长的试炼。",
+    "origin": "索尔（Thor）因傲慢被流放时失去举锤资格（《雷神（Thor）1》），后重获认可。雷神（Thor）3中神锤（Mjolnir）被海拉（Hela）捏碎，索尔（Thor）领悟无需武器的雷霆之力。碎片被简·福斯特（Jane Foster）在《雷神（Thor）4》中重铸，助她成为「神威雷神（Thor）」。",
+    "appearances": [
+      "thor-1",
+      "avengers-1",
+      "ragnarok",
+      "thor-4",
+      "endgame"
+    ],
+    "related": [],
+    "relatedChars": [
+      "thor",
+      "jane-foster"
+    ],
+    "relatedWorks": [
+      "ragnarok"
+    ]
+  },
+  {
+    "id": "vibranium",
+    "name": "振金（Vibranium）",
+    "category": "item",
+    "summary": "能吸收震动的稀有金属，瓦坎达（Wakanda）科技的心脏。",
+    "definition": "振金（Vibranium）是一种能吸收、存储和释放能量的稀有外星金属，是漫威宇宙中最珍贵的资源之一。它既造就了美国队长（Captain America）的盾牌，也是瓦坎达（Wakanda）尖端科技的根基。",
+    "origin": "振金（Vibranium）由坠落地表的陨石带来，集中在非洲瓦坎达（Wakanda）。瓦坎达（Wakanda）世代利用振金（Vibranium）发展出远超世界的科技。美国队长（Captain America）的盾牌由振金（Vibranium）与金属混合而成；《黑豹（Black Panther）2》中塔洛坎（Talokan）也以海底振金（Vibranium）为依托。",
+    "appearances": [
+      "captain-america-first-avenger",
+      "black-panther-1",
+      "civil-war",
+      "black-panther-2",
+      "infinity-war"
+    ],
+    "related": [
+      "wakanda"
+    ],
+    "relatedChars": [
+      "tchalla",
+      "steve-rogers"
+    ]
+  },
+  {
+    "id": "pym-particles",
+    "name": "皮姆粒子（Pym Particles）",
+    "category": "item",
+    "summary": "能缩小物质到亚原子尺度的革命性粒子。",
+    "definition": "皮姆粒子（Pym Particles）由汉克·皮姆（Hank Pym）发现，是能让物质缩小到亚原子尺度（乃至量子领域（Quantum Realm））的独特粒子。它是蚁人（Ant-Man）与黄蜂女（Wasp）战衣的核心科技，也是《终局之战》时间旅行的关键。",
+    "origin": "汉克·皮姆（Hank Pym）以此发明蚁人战衣（Ant-Man Suit），因担心技术被滥用而隐退多年。斯科特·朗（Scott Lang）继承战衣；《终局之战》中复仇者借助皮姆粒子（Pym Particles）进行量子时间旅行，逆转响指（the Snap）。",
+    "appearances": [
+      "ant-man-1",
+      "ant-man-and-wasp",
+      "ant-man-3",
+      "endgame"
+    ],
+    "related": [
+      "quantum-realm"
+    ],
+    "relatedChars": [
+      "hank-pym",
+      "scott-lang"
+    ]
+  },
+  {
+    "id": "ten-rings",
+    "name": "十环（the Ten Rings）",
+    "category": "item",
+    "summary": "十枚威力无穷的神秘环带，传说中的远古圣器。",
+    "definition": "十环（the Ten Rings）是十枚能赋予持有者不同超凡能力的环带，传说来自一颗坠落的彗星。它们可以延长寿命、增强力量、发射能量束。尚气（Shang-Chi）的父亲文武（Wenwu）凭借十环活了一千多年并建立了十环帮。",
+    "origin": "十环组织（the Ten Rings）是漫威宇宙最早的恐怖组织，也是《钢铁侠（Iron Man）1》中绑架托尼·斯塔克（Tony Stark）的元凶。其首领文武（Wenwu）在《尚气（Shang-Chi）与十环传奇》中登场，尚气（Shang-Chi）最终继承了十环。",
+    "appearances": [
+      "iron-man-1",
+      "shang-chi-1"
+    ],
+    "related": [],
+    "relatedChars": [
+      "shang-chi"
+    ]
+  },
+  {
+    "id": "chaos-magic",
+    "name": "混沌魔法（Chaos Magic）",
+    "category": "magic",
+    "summary": "能重塑现实的顶级魔法，旺达的独特天赋。",
+    "definition": "混沌魔法（Chaos Magic）是漫威宇宙中最强大也最危险的魔法形式之一，能操纵概率与改写现实。它是旺达·马克西莫夫（Wanda Maximoff）的独特天赋，也是她成为「绯红女巫」（the Scarlet Witch）的力量来源。",
+    "origin": "旺达在《旺达幻视（WandaVision）》中觉醒混沌魔法（Chaos Magic），凭它在西景镇（Westview）制造了一个现实扭曲的「乐园」。这股力量被黑暗之书（the Darkhold）进一步腐蚀，使她在《奇异博士（Doctor Strange）2》中走向失控。",
+    "appearances": [
+      "wandavision",
+      "doctor-strange-2",
+      "age-of-ultron"
+    ],
+    "related": [
+      "darkhold"
+    ],
+    "relatedChars": [
+      "wanda-maximoff",
+      "wanda-maximoff"
+    ]
+  },
+  {
+    "id": "darkhold",
+    "name": "黑暗之书（the Darkhold）",
+    "category": "magic",
+    "summary": "由恶魔书写的禁书，阅读者会逐渐被黑暗腐蚀。",
+    "definition": "黑暗之书（the Darkhold）是一部由远古恶魔（即西索恩 Chthon）书写、记载着所有禁忌魔法的书。它拥有自我意志，会诱惑、腐蚀阅读者，赐予力量的同时扭曲其心智。",
+    "origin": "黑暗之书散落于多个宇宙（在《奇异博士（Doctor Strange）2》中出现在旺达手中，也存在于主宇宙卡玛泰姬（Kamar-Taj）的禁书区）。旺达阅读后堕入黑暗，成为多元宇宙（the Multiverse）的威胁。",
+    "appearances": [
+      "wandavision",
+      "doctor-strange-2"
+    ],
+    "related": [
+      "chaos-magic"
+    ],
+    "relatedChars": [
+      "wanda-maximoff",
+      "wanda-maximoff"
+    ]
+  },
+  {
+    "id": "kamar-taj",
+    "name": "卡玛泰姬（Kamar-Taj）",
+    "category": "magic",
+    "summary": "地球至尊法师（Sorcerer Supreme）的修行圣地，魔法世界的总部。",
+    "definition": "卡玛泰姬（Kamar-Taj）是位于尼泊尔加德满都的魔法修行圣地，地球法师组织的总部。法师们在此学习操控魔法能量、守护地球免受多维空间威胁。至尊法师（the Sorcerer Supreme）是它的最高领袖。",
+    "origin": "卡玛泰姬（Kamar-Taj）由古一（the Ancient One）领导数百年，守护地球。奇异博士（Doctor Strange）车祸后在此拜师，最终接任至尊法师（Sorcerer Supreme）。",
+    "appearances": [
+      "doctor-strange-1",
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "sorcerer-supreme"
+    ],
+    "relatedChars": [
+      "ancient-one"
+    ]
+  },
+  {
+    "id": "sorcerer-supreme",
+    "name": "至尊法师（the Sorcerer Supreme）",
+    "category": "magic",
+    "summary": "地球魔法世界的守护者，负责抵挡多维威胁。",
+    "definition": "至尊法师（the Sorcerer Supreme）是地球法师组织的最高头衔，负责守护地球免受多维空间与多元宇宙（the Multiverse）的威胁。持有者通常保管时间宝石（Time Stone）（阿戈摩托之眼）。",
+    "origin": "古一（the Ancient One）长期担任至尊法师（Sorcerer Supreme），死后由奇异博士（Doctor Strange）继承。在多元宇宙（the Multiverse）时代，王（Wong）一度出任至尊法师（Sorcerer Supreme）。",
+    "appearances": [
+      "doctor-strange-1",
+      "infinity-war",
+      "endgame",
+      "doctor-strange-2"
+    ],
+    "related": [
+      "kamar-taj",
+      "time-stone"
+    ],
+    "relatedChars": [
+      "ancient-one"
+    ]
+  },
+  {
+    "id": "shield",
+    "name": "神盾局（S.H.I.E.L.D.）",
+    "category": "org",
+    "summary": "维护地球和平的顶级特工组织，复仇者联盟的摇篮。",
+    "definition": "神盾局（S.H.I.E.L.D.，国土战略防御攻击与后勤保障局）是维护地球安全、处理超自然威胁的全球性特工组织。尼克·弗瑞（Nick Fury）发起复仇者计划，将超级英雄集结成团队。",
+    "origin": "神盾局（S.H.I.E.L.D.）源于二战时期的战略科学预备队（S.S.R.）。《美队（Cap）2》中神盾局（S.H.I.E.L.D.）被九头蛇（Hydra）渗透而崩塌，此后由科尔森等人重建。",
+    "appearances": [
+      "iron-man-1",
+      "avengers-1",
+      "winter-soldier",
+      "agents-of-shield",
+      "captain-marvel-1"
+    ],
+    "related": [
+      "hydra"
+    ],
+    "relatedChars": [
+      "nick-fury"
+    ],
+    "relatedWorks": [
+      "avengers-1",
+      "agents-of-shield"
+    ]
+  },
+  {
+    "id": "hydra",
+    "name": "九头蛇（Hydra）",
+    "category": "org",
+    "summary": "砍掉一个头，长出两个头——深潜百年的纳粹组织。",
+    "definition": "九头蛇（Hydra）是以红骷髅（Red Skull）为首、信奉统治世界的极端组织，其信条是「砍掉一个头，长出两个头」。它表面在二战后覆灭，实则长期潜伏在神盾局（S.H.I.E.L.D.）等机构内部。",
+    "origin": "九头蛇（Hydra）诞生于纳粹德国，红骷髅（Red Skull）利用宇宙魔方（the Tesseract）研发武器。《美队（Cap）2》揭露九头蛇（Hydra）早已渗透神盾局（S.H.I.E.L.D.）高层；《奥创（Ultron）纪元》后其残余仍活跃。",
+    "appearances": [
+      "captain-america-first-avenger",
+      "winter-soldier",
+      "age-of-ultron",
+      "agents-of-shield"
+    ],
+    "related": [
+      "shield"
+    ],
+    "relatedChars": [
+      "red-skull",
+      "steve-rogers"
+    ]
+  },
+  {
+    "id": "tva",
+    "name": "时间变异管理局（the Time Variance Authority）",
+    "category": "org",
+    "summary": "守护神圣时间线（the Sacred Timeline）、消除分支的宇宙机构。",
+    "definition": "时间变异管理局（the Time Variance Authority，TVA）是维护神圣时间线（the Sacred Timeline）、防止时间线分支失控的神秘机构。他们抓捕「时间犯」、重置分支，以确保时间按「既定剧本」流动。",
+    "origin": "《洛基（Loki）》剧集揭示 TVA 由「遗留之人（He Who Remains）」（He Who Remains，康（Kang）的一个变体）创建。遗留之人（He Who Remains）死后，TVA 失去控制，时间线分支失控，多元宇宙（the Multiverse）随之开启。",
+    "appearances": [
+      "loki",
+      "ant-man-3",
+      "deadpool-3"
+    ],
+    "related": [
+      "sacred-timeline",
+      "time-branch"
+    ],
+    "relatedChars": [
+      "kang",
+      "loki"
+    ]
+  },
+  {
+    "id": "asgard",
+    "name": "阿斯加德（Asgard）",
+    "category": "org",
+    "summary": "北欧神族的黄金国度，九界（the Nine Realms）之首。",
+    "definition": "阿斯加德（Asgard）是北欧神族（以奥丁（Odin）、索尔（Thor）、洛基（Loki）为代表）的故乡，漂浮于宇宙中的黄金之城，也是九界（the Nine Realms）的中枢。",
+    "origin": "阿斯加德（Asgard）由奥丁（Odin）统治千年。《雷神（Thor）3》中诸神黄昏（Ragnarok）使其毁灭，幸存者迁往地球挪威，索尔（Thor）曾作为阿斯加德（Asgard）新王。",
+    "appearances": [
+      "thor-1",
+      "thor-2",
+      "ragnarok",
+      "infinity-war",
+      "thor-4"
+    ],
+    "related": [
+      "nine-realms"
+    ],
+    "relatedChars": [
+      "thor",
+      "loki"
+    ],
+    "relatedWorks": [
+      "ragnarok"
+    ]
+  },
+  {
+    "id": "wakanda",
+    "name": "瓦坎达（Wakanda）",
+    "category": "org",
+    "summary": "隐藏于非洲的振金（Vibranium）之国，地球上最先进的文明。",
+    "definition": "瓦坎达（Wakanda）是位于非洲东部的隐秘王国，因丰富的振金（Vibranium）矿藏而拥有远超世界的科技。它长期隐藏自身实力，由黑豹（the Black Panther）担任国王守护。",
+    "origin": "特查拉（T'Challa）在《黑豹（Black Panther）》中继承王位并决定让瓦坎达（Wakanda）走向世界。《无限战争》中瓦坎达（Wakanda）成为对抗灭霸（Thanos）的最终战场。",
+    "appearances": [
+      "black-panther-1",
+      "civil-war",
+      "infinity-war",
+      "endgame",
+      "black-panther-2"
+    ],
+    "related": [
+      "vibranium"
+    ],
+    "relatedChars": [
+      "shuri",
+      "tchalla"
+    ]
+  },
+  {
+    "id": "quantum-realm",
+    "name": "量子领域（the Quantum Realm）",
+    "category": "place",
+    "summary": "物质缩到极限后抵达的微观宇宙，时间旅行的大门。",
+    "definition": "量子领域（the Quantum Realm）是当物质缩小到亚原子尺度后抵达的神秘微观宇宙。这里的时间流速与现实完全不同，隐藏着无限的可能——它是《终局之战》时间旅行方案的理论基础。",
+    "origin": "汉克·皮姆（Hank Pym）最先探索量子领域（Quantum Realm），他的妻子珍妮特曾被困其中三十年。《蚁人（Ant-Man）2》中斯科特·朗（Scott Lang）进入量子领域（Quantum Realm）时恰逢响指（the Snap），被困五年后逃出，带来了「量子时间旅行」的灵感，促成复仇者逆转响指（the Snap）。",
+    "appearances": [
+      "ant-man-1",
+      "ant-man-and-wasp",
+      "endgame",
+      "ant-man-3"
+    ],
+    "related": [
+      "pym-particles"
+    ],
+    "relatedChars": [
+      "hank-pym",
+      "scott-lang"
+    ]
+  },
+  {
+    "id": "nine-realms",
+    "name": "九界（the Nine Realms）",
+    "category": "place",
+    "summary": "以世界树相连的九个王国，阿斯加德（Asgard）是其中之首。",
+    "definition": "九界（the Nine Realms）是北欧神话体系中以世界树（Yggdrasil）相连的九个世界，包括阿斯加德（Asgard）、中庭地球（Midgard）、约顿海姆（冰霜巨人之乡）等。阿斯加德（Asgard）通过彩虹桥（the Bifrost）往来九界（the Nine Realms）。",
+    "origin": "九界（the Nine Realms）秩序由奥丁（Odin）统治千年。宇宙魔方（the Tesseract）曾用来打开九界（the Nine Realms）间的通道（《雷神（Thor）1》）。",
+    "appearances": [
+      "thor-1",
+      "thor-2",
+      "ragnarok"
+    ],
+    "related": [
+      "asgard",
+      "nine-realms"
+    ],
+    "relatedChars": [
+      "thor"
+    ]
+  },
+  {
+    "id": "sakaar",
+    "name": "萨卡星球（Sakaar）",
+    "category": "place",
+    "summary": "宇宙垃圾场的边缘世界，角斗士的角斗场。",
+    "definition": "萨卡星球（Sakaar）是宇宙边缘一颗由「垃圾」构成的世界，时空扭曲让万物在此汇聚。这里由暴君宗师（the Grandmaster）统治，以角斗士竞技为乐。",
+    "origin": "《雷神（Thor）3》中索尔（Thor）流落萨卡（Sakaar），在角斗场与浩克（Hulk）重逢；女武神（Valkyrie）也曾在此隐居。",
+    "appearances": [
+      "ragnarok"
+    ],
+    "related": [],
+    "relatedChars": [
+      "thor",
+      "valkyrie"
+    ],
+    "relatedWorks": [
+      "thor-4"
+    ]
+  },
+  {
+    "id": "sacred-timeline",
+    "name": "神圣时间线（the Sacred Timeline）",
+    "category": "place",
+    "summary": "被 TVA 维护的唯一「正统」时间线。",
+    "definition": "神圣时间线（the Sacred Timeline）是时间变异管理局（TVA）守护的唯一时间线，被视为宇宙应当遵循的「既定剧本」。任何偏离都会产生分支，分支会被 TVA 重置。",
+    "origin": "神圣时间线（the Sacred Timeline）由「遗留之人（He Who Remains）」（He Who Remains，康（Kang）的变体）在时间尽头裁剪而成。他的死亡使时间线分支失控，多元宇宙（the Multiverse）正式开启。",
+    "appearances": [
+      "loki",
+      "ant-man-3"
+    ],
+    "related": [
+      "tva",
+      "time-branch"
+    ],
+    "relatedChars": [
+      "kang",
+      "loki"
+    ]
+  },
+  {
+    "id": "time-branch",
+    "name": "时间线分支（Time Branches）",
+    "category": "concept",
+    "summary": "时间线偏离既定轨道后产生的平行现实。",
+    "definition": "时间线分支（Time Branches）是神圣时间线（the Sacred Timeline）发生偏离时产生的平行时间线。每个分支都会衍生出一个平行宇宙，当分支失控蔓延时，多元宇宙（the Multiverse）随之诞生。",
+    "origin": "《洛基（Loki）》中，洛基（Loki）与希尔维揭开 TVA 真相，遗留之人（He Who Remains）死后分支失控；《蜘蛛侠（Spider-Man）：英雄无归》《奇异博士（Doctor Strange）2》中，多元宇宙（the Multiverse）的裂缝直接威胁现实。",
+    "appearances": [
+      "loki",
+      "spider-man-no-way-home",
+      "doctor-strange-2",
+      "ant-man-3"
+    ],
+    "related": [
+      "sacred-timeline",
+      "multiverse",
+      "tva"
+    ]
+  },
+  {
+    "id": "the-snap",
+    "name": "响指（the Snap）",
+    "category": "concept",
+    "summary": "灭霸（Thanos）戴上无限手套（the Infinity Gauntlet）的一击，宇宙一半生命灰飞烟灭。",
+    "definition": "响指（the Snap）指灭霸（Thanos）集齐六颗无限宝石（the Infinity Stones）后，戴上无限手套（the Infinity Gauntlet）打响手指的瞬间——它实现了「消灭宇宙一半生命」的愿望，半数生物化为灰烬。",
+    "origin": "《无限战争》结尾灭霸（Thanos）打响响指（the Snap），宇宙陷入「烁灭」五年。五年后，幸存的复仇者通过时间旅行集齐宝石，由浩克（Hulk）与托尼·斯塔克（Tony Stark）先后打出逆转的响指（the Snap），被消失的生命得以回归。",
+    "appearances": [
+      "infinity-war",
+      "endgame"
+    ],
+    "related": [
+      "infinity-gauntlet",
+      "infinity-stones"
+    ],
+    "relatedChars": [
+      "thanos"
+    ]
+  },
+  {
+    "id": "sokovia-accords",
+    "name": "索科维亚（Sokovia）协议（the Sokovia Accords）",
+    "category": "concept",
+    "summary": "监管超能力者的国际法案，复仇者内战的导火索。",
+    "definition": "索科维亚（Sokovia）协议（the Sokovia Accords）是《奥创（Ultron）纪元》索科维亚（Sokovia）灾难后，由联合国推动签署的国际法案，要求所有超能力者向政府登记、接受监管，未经批准不得私自行动。",
+    "origin": "协议签署引发复仇者分裂：钢铁侠（Iron Man）赞成监管，美国队长（Captain America）反对，最终演变成《美队（Cap）3：内战》的英雄大战。",
+    "appearances": [
+      "age-of-ultron",
+      "civil-war",
+      "black-widow"
+    ],
+    "related": [],
+    "relatedChars": [
+      "steve-rogers"
+    ],
+    "relatedWorks": [
+      "avengers-1"
+    ]
+  },
+  {
+    "id": "multiverse",
+    "name": "多元宇宙（the Multiverse）",
+    "category": "concept",
+    "summary": "无数平行宇宙的总和，漫威宇宙的终极舞台。",
+    "definition": "多元宇宙（the Multiverse）指无数个平行宇宙（以及其中的时间线分支、不同现实）的总和。每个宇宙都有自己版本的英雄与反派，彼此偶尔通过裂缝或特殊手段交汇。",
+    "origin": "多元宇宙（the Multiverse）在《洛基（Loki）》中正式开启，并在《蜘蛛侠（Spider-Man）：英雄无归》（三版蜘蛛侠（Spider-Man）同框）、《奇异博士（Doctor Strange）2》、《蚁人（Ant-Man）3》（康（Kang））中不断展开，最终导向《复仇者：秘密战争》的多元宇宙（the Multiverse）终局。",
+    "appearances": [
+      "loki",
+      "spider-man-no-way-home",
+      "doctor-strange-2",
+      "ant-man-3",
+      "deadpool-3",
+      "avengers-secret-wars"
+    ],
+    "related": [
+      "time-branch",
+      "sacred-timeline"
+    ],
+    "relatedChars": [
+      "kang"
+    ]
+  }
+]

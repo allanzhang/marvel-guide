@@ -542,7 +542,7 @@
       "valkyrie",
       "shuri"
     ],
-    "crossUniverseNote": "终局之战是无限传奇的收官之作，也是初代复仇者中钢铁侠（Iron Man）与黑寡妇（Black Widow）的谢幕。此后漫威电影宇宙（the Marvel Cinematic Universe）进入多元宇宙（the Multiverse）时代。",
+    "crossUniverseNote": "终局之战是无限传奇（the Infinity Saga）的收官之作，也是初代复仇者中钢铁侠（Iron Man）与黑寡妇（Black Widow）的谢幕。此后漫威电影宇宙（the Marvel Cinematic Universe）进入多元宇宙（the Multiverse）时代。",
     "quotes": [
       "Whatever it takes.",
       "I am Iron Man.",
@@ -640,7 +640,7 @@
       "stephen-strange",
       "wanda-maximoff"
     ],
-    "crossUniverseNote": "本片正式展开多元宇宙（the Multiverse）叙事。绯红女巫（Scarlet Witch）的失控源于剧集《旺达幻视（Vision）》（WandaVision）中失去孩子与爱人的创伤，建议先看该剧再观影，更理解她的动机。",
+    "crossUniverseNote": "本片正式展开多元宇宙（the Multiverse）叙事。绯红女巫（Scarlet Witch）的失控源于剧集《旺达幻视（WandaVision）》（WandaVision）中失去孩子与爱人的创伤，建议先看该剧再观影，更理解她的动机。",
     "quotes": [
       "I can't change what happened. I can only try to protect it.",
       "The dreams are not real. They're versions of you from other universes."
@@ -737,13 +737,13 @@
     "eraId": "era-multiverse",
     "isMajorEvent": false,
     "order": 1,
-    "summary": "卡罗尔·丹佛斯（Carol Danvers）与两个「继承者」产生了神秘的光速纠缠——少女莫妮卡·兰博（Monica Rambeau）和惊奇少女卡玛拉·汗（Kamala Khan）。只要她们同时使用超能力，就会彼此互换位置。为了阻止一场跨星系的战争，三人被迫组队协作，也在并肩作战中理解了彼此。本片串联起《惊奇队长（Captain Marvel）》《惊奇女士（Ms. Marvel）》与《旺达幻视（Vision）》三条人物线。",
+    "summary": "卡罗尔·丹佛斯（Carol Danvers）与两个「继承者」产生了神秘的光速纠缠——少女莫妮卡·兰博（Monica Rambeau）和惊奇少女卡玛拉·汗（Kamala Khan）。只要她们同时使用超能力，就会彼此互换位置。为了阻止一场跨星系的战争，三人被迫组队协作，也在并肩作战中理解了彼此。本片串联起《惊奇队长（Captain Marvel）》《惊奇女士（Ms. Marvel）》与《旺达幻视（WandaVision）》三条人物线。",
     "characters": [
       "carol-danvers",
       "kamala-khan",
       "monica-rambeau"
     ],
-    "crossUniverseNote": "莫妮卡·兰博（Monica Rambeau）在《惊奇队长（Captain Marvel）》中是孩童，成年后于剧集《旺达幻视（Vision）》（WandaVision）中觉醒能力；卡玛拉·汗（Kamala Khan）则在剧集《惊奇女士（Ms. Marvel）》（Ms. Marvel）中登场。建议先看两部剧集更连贯。",
+    "crossUniverseNote": "莫妮卡·兰博（Monica Rambeau）在《惊奇队长（Captain Marvel）》中是孩童，成年后于剧集《旺达幻视（WandaVision）》（WandaVision）中觉醒能力；卡玛拉·汗（Kamala Khan）则在剧集《惊奇女士（Ms. Marvel）》（Ms. Marvel）中登场。建议先看两部剧集更连贯。",
     "quotes": [
       "Higher, further, faster, baby!"
     ]

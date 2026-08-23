@@ -348,7 +348,7 @@
     "isCoreSix": false,
     "universe": "sacred",
     "who": "来自泰坦星（Titan）的外星军阀，崇尚“消灭宇宙一半生命以维持平衡”的偏执理念。他强大、冷静、坚定，认为自己是在做救世的伟业而非杀戮。",
-    "role": "无限传奇最大的反派。他收集六颗无限宝石（the Infinity Stones）、打响指（the Snap）消灭宇宙一半生命，是驱动整个复仇者联盟集结与反击的核心威胁。",
+    "role": "无限传奇（the Infinity Saga）最大的反派。他收集六颗无限宝石（the Infinity Stones）、打响指（the Snap）消灭宇宙一半生命，是驱动整个复仇者联盟集结与反击的核心威胁。",
     "storyline": "多年间游走宇宙收集无限宝石（the Infinity Stones），2018年集齐宝石打响响指（the Snap），2019年（故事2023年）复仇者通过时间旅行逆转响指（the Snap）后，在终局决战中被钢铁侠（Iron Man）牺牲自己消灭。",
     "movies": [
       "infinity-war",
@@ -364,7 +364,7 @@
     "isCoreSix": false,
     "universe": "sacred",
     "who": "奥丁（Odin）收养的冰霜巨人，索尔（Thor）的弟弟。他狡黠、诡诈、渴望证明自己，在善与恶之间反复摇摆，既是复仇者的敌人，也曾是并肩作战的伙伴。",
-    "role": "漫威电影宇宙（the Marvel Cinematic Universe）早期的核心反派，也是极具人气的悲情角色。他的死与重生贯穿了无限传奇，成为多元宇宙（the Multiverse）时代的一条重要线索。",
+    "role": "漫威电影宇宙（the Marvel Cinematic Universe）早期的核心反派，也是极具人气的悲情角色。他的死与重生贯穿了无限传奇（the Infinity Saga），成为多元宇宙（the Multiverse）时代的一条重要线索。",
     "storyline": "2011年挑起与地球的战争，2012年纽约大战入侵地球，2013年与索尔（Thor）并肩对抗黑暗精灵（the Dark Elves），2017年诸神黄昏中与索尔（Thor）并肩迎战海拉（Hela）、最后牺牲自己，2018年无限战争中为保护索尔（Thor）而被灭霸（Thanos）杀害，2023年终局之战时间旅行中出现另一个洛基（Loki）。",
     "movies": [
       "thor-1",
@@ -791,9 +791,9 @@
     "group": "solo",
     "isCoreSix": false,
     "universe": "sacred",
-    "who": "《惊奇队长（Captain Marvel）》中卡罗尔挚友玛丽亚·兰博的女儿，成年后成为神剑局特工。她多次穿越旺达幻视（Vision）的魔法结界，身体被重构，获得了操控电磁光谱（Photon）的能力。",
-    "role": "连接《惊奇队长（Captain Marvel）》与《旺达幻视（Vision）》两条线的关键人物，也是《惊奇队长（Captain Marvel）2》的光速纠缠核心之一。",
-    "storyline": "1995年以孩童身份登场，2023年在《旺达幻视（Vision）》中觉醒光谱（Photon）能力，2026年与惊奇队长（Captain Marvel）、卡玛拉组队。",
+    "who": "《惊奇队长（Captain Marvel）》中卡罗尔挚友玛丽亚·兰博的女儿，成年后成为神剑局特工。她多次穿越旺达幻视（WandaVision）的魔法结界，身体被重构，获得了操控电磁光谱（Photon）的能力。",
+    "role": "连接《惊奇队长（Captain Marvel）》与《旺达幻视（WandaVision）》两条线的关键人物，也是《惊奇队长（Captain Marvel）2》的光速纠缠核心之一。",
+    "storyline": "1995年以孩童身份登场，2023年在《旺达幻视（WandaVision）》中觉醒光谱（Photon）能力，2026年与惊奇队长（Captain Marvel）、卡玛拉组队。",
     "movies": [
       "the-marvels"
     ],

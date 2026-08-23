@@ -11,7 +11,7 @@ import Base from '../layouts/Base.astro';
     </div>
   </section>
 
-  <!-- 双入口 -->
+  <!-- 三入口 -->
   <section class="entries container-wide">
     <a class="entry-card" href="/timeline">
       <span class="entry-card__num">01</span>
@@ -24,6 +24,12 @@ import Base from '../layouts/Base.astro';
       <h2 class="entry-card__title">人物墙 <span class="en">Characters</span></h2>
       <p class="entry-card__desc">从复仇者（the Avengers）核心到反派堂，认识每个重要角色——他是谁、他的作用、他的故事线。</p>
       <span class="entry-card__go">认识人物 →</span>
+    </a>
+    <a class="entry-card" href="/concepts">
+      <span class="entry-card__num">03</span>
+      <h2 class="entry-card__title">概念库 <span class="en">Concepts</span></h2>
+      <p class="entry-card__desc">无限宝石、魔法体系、神秘组织与重要事件——看懂剧情前，先弄懂这些设定名词。</p>
+      <span class="entry-card__go">查词条 →</span>
     </a>
   </section>
 
@@ -91,7 +97,7 @@ import Base from '../layouts/Base.astro';
   }
 
   /* ===== 双入口 ===== */
-  .entries { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding: 96px 48px 0; }
+  .entries { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; padding: 96px 48px 0; }
   .entry-card {
     border-radius: var(--radius);
     padding: 44px 40px 40px;

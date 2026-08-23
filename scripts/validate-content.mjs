@@ -6,6 +6,7 @@ const eras = read('eras.json');
 const movies = read('movies.json');
 const characters = read('characters.json');
 const series = read('series.json');
+const concepts = read('concepts.json');
 const errors = [];
 const err = (msg) => errors.push(msg);
 
@@ -22,6 +23,7 @@ checkUnique(eras, 'era');
 checkUnique(movies, 'movie');
 checkUnique(characters, 'character');
 checkUnique(series, 'series');
+checkUnique(concepts, 'concept');
 
 // 必填字段
 for (const m of movies) {
@@ -34,6 +36,13 @@ for (const s of series) {
     if (s[f] === undefined) err(`series ${s.id} 缺字段 ${f}`);
   }
   if (s.type !== 'series') err(`series ${s.id} type 应为 'series'`);
+}
+const conceptCats = new Set(['gem', 'item', 'magic', 'org', 'place', 'concept']);
+for (const c of concepts) {
+  for (const f of ['name', 'category', 'summary', 'definition', 'origin']) {
+    if (c[f] === undefined) err(`concept ${c.id} 缺字段 ${f}`);
+  }
+  if (!conceptCats.has(c.category)) err(`concept ${c.id} 非法分类: ${c.category}`);
 }
 for (const c of characters) {
   for (const f of ['name', 'alias', 'tagline', 'group', 'who', 'role', 'storyline']) {
@@ -51,7 +60,9 @@ for (const e of eras) {
 const eraIds = new Set(eras.map(e => e.id));
 const movieIds = new Set(movies.map(m => m.id));
 const seriesIds = new Set(series.map(s => s.id));
+const workIds = new Set([...movieIds, ...seriesIds]);
 const charIds = new Set(characters.map(c => c.id));
+const conceptIds = new Set(concepts.map(c => c.id));
 const groupAllowed = new Set(['avengers-core', 'solo', 'guardians', 'mystic', 'villains', 'support']);
 
 for (const m of movies) {
@@ -89,9 +100,18 @@ for (const s of series) {
     if (c && !(c.series || []).includes(s.id)) err(`双向链接断裂: ${c.id}.series 缺少 ${s.id}`);
   }
 }
+// 概念引用：appearances 必须指向存在的作品；related 必须指向存在的概念
+for (const c of concepts) {
+  for (const wid of (c.appearances || [])) {
+    if (!workIds.has(wid)) err(`concept ${c.id} 引用了不存在的作品: ${wid}`);
+  }
+  for (const rid of (c.related || [])) {
+    if (!conceptIds.has(rid)) err(`concept ${c.id} 引用了不存在的概念: ${rid}`);
+  }
+}
 
 if (errors.length) {
   console.error(`✗ 校验失败，${errors.length} 个问题:\n` + errors.map(e => '  - ' + e).join('\n'));
   process.exit(1);
 }
-console.log(`✓ 校验通过: ${eras.length} 篇章 / ${movies.length} 部电影 / ${series.length} 部剧集 / ${characters.length} 个人物，全部引用有效`);
+console.log(`✓ 校验通过: ${eras.length} 篇章 / ${movies.length} 部电影 / ${series.length} 部剧集 / ${characters.length} 个人物 / ${concepts.length} 个概念，全部引用有效`);

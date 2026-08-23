@@ -82,6 +82,8 @@ const PLACES = {
   '漫威电影宇宙': 'the Marvel Cinematic Universe', '多元宇宙': 'the Multiverse',
   '时间变异管理局': 'the Time Variance Authority', '神圣时间线': 'the Sacred Timeline',
   '西景镇': 'Westview', '昆仑': 'K\'un-Lun', '地狱厨房': 'Hell\'s Kitchen', '手合会': 'the Hand',
+  '旺达幻视': 'WandaVision', '猎鹰与冬兵': 'The Falcon and the Winter Soldier',
+  '无限传奇': 'the Infinity Saga',
 };
 
 // 道具 / 武器 / 概念
@@ -152,6 +154,7 @@ const FIELD_PLAN = [
   { file: 'characters.json', fields: ['name','alias','who','role','storyline'], terms: toTerms({ ...PEOPLE, ...PLACES, ...ITEMS }) },
   { file: 'series.json', fields: ['title'], terms: toTerms(MOVIE_TITLES) },
   { file: 'series.json', fields: ['summary','backgroundNote','relationsNote','timelineNote'], terms: toTerms({ ...MOVIE_TITLES, ...PEOPLE, ...PLACES, ...ITEMS }) },
+  { file: 'concepts.json', fields: ['name','summary','definition','origin'], terms: toTerms({ ...PEOPLE, ...PLACES, ...ITEMS }) },
 ];
 
 for (const plan of FIELD_PLAN){

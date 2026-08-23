@@ -7,9 +7,22 @@ export const eras = read('eras.json');
 export const movies = read('movies.json');
 export const series = read('series.json');
 export const characters = read('characters.json');
+export const concepts = read('concepts.json');
 
 export const charById = Object.fromEntries(characters.map((c) => [c.id, c]));
 export const eraById = Object.fromEntries(eras.map((e) => [e.id, e]));
+export const conceptById = Object.fromEntries(concepts.map((c) => [c.id, c]));
+export const workById = Object.fromEntries([...movies, ...series].map((w) => [w.id, w]));
+
+// 概念分类定义（概念库用）
+export const conceptOrder = [
+  ['gem', '无限宝石', 'The Infinity Stones'],
+  ['item', '力量与物品', 'Power & Artifacts'],
+  ['magic', '魔法体系', 'The Mystic Arts'],
+  ['org', '组织与势力', 'Organizations'],
+  ['place', '地点与领域', 'Places & Realms'],
+  ['concept', '概念与事件', 'Concepts & Events'],
+];
 
 export const sortedEras = [...eras].sort((a, b) => a.startYear - b.startYear);
 export const sortedMovies = [...movies].sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));

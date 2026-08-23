@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import { concepts, conceptById, charById, workById } from '../../lib/data.mjs';
+
+export async function getStaticPaths() {
+  return concepts.map((c) => ({ params: { id: c.id }, props: { c } }));
+}
+
+const { c } = Astro.props;
+const relatedConcepts = (c.related || []).map((id) => conceptById[id]).filter(Boolean);
+const relatedChars = (c.relatedChars || []).map((id) => charById[id]).filter(Boolean);
+const appearances = (c.appearances || []).map((id) => workById[id]).filter(Boolean);
+---
+
+<Base title={`${c.name} · 漫威概念库`} description={`${c.summary}——${c.name}的来源、背景与在漫威电影宇宙中的出现。`}>
+  <section class="cd-hero full-bleed">
+    <div class="cd-hero__shade"></div>
+    <div class="cd-hero__inner">
+      <p class="cd-hero__kicker">概念词条 · LORE</p>
+      <h1 class="cd-hero__name">{c.name}</h1>
+      <p class="cd-hero__summary">{c.summary}</p>
+    </div>
+  </section>
+
+  <div class="container-text cd-body">
+    <section class="cd-section">
+      <h2 class="cd-section__title">它是什么</h2>
+      <p class="cd-section__text">{c.definition}</p>
+    </section>
+
+    <section class="cd-section">
+      <h2 class="cd-section__title">来源与背景</h2>
+      <p class="cd-section__text">{c.origin}</p>
+    </section>
+  </div>
+
+  {appearances.length > 0 && (
+    <section class="cd-works">
+      <div class="container-wide">
+        <h2 class="cd-works__title">出现在</h2>
+        <div class="cd-works__chips">
+          {appearances.map((w) => (
+            <a class="chip" href={`/timeline#${w.id}`}>{w.title}</a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {(relatedConcepts.length > 0 || relatedChars.length > 0) && (
+    <section class="cd-related">
+      <div class="container-wide">
+        <h2 class="cd-related__title">相关词条</h2>
+        <div class="cd-related__grid">
+          {relatedConcepts.map((r) => (
+            <a class="rlink" href={`/concepts/${r.id}`}>
+              <span class="rlink__tag">概念</span>{r.name}
+            </a>
+          ))}
+          {relatedChars.map((r) => (
+            <a class="rlink" href={`/characters/${r.id}`}>
+              <span class="rlink__tag">人物</span>{r.alias || r.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .cd-hero {
+    position: relative;
+    height: 52vh;
+    min-height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    background:
+      radial-gradient(90% 80% at 85% 10%, rgba(176, 42, 30, 0.3) 0%, transparent 55%),
+      linear-gradient(160deg, #1b1c1f 0%, #2f2f38 100%);
+  }
+  .cd-hero__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%); }
+  .cd-hero__inner { position: relative; width: 100%; max-width: var(--w-wide); margin: 0 auto; padding: 0 48px 56px; }
+  .cd-hero__kicker {
+    font-size: var(--fs-tiny);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 14px;
+  }
+  .cd-hero__name { font-size: clamp(36px, 5vw, 72px); line-height: 1.15; }
+  .cd-hero__summary { margin-top: 14px; font-size: var(--fs-sub); opacity: 0.9; max-width: 640px; }
+
+  .cd-body { padding-top: 64px; }
+  .cd-section { margin-bottom: 48px; }
+  .cd-section__title { font-size: var(--fs-section); color: var(--accent); margin-bottom: 14px; }
+  .cd-section__text { font-size: var(--fs-body); line-height: 2.1; color: var(--ink); }
+
+  .cd-works { margin-top: 48px; }
+  .cd-works__title { font-size: var(--fs-section); margin-bottom: 8px; }
+  .cd-works__chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .chip {
+    font-size: var(--fs-small);
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    background: #fff;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  .cd-related { margin-top: 56px; }
+  .cd-related__title { font-size: var(--fs-section); margin-bottom: 20px; }
+  .cd-related__grid { display: flex; flex-wrap: wrap; gap: 12px; }
+  .rlink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--fs-small);
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .rlink:hover { border-color: var(--accent); color: var(--accent); }
+  .rlink__tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: 0 6px;
+  }
+
+  @media (max-width: 820px) {
+    .cd-hero { height: 44vh; }
+    .cd-hero__inner { padding: 0 20px 36px; }
+  }
+</style>
