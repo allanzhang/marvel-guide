@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries } from '../../lib/data.mjs';
+import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries, linkConcepts } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return characters.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -42,17 +42,17 @@ const universeEn = {
   <div class="container-text pd-body">
     <section class="pd-section">
       <h2 class="pd-section__title">他是谁</h2>
-      <p class="pd-section__text">{c.who}</p>
+      <p class="pd-section__text" set:html={linkConcepts(c.who)}></p>
     </section>
 
     <section class="pd-section">
       <h2 class="pd-section__title">他的作用</h2>
-      <p class="pd-section__text">{c.role}</p>
+      <p class="pd-section__text" set:html={linkConcepts(c.role)}></p>
     </section>
 
     <section class="pd-section">
       <h2 class="pd-section__title">他的故事线</h2>
-      <p class="pd-section__text">{c.storyline}</p>
+      <p class="pd-section__text" set:html={linkConcepts(c.storyline)}></p>
     </section>
   </div>
 

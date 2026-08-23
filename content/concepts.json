@@ -619,5 +619,235 @@
     "relatedChars": [
       "kang"
     ]
+  },
+  {
+    "id": "skrulls",
+    "name": "斯克鲁人（the Skrulls）",
+    "category": "concept",
+    "summary": "能任意变形的外星种族，漫威宇宙最著名的变色龙间谍。",
+    "definition": "斯克鲁人（the Skrulls）是来自外星、天生拥有变形能力的外星种族。他们可以完美复制任何人的外貌、声音甚至记忆，是漫威宇宙最可怕的间谍与渗透者。",
+    "origin": "《惊奇队长（Captain Marvel）》中斯克鲁人是以难民形象登场、被克里人追杀的受害者；《秘密入侵》剧集揭示部分斯克鲁人早已潜入地球高层，策划无声入侵。这一「先受害后威胁」的反转是理解两部作品的关键。",
+    "appearances": [
+      "captain-marvel-1",
+      "secret-invasion",
+      "far-from-home"
+    ],
+    "related": [
+      "kree"
+    ],
+    "relatedChars": [
+      "nick-fury",
+      "carol-danvers",
+      "nick-fury"
+    ]
+  },
+  {
+    "id": "kree",
+    "name": "克里人（the Kree）",
+    "category": "concept",
+    "summary": "崇尚武力与征服的蓝色外星种族，漫威宇宙的老牌帝国。",
+    "definition": "克里人（the Kree）是漫威宇宙的老牌外星帝国种族，崇尚武力、科学至上。他们与斯克鲁人（the Skrulls）是千年宿敌，也曾多次试图染指地球。",
+    "origin": "《惊奇队长（Captain Marvel）》中克里人视卡罗尔·丹佛斯（Carol Danvers）为战士并试图利用她；指控者罗南（Ronan the Accuser）是克里人的战争领袖。克里人的「至高智慧」文明设定贯穿宇宙线。",
+    "appearances": [
+      "captain-marvel-1",
+      "guardians-1"
+    ],
+    "related": [
+      "skrulls"
+    ],
+    "relatedChars": [
+      "carol-danvers"
+    ]
+  },
+  {
+    "id": "chitauri",
+    "name": "齐塔瑞（the Chitauri）",
+    "category": "concept",
+    "summary": "听从灭霸（Thanos）号令的外星军团，纽约大战的入侵者。",
+    "definition": "齐塔瑞（the Chitauri）是漫威宇宙中听命于灭霸（Thanos）的外星军团。他们通过空间传送门涌入地球，是《复仇者联盟1》纽约大战的入侵主力，以飞行器和权杖武器著称。",
+    "origin": "洛基（Loki）在《复仇者联盟1》中用宇宙魔方（the Tesseract）打开虫洞，引来齐塔瑞大军（the Chitauri）入侵纽约。此后他们的残骸成了《蜘蛛侠（Spider-Man）：英雄归来》中秃鹫（Vulture）捡拾外星科技的来源。",
+    "appearances": [
+      "avengers-1",
+      "spider-man-homecoming"
+    ],
+    "related": [
+      "tesseract",
+      "space-stone"
+    ],
+    "relatedChars": [
+      "loki",
+      "vulture",
+      "thanos"
+    ]
+  },
+  {
+    "id": "eternals-race",
+    "name": "永恒族（the Eternals）",
+    "category": "concept",
+    "summary": "天神族（Celestials）创造的超级战士，在地球潜伏了七千年。",
+    "definition": "永恒族（the Eternals）是天神族（the Celestials）在远古时期创造的超级战士种族，拥有近乎永生的寿命与超凡能力，在地球上隐藏了七千年。他们的使命表面是保护人类免受变异族（the Deviants）侵害，实则另有目的。",
+    "origin": "《永恒族（Eternals）》揭示：永恒族（Eternals）存在的真正目的，是等待地球孕育出新的天神族（Celestials）——他们的「保护人类」只是掩护。当真相揭露，永恒族（Eternals）面临「服从造物主还是守护人类」的抉择。",
+    "appearances": [
+      "eternals-1"
+    ],
+    "related": [
+      "celestials",
+      "deviants"
+    ],
+    "relatedChars": [
+      "ikaris",
+      "sersi"
+    ]
+  },
+  {
+    "id": "celestials",
+    "name": "天神族（the Celestials）",
+    "category": "concept",
+    "summary": "宇宙最早最强大的古老种族，连灭霸（Thanos）都忌惮的存在。",
+    "definition": "天神族（the Celestials）是漫威宇宙最古老、最强大的种族之一，体型如山岳般巨大，早在宇宙诞生之初就存在。他们视宇宙为「孵化场」，会在有生命的星球核心孕育新的天神。",
+    "origin": "《永恒族（Eternals）》中天神族（Celestials）是永恒族（Eternals）的造物主——地球内部正孕育着一个新的天神，它的诞生将毁灭地球。这一设定把宇宙尺度拉到了复仇者电影从未触及的高度。",
+    "appearances": [
+      "eternals-1"
+    ],
+    "related": [
+      "eternals-race",
+      "deviants"
+    ],
+    "relatedChars": [
+      "ikaris",
+      "sersi"
+    ]
+  },
+  {
+    "id": "deviants",
+    "name": "变异族（the Deviants）",
+    "category": "concept",
+    "summary": "天神族（Celestials）创造的失败造物，永恒族（Eternals）的宿敌。",
+    "definition": "变异族（the Deviants）是天神族（the Celestials）创造的另一个种族——因基因缺陷而被视为「失败品」，面目狰狞、拥有吸收基因的进化能力。他们与永恒族（the Eternals）是天生的宿敌。",
+    "origin": "永恒族（Eternals）的官方使命就是消灭变异族（Deviants）、保护人类。但《永恒族（Eternals）》揭示，变异族（Deviants）的威胁只是表象，真正的危机是地球内部孕育的天神。",
+    "appearances": [
+      "eternals-1"
+    ],
+    "related": [
+      "eternals-race",
+      "celestials"
+    ],
+    "relatedChars": [
+      "ikaris"
+    ]
+  },
+  {
+    "id": "mutants",
+    "name": "变种人（the Mutants）",
+    "category": "concept",
+    "summary": "天生携带 X 基因的超能力人类，漫威最庞大的英雄群体。",
+    "definition": "变种人（the Mutants）是天生的超能力人类——他们从出生就携带 X 基因，觉醒后获得千奇百怪的能力。与「意外获得能力」的复仇者不同，变种人从出生起就注定与众不同。",
+    "origin": "变种人原属福克斯（Fox）的 X 战警宇宙，在迪士尼收购福克斯后逐渐并入 MCU。死侍（Deadpool）与金刚狼（Wolverine）是首批进入 MCU 的变种人角色，未来更多变种人将陆续登场。",
+    "appearances": [
+      "deadpool-3",
+      "doctor-strange-2"
+    ],
+    "related": [],
+    "relatedChars": [
+      "deadpool",
+      "wolverine",
+      "deadpool",
+      "wolverine"
+    ]
+  },
+  {
+    "id": "inhumans",
+    "name": "异人族（the Inhumans）",
+    "category": "concept",
+    "summary": "经由泰瑞根迷雾觉醒的人类分支，拥有种族天赋。",
+    "definition": "异人族（the Inhumans）是人类的一个远古分支，体内携带异人基因。接触泰瑞根迷雾（Terrigen Mist）后，他们才会觉醒各自独特的能力——但觉醒过程伴随着基因重塑的巨大风险。",
+    "origin": "异人族在《神盾局（S.H.I.E.L.D.）特工》中占据重要篇幅，主角之一斯凯（Daisy Johnson）就是觉醒后的异人。这一设定与变种人（the Mutants）相似但起源不同。",
+    "appearances": [
+      "agents-of-shield"
+    ],
+    "related": [
+      "mutants"
+    ],
+    "relatedChars": [
+      "daisy-johnson"
+    ]
+  },
+  {
+    "id": "frost-giants",
+    "name": "冰霜巨人（the Frost Giants）",
+    "category": "concept",
+    "summary": "约顿海姆的寒冰种族，洛基（Loki）的血脉源头。",
+    "definition": "冰霜巨人（the Frost Giants）是九界（the Nine Realms）中约顿海姆的土著种族，身高体壮、以寒冰之力为武器。他们曾与阿斯加德（Asgard）世代交战。",
+    "origin": "《雷神（Thor）1》中冰霜巨人首领劳菲是洛基（Loki）的生父——洛基（Loki）其实是冰霜巨人之子，被奥丁（Odin）收养。这一身世秘密是整个雷神（Thor）线的重要转折。",
+    "appearances": [
+      "thor-1",
+      "thor-2"
+    ],
+    "related": [
+      "nine-realms"
+    ],
+    "relatedChars": [
+      "loki",
+      "odin",
+      "loki"
+    ]
+  },
+  {
+    "id": "dark-elves",
+    "name": "黑暗精灵（the Dark Elves）",
+    "category": "concept",
+    "summary": "以现实宝石（Reality Stone）以太（the Aether）为武器的远古黑暗种族。",
+    "definition": "黑暗精灵（the Dark Elves）是阿斯加德（Asgard）最古老的敌人之一，崇拜黑暗、厌恶光明。他们的首领玛勒基斯曾用现实宝石（Reality Stone）「以太（the Aether）」试图让宇宙回归永恒的黑暗。",
+    "origin": "《雷神（Thor）2》中黑暗精灵（the Dark Elves）借九界（the Nine Realms）连成一线（天体汇聚）之机复活，夺取以太（the Aether）。雷神（Thor）索尔（Thor）与洛基（Loki）被迫联手对抗，最终以太（the Aether）被交给收藏家保管。",
+    "appearances": [
+      "thor-2"
+    ],
+    "related": [
+      "reality-stone",
+      "aether",
+      "nine-realms"
+    ],
+    "relatedChars": [
+      "thor",
+      "loki"
+    ]
+  },
+  {
+    "id": "aether",
+    "name": "以太（the Aether）",
+    "category": "concept",
+    "summary": "现实宝石（Reality Stone）的液态形态，能改写现实本身的危险物质。",
+    "definition": "以太（the Aether）是现实宝石（the Reality Stone）的液态存在形式，一种会主动寄生宿主的红色流体。它能改写现实、让幻想成真，是六颗无限宝石（the Infinity Stones）中最难以掌控的一颗。",
+    "origin": "以太（the Aether）由远古黑暗精灵（the Dark Elves）以现实宝石（Reality Stone）锻造。《雷神（Thor）2》中简·福斯特（Jane Foster）意外成为宿主，《雷神（Thor）2》结局后它被交给收藏家（the Collector），最终在《无限战争》中被灭霸（Thanos）取得。",
+    "appearances": [
+      "thor-2",
+      "infinity-war"
+    ],
+    "related": [
+      "reality-stone",
+      "dark-elves",
+      "infinity-stones"
+    ],
+    "relatedChars": [
+      "jane-foster"
+    ]
+  },
+  {
+    "id": "zehoberei",
+    "name": "泽侯贝里人（the Zehoberei）",
+    "category": "concept",
+    "summary": "卡魔拉（Gamora）与星云的母族，被灭霸（Thanos）灭族的银河种族。",
+    "definition": "泽侯贝里人（the Zehoberei）是银河系（the galaxy）中的一个种族，卡魔拉（Gamora）与星云（Nebula）的母族。她们在孩童时被灭霸（Thanos）带走训练成杀手，母星则被灭霸（Thanos）毁灭。",
+    "origin": "卡魔拉（Gamora）被称为「宇宙最危险的女人」正是因为从小被灭霸（Thanos）培养为刺客。她与灭霸（Thanos）之间复杂的「父女」关系，是无限战争中最关键的牺牲线。",
+    "appearances": [
+      "guardians-1",
+      "infinity-war"
+    ],
+    "related": [],
+    "relatedChars": [
+      "gamora",
+      "thanos",
+      "gamora"
+    ]
   }
 ]

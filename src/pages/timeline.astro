@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { sortedEras, sortedEntries, characters, charById, posterUrl, isSeries } from '../lib/data.mjs';
+import { sortedEras, sortedEntries, characters, charById, posterUrl, isSeries, linkConcepts } from '../lib/data.mjs';
 
 const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
 ---
@@ -55,13 +55,13 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                     {isSeries(m) && <span class="entry__series-badge">剧集 · {m.seasons}</span>}
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
-                    <p class="entry__summary">{m.summary}</p>
+                    <p class="entry__summary" set:html={linkConcepts(m.summary)}>
                     {m.backgroundNote && (
                       <div class="entry__know">
                         <span class="entry__know-label">观众须知 · Viewer's Guide</span>
-                        <p class="entry__know-item"><b>背景</b>{m.backgroundNote}</p>
-                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b>{m.relationsNote}</p>}
-                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b>{m.timelineNote}</p>}
+                        <p class="entry__know-item"><b>背景</b><span set:html={linkConcepts(m.backgroundNote)}></span></p>
+                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b><span set:html={linkConcepts(m.relationsNote)}></span></p>}
+                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b><span set:html={linkConcepts(m.timelineNote)}></span></p>}
                       </div>
                     )}
                     {m.quotes && m.quotes.length > 0 && (
@@ -89,13 +89,13 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                     {isSeries(m) && <span class="entry__series-badge">剧集 · {m.seasons}</span>}
                     <h3 class="entry__title">{m.title}</h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
-                    <p class="entry__summary">{m.summary}</p>
+                    <p class="entry__summary" set:html={linkConcepts(m.summary)}>
                     {m.backgroundNote && (
                       <div class="entry__know">
                         <span class="entry__know-label">观众须知 · Viewer's Guide</span>
-                        <p class="entry__know-item"><b>背景</b>{m.backgroundNote}</p>
-                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b>{m.relationsNote}</p>}
-                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b>{m.timelineNote}</p>}
+                        <p class="entry__know-item"><b>背景</b><span set:html={linkConcepts(m.backgroundNote)}></span></p>
+                        {m.relationsNote && <p class="entry__know-item"><b>人物关系</b><span set:html={linkConcepts(m.relationsNote)}></span></p>}
+                        {m.timelineNote && <p class="entry__know-item"><b>时间线衔接</b><span set:html={linkConcepts(m.timelineNote)}></span></p>}
                       </div>
                     )}
                     {m.quotes && m.quotes.length > 0 && (

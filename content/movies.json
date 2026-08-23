@@ -118,7 +118,10 @@
     "characters": [
       "thor",
       "loki",
-      "jane-foster"
+      "jane-foster",
+      "odin",
+      "frigga",
+      "heimdall"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -144,7 +147,8 @@
       "natasha-romanoff",
       "clint-barton",
       "loki",
-      "nick-fury"
+      "nick-fury",
+      "coulson"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -166,7 +170,9 @@
     "characters": [
       "thor",
       "loki",
-      "jane-foster"
+      "jane-foster",
+      "odin",
+      "frigga"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -233,7 +239,9 @@
       "gamora",
       "drax",
       "rocket",
-      "groot"
+      "groot",
+      "yondu",
+      "nebula"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -256,7 +264,10 @@
       "gamora",
       "drax",
       "rocket",
-      "groot"
+      "groot",
+      "yondu",
+      "nebula",
+      "mantis"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -394,7 +405,8 @@
     "summary": "经过内战后，蜘蛛侠（Spider-Man）彼得·帕克（Peter Parker）被托尼·斯塔克（Tony Stark）收为学徒，却始终渴望证明自己。他一边应对高中生活，一边追查利用外星科技贩卖武器的秃鹫（Vulture）。这部电影让彼得明白，成为英雄不在于战衣，而在于责任。",
     "characters": [
       "peter-parker",
-      "tony-stark"
+      "tony-stark",
+      "vulture"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -415,7 +427,9 @@
     "characters": [
       "stephen-strange",
       "ancient-one",
-      "wong"
+      "wong",
+      "dormammu",
+      "kaecilius"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -437,7 +451,10 @@
       "thor",
       "loki",
       "bruce-banner",
-      "valkyrie"
+      "valkyrie",
+      "odin",
+      "heimdall",
+      "surtur"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -496,7 +513,10 @@
       "red-skull",
       "sam-wilson",
       "wong",
-      "shuri"
+      "shuri",
+      "nebula",
+      "mantis",
+      "heimdall"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -540,7 +560,9 @@
       "scott-lang",
       "wong",
       "valkyrie",
-      "shuri"
+      "shuri",
+      "nebula",
+      "mantis"
     ],
     "crossUniverseNote": "终局之战是无限传奇（the Infinity Saga）的收官之作，也是初代复仇者中钢铁侠（Iron Man）与黑寡妇（Black Widow）的谢幕。此后漫威电影宇宙（the Marvel Cinematic Universe）进入多元宇宙（the Multiverse）时代。",
     "quotes": [
@@ -580,7 +602,8 @@
     "order": 1,
     "summary": "隐姓埋名的青年尚气（Shang-Chi）在旧金山过着普通生活，却被卷入父亲文武（Wenwu）的十环帮往事。文武（Wenwu）是活了千年的传奇武者，手握十枚威力无穷的十环，他试图召唤早已去世的妻子——却误入了神秘村落塔罗的结界，惊动了传说中的神龙。尚气（Shang-Chi）必须在父亲的执念与保护塔罗之间做出抉择，最终真正继承十环的力量。本片首次将神秘的十环组织（Ten Rings）带回主线——它正是当年绑架托尼·斯塔克（Tony Stark）的组织。",
     "characters": [
-      "shang-chi"
+      "shang-chi",
+      "wenwu"
     ],
     "crossUniverseNote": "",
     "quotes": [
@@ -638,7 +661,8 @@
     "summary": "英雄无归留下的多元宇宙（the Multiverse）裂缝引来了新的危机。来自另一宇宙的少女阿美莉卡·查韦斯（America Chavez）拥有穿越多元宇宙（the Multiverse）的能力，成为各方争夺的目标。奇异博士（Doctor Strange）在追查中惊觉，真正操控这一切的竟是曾经并肩作战的旺达——她被黑暗之书（Darkhold）腐蚀，化身绯红女巫（Scarlet Witch），试图夺取阿美莉卡的力量去往另一个宇宙与自己的孩子团聚。奇异博士（Doctor Strange）不得不直面自己最黑暗的另一面，在多元宇宙（the Multiverse）的疯狂中守护现实。",
     "characters": [
       "stephen-strange",
-      "wanda-maximoff"
+      "wanda-maximoff",
+      "america-chavez"
     ],
     "crossUniverseNote": "本片正式展开多元宇宙（the Multiverse）叙事。绯红女巫（Scarlet Witch）的失控源于剧集《旺达幻视（WandaVision）》（WandaVision）中失去孩子与爱人的创伤，建议先看该剧再观影，更理解她的动机。",
     "quotes": [
@@ -661,7 +685,7 @@
       "jane-foster",
       "valkyrie"
     ],
-    "crossUniverseNote": "",
+    "crossUniverseNote": "观众须知·衔接：简·福斯特（Jane Foster）能举起雷神之锤（Mjolnir），是因为雷神（Thor）3中神锤（Mjolnir）碎片与她产生的共鸣——她因此成为「神威雷神（Thor）」。建议先看《雷神（Thor）1-3》理解索尔（Thor）与简的感情线，以及格尔（Gorr）为何憎恨神明。",
     "quotes": [
       "I need you to be what I never could be: a god worth loving."
     ]
@@ -678,7 +702,8 @@
     "summary": "特查拉（T'Challa）国王骤然离世后，瓦坎达（Wakanda）在悲痛中面对新的威胁——隐藏在海底的古老国度塔洛坎（Talokan）浮出水面。塔洛坎（Talokan）之王纳摩（Namor）以振金（Vibranium）为筹码向世界宣战，瓦坎达（Wakanda）则在苏睿（Shuri）的带领下艰难接过黑豹（Black Panther）的衣钵。本片既是对逝者的深情告别，也是瓦坎达（Wakanda）走向世界、传承意志的新篇章。",
     "characters": [
       "shuri",
-      "tchalla"
+      "tchalla",
+      "namor"
     ],
     "crossUniverseNote": "本片是查德维克·博斯曼（Chadwick Boseman）去世后的传承之作，黑豹（Black Panther）的衣钵在片中正式传给苏睿（Shuri）。",
     "quotes": [
@@ -782,7 +807,7 @@
       "sam-wilson",
       "general-ross"
     ],
-    "crossUniverseNote": "",
+    "crossUniverseNote": "观众须知·衔接：山姆·威尔逊（Sam Wilson）在《复仇者联盟4：终局之战（Avengers: Endgame）》结尾接过美国队长（Captain America）的盾牌，并在剧集《猎鹰与冬兵（The Falcon and the Winter Soldier）》中正式确立「以信念而非血清成为美队（Cap）」的身份。建议先看该剧集，再理解本片中他作为新任美队（Cap）的立场。",
     "quotes": [
       "I'm not Steve Rogers. But that doesn't mean I can't be Captain America."
     ]

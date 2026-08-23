@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { concepts, conceptById, charById, workById } from '../../lib/data.mjs';
+import { concepts, conceptById, charById, workById, linkConcepts } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return concepts.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -25,12 +25,12 @@ const appearances = (c.appearances || []).map((id) => workById[id]).filter(Boole
   <div class="container-text cd-body">
     <section class="cd-section">
       <h2 class="cd-section__title">它是什么</h2>
-      <p class="cd-section__text">{c.definition}</p>
+      <p class="cd-section__text" set:html={linkConcepts(c.definition)}></p>
     </section>
 
     <section class="cd-section">
       <h2 class="cd-section__title">来源与背景</h2>
-      <p class="cd-section__text">{c.origin}</p>
+      <p class="cd-section__text" set:html={linkConcepts(c.origin)}></p>
     </section>
   </div>
 

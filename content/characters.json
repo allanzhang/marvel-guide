@@ -860,5 +860,292 @@
     "movies": [
       "fantastic-four-1"
     ]
+  },
+  {
+    "id": "odin",
+    "name": "奥丁（Odin）",
+    "alias": "众神之父",
+    "tagline": "阿斯加德之王",
+    "group": "support",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "阿斯加德（Asgard）的统治者、九界（the Nine Realms）的守护者、索尔（Thor）与洛基（Loki）的父亲。他历经无数战争统一九界（the Nine Realms），以智慧和威严统治千年，却在暮年面临子女相争的悲剧。",
+    "role": "雷神（Thor）线的灵魂人物。他既是索尔（Thor）成长的严父，也是洛基（Loki）身世之谜的源头——收养冰霜巨人之子、放逐长女海拉（Hela），他的每一个选择都深刻影响着阿斯加德（Asgard）的命运。",
+    "storyline": "2011年放逐傲慢的索尔（Thor）到地球历练，2017年在《雷神（Thor）3》开头于挪威安然离世，其死亡解除了对长女海拉（Hela）的封印，间接导致阿斯加德（Asgard）的毁灭。",
+    "movies": [
+      "thor-1",
+      "thor-2",
+      "ragnarok"
+    ],
+    "series": []
+  },
+  {
+    "id": "coulson",
+    "name": "菲尔·科尔森（Phil Coulson）",
+    "alias": "科尔森特工",
+    "tagline": "神盾局忠臣",
+    "group": "support",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "神盾局（S.H.I.E.L.D.）的资深特工，美国队长（Captain America）的铁杆粉丝，在《复仇者联盟1》中被洛基（Loki）杀死，后被秘密复活。他温和、可靠，是神盾局（S.H.I.E.L.D.）的精神支柱。",
+    "role": "连接电影与《神盾局（S.H.I.E.L.D.）特工》剧集的关键人物。他的复活与成长贯穿了神盾局（S.H.I.E.L.D.）从覆灭到重建的全过程。",
+    "storyline": "2012年在纽约大战中被洛基（Loki）所杀，被神盾局（S.H.I.E.L.D.）秘密复活后组建精英小队，带领特工团队走过七季，见证神盾局（S.H.I.E.L.D.）的覆灭与重建。",
+    "movies": [
+      "avengers-1"
+    ],
+    "series": [
+      "agents-of-shield"
+    ]
+  },
+  {
+    "id": "namor",
+    "name": "纳摩（Namor）",
+    "alias": "海底之王",
+    "tagline": "塔洛坎之王",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "隐藏于海底的古老国度塔洛坎（Talokan）的统治者，脚下生有双翼、力大无穷。他守护着自己的子民，对地表世界怀有深深的警惕。",
+    "role": "《黑豹（Black Panther）2》的核心反派。他以振金（Vibranium）为筹码向世界宣战，与瓦坎达（Wakanda）的冲突本质是「两个被世界遗忘的文明如何自处」的碰撞。",
+    "storyline": "2025年在《黑豹（Black Panther）2》中浮出水面，与瓦坎达（Wakanda）对抗，最终达成脆弱的停战。",
+    "movies": [
+      "black-panther-2"
+    ],
+    "series": []
+  },
+  {
+    "id": "dormammu",
+    "name": "多玛姆（Dormammu）",
+    "alias": "黑暗维度主宰",
+    "tagline": "黑暗维度的领主",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "multi",
+    "who": "黑暗维度（the Dark Dimension）的统治者，一个纯粹以能量形态存在的古老存在。他渴求吞并所有维度，是法师们最恐惧的威胁。",
+    "role": "《奇异博士（Doctor Strange）1》的反派。他的威胁让奇异博士（Doctor Strange）领悟到时间宝石（the Time Stone）的真正用法——用无限循环的时间困住多玛姆。",
+    "storyline": "2016年试图吞噬地球所在的维度，被奇异博士（Doctor Strange）用时间宝石（Time Stone）困在时间循环中，最终被迫妥协退走。",
+    "movies": [
+      "doctor-strange-1"
+    ],
+    "series": []
+  },
+  {
+    "id": "yondu",
+    "name": "勇度（Yondu Udonta）",
+    "alias": "掠夺者首领",
+    "tagline": "星爵的养父",
+    "group": "guardians",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "太空掠夺者的首领，用口哨操控飞箭的高手。他外表凶悍、唯利是图，却在心里把星爵（Star-Lord）当作自己的儿子。",
+    "role": "银河护卫队的情感核心。他的牺牲是《银护2》最催泪的时刻，也揭示了他才是星爵（Star-Lord）真正的「爸爸」。",
+    "storyline": "2014年掳走幼年星爵（Star-Lord）并抚养他长大，2014年（银护2）为救星爵（Star-Lord）在太空牺牲，临终说出「他或许是你父亲，但我才是你爸爸」。",
+    "movies": [
+      "guardians-1",
+      "guardians-2"
+    ],
+    "series": []
+  },
+  {
+    "id": "nebula",
+    "name": "星云（Nebula）",
+    "alias": "机械复仇者",
+    "tagline": "灭霸的养女",
+    "group": "guardians",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "灭霸（Thanos）的养女，被改造成机械改造人。她与卡魔拉（Gamora）是姐妹也是对手，冷酷外表下藏着对「输给姐姐」的不甘与对自由的渴望。",
+    "role": "银河护卫队的一员，也是《终局之战》时间劫持计划的关键——她来自过去的记忆成为找到灭霸（Thanos）的关键线索。",
+    "storyline": "2014年加入银河护卫队，2018年无限战争中被灭霸（Thanos）俘虏，2023年终局之战中成为逆转响指（the Snap）的关键人物，与复仇者并肩作战。",
+    "movies": [
+      "guardians-1",
+      "guardians-2",
+      "infinity-war",
+      "endgame"
+    ],
+    "series": []
+  },
+  {
+    "id": "mantis",
+    "name": "螳螂女（Mantis）",
+    "alias": "共情者",
+    "tagline": "银河护卫队成员",
+    "group": "guardians",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "拥有共情能力的银河护卫队成员，能感知并影响他人的情绪。她天真、善良，因触角外貌而常被误解，却是团队最温柔的存在。",
+    "role": "银河护卫队的情绪调和剂。她在《银护2》中与天神伊戈（Ego）的父子关系线中起到关键作用。",
+    "storyline": "2014年（银护2）加入银河护卫队，帮助星爵（Star-Lord）对抗生父伊戈（Ego），此后随队参与无限战争与终局之战。",
+    "movies": [
+      "guardians-2",
+      "infinity-war",
+      "endgame"
+    ],
+    "series": []
+  },
+  {
+    "id": "frigga",
+    "name": "弗丽嘉（Frigga）",
+    "alias": "众神之母",
+    "tagline": "阿斯加德王后",
+    "group": "support",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "阿斯加德（Asgard）王后、索尔（Thor）的生母、洛基（Loki）的养母。她温柔而智慧，是唯一真正理解洛基（Loki）、平等爱着两个儿子的人。",
+    "role": "雷神（Thor）线的情感支柱。她的死是洛基（Loki）与索尔（Thor）关系的重要转折，也让洛基（Loki）真正感受到被爱。",
+    "storyline": "2011年（雷神（Thor）1）劝说奥丁（Odin）不要放逐索尔（Thor），2013年（雷神（Thor）2）为保护简·福斯特（Jane Foster）被黑暗精灵（the Dark Elves）所杀，2013年（雷神（Thor）2）临终前与洛基（Loki）和解。",
+    "movies": [
+      "thor-1",
+      "thor-2"
+    ],
+    "series": []
+  },
+  {
+    "id": "heimdall",
+    "name": "海姆达尔（Heimdall）",
+    "alias": "彩虹桥守护者",
+    "tagline": "九界守望者",
+    "group": "support",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "彩虹桥（the Bifrost）的守护者、全知之眼的主人。他能看见九界（the Nine Realms）的一切，是阿斯加德（Asgard）最忠诚的守望者。",
+    "role": "阿斯加德（Asgard）的防线。他的牺牲为阿斯加德（Asgard）幸存者争取了时间，也把最后一批子民托付给了索尔（Thor）。",
+    "storyline": "2011年（雷神（Thor）1）起守护彩虹桥，2017年（雷神（Thor）3）随阿斯加德（Asgard）毁灭而流亡，2018年（无限战争）被灭霸（Thanos）所杀，牺牲前将海姆达尔之力传给了浩克（Hulk）。",
+    "movies": [
+      "thor-1",
+      "ragnarok",
+      "infinity-war"
+    ],
+    "series": []
+  },
+  {
+    "id": "kingpin",
+    "name": "威尔逊·菲斯克（Wilson Fisk）",
+    "alias": "金并",
+    "tagline": "地狱厨房的皇帝",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "地狱厨房（Hell's Kitchen）的犯罪皇帝，以合法商人身份掩盖罪行。他体魄惊人、心狠手辣，却对爱人有极致的温柔——一个复杂到令人着迷的反派。",
+    "role": "夜魔侠（Daredevil）的宿敌，也是 Netflix 街头英雄线最重要的反派。他已确认进入 MCU 主宇宙。",
+    "storyline": "2015年（夜魔侠）与马特·默多克展开长期对抗，2017年（捍卫者）后势力延续，此后出现在《鹰眼（Hawkeye）》剧集中，正式进入 MCU 主时间线。",
+    "movies": [],
+    "series": [
+      "daredevil",
+      "defenders",
+      "hawkeye"
+    ]
+  },
+  {
+    "id": "kaecilius",
+    "name": "卡西留斯（Kaecilius）",
+    "alias": "叛徒法师",
+    "tagline": "多玛姆的信徒",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "曾是一名卡玛泰姬（Kamar-Taj）法师，因不满古一（Ancient One）「只守不攻」的理念而叛逃，成为多玛姆（Dormammu）的信徒，渴望用黑暗维度毁灭一切。",
+    "role": "《奇异博士（Doctor Strange）1》的主要反派，他的叛变是奇异博士（Doctor Strange）走上法师之路的契机。",
+    "storyline": "2016年窃取卡玛泰姬（Kamar-Taj）禁书、召唤多玛姆降临，最终被奇异博士（Doctor Strange）困在时间循环中，随多玛姆一同离开。",
+    "movies": [
+      "doctor-strange-1"
+    ],
+    "series": []
+  },
+  {
+    "id": "surtur",
+    "name": "苏尔特尔（Surtur）",
+    "alias": "火之巨人",
+    "tagline": "诸神黄昏的执行者",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "穆斯贝尔海姆的火之巨人，预言中注定毁灭阿斯加德（Asgard）的存在。他手持暮光之剑，是「诸神黄昏（Ragnarok）」的化身。",
+    "role": "《雷神（Thor）3》的「工具性反派」——索尔（Thor）主动唤醒苏尔特尔，用诸神黄昏的火焰毁灭阿斯加德（Asgard），以击败海拉（Hela）。",
+    "storyline": "2017年（雷神（Thor）3）被索尔（Thor）唤醒，与海拉（Hela）同归于尽，以火焰吞噬了阿斯加德（Asgard）。",
+    "movies": [
+      "ragnarok"
+    ],
+    "series": []
+  },
+  {
+    "id": "america-chavez",
+    "name": "阿美莉卡·查韦斯（America Chavez）",
+    "alias": "多元宇宙（the Multiverse）少女",
+    "tagline": "穿越星形传送门",
+    "group": "solo",
+    "isCoreSix": false,
+    "universe": "multi",
+    "who": "来自另一宇宙的少女，能用星形传送门在多元宇宙（the Multiverse）间穿梭。她热情、勇敢，是多元宇宙（the Multiverse）时代的新生代英雄。",
+    "role": "《奇异博士（Doctor Strange）2》的关键角色——她穿越多元宇宙（the Multiverse）的能力成为绯红女巫（Scarlet Witch）争夺的目标，也引领奇异博士（Doctor Strange）直面自己的黑暗面。",
+    "storyline": "2025年（奇异博士（Doctor Strange）2）在多元宇宙（the Multiverse）中穿梭，与奇异博士（Doctor Strange）并肩对抗绯红女巫，最终留在主宇宙接受法师训练。",
+    "movies": [
+      "doctor-strange-2"
+    ],
+    "series": []
+  },
+  {
+    "id": "wenwu",
+    "name": "文武（Wenwu）",
+    "alias": "十环帮主",
+    "tagline": "十环的持有者",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "活了上千年的传奇武者，十环（the Ten Rings）的持有者，尚气（Shang-Chi）的父亲。他冷酷无情，却对亡妻有着近乎执念的爱。",
+    "role": "《尚气（Shang-Chi）》的核心反派，也是十环组织（the Ten Rings）的首领——正是《钢铁侠（Iron Man）1》中绑架托尼·斯塔克（Tony Stark）的组织。",
+    "storyline": "千年前获得十环，建立十环帮，2024年（尚气（Shang-Chi））为寻找亡妻误入塔罗结界，最终与儿子尚气（Shang-Chi）和解、牺牲自己阻止黑暗吞噬。",
+    "movies": [
+      "shang-chi-1"
+    ],
+    "series": []
+  },
+  {
+    "id": "kate-bishop",
+    "name": "凯特·毕肖普（Kate Bishop）",
+    "alias": "二代鹰眼（Hawkeye）",
+    "tagline": "弓箭手新秀",
+    "group": "solo",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "富家千金出身的射箭天才，鹰眼（Hawkeye）的头号粉丝。她聪慧、果断、带着富家女的潇洒，在圣诞危机中证明了自己配得上鹰眼（Hawkeye）的衣钵。",
+    "role": "《鹰眼（Hawkeye）》剧集的核心人物，新一代鹰眼（Hawkeye）的继承者，也是 MCU 新生代英雄的重要成员。",
+    "storyline": "2024年（鹰眼（Hawkeye））在圣诞夜与克林特·巴顿（Clint Barton）组队，揭开「浪人」套装背后的阴谋，正式接过鹰眼（Hawkeye）的弓箭。",
+    "movies": [],
+    "series": [
+      "hawkeye"
+    ]
+  },
+  {
+    "id": "vulture",
+    "name": "亚德里安·图姆斯（Adrian Toomes）",
+    "alias": "秃鹫（Vulture）",
+    "tagline": "外星科技的拾荒者",
+    "group": "villains",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "纽约皇后区的普通工人，纽约大战后靠捡拾齐塔瑞（the Chitauri）残骸走私外星科技发家。他既是蜘蛛侠（Spider-Man）的宿敌，也是一个为了家人铤而走险的普通人。",
+    "role": "《蜘蛛侠（Spider-Man）：英雄归来》的反派。他让彼得·帕克（Peter Parker）第一次明白：真正的英雄不是靠战衣，而是靠选择。",
+    "storyline": "2016年（英雄归来）利用外星科技走私军火，与蜘蛛侠（Spider-Man）对抗，最终被捕入狱；在《莫比亚斯》片尾彩蛋中出狱重出江湖。",
+    "movies": [
+      "spider-man-homecoming"
+    ],
+    "series": []
+  },
+  {
+    "id": "daisy-johnson",
+    "name": "黛西·约翰逊（Daisy Johnson）",
+    "alias": "震波女",
+    "tagline": "异人族震波女",
+    "group": "support",
+    "isCoreSix": false,
+    "universe": "sacred",
+    "who": "《神盾局（S.H.I.E.L.D.）特工》核心人物，从黑客斯凯（Skye）成长为异人族（the Inhumans）觉醒者「震波女」。她能用振动能力引发地震级破坏，是神盾局（S.H.I.E.L.D.）最强的特工之一。",
+    "role": "神盾局（S.H.I.E.L.D.）的重建核心。她的成长贯穿了《神盾局（S.H.I.E.L.D.）特工》七季，也代表了异人族在 MCU 的呈现。",
+    "storyline": "2013年（神盾局（S.H.I.E.L.D.）特工）作为黑客登场，2015年觉醒异人能力成为震波女，此后带领神盾局（S.H.I.E.L.D.）走过七季的风雨。",
+    "movies": [],
+    "series": [
+      "agents-of-shield"
+    ]
   }
 ]
