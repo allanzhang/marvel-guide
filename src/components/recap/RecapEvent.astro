@@ -38,10 +38,10 @@ const conceptThreads = event.conceptThreads.map((thread) => ({
     <h4>人物变化</h4>
     <div class="recap-change-list">
       {characterChanges.map((change) => (
-        <a class="recap-change" href={pageUrl(`characters/${change.id}`)}>
-          <span class="recap-change__name" set:html={softenText(change.name)}></span>
+        <div class="recap-change">
+          <a class="recap-change__name" href={pageUrl(`characters/${change.id}`)} set:html={softenText(change.name)}></a>
           <span class="recap-change__text" set:html={enrichText(change.summary)}></span>
-        </a>
+        </div>
       ))}
     </div>
   </section>
@@ -50,10 +50,10 @@ const conceptThreads = event.conceptThreads.map((thread) => ({
     <h4>概念与伏笔</h4>
     <div class="recap-change-list">
       {conceptThreads.map((thread) => (
-        <a class="recap-change" href={pageUrl(`concepts/${thread.id}`)}>
-          <span class="recap-change__name" set:html={softenText(thread.name)}></span>
+        <div class="recap-change">
+          <a class="recap-change__name" href={pageUrl(`concepts/${thread.id}`)} set:html={softenText(thread.name)}></a>
           <span class="recap-change__text" set:html={enrichText(thread.summary)}></span>
-        </a>
+        </div>
       ))}
     </div>
   </section>

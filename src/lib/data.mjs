@@ -54,12 +54,17 @@ export const pageUrl = (path) => `${BASE}${path.replace(/^\//, '')}`;
 // 正文词链接：把「概念中文名」与「角色名/名号」替换为指向对应页面的链接。
 // 规则：长词优先；概念词优先于角色词（同名时指向概念页）；已带链接的不重复。
 const zhPart = (s) => (s || '').replace(/（.*$/, '').trim();
+// 提取全角括号内的英文注音（用于给链接补上统一的中文（English）样式）
+const enPart = (s) => {
+  const m = /（([A-Za-z][^（）]*)）/.exec(s || '');
+  return m ? m[1] : '';
+};
 
 // 干净名号：形如「中文（English）」且括号后无其他描述（排除「神盾局（S.H.I.E.L.D.）局长」这类含概念词的描述性角色）
 const isCleanAlias = (s) => /^[^（）]*（[^（）]*）$/.test((s || '').trim());
 
 const conceptTerms = concepts
-  .map((c) => ({ zh: zhPart(c.name), href: pageUrl(`concepts/${c.id}`) }))
+  .map((c) => ({ zh: zhPart(c.name), en: enPart(c.name), href: pageUrl(`concepts/${c.id}`) }))
   .filter((x) => x.zh.length >= 2);
 
 const charTerms = characters
@@ -67,9 +72,9 @@ const charTerms = characters
     const terms = [];
     const name = zhPart(c.name);
     const alias = zhPart(c.alias);
-    if (name.length >= 2) terms.push({ zh: name, href: pageUrl(`characters/${c.id}`) });
+    if (name.length >= 2) terms.push({ zh: name, en: enPart(c.name), href: pageUrl(`characters/${c.id}`) });
     // 仅收录「干净名号」，避免把「九头蛇首领」「神盾局局长」这类描述误判为角色
-    if (isCleanAlias(c.alias) && alias.length >= 2) terms.push({ zh: alias, href: pageUrl(`characters/${c.id}`) });
+    if (isCleanAlias(c.alias) && alias.length >= 2) terms.push({ zh: alias, en: enPart(c.alias), href: pageUrl(`characters/${c.id}`) });
     return terms;
   });
 
@@ -89,17 +94,24 @@ export function linkConcepts(text) {
   let out = '';
   let i = 0;
   outer: while (i < text.length) {
-    for (const { zh, href } of linkTerms) {
+    for (const { zh, en, href } of linkTerms) {
       if (!text.startsWith(zh, i)) continue;
       // 尝试吞掉紧邻的括号英文（形式与数据一致：全角括号 + 拉丁开头）
       let end = i + zh.length;
-      let en = '';
       const m = /^（[A-Za-z][^）]*）/.exec(text.slice(end));
-      if (m) {
-        en = m[0];
-        end += m[0].length;
-      }
-      const enSpan = en ? `<span class="c-en">${en}</span>` : '';
+      if (m) end += m[0].length;
+      // 术语（含紧邻英文注音）后紧跟 ASCII 数字/字母：视为更长专名的一部分
+      // （如作品续集名「惊奇队长2」「雷神（Thor）2」「美国队长（Captain America）4」）。
+      // 此处不切割，避免把续集名拆成「角色名+数字」。直接放弃本位置的链接
+      // （较短的候选词同样属于该专名内部），回落到逐字输出。
+      const next = text[end];
+      if (next && /[0-9A-Za-z]/.test(next)) break;
+      // 优先用词条自带英文注音，保证全站链接统一为「中文（English）」；
+      // 词条无英文时回退到原文紧邻的括号英文。
+      // 统一为「（English）」形式，与卡片/标题里 softenText 生成的注音一致。
+      // en 为纯英文需补全角括号；m[0] 已含括号则直接复用。
+      const enText = en ? `（${en}）` : (m && m[0]) || '';
+      const enSpan = enText ? `<span class="c-en">${enText}</span>` : '';
       out += `<a class="c-link" href="${href}">${zh}${enSpan}</a>`;
       i = end;
       continue outer;

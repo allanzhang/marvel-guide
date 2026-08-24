@@ -395,8 +395,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 700; line-height: 
 }
 .recap-change {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr);
-  gap: 16px;
+  gap: 4px;
   padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -409,6 +408,12 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 700; line-height: 
 .recap-change__name {
   font-weight: 700;
   color: var(--ink);
+  line-height: 1.5;
+}
+.recap-change__name:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .recap-change__text {
   color: var(--ink-soft);
@@ -565,7 +570,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 700; line-height: 
   .recap-upcoming { grid-template-columns: 1fr; }
   .recap-toc__grid { grid-template-columns: 1fr; }
   .recap-event { padding: 24px 18px; border-left-width: 4px; }
-  .recap-change { grid-template-columns: 1fr; gap: 6px; }
+  .recap-change { gap: 6px; }
   .recap-work-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
   .recap-person { max-width: 100%; }
 }
