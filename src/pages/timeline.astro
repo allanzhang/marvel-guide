@@ -3,6 +3,11 @@ import Base from '../layouts/Base.astro';
 import { sortedEras, sortedEntries, characters, charById, posterUrl, workBackdropUrl, isSeries, enrichText, softenText, cleanNote, pageUrl } from '../lib/data.mjs';
 
 const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
+const priorityMeta = {
+  'must-watch': { label: '必看', en: 'MUST WATCH' },
+  recommended: { label: '推荐观看', en: 'RECOMMENDED' },
+  optional: { label: '可以跳过', en: 'OPTIONAL' },
+};
 ---
 
 <Base title="时间线 · 漫威电影世界图鉴" description="漫威电影宇宙剧情时间线：从二战到多元宇宙时代，按故事顺序排列的电影与剧集全览，每部附剧情导读与经典台词。">
@@ -40,6 +45,15 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
               <h2 class="era-hero__title">{era.heroTitle}</h2>
               <p class="era-hero__years">{era.years}</p>
               <p class="era-hero__intro">{era.intro}</p>
+              {era.coreGoal && (
+                <div class="era-goal">
+                  <span class="era-goal__index">CORE</span>
+                  <div class="era-goal__body">
+                    <b>本篇核心任务</b>
+                    <p>{era.coreGoal}</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -55,9 +69,23 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                   </div>
                   <div class="entry--major__body">
                     <span class="entry__year">{m.yearLabel}</span>
+                    {m.watchPriority && <span class={`priority-badge priority-badge--${m.watchPriority}`}>{priorityMeta[m.watchPriority]?.label || m.watchPriority}</span>}
                     {isSeries(m) && <span class="entry__series-badge">剧集 · {m.seasons}</span>}
-                    <h3 class="entry__title" set:html={softenText(m.title)}></h3>
+                    <h3 class="entry__title"><a href={pageUrl(`works/${m.id}`)} set:html={softenText(m.title)}></a></h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
+                    {m.watchPriority && (
+                      <div class={`decision decision--${m.watchPriority}`}>
+                        <span class="decision__tag">
+                          <span>{priorityMeta[m.watchPriority]?.label || m.watchPriority}</span>
+                          <em>{priorityMeta[m.watchPriority]?.en || ''}</em>
+                        </span>
+                        {m.skipImpact && (
+                          <p class="decision__impact">
+                            <b>如果跳过</b><span set:html={enrichText(cleanNote(m.skipImpact))}></span>
+                          </p>
+                        )}
+                      </div>
+                    )}
                     <p class="entry__summary" set:html={enrichText(m.summary)}></p>
                     {m.backgroundNote && (
                       <div class="entry__know">
@@ -90,8 +118,21 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
                   <div class="entry__body">
                     <span class="entry__year">{m.yearLabel}</span>
                     {isSeries(m) && <span class="entry__series-badge">剧集 · {m.seasons}</span>}
-                    <h3 class="entry__title" set:html={softenText(m.title)}></h3>
+                    <h3 class="entry__title"><a href={pageUrl(`works/${m.id}`)} set:html={softenText(m.title)}></a></h3>
                     <p class="entry__subtitle">{m.subtitle}</p>
+                    {m.watchPriority && (
+                      <div class={`decision decision--${m.watchPriority}`}>
+                        <span class="decision__tag">
+                          <span>{priorityMeta[m.watchPriority]?.label || m.watchPriority}</span>
+                          <em>{priorityMeta[m.watchPriority]?.en || ''}</em>
+                        </span>
+                        {m.skipImpact && (
+                          <p class="decision__impact">
+                            <b>如果跳过</b><span set:html={enrichText(cleanNote(m.skipImpact))}></span>
+                          </p>
+                        )}
+                      </div>
+                    )}
                     <p class="entry__summary" set:html={enrichText(m.summary)}></p>
                     {m.backgroundNote && (
                       <div class="entry__know">
@@ -244,6 +285,102 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
   .era-hero__years { margin-top: 16px; font-family: var(--font-serif); font-size: var(--fs-sub); opacity: 0.85; }
   .era-hero__intro { margin-top: 24px; max-width: 620px; font-size: var(--fs-body); line-height: 2; opacity: 0.92; }
 
+  .era-goal {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+    margin-top: 28px;
+    max-width: 720px;
+    padding: 22px 24px;
+    background: rgba(255, 255, 255, 0.96);
+    border-left: 6px solid var(--accent);
+    border-radius: 4px var(--radius) var(--radius) 4px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+    color: var(--ink);
+  }
+  .era-goal__index {
+    flex: 0 0 auto;
+    padding-right: 16px;
+    border-right: 1px solid var(--line);
+    color: var(--accent);
+    font-family: var(--font-serif);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    writing-mode: vertical-rl;
+  }
+  .era-goal b {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .era-goal p {
+    color: var(--ink);
+    font-size: clamp(17px, 1.35vw, 21px);
+    line-height: 1.65;
+    font-weight: 600;
+  }
+
+  .decision {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    overflow: hidden;
+    margin-bottom: 16px;
+    max-width: 680px;
+    border-radius: 3px var(--radius) var(--radius) 3px;
+    box-shadow: 0 10px 28px rgba(15, 18, 22, 0.1);
+  }
+  .decision__tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 104px;
+    padding: 11px 14px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(145deg, #2f333a, #575d66);
+  }
+  .decision__tag span {
+    font-size: 19px;
+    font-weight: 850;
+    letter-spacing: 1px;
+    line-height: 1.1;
+  }
+  .decision__tag em {
+    margin-top: 3px;
+    font-style: normal;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.72;
+  }
+  .decision__impact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 16px;
+    color: #fff;
+    background: #17181c;
+    font-size: var(--fs-small);
+    line-height: 1.62;
+  }
+  .decision__impact b {
+    flex: 0 0 auto;
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.24);
+    font-size: 12px;
+    opacity: 0.66;
+  }
+  .decision--must-watch .decision__tag { background: linear-gradient(135deg, #c31d10 0%, #8e150c 100%); }
+  .decision--must-watch .decision__impact { box-shadow: inset 4px 0 0 #c31d10; }
+  .decision--recommended .decision__tag { background: linear-gradient(135deg, #d97a00 0%, #a85b00 100%); }
+  .decision--recommended .decision__impact { box-shadow: inset 4px 0 0 #d97a00; }
+  .decision--optional .decision__tag { background: linear-gradient(135deg, #555f57 0%, #383f39 100%); }
+  .decision--optional .decision__impact { opacity: 0.82; }
+
   /* ===== 常规条目 ===== */
   .era-entries { display: flex; flex-direction: column; gap: 56px; padding-top: 56px; }
   .entry {
@@ -273,7 +410,15 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
   }
   .entry__title { font-size: 34px; line-height: 1.25; margin-bottom: 2px; }
   .entry__title .c-en { font-size: 0.6em; letter-spacing: 0.5px; }
+  .entry__title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .entry__title a:hover { color: var(--accent); }
   .entry__subtitle { color: var(--ink-soft); font-size: 19px; margin-bottom: 8px; }
+  .entry__body .priority-badge { margin-left: 10px; vertical-align: middle; }
+  .entry__body .watch-guide { margin-bottom: 14px; }
   .entry__summary {
     color: var(--ink);
     line-height: 1.8;
@@ -432,6 +577,7 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
   }
   .entry--major__body { padding: 48px 56px 56px; }
   .entry--major__body .entry__year { font-size: 28px; }
+  .entry--major__body .decision { max-width: 760px; }
   .entry--major__body .entry__title { font-size: clamp(40px, 5vw, 64px); }
   .entry--major__body .entry__summary { font-size: var(--fs-sub); line-height: 1.85; max-width: 720px; }
 
@@ -445,5 +591,10 @@ const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
     .entry--flip { direction: ltr; }
     .entry__media { order: -1; }
     .entry--major__body { padding: 32px 24px 40px; }
+    .era-goal { align-items: center; gap: 14px; padding: 18px; }
+    .era-goal__index { padding-right: 12px; }
+    .decision { grid-template-columns: 1fr; }
+    .decision__impact { align-items: flex-start; }
+    .decision__impact b { padding: 0 0 4px; border-right: 0; }
   }
 </style>

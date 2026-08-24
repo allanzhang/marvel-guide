@@ -39,6 +39,10 @@ const PERSON_OVERRIDES = {
   'vulture': 'Michael Keaton', 'daisy-johnson': 'Chloe Bennet',
   'kaecilius': 'Mads Mikkelsen', 'dormammu': 'Benedict Cumberbatch',
   'surtur': 'Clancy Brown',
+  'matt-murdock': 'Charlie Cox', 'jessica-jones': 'Krysten Ritter',
+  'luke-cage': 'Mike Colter', 'danny-rand': 'Finn Jones',
+  'frank-castle': 'Jon Bernthal', 'steven-grant': 'Oscar Isaac',
+  'jennifer-walters': 'Tatiana Maslany',
 };
 
 const get = (url) => {
@@ -64,6 +68,8 @@ async function main() {
   let ok = 0, fail = 0, skip = 0;
 
   for (const c of chars) {
+    const out = `${OUT}/portrait-${c.id}.webp`;
+    if (existsSync(out)) { skip++; continue; }
     const actor = PERSON_OVERRIDES[c.id];
     if (!actor) { console.log('-', c.id, '无演员映射，跳过'); skip++; continue; }
     const url = `${API}/search/person?api_key=${KEY}&query=${encodeURIComponent(actor)}`;
@@ -73,7 +79,6 @@ async function main() {
       best = (data.results || []).find((r) => r.profile_path);
     } catch { /* ignore */ }
     if (!best) { console.log('x', c.id, actor, '无肖像'); fail++; continue; }
-    const out = `${OUT}/portrait-${c.id}.webp`;
     if (dry) { console.log('·', c.id, '->', best.name); ok++; continue; }
     if (download(`${IMG}${best.profile_path}`, out)) { ok++; console.log('v', c.id, '->', best.name); }
     else { fail++; console.log('x', c.id, actor); }

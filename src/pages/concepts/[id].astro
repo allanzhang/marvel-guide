@@ -42,7 +42,7 @@ const cBackdrop = backdropUrl(c.id);
         <h2 class="cd-works__title">出现在</h2>
         <div class="cd-works__chips">
           {appearances.map((w) => (
-            <a class="chip" href={pageUrl(`timeline#${w.id}`)}>{w.title}</a>
+            <a class="chip" href={pageUrl(`works/${w.id}`)}>{w.title}</a>
           ))}
         </div>
       </div>

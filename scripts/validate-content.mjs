@@ -9,6 +9,7 @@ const series = read('series.json');
 const concepts = read('concepts.json');
 const errors = [];
 const err = (msg) => errors.push(msg);
+const watchPriorities = new Set(['must-watch', 'recommended', 'optional']);
 
 // 唯一性
 const checkUnique = (arr, label) => {
@@ -30,12 +31,16 @@ for (const m of movies) {
   for (const f of ['title', 'year', 'yearLabel', 'eraId', 'summary', 'characters']) {
     if (m[f] === undefined) err(`movie ${m.id} 缺字段 ${f}`);
   }
+  if (m.watchPriority !== undefined && !watchPriorities.has(m.watchPriority)) err(`movie ${m.id} 非法观看优先级: ${m.watchPriority}`);
+  if (m.watchPriority !== undefined && m.skipImpact === undefined) err(`movie ${m.id} 缺字段 skipImpact`);
 }
 for (const s of series) {
   for (const f of ['title', 'year', 'yearLabel', 'eraId', 'type', 'seasons', 'summary', 'characters']) {
     if (s[f] === undefined) err(`series ${s.id} 缺字段 ${f}`);
   }
   if (s.type !== 'series') err(`series ${s.id} type 应为 'series'`);
+  if (s.watchPriority !== undefined && !watchPriorities.has(s.watchPriority)) err(`series ${s.id} 非法观看优先级: ${s.watchPriority}`);
+  if (s.watchPriority !== undefined && s.skipImpact === undefined) err(`series ${s.id} 缺字段 skipImpact`);
 }
 const conceptCats = new Set(['gem', 'item', 'magic', 'org', 'place', 'concept']);
 for (const c of concepts) {
@@ -54,6 +59,7 @@ for (const e of eras) {
   for (const f of ['name', 'years', 'startYear', 'color', 'colorSoft', 'intro']) {
     if (e[f] === undefined) err(`era ${e.id} 缺字段 ${f}`);
   }
+  if (e.coreGoal !== undefined && e.coreGoal.length < 8) err(`era ${e.id} 的 coreGoal 过短`);
 }
 
 // 引用完整性

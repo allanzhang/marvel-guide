@@ -44,6 +44,101 @@
     ]
   },
   {
+    "id": "matt-murdock",
+    "name": "马特·默多克（Matt Murdock）",
+    "alias": "夜魔侠（Daredevil）",
+    "tagline": "盲人律师 / 地狱厨房义警",
+    "group": "solo",
+    "universe": "sacred",
+    "who": "幼年因化学废料失明、其余感官被异常强化的律师。白天在法庭上替弱势者辩护，夜晚穿上红色战衣以夜魔侠的身份守护地狱厨房。",
+    "role": "Netflix 街头英雄线的核心。他把超级英雄故事拉回街头层面，用肉身对抗犯罪网络，也让「英雄是否该杀人」成为这条线最核心的道德冲突。",
+    "storyline": "自幼失明后被棍叟训练，成年后与弗吉·尼尔森和凯伦·佩吉开设律师事务所。他以夜魔侠身份对抗金并与（Kingpin）、惩罚者和手合会，多次重伤仍不退缩，成为地狱厨房不可替代的守护者。",
+    "series": [
+      "daredevil",
+      "defenders"
+    ],
+    "movies": []
+  },
+  {
+    "id": "jessica-jones",
+    "name": "杰茜卡·琼斯（Jessica Jones）",
+    "alias": "杰茜卡（Jessica）",
+    "tagline": "私家侦探 / 前超级英雄",
+    "group": "solo",
+    "universe": "sacred",
+    "who": "拥有超强力量和短暂飞行能力的私家侦探。一场车祸夺走家人并给她能力，也把她推入紫人的精神控制噩梦；她粗口、酗酒、孤僻，却始终不肯放弃救人。",
+    "role": "Netflix 系列中最黑暗也最具心理深度的主角。她的故事把创伤后遗症、性侵控制和女性自主权带入超英叙事，让街头英雄线拥有完全不同的重量。",
+    "storyline": "失去家人后被紫人基尔格雷夫控制并被迫犯下暴行，脱身后开办 Alias 侦探社。她先终结紫人，再面对母亲变成的阿尔萨·琼斯，最后加入捍卫者联盟对抗手合会，一直以破碎但倔强的方式活下去。",
+    "series": [
+      "jessica-jones",
+      "defenders"
+    ],
+    "movies": []
+  },
+  {
+    "id": "luke-cage",
+    "name": "卡尔·卢卡斯（Carl Lucas）",
+    "alias": "卢克·凯奇（Luke Cage）",
+    "tagline": "刀枪不入 / 哈莱姆守护者",
+    "group": "solo",
+    "universe": "sacred",
+    "who": "因实验意外获得钢铁之躯和超人力量的前警察。他沉默寡言、戴着兜帽走在哈莱姆街头，是社区最坚硬的盾牌。",
+    "role": "Netflix 街头线的力量核心与黑人社区叙事代表。他的故事围绕种族、监狱、资本与社区责任展开，让「谁来保护街区」成为超英故事的中心问题。",
+    "storyline": "被冤入狱后在实验中获得不死之躯，越狱后隐姓埋名来到哈莱姆。他先后击败科顿毛斯、黑玛丽亚和迪亚波罗，短暂接管黑帮后自我放逐，最终回归社区继续做守护者。",
+    "series": [
+      "luke-cage",
+      "defenders"
+    ],
+    "movies": []
+  },
+  {
+    "id": "danny-rand",
+    "name": "丹尼·兰德（Danny Rand）",
+    "alias": "铁拳（Iron Fist）",
+    "tagline": "亿万富翁 / 昆仑武术传人",
+    "group": "solo",
+    "universe": "sacred",
+    "who": "兰德企业继承人，幼年在昆仑学武并获得凝聚气的铁拳之力。他不谙世事却信念执拗，想用古老力量守护纽约。",
+    "role": "Netflix 街头线的神秘武术担当。他把手合会、昆仑和东方武术体系引入街头宇宙，也为捍卫者联盟提供了对抗异界威胁的关键力量。",
+    "storyline": "家族空难后被昆仑僧侣救走，接受训练并在击败舒老龙后获得铁拳。返回纽约争夺公司时发现手合会渗透，随后与夜魔侠、杰茜卡和卢克组成捍卫者联盟，共同阻止黑空计划。",
+    "series": [
+      "iron-fist",
+      "defenders"
+    ],
+    "movies": []
+  },
+  {
+    "id": "frank-castle",
+    "name": "弗兰克·卡斯特（Frank Castle）",
+    "alias": "惩罚者（The Punisher）",
+    "tagline": "退伍军人 / 以杀止杀",
+    "group": "villains",
+    "universe": "sacred",
+    "who": "家人被害的前特种部队军人。他没有超能力，只有军火、战术和对罪犯毫不妥协的暴力审判——骷髅标志就是他的判决书。",
+    "role": "Netflix 系列中最具争议的反英雄。他逼迫观众思考法律、战争创伤和正义边界：当制度失效，一个人是否有权成为执行者？",
+    "storyline": "家人在黑帮火并中丧生后，弗兰克展开血腥复仇。他揭穿军方阴谋、对抗比利·鲁索，也在与麦达尼和微光的纠缠中不断面对自己是否已被战争彻底改变。",
+    "series": [
+      "punisher",
+      "daredevil"
+    ],
+    "movies": []
+  },
+  {
+    "id": "steven-grant",
+    "name": "史蒂文·格兰特（Steven Grant）",
+    "alias": "月光骑士（Moon Knight）",
+    "tagline": "多重人格 / 月神骑士",
+    "group": "solo",
+    "universe": "sacred",
+    "who": "患有分离性身份障碍的博物馆礼品店员工。温和的史蒂文、佣兵马克·斯佩克特和其他人格共享一具身体，并成为埃及月神孔苏在人间的骑士。",
+    "role": "Phase 4 的独立神话线代表。他把埃及神祇、心理创伤和身份认同揉进超英叙事，让「我是谁」本身成为最大的战斗。",
+    "storyline": "史蒂文发现自己体内藏着佣兵马克·斯佩克特，两人被卷入孔苏、阿米特及其化身哈罗的神话斗争。他们穿越冥界、面对童年创伤，最终接纳彼此人格并阻止阿米特审判所有灵魂。",
+    "series": [
+      "moon-knight"
+    ],
+    "movies": []
+  },
+  {
     "id": "thor",
     "name": "索尔（Thor）",
     "alias": "雷神（Thor）",
@@ -1146,6 +1241,21 @@
     "movies": [],
     "series": [
       "agents-of-shield"
+    ]
+  },
+  {
+    "id": "jennifer-walters",
+    "name": "珍妮弗·沃尔特斯（Jennifer Walters）",
+    "alias": "女浩克（She-Hulk）",
+    "tagline": "律师 / 绿巨人表妹",
+    "group": "solo",
+    "universe": "sacred",
+    "who": "专门代理超人类案件的律师，也是布鲁斯·班纳（Bruce Banner）的表妹。一次意外输血让她获得浩克之力，但平时仍保持清醒理智，把超级英雄身份和律师职业同时扛在肩上。",
+    "role": "Phase 4 里最贴近「普通人视角」的英雄。她用法庭和日常喜剧的方式处理超英世界的烂摊子，也让「打破第四面墙」成为 MCU 难得的幽默体验。",
+    "storyline": "在《女浩克（She-Hulk: Attorney at Law）》中逐渐掌握变身，一边打官司一边应对憎恶、泰坦尼亚等对手，最终学会在超级英雄身份与律师生活之间找到自己的节奏。",
+    "movies": [],
+    "series": [
+      "she-hulk"
     ]
   }
 ]

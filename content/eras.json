@@ -8,6 +8,7 @@
     "color": "#3e4a3d",
     "colorSoft": "#e8ece7",
     "intro": "漫威电影宇宙（the Marvel Cinematic Universe）的世界，要从一颗坠落到瓦坎达（Wakanda）的陨石和一位瘦弱士兵的血清实验说起。这个时代还没有超级英雄——只有凡人用勇气、科学和战争，在历史的缝隙里埋下改变世界的种子。",
+    "coreGoal": "看完这一段，你只需要记住：美国队长的来历，以及宇宙魔方为什么重要。",
     "heroTitle": "一切从这里开始",
     "backdropUrl": "/backdrops/era-ww2.webp"
   },
@@ -20,6 +21,7 @@
     "color": "#8f1d14",
     "colorSoft": "#f5e6e3",
     "intro": "进入现代，超级士兵、天才发明家、北欧神族、浩克（Hulk）与特工逐渐浮出水面。神盾局（S.H.I.E.L.D.）意识到，地球需要一支超能力队伍来面对前所未有的威胁——复仇者联盟由此诞生。",
+    "coreGoal": "看完这一段，你只需要记住：复仇者为什么集结，神盾局又为什么走向覆灭。",
     "heroTitle": "复仇者，集结",
     "backdropUrl": "/backdrops/era-assembly.webp"
   },
@@ -32,6 +34,7 @@
     "color": "#2f4156",
     "colorSoft": "#e6ebf0",
     "intro": "复仇者联盟在一场又一场战斗中声名鹊起，也带来了越来越大的破坏。当世界开始要求英雄接受监管，钢铁侠（Iron Man）与美国队长（Captain America）在理念上彻底决裂——一场内战撕裂了整个团队。",
+    "coreGoal": "看完这一段，你只需要记住：英雄为什么分裂，以及各方核心战力如何重新站队。",
     "heroTitle": "英雄之战",
     "backdropUrl": "/backdrops/era-civil-war.webp"
   },
@@ -44,6 +47,7 @@
     "color": "#4a2c5f",
     "colorSoft": "#ece5f1",
     "intro": "来自泰坦星（Titan）的灭霸（Thanos）集齐六颗无限宝石（the Infinity Stones），一个响指（the Snap）消灭了宇宙一半的生命。英雄们在失败、失去与绝望中重新集结，展开了一场跨越时空的反击——这是整个漫威电影宇宙（the Marvel Cinematic Universe）最重要的篇章。",
+    "coreGoal": "看完这一段，你只需要记住：无限宝石如何集齐，响指带来什么代价，英雄如何反击。",
     "heroTitle": "终局之前",
     "backdropUrl": "/backdrops/era-infinity.webp"
   },
@@ -56,6 +60,7 @@
     "color": "#1d6f8f",
     "colorSoft": "#e3eef3",
     "intro": "终局之战（Endgame）之后，时间线被打破，平行宇宙接连显现。蜘蛛侠（Spider-Man）身份暴露、奇异博士（Doctor Strange）打开多元宇宙（the Multiverse）的裂缝、征服者康（Kang the Conqueror）在时间尽头崛起——这个时代的故事，才刚刚开始。",
+    "coreGoal": "看完这一段，你只需要记住：多元宇宙为什么失控，哪些裂缝会把故事推向下一场大战。",
     "heroTitle": "多元宇宙（the Multiverse）的裂缝",
     "backdropUrl": "/backdrops/era-multiverse.webp"
   }
