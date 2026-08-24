@@ -49,7 +49,36 @@
       "/stills/still-captain-america-first-avenger-2.webp",
       "/stills/still-captain-america-first-avenger-3.webp",
       "/stills/still-captain-america-first-avenger-4.webp"
-    ]
+    ],
+    "storyRole": "建立 MCU 的道德原点和历史债：史蒂夫证明品格比力量更重要，宇宙魔方、九头蛇和神盾局前身则把二战遗产接到现代主线。",
+    "keyTakeaways": [
+      "超级士兵血清放大的是人的本性，史蒂夫和红骷髅因此成为正反两面。",
+      "宇宙魔方成为神盾局长期保管的关键遗物。",
+      "巴基坠崖、史蒂夫冰封，为冬日战士和现代复仇者登场埋下双重伏笔。"
+    ],
+    "aftermath": {
+      "setup": [
+        "神盾局前身长期保管宇宙魔方。",
+        "巴基被九头蛇救走并改造成冬日战士。"
+      ],
+      "payoff": [
+        "回收厄斯金博士关于“强者力量要用在何处”的命题。"
+      ],
+      "characterStates": [
+        {
+          "id": "steve-rogers",
+          "state": "驾驶飞机坠海后冰封，直到现代被神盾局发现。"
+        },
+        {
+          "id": "bucky-barnes",
+          "state": "坠崖后被九头蛇俘获，后续成为冬日战士。"
+        },
+        {
+          "id": "peggy-carter",
+          "state": "参与战略科学预备队，成为神盾局体系的奠基人之一。"
+        }
+      ]
+    }
   },
   {
     "id": "captain-marvel-1",
@@ -151,7 +180,36 @@
       "/stills/still-iron-man-1-2.webp",
       "/stills/still-iron-man-1-3.webp",
       "/stills/still-iron-man-1-4.webp"
-    ]
+    ],
+    "storyRole": "开启现代超级英雄时代，并把托尼·斯塔克从军火商推到公开英雄身份的位置上。",
+    "keyTakeaways": [
+      "托尼在洞穴中制造 Mark I，伊森之死让他意识到自己的武器造成了什么。",
+      "关闭斯塔克工业武器部门是托尼第一次为自己制造的死亡负责。",
+      "结尾公开身份，使超级英雄从秘密行动变成公众事件。"
+    ],
+    "aftermath": {
+      "setup": [
+        "十环帮把钢铁侠起源与后来的尚气、十环组织连接起来。",
+        "托尼的公开身份引发政府监管压力。"
+      ],
+      "payoff": [
+        "弗瑞的复仇者倡议在片尾从幕后走向台前。"
+      ],
+      "characterStates": [
+        {
+          "id": "tony-stark",
+          "state": "公开承认“我是钢铁侠”，从军火商转变为公开超级英雄。"
+        },
+        {
+          "id": "james-rhodes",
+          "state": "作为军方联络人进入托尼世界，未来成为战争机器。"
+        },
+        {
+          "id": "nick-fury",
+          "state": "正式向托尼提出复仇者倡议。"
+        }
+      ]
+    }
   },
   {
     "id": "incredible-hulk",
@@ -307,7 +365,36 @@
       "/stills/still-thor-1-2.webp",
       "/stills/still-thor-1-3.webp",
       "/stills/still-thor-1-4.webp"
-    ]
+    ],
+    "storyRole": "把阿斯加德、九界和洛基引入 MCU，并让索尔学会王权意味着责任而非证明自己。",
+    "keyTakeaways": [
+      "索尔因傲慢被放逐到地球，必须在失去神力后重新证明自己。",
+      "洛基发现自己冰霜巨人后裔身份，归属感崩塌。",
+      "雷神之锤和宇宙宝物把神话线与地球防线连接。"
+    ],
+    "aftermath": {
+      "setup": [
+        "洛基坠落后被灭霸利用，为纽约大战铺路。",
+        "简与阿斯加德的连接引出以太和现实宝石。"
+      ],
+      "payoff": [
+        "奥丁关于“合格者”的考验，为索尔日后真正觉醒雷神之力埋下起点。"
+      ],
+      "characterStates": [
+        {
+          "id": "thor",
+          "state": "重新获得雷神之锤，回到阿斯加德承担王子责任。"
+        },
+        {
+          "id": "loki",
+          "state": "坠入宇宙深渊，转而走向齐塔瑞和灭霸阵营。"
+        },
+        {
+          "id": "odin",
+          "state": "继续维持阿斯加德秩序，但也隐藏了更多王室秘密。"
+        }
+      ]
+    }
   },
   {
     "id": "avengers-1",
@@ -365,7 +452,40 @@
       "/stills/still-avengers-1-2.webp",
       "/stills/still-avengers-1-3.webp",
       "/stills/still-avengers-1-4.webp"
-    ]
+    ],
+    "storyRole": "第一次把钢铁侠、美队、雷神、浩克、黑寡妇和鹰眼组成复仇者，证明跨英雄叙事可以形成团队主线。",
+    "keyTakeaways": [
+      "洛基借宇宙魔方和齐塔瑞军队入侵纽约。",
+      "六位英雄从互不信任走向分工合作。",
+      "托尼把核弹送入太空，留下长期的外星入侵焦虑。"
+    ],
+    "aftermath": {
+      "setup": [
+        "托尼的战后焦虑直接催生奥创计划。",
+        "洛基权杖中的心灵宝石被神盾局带走。"
+      ],
+      "payoff": [
+        "回收惊奇队长和钢铁侠等作品中的复仇者倡议。"
+      ],
+      "characterStates": [
+        {
+          "id": "tony-stark",
+          "state": "经历太空虫洞后开始被下一次入侵焦虑追着跑。"
+        },
+        {
+          "id": "steve-rogers",
+          "state": "在现代世界第一次找到团队位置。"
+        },
+        {
+          "id": "bruce-banner",
+          "state": "浩克从被追捕对象变成团队战斗力。"
+        },
+        {
+          "id": "loki",
+          "state": "被带回阿斯加德受审，但他的威胁并未真正结束。"
+        }
+      ]
+    }
   },
   {
     "id": "thor-2",
@@ -522,7 +642,40 @@
       "/stills/still-winter-soldier-2.webp",
       "/stills/still-winter-soldier-3.webp",
       "/stills/still-winter-soldier-4.webp"
-    ]
+    ],
+    "storyRole": "拆除第一阶段“神盾局会保护世界”的安全幻想，让 MCU 进入监管失效和信任危机阶段。",
+    "keyTakeaways": [
+      "神盾局内部长期潜伏九头蛇。",
+      "洞察计划本质是用算法预先清除威胁。",
+      "巴基以冬日战士身份回归，把制度危机变成史蒂夫的私人创伤。"
+    ],
+    "aftermath": {
+      "setup": [
+        "神盾局崩塌后，复仇者失去统一机构支持。",
+        "索科维亚协议和内战的政治基础开始形成。"
+      ],
+      "payoff": [
+        "回收美国队长1中巴基失踪和九头蛇遗产。"
+      ],
+      "characterStates": [
+        {
+          "id": "steve-rogers",
+          "state": "成为警惕体制滥权的道德反抗者。"
+        },
+        {
+          "id": "natasha-romanoff",
+          "state": "选择公开神盾局机密，承担间谍身份曝光后果。"
+        },
+        {
+          "id": "bucky-barnes",
+          "state": "仍在九头蛇控制中，成为史蒂夫未来必须面对的旧友。"
+        },
+        {
+          "id": "sam-wilson",
+          "state": "以猎鹰身份加入史蒂夫阵营。"
+        }
+      ]
+    }
   },
   {
     "id": "guardians-1",
@@ -577,7 +730,40 @@
       "/stills/still-guardians-1-2.webp",
       "/stills/still-guardians-1-3.webp",
       "/stills/still-guardians-1-4.webp"
-    ]
+    ],
+    "storyRole": "把主线从地球扩展到宇宙，并让力量宝石、灭霸养女和银河护卫队进入无限宝石主线。",
+    "keyTakeaways": [
+      "彼得·奎尔取得力量宝石，罗南试图借宝石毁灭山达尔。",
+      "一群互不信任的宇宙边缘人组成家庭。",
+      "卡魔拉和星云作为灭霸养女，提前绑定无限战争的情感代价。"
+    ],
+    "aftermath": {
+      "setup": [
+        "力量宝石后来被灭霸从山达尔取走。",
+        "卡魔拉知道灵魂宝石所在地，为沃米尔牺牲埋伏笔。"
+      ],
+      "payoff": [
+        "回收雷神2中无限宝石被分散保管的线索。"
+      ],
+      "characterStates": [
+        {
+          "id": "star-lord",
+          "state": "从宇宙盗贼成长为护卫队领袖。"
+        },
+        {
+          "id": "gamora",
+          "state": "与灭霸决裂，成为护卫队成员。"
+        },
+        {
+          "id": "rocket",
+          "state": "第一次拥有稳定的同伴关系。"
+        },
+        {
+          "id": "nebula",
+          "state": "与卡魔拉仍敌对，但姐妹关系开始松动。"
+        }
+      ]
+    }
   },
   {
     "id": "guardians-2",
@@ -690,7 +876,40 @@
       "/stills/still-age-of-ultron-2.webp",
       "/stills/still-age-of-ultron-3.webp",
       "/stills/still-age-of-ultron-4.webp"
-    ]
+    ],
+    "storyRole": "展示复仇者行动的公共代价，并把心灵宝石、索科维亚创伤和幻视推向后续核心冲突。",
+    "keyTakeaways": [
+      "托尼和班纳用心灵宝石启动奥创，防御计划变成灭绝危机。",
+      "索科维亚城市升空毁灭，催生索科维亚协议。",
+      "幻视诞生，成为心灵宝石的生命化载体。"
+    ],
+    "aftermath": {
+      "setup": [
+        "索科维亚灾难成为内战导火索。",
+        "旺达失去幻视的创伤通向旺达幻视和奇异博士2。"
+      ],
+      "payoff": [
+        "回收纽约大战后托尼的安全焦虑。"
+      ],
+      "characterStates": [
+        {
+          "id": "tony-stark",
+          "state": "因奥创灾难背负巨大愧疚，但仍相信自己必须保护世界。"
+        },
+        {
+          "id": "wanda-maximoff",
+          "state": "从奥创阵营转入复仇者阵营。"
+        },
+        {
+          "id": "vision",
+          "state": "以新生命形式诞生，并与心灵宝石绑定。"
+        },
+        {
+          "id": "bruce-banner",
+          "state": "选择离开团队，浩克身份继续悬置。"
+        }
+      ]
+    }
   },
   {
     "id": "ant-man-1",
@@ -801,7 +1020,44 @@
       "/stills/still-civil-war-2.webp",
       "/stills/still-civil-war-3.webp",
       "/stills/still-civil-war-4.webp"
-    ]
+    ],
+    "storyRole": "让复仇者不是被外敌击败，而是被监管分歧、私人创伤和泽莫的复仇从内部打散。",
+    "keyTakeaways": [
+      "索科维亚协议把英雄是否应受监管摆到台面。",
+      "泽莫利用巴基和斯塔克父母死亡真相制造决裂。",
+      "机场大战标志着团队公开分裂。"
+    ],
+    "aftermath": {
+      "setup": [
+        "史蒂夫和巴基流亡，托尼与旧复联裂痕加深。",
+        "黑豹、蜘蛛侠等新英雄被引入更大的主线。"
+      ],
+      "payoff": [
+        "回收冬日战士中的体制不信任和奥创的公共代价。"
+      ],
+      "characterStates": [
+        {
+          "id": "steve-rogers",
+          "state": "放弃复联领袖身份，选择保护巴基和自主判断。"
+        },
+        {
+          "id": "tony-stark",
+          "state": "站在监管一边，并因父母之死与史蒂夫决裂。"
+        },
+        {
+          "id": "bucky-barnes",
+          "state": "选择被冰封，直到洗脑问题被处理。"
+        },
+        {
+          "id": "tchalla",
+          "state": "放弃私刑，选择正义并继承瓦坎达王位。"
+        },
+        {
+          "id": "peter-parker",
+          "state": "被托尼带入成人英雄战场。"
+        }
+      ]
+    }
   },
   {
     "id": "black-widow",
@@ -1005,7 +1261,36 @@
       "/stills/still-doctor-strange-1-2.webp",
       "/stills/still-doctor-strange-1-3.webp",
       "/stills/still-doctor-strange-1-4.webp"
-    ]
+    ],
+    "storyRole": "把魔法体系、时间宝石和多元宇宙概念引入 MCU，让现实边界成为新的主线维度。",
+    "keyTakeaways": [
+      "斯特兰奇从控制一切的医生变成接受未知的法师。",
+      "卡玛泰姬揭示黑暗次元和多元宇宙。",
+      "时间宝石被用来困住多玛姆。"
+    ],
+    "aftermath": {
+      "setup": [
+        "时间宝石成为灭霸收集目标。",
+        "斯特兰奇日后在英雄无归中轻率施法，打开多元宇宙裂缝。"
+      ],
+      "payoff": [
+        "为无限战争中斯特兰奇看到唯一胜机埋下规则基础。"
+      ],
+      "characterStates": [
+        {
+          "id": "stephen-strange",
+          "state": "成为纽约至圣所守护者。"
+        },
+        {
+          "id": "ancient-one",
+          "state": "死亡后把魔法守护责任传给新一代。"
+        },
+        {
+          "id": "wong",
+          "state": "成为斯特兰奇最稳定的法师盟友。"
+        }
+      ]
+    }
   },
   {
     "id": "ragnarok",
@@ -1060,7 +1345,40 @@
       "/stills/still-ragnarok-2.webp",
       "/stills/still-ragnarok-3.webp",
       "/stills/still-ragnarok-4.webp"
-    ]
+    ],
+    "storyRole": "拆掉索尔旧有的锤子、阿斯加德和王位幻象，并让剧情直接接上无限战争开场。",
+    "keyTakeaways": [
+      "海拉揭示奥丁征服史，阿斯加德神话被去魅。",
+      "索尔失去雷神之锤后真正觉醒雷神之力。",
+      "阿斯加德毁灭，人民乘船离开后立刻遭遇灭霸。"
+    ],
+    "aftermath": {
+      "setup": [
+        "洛基带走宇宙魔方，直接导致无限战争开场。",
+        "阿斯加德难民船成为灭霸第一处屠杀现场。"
+      ],
+      "payoff": [
+        "回收索尔一直依赖锤子和身份合法性的成长线。"
+      ],
+      "characterStates": [
+        {
+          "id": "thor",
+          "state": "成为真正掌握雷霆的王者，但很快失去大部分人民。"
+        },
+        {
+          "id": "loki",
+          "state": "短暂回到索尔身边，却因保留宇宙魔方引向灾难。"
+        },
+        {
+          "id": "bruce-banner",
+          "state": "以浩克身份在萨卡生活多年后重返主线。"
+        },
+        {
+          "id": "valkyrie",
+          "state": "重新承担保护阿斯加德人民的责任。"
+        }
+      ]
+    }
   },
   {
     "id": "ant-man-and-wasp",
@@ -1111,7 +1429,36 @@
       "/stills/still-ant-man-and-wasp-2.webp",
       "/stills/still-ant-man-and-wasp-3.webp",
       "/stills/still-ant-man-and-wasp-4.webp"
-    ]
+    ],
+    "storyRole": "以量子领域为主线服务，说明斯科特如何在响指五年后归来并带来时间劫案可能。",
+    "keyTakeaways": [
+      "皮姆一家深入量子领域寻找珍妮特。",
+      "量子领域的时间和空间规则被进一步确认。",
+      "片尾斯科特被困在量子领域，与响指事件直接交汇。"
+    ],
+    "aftermath": {
+      "setup": [
+        "斯科特五年后脱离量子领域，成为终局时间穿越关键。",
+        "皮姆粒子成为时间劫案技术基础。"
+      ],
+      "payoff": [
+        "回收蚁人1中量子领域不是单纯奇观空间的伏笔。"
+      ],
+      "characterStates": [
+        {
+          "id": "scott-lang",
+          "state": "响指时被困量子领域，外部世界已过去五年。"
+        },
+        {
+          "id": "hope-van-dyne",
+          "state": "与汉克、珍妮特一同化灰，家庭重聚被响指打断。"
+        },
+        {
+          "id": "hank-pym",
+          "state": "其量子技术成为逆转响指的必要条件。"
+        }
+      ]
+    }
   },
   {
     "id": "infinity-war",
@@ -1182,7 +1529,44 @@
       "/stills/still-infinity-war-2.webp",
       "/stills/still-infinity-war-3.webp",
       "/stills/still-infinity-war-4.webp"
-    ]
+    ],
+    "storyRole": "收束前十年的无限宝石线索，让灭霸完成响指并把 MCU 从英雄集结阶段推入失败与幸存阶段。",
+    "keyTakeaways": [
+      "灭霸通过牺牲卡魔拉取得灵魂宝石。",
+      "斯特兰奇交出时间宝石，是在执行唯一胜利路径。",
+      "响指抹去宇宙半数生命，英雄第一次全面失败。"
+    ],
+    "aftermath": {
+      "setup": [
+        "幸存者带着失败进入五年灰暗期。",
+        "旺达失去幻视，为黑暗神书线埋下创伤。"
+      ],
+      "payoff": [
+        "回收前十年六颗无限宝石和灭霸暗线。"
+      ],
+      "characterStates": [
+        {
+          "id": "thanos",
+          "state": "完成响指后归隐，并认为自己完成了“使命”。"
+        },
+        {
+          "id": "thor",
+          "state": "未能砍中灭霸头部，背负阻止失败的创伤。"
+        },
+        {
+          "id": "tony-stark",
+          "state": "在泰坦星失去彼得，退出英雄生活。"
+        },
+        {
+          "id": "stephen-strange",
+          "state": "化灰前保留唯一胜利未来的秘密。"
+        },
+        {
+          "id": "wanda-maximoff",
+          "state": "被迫杀死幻视仍失败，失去一切。"
+        }
+      ]
+    }
   },
   {
     "id": "endgame",
@@ -1259,7 +1643,44 @@
       "/stills/still-endgame-2.webp",
       "/stills/still-endgame-3.webp",
       "/stills/still-endgame-4.webp"
-    ]
+    ],
+    "storyRole": "通过量子领域和时间劫案逆转响指，完成初代复仇者核心弧线，并把时间分支问题留给多元宇宙时代。",
+    "keyTakeaways": [
+      "斯科特从量子领域归来，让时间穿越成为可能。",
+      "黑寡妇在沃米尔牺牲换取灵魂宝石。",
+      "托尼牺牲自己打响指，史蒂夫选择回到过去生活。"
+    ],
+    "aftermath": {
+      "setup": [
+        "2012 洛基带走宇宙魔方产生时间分支。",
+        "山姆接过盾牌，开启新美国队长线。"
+      ],
+      "payoff": [
+        "回收钢铁侠、美队、黑寡妇、雷神等初代角色弧线。"
+      ],
+      "characterStates": [
+        {
+          "id": "tony-stark",
+          "state": "牺牲自己打响指，完成从利己军火商到守护者的弧线。"
+        },
+        {
+          "id": "natasha-romanoff",
+          "state": "在沃米尔牺牲，换取灵魂宝石。"
+        },
+        {
+          "id": "steve-rogers",
+          "state": "归还宝石后回到过去与佩吉生活，把盾牌交给山姆。"
+        },
+        {
+          "id": "thor",
+          "state": "把新阿斯加德交给女武神，随银河护卫队离开。"
+        },
+        {
+          "id": "sam-wilson",
+          "state": "成为美国队长盾牌的继承者。"
+        }
+      ]
+    }
   },
   {
     "id": "far-from-home",
@@ -1457,7 +1878,36 @@
       "/stills/still-spider-man-no-way-home-2.webp",
       "/stills/still-spider-man-no-way-home-3.webp",
       "/stills/still-spider-man-no-way-home-4.webp"
-    ]
+    ],
+    "storyRole": "真正让多元宇宙从设定变成情感代价：彼得为修复身份危机，最终让全世界忘记自己。",
+    "keyTakeaways": [
+      "遗忘咒语失控，把其他宇宙认识彼得的人拉入主宇宙。",
+      "三任蜘蛛侠共同面对旧反派。",
+      "彼得选择让全世界忘记彼得·帕克，而不只是蜘蛛侠身份。"
+    ],
+    "aftermath": {
+      "setup": [
+        "彼得以匿名身份重新开始，为全新日阶段铺路。",
+        "斯特兰奇的咒语风险继续影响多元宇宙线。"
+      ],
+      "payoff": [
+        "回收英雄远征结尾身份曝光危机。"
+      ],
+      "characterStates": [
+        {
+          "id": "peter-parker",
+          "state": "失去所有公开身份关系，以匿名普通人身份继续做蜘蛛侠。"
+        },
+        {
+          "id": "stephen-strange",
+          "state": "再次因轻率施法影响现实边界。"
+        },
+        {
+          "id": "wong",
+          "state": "作为法师防线核心，提醒咒语风险但无法完全阻止后果。"
+        }
+      ]
+    }
   },
   {
     "id": "doctor-strange-2",
@@ -1508,7 +1958,40 @@
       "/stills/still-doctor-strange-2-2.webp",
       "/stills/still-doctor-strange-2-3.webp",
       "/stills/still-doctor-strange-2-4.webp"
-    ]
+    ],
+    "storyRole": "把多元宇宙从跨界事件推进为心理与魔法危机，并完成旺达从创伤幸存者到绯红女巫的极端转折。",
+    "keyTakeaways": [
+      "美国小姐的穿越能力成为各方争夺目标。",
+      "光照会展示其他宇宙的精英秩序并不稳固。",
+      "旺达在孩子的恐惧中醒悟并摧毁黑暗神书源头。"
+    ],
+    "aftermath": {
+      "setup": [
+        "美国小姐的能力仍可能在多元宇宙大战中发挥作用。",
+        "斯特兰奇经历多元宇宙后更清楚傲慢的代价。"
+      ],
+      "payoff": [
+        "回收旺达幻视中西景镇创伤和黑暗神书影响。"
+      ],
+      "characterStates": [
+        {
+          "id": "stephen-strange",
+          "state": "承认自己无法单靠控制欲解决多元宇宙危机。"
+        },
+        {
+          "id": "wanda-maximoff",
+          "state": "看似随万达格山崩塌，最终生死仍保留多元宇宙变体空间。"
+        },
+        {
+          "id": "america-chavez",
+          "state": "开始掌控穿越多元宇宙的能力。"
+        },
+        {
+          "id": "wong",
+          "state": "继续守护卡玛泰姬，但法师防线遭受重创。"
+        }
+      ]
+    }
   },
   {
     "id": "thor-4",
@@ -1659,7 +2142,36 @@
       "/stills/still-ant-man-3-2.webp",
       "/stills/still-ant-man-3-3.webp",
       "/stills/still-ant-man-3-4.webp"
-    ]
+    ],
+    "storyRole": "把蚁人家庭冒险与康、量子领域和 TVA 之后的多元宇宙战争连接起来。",
+    "keyTakeaways": [
+      "量子领域被揭示为有文明和压迫者的复杂空间。",
+      "征服者康被困量子领域并试图重启时间征服。",
+      "康议会登场，说明一个康倒下不等于威胁结束。"
+    ],
+    "aftermath": {
+      "setup": [
+        "康议会和更多变体为毁灭日、秘密战争铺路。",
+        "量子领域与时间分支继续关联。"
+      ],
+      "payoff": [
+        "回收洛基中遗留之人死亡后康变体失控的线索。"
+      ],
+      "characterStates": [
+        {
+          "id": "scott-lang",
+          "state": "从普通英雄被迫面对多元宇宙级威胁。"
+        },
+        {
+          "id": "hope-van-dyne",
+          "state": "与家人成为共同行动的量子领域英雄单元。"
+        },
+        {
+          "id": "kang",
+          "state": "一个变体被击败，但康议会和更多威胁已经醒来。"
+        }
+      ]
+    }
   },
   {
     "id": "guardians-3",
@@ -2012,7 +2524,36 @@
       "/stills/still-avengers-doomsday-2.webp",
       "/stills/still-avengers-doomsday-3.webp",
       "/stills/still-avengers-doomsday-4.webp"
-    ]
+    ],
+    "storyRole": "作为多元宇宙阶段的关键决战节点，把康变体、时间线分支和新一代英雄集结推到前台；正片细节以上映后为准。",
+    "keyTakeaways": [
+      "已有线索显示康变体会成为多元宇宙级威胁。",
+      "新一代复仇者和跨界角色需要重新集结。",
+      "这部片会直接影响秘密战争的阵营与赌注。"
+    ],
+    "aftermath": {
+      "setup": [
+        "毁灭日之后的世界将直接进入秘密战争。",
+        "老复仇者、神奇四侠、变种人和多元宇宙角色可能交汇。"
+      ],
+      "payoff": [
+        "回收洛基、蚁人3和死侍跨界布置的多元宇宙线索。"
+      ],
+      "characterStates": [
+        {
+          "id": "kang",
+          "state": "截至上映前，康变体仍是核心威胁框架之一，但具体形态待正片确认。"
+        },
+        {
+          "id": "reed-richards",
+          "state": "神奇先生及其宇宙可能进入更大战场。"
+        },
+        {
+          "id": "deadpool",
+          "state": "跨界变量可能被卷入多元宇宙大战。"
+        }
+      ]
+    }
   },
   {
     "id": "avengers-secret-wars",
@@ -2035,6 +2576,35 @@
     "stills": [
       "/stills/still-avengers-secret-wars-1.webp",
       "/stills/still-avengers-secret-wars-2.webp"
-    ]
+    ],
+    "storyRole": "作为当前多元宇宙阶段的终局节点，用来收束时间线失控、宇宙碰撞和新一代英雄集结；正片细节以上映后为准。",
+    "keyTakeaways": [
+      "多元宇宙碰撞是目前最明确的舞台。",
+      "不同宇宙的英雄和反派可能被迫合作或对立。",
+      "影片将决定 MCU 下一阶段的基础格局。"
+    ],
+    "aftermath": {
+      "setup": [
+        "秘密战争后可能重塑主宇宙、变体和变种人/神奇四侠的位置。",
+        "具体牺牲、回归和重置均需等待正片。"
+      ],
+      "payoff": [
+        "预计回收洛基、死侍、神奇四侠和康议会等阶段线索。"
+      ],
+      "characterStates": [
+        {
+          "id": "kang",
+          "state": "是否仍是最终反派或被其他威胁取代，仍待确认。"
+        },
+        {
+          "id": "loki",
+          "state": "作为时间线守护者，可能与秘密战争有关联，但介入方式未定。"
+        },
+        {
+          "id": "wolverine",
+          "state": "X 战警遗产可能通过他进入终局战场。"
+        }
+      ]
+    }
   }
 ]

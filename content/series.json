@@ -101,7 +101,32 @@
       "/stills/still-loki-2.webp",
       "/stills/still-loki-3.webp",
       "/stills/still-loki-4.webp"
-    ]
+    ],
+    "storyRole": "解释多元宇宙为什么会失控，并让洛基从诡计之神变成时间线守护者。",
+    "keyTakeaways": [
+      "TVA 的神圣时间线是遗留之人裁剪出的秩序。",
+      "希尔维杀死遗留之人，导致时间线分支爆发。",
+      "洛基最终坐上时间王座，用自身维持所有时间线。"
+    ],
+    "aftermath": {
+      "setup": [
+        "无数康变体涌出，为量子狂潮和秘密战争铺路。",
+        "洛基成为多元宇宙战争中位置特殊的变量。"
+      ],
+      "payoff": [
+        "回收终局时间劫案中 2012 洛基逃脱的分支。"
+      ],
+      "characterStates": [
+        {
+          "id": "loki",
+          "state": "从追求王位和归属的人，转变为独自守护时间线的存在。"
+        },
+        {
+          "id": "kang",
+          "state": "以遗留之人和多变体形式成为阶段威胁框架。"
+        }
+      ]
+    }
   },
   {
     "id": "wandavision",
@@ -155,7 +180,36 @@
       "/stills/still-wandavision-2.webp",
       "/stills/still-wandavision-3.webp",
       "/stills/still-wandavision-4.webp"
-    ]
+    ],
+    "storyRole": "把终局后的悲伤转化为混沌魔法事件，并解释旺达为何会走向绯红女巫。",
+    "keyTakeaways": [
+      "旺达用混沌魔法把西景镇改造成情景喜剧世界。",
+      "她创造的幻视和孩子既是爱，也是对镇民的囚禁。",
+      "告别幻境后，黑暗神书把她引向多元宇宙中的孩子。"
+    ],
+    "aftermath": {
+      "setup": [
+        "黑暗神书直接通向奇异博士2。",
+        "比利和汤米的存在成为跨宇宙执念。"
+      ],
+      "payoff": [
+        "回收终局中旺达失去幻视和家庭的创伤。"
+      ],
+      "characterStates": [
+        {
+          "id": "wanda-maximoff",
+          "state": "放开西景镇幻境，却被黑暗神书进一步吞噬。"
+        },
+        {
+          "id": "vision",
+          "state": "白幻视携带记忆离开，其后续仍有悬念。"
+        },
+        {
+          "id": "monica-rambeau",
+          "state": "能力被激活，后续接入惊奇队长线。"
+        }
+      ]
+    }
   },
   {
     "id": "falcon-winter-soldier",

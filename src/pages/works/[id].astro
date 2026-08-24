@@ -39,6 +39,10 @@ const excerpt = (text) => {
   out = out.trim();
   return out.length > 60 ? `${out.slice(0, 58)}…` : out;
 };
+const storyStates = (w.aftermath?.characterStates || []).map((state) => ({
+  ...state,
+  name: charById[state.id]?.alias || charById[state.id]?.name || state.id,
+}));
 ---
 
 <Base title={`${w.title} · 漫威电影世界图鉴`} description={`${w.title}：${(w.summary || '').slice(0, 120)}…`}>
@@ -77,6 +81,58 @@ const excerpt = (text) => {
           </div>
         )}
       </section>
+
+      {w.storyRole && (
+        <section class="wd-story-role">
+          <div class="wd-story-role__head">
+            <span class="wd-story-role__kicker">STORY POSITION</span>
+            <h2>在主线中的位置</h2>
+          </div>
+          <p class="wd-story-role__text" set:html={enrichText(w.storyRole)}></p>
+
+          {w.keyTakeaways?.length > 0 && (
+            <div class="wd-takeaways">
+              <h3>看完只记这几件事</h3>
+              <ul>
+                {w.keyTakeaways.map((item) => <li set:html={enrichText(item)}></li>)}
+              </ul>
+            </div>
+          )}
+
+          {w.aftermath && (
+            <div class="wd-aftermath">
+              <h3>伏笔与片后状态</h3>
+              <div class="wd-aftermath__grid">
+                {w.aftermath.setup?.length > 0 && (
+                  <div>
+                    <b>埋下</b>
+                    <ul>{w.aftermath.setup.map((item) => <li set:html={enrichText(item)}></li>)}</ul>
+                  </div>
+                )}
+                {w.aftermath.payoff?.length > 0 && (
+                  <div>
+                    <b>回收</b>
+                    <ul>{w.aftermath.payoff.map((item) => <li set:html={enrichText(item)}></li>)}</ul>
+                  </div>
+                )}
+              </div>
+              {storyStates.length > 0 && (
+                <div class="wd-states">
+                  <b>本片之后</b>
+                  <div class="wd-states__grid">
+                    {storyStates.map((state) => (
+                      <a class="wd-state" href={pageUrl(`characters/${state.id}`)}>
+                        <span class="wd-state__name" set:html={softenText(state.name)}></span>
+                        <span class="wd-state__text" set:html={enrichText(state.state)}></span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </section>
+      )}
 
       {(w.backgroundNote || w.relationsNote || w.timelineNote) && (
         <section class="wd-section">
@@ -156,9 +212,9 @@ const excerpt = (text) => {
 
     <!-- 底部导航 -->
     <nav class="wd-nav container-wide">
-      {prev ? <a href={`/works/${prev.id}`}>← {prev.title.split('（')[0]}</a> : <span></span>}
+      {prev ? <a href={pageUrl(`works/${prev.id}`)}>← {prev.title.split('（')[0]}</a> : <span></span>}
       <a href={pageUrl(`timeline#${w.id}`)}>← 返回时间线</a>
-      {next ? <a href={`/works/${next.id}`}>{next.title.split('（')[0]} →</a> : <span></span>}
+      {next ? <a href={pageUrl(`works/${next.id}`)}>{next.title.split('（')[0]} →</a> : <span></span>}
     </nav>
   </article>
 </Base>
@@ -283,4 +339,31 @@ const excerpt = (text) => {
   .wd-quotes{padding-top:44px;padding-bottom:44px}
   .wd-nav{flex-wrap:wrap;padding-top:32px;padding-bottom:52px;font-size:14px}
 }
+  /* ===== 主线定位 ===== */
+  .wd-story-role{
+    margin:56px 0;padding:34px 36px;border-radius:var(--radius);
+    background:linear-gradient(180deg,#fff 0%,#fbf7f5 100%);
+    border:1px solid var(--line);border-left:5px solid var(--era-color,var(--accent));
+    box-shadow:var(--shadow)
+  }
+  .wd-story-role__kicker{color:var(--accent);font-size:var(--fs-tiny);letter-spacing:.18em;font-weight:700}
+  .wd-story-role h2{font-size:30px;margin:8px 0 16px}
+  .wd-story-role__text{font-size:18px;line-height:2;color:var(--ink);max-width:900px}
+  .wd-takeaways,.wd-aftermath{margin-top:28px}
+  .wd-takeaways h3,.wd-aftermath h3{font-family:var(--font-sans);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+  .wd-takeaways ul,.wd-aftermath ul{display:grid;gap:10px;list-style:none}
+  .wd-takeaways li{position:relative;padding-left:22px;line-height:1.85}
+  .wd-takeaways li::before{content:'';position:absolute;left:0;top:.82em;width:7px;height:7px;border-radius:50%;background:var(--era-color,var(--accent))}
+  .wd-aftermath__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .wd-aftermath b{display:block;margin-bottom:8px}
+  .wd-aftermath li{padding-left:18px;position:relative;color:var(--ink-soft);line-height:1.8}
+  .wd-aftermath li::before{content:'';position:absolute;left:0;top:.75em;width:6px;height:6px;border-radius:50%;background:var(--line)}
+  .wd-states{margin-top:22px}
+  .wd-states__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+  .wd-state{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:border-color .15s,transform .15s}
+  .wd-state:hover{border-color:rgba(176,42,30,.45);transform:translateY(-2px)}
+  .wd-state__name{display:block;font-weight:700;margin-bottom:6px;color:var(--ink)}
+  .wd-state__text{display:block;color:var(--ink-soft);line-height:1.7;font-size:var(--fs-small)}
+  @media (max-width:820px){.wd-story-role{padding:26px 20px}.wd-aftermath__grid{grid-template-columns:1fr}}
+
 </style>

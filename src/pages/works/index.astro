@@ -1,0 +1,105 @@
+---
+import Base from '../../layouts/Base.astro';
+import { sortedEras, sortedEntries, posterUrl, isSeries, pageUrl, softenText } from '../../lib/data.mjs';
+
+const entriesOf = (eraId) => sortedEntries.filter((m) => m.eraId === eraId);
+const priorityMeta = {
+  'must-watch': { label: '必看', en: 'MUST' },
+  recommended: { label: '推荐', en: 'REC' },
+  optional: { label: '可选', en: 'OPT' },
+};
+---
+<Base title="作品图鉴 · 漫威电影世界图鉴" description="浏览全部 56 部 MCU 电影和剧集海报、剧情导读、主线定位、关键要点、片后状态、剧照、影评和观看决策。">
+  <section class="wks-hero">
+    <div class="wks-hero__inner container-wide">
+      <p class="wks-hero__kicker">ALL WORKS · 56 TITLES</p>
+      <h1 class="wks-hero__title">作品图鉴</h1>
+      <p class="wks-hero__desc">全部电影和剧集按篇章分组，点击海报查看完整剧情、剧照、影评、主线定位和片后状态。</p>
+    </div>
+  </section>
+
+  {sortedEras.map((era) => {
+    const works = entriesOf(era.id);
+    return (
+      <section class="wks-era" style={`--era-color:${era.color}`}>
+        <div class="wks-era__head container-wide">
+          <span class="wks-era__num">{String(sortedEras.indexOf(era) + 1).padStart(2, '0')}</span>
+          <div>
+            <h2>{era.name}</h2>
+            <p>{era.coreGoal}</p>
+          </div>
+        </div>
+        <div class="wks-grid container-wide">
+          {works.map((w) => (
+            <a class="wks-card" href={pageUrl(`works/${w.id}`)}>
+              <div class="wks-card__media">
+                <img src={posterUrl(w.id)} alt={w.title} loading="lazy" width="120" height="180" />
+                {w.watchPriority && (
+                  <span class={`wks-card__badge wks-card__badge--${w.watchPriority}`}>
+                    {priorityMeta[w.watchPriority]?.label}
+                  </span>
+                )}
+                {isSeries(w) && <span class="wks-card__type">剧集</span>}
+              </div>
+              <div class="wks-card__body">
+                <span class="wks-card__year">{w.yearLabel}</span>
+                <span class="wks-card__title" set:html={softenText(w.title)}></span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    );
+  })}
+</Base>
+
+<style>
+  .wks-hero {
+    background:
+      radial-gradient(80% 80% at 80% 10%, rgba(176,42,30,.25), transparent 55%),
+      linear-gradient(160deg, #121316 0%, #1b1c1f 60%, #20212a 100%);
+    color: #fff;
+    padding: 80px 0 72px;
+  }
+  .wks-hero__inner { padding: 0 48px; }
+  .wks-hero__kicker { color: rgba(255,255,255,.65); font-size: var(--fs-tiny); letter-spacing: .2em; text-transform: uppercase; font-weight: 700; }
+  .wks-hero__title { font-size: clamp(42px, 6vw, 80px); line-height: 1.05; margin: 14px 0 18px; }
+  .wks-hero__desc { max-width: 640px; color: rgba(255,255,255,.8); font-size: 19px; line-height: 1.8; }
+
+  .wks-era { padding: 56px 0; border-bottom: 1px solid var(--line); }
+  .wks-era__head { display: flex; align-items: flex-start; gap: 18px; padding: 0 48px 28px; }
+  .wks-era__num { font-family: var(--font-serif); font-size: 32px; font-weight: 800; color: var(--era-color, var(--accent)); line-height: 1; }
+  .wks-era__head h2 { font-size: clamp(24px, 3vw, 34px); margin-bottom: 6px; }
+  .wks-era__head p { color: var(--ink-soft); max-width: 680px; }
+
+  .wks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 0 48px; }
+  .wks-card {
+    display: flex; flex-direction: column;
+    border-radius: var(--radius); overflow: hidden;
+    background: #fff; box-shadow: var(--shadow); border: 1px solid var(--line);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+  .wks-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); border-color: var(--accent); }
+  .wks-card__media { position: relative; aspect-ratio: 2/3; overflow: hidden; background: var(--paper); }
+  .wks-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+  .wks-card:hover .wks-card__media img { transform: scale(1.05); }
+  .wks-card__badge {
+    position: absolute; top: 8px; left: 8px; padding: 3px 10px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; color: #fff;
+  }
+  .wks-card__badge--must-watch { background: var(--accent); }
+  .wks-card__badge--recommended { background: #c47a1a; }
+  .wks-card__badge--optional { background: rgba(0,0,0,.55); }
+  .wks-card__type {
+    position: absolute; top: 8px; right: 8px; padding: 3px 8px; border-radius: 4px;
+    font-size: 10px; font-weight: 600; color: #fff; background: rgba(0,0,0,.6);
+  }
+  .wks-card__body { padding: 14px 16px 18px; }
+  .wks-card__year { display: block; font-family: var(--font-serif); font-size: var(--fs-tiny); color: var(--accent); font-weight: 700; letter-spacing: 0.05em; }
+  .wks-card__title { display: block; margin-top: 4px; font-size: 14px; line-height: 1.5; color: var(--ink); font-weight: 600; }
+
+  @media (max-width: 820px) {
+    .wks-hero__inner, .wks-era__head, .wks-grid { padding-left: 20px; padding-right: 20px; }
+    .wks-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+  }
+</style>

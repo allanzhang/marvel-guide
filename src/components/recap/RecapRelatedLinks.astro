@@ -1,0 +1,53 @@
+---
+import { charById, conceptById, workById, pageUrl, posterUrl, portraitUrl, softenText } from '../../lib/data.mjs';
+
+const { event } = Astro.props;
+const coreWorks = (event.relatedWorks.core || []).map((id) => workById[id]);
+const supplementaryWorks = (event.relatedWorks.supplementary || []).map((id) => workById[id]);
+const characters = event.characterChanges.map((change) => charById[change.id]);
+const concepts = event.conceptThreads.map((thread) => conceptById[thread.id]);
+---
+<div class="recap-related">
+  <section class="recap-related__block">
+    <h4>相关作品</h4>
+    {coreWorks.length > 0 && (
+      <div class="recap-work-grid">
+        {coreWorks.map((work) => (
+          <a class="recap-work-card" href={pageUrl(`works/${work.id}`)}>
+            <img src={posterUrl(work.id)} alt={work.title} loading="lazy" decoding="async" width="120" height="180" />
+            <span class="recap-work-card__title" set:html={softenText(work.title)}></span>
+            <span class="recap-work-card__meta">核心作品</span>
+          </a>
+        ))}
+        {supplementaryWorks.map((work) => (
+          <a class="recap-work-card recap-work-card--soft" href={pageUrl(`works/${work.id}`)}>
+            <img src={posterUrl(work.id)} alt={work.title} loading="lazy" decoding="async" width="120" height="180" />
+            <span class="recap-work-card__title" set:html={softenText(work.title)}></span>
+            <span class="recap-work-card__meta">补充作品</span>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <section class="recap-related__block">
+    <h4>关键人物</h4>
+    <div class="recap-chip-grid">
+      {characters.map((character) => (
+        <a class="recap-person" href={pageUrl(`characters/${character.id}`)}>
+          <img src={portraitUrl(character.id)} alt={character.name} loading="lazy" decoding="async" width="48" height="48" />
+          <span set:html={softenText(character.alias || character.name)}></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="recap-related__block">
+    <h4>关键概念</h4>
+    <div class="recap-chip-grid">
+      {concepts.map((concept) => (
+        <a class="recap-concept" href={pageUrl(`concepts/${concept.id}`)} set:html={softenText(concept.name)}></a>
+      ))}
+    </div>
+  </section>
+</div>

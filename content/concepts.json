@@ -23,7 +23,23 @@
       "mind-stone",
       "soul-stone",
       "infinity-gauntlet"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "captain-america-first-avenger",
+      "mainImpact": "六颗宝石是无限传奇的主线物件，决定了灭霸如何从幕后走到响指中心。",
+      "keyMoments": [
+        "宇宙魔方、洛基权杖、以太、力量宝石等以不同形态分散出现。",
+        "灭霸在无限战争中集齐六颗宝石并打响指。",
+        "终局后主宇宙宝石被归还或摧毁，主线焦点转向多元宇宙。"
+      ],
+      "relatedCharacters": [
+        "thanos",
+        "vision",
+        "stephen-strange",
+        "gamora"
+      ],
+      "currentStatus": "主宇宙的无限宝石不再作为当前阶段核心目标，但时间劫案和其他宇宙仍会让它们产生影响。"
+    }
   },
   {
     "id": "space-stone",
@@ -45,7 +61,23 @@
     ],
     "relatedChars": [
       "red-skull"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "captain-america-first-avenger",
+      "mainImpact": "空间宝石通过宇宙魔方连接二战、神盾局、纽约大战和灭霸开场，是最早贯穿主线的宝石。",
+      "keyMoments": [
+        "红骷髅在二战中利用宇宙魔方开发武器。",
+        "洛基用宇宙魔方打开纽约大战传送门。",
+        "灭霸在阿斯加德难民船上从洛基手中取得空间宝石。"
+      ],
+      "relatedCharacters": [
+        "red-skull",
+        "loki",
+        "nick-fury",
+        "thanos"
+      ],
+      "currentStatus": "主宇宙空间宝石已被灭霸取得并在响指后损毁；时间劫案中的分支版本产生了洛基支线。"
+    }
   },
   {
     "id": "time-stone",
@@ -64,7 +96,23 @@
       "sorcerer-supreme",
       "kamar-taj"
     ],
-    "relatedChars": []
+    "relatedChars": [],
+    "narrativeRole": {
+      "firstAppearance": "doctor-strange-1",
+      "mainImpact": "时间宝石让卡玛泰姬能够介入现实规则，也是无限战争中唯一胜利路径的关键。",
+      "keyMoments": [
+        "斯特兰奇用阿戈摩托之眼困住多玛姆。",
+        "斯特兰奇在泰坦星看到唯一胜利未来。",
+        "他主动交出时间宝石以保住托尼性命。"
+      ],
+      "relatedCharacters": [
+        "stephen-strange",
+        "ancient-one",
+        "wong",
+        "thanos"
+      ],
+      "currentStatus": "主宇宙时间宝石已被灭霸使用并损毁；终局中古一曾向班纳解释宝石与现实守护的关系。"
+    }
   },
   {
     "id": "reality-stone",
@@ -82,7 +130,23 @@
       "infinity-stones",
       "reality-stone",
       "reality-stone"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "thor-2",
+      "mainImpact": "现实宝石以太把黑暗精灵、九界和无限宝石系统连接起来，推动灭霸收集暗线。",
+      "keyMoments": [
+        "简接触以太，黑暗精灵试图让宇宙回到黑暗。",
+        "战后现实宝石被交给收集者保管。",
+        "灭霸后来取得现实宝石并用它制造幻象。"
+      ],
+      "relatedCharacters": [
+        "thor",
+        "jane-foster",
+        "loki",
+        "thanos"
+      ],
+      "currentStatus": "主宇宙现实宝石已被灭霸集齐并损毁，其主要功能是解释宝石规则和灭霸进度。"
+    }
   },
   {
     "id": "power-stone",
@@ -101,7 +165,23 @@
     ],
     "relatedChars": [
       "star-lord"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "guardians-1",
+      "mainImpact": "力量宝石把银河护卫队、山达尔和灭霸力量线连接起来。",
+      "keyMoments": [
+        "彼得·奎尔取得力量宝石，护卫队阻止罗南毁灭山达尔。",
+        "山达尔长期保管力量宝石。",
+        "灭霸在无限战争前血洗山达尔并取得宝石。"
+      ],
+      "relatedCharacters": [
+        "star-lord",
+        "gamora",
+        "rocket",
+        "thanos"
+      ],
+      "currentStatus": "主宇宙力量宝石已被灭霸取得并损毁，是无限战争开场前已知的灭霸进度。"
+    }
   },
   {
     "id": "mind-stone",
@@ -122,7 +202,23 @@
     "relatedChars": [
       "vision",
       "wanda-maximoff"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "avengers-1",
+      "mainImpact": "心灵宝石从洛基权杖演变为幻视生命核心，同时制造旺达能力和奥创危机。",
+      "keyMoments": [
+        "洛基权杖成为入侵地球工具。",
+        "斯特克工业用权杖实验激活旺达和快银。",
+        "心灵宝石与再生摇篮、贾维斯共同诞生幻视。"
+      ],
+      "relatedCharacters": [
+        "vision",
+        "wanda-maximoff",
+        "tony-stark",
+        "ultron"
+      ],
+      "currentStatus": "主宇宙心灵宝石随幻视死亡和响指结束；它造成的创伤仍在旺达线延续。"
+    }
   },
   {
     "id": "soul-stone",
@@ -144,7 +240,23 @@
     ],
     "relatedWorks": [
       "black-widow"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "infinity-war",
+      "mainImpact": "灵魂宝石把灭霸对卡魔拉的控制转化为不可逆牺牲，是无限战争最私人的代价。",
+      "keyMoments": [
+        "卡魔拉知道灵魂宝石在沃米尔。",
+        "红骷髅作为宝石引路人出现。",
+        "灭霸牺牲卡魔拉取得宝石。"
+      ],
+      "relatedCharacters": [
+        "thanos",
+        "gamora",
+        "red-skull",
+        "natasha-romanoff"
+      ],
+      "currentStatus": "终局中黑寡妇以牺牲换取灵魂宝石；主宇宙宝石归还后，灵魂宝石的代价仍永久改变了幸存者。"
+    }
   },
   {
     "id": "infinity-gauntlet",
@@ -227,7 +339,23 @@
     "relatedChars": [
       "tchalla",
       "steve-rogers"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "captain-america-first-avenger",
+      "mainImpact": "振金从美国队长盾牌材料扩展为瓦坎达全球政治、科技和权力争夺的核心资源。",
+      "keyMoments": [
+        "斯塔克用振金为史蒂夫制作盾牌。",
+        "瓦坎达依靠振金发展为隐藏高科技国家。",
+        "特查拉开放瓦坎达后，振金成为国际争夺资源。"
+      ],
+      "relatedCharacters": [
+        "steve-rogers",
+        "tchalla",
+        "shuri",
+        "general-ross"
+      ],
+      "currentStatus": "振金继续牵动瓦坎达与外部世界关系，并在美国队长4等新世界秩序故事中保持重要性。"
+    }
   },
   {
     "id": "pym-particles",
@@ -248,7 +376,23 @@
     "relatedChars": [
       "hank-pym",
       "scott-lang"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "ant-man-1",
+      "mainImpact": "皮姆粒子改变尺度，也是终局时间劫案能够执行的技术基础。",
+      "keyMoments": [
+        "斯科特依靠皮姆粒子成为蚁人。",
+        "汉克·皮姆长期向斯塔克等人隐瞒技术。",
+        "终局复仇者使用皮姆粒子穿越过去借宝石。"
+      ],
+      "relatedCharacters": [
+        "scott-lang",
+        "hank-pym",
+        "hope-van-dyne",
+        "steve-rogers"
+      ],
+      "currentStatus": "皮姆粒子仍是量子穿越和时间行动的关键技术，但故事重心已从偷盗行动转向宇宙级危机。"
+    }
   },
   {
     "id": "ten-rings",
@@ -284,7 +428,22 @@
     "relatedChars": [
       "wanda-maximoff",
       "wanda-maximoff"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "wandavision",
+      "mainImpact": "混沌魔法解释了旺达为何能改写西景镇现实，并使她成为多元宇宙阶段最危险的魔法使用者之一。",
+      "keyMoments": [
+        "旺达无意识中创造情景喜剧现实。",
+        "阿加莎指出旺达使用的是混沌魔法。",
+        "奇异博士2中混沌魔法让旺达能跨宇宙追捕美国小姐。"
+      ],
+      "relatedCharacters": [
+        "wanda-maximoff",
+        "vision",
+        "stephen-strange"
+      ],
+      "currentStatus": "旺达本人命运未定，但混沌魔法已经证明足以改变现实和跨越宇宙。"
+    }
   },
   {
     "id": "darkhold",
@@ -303,7 +462,23 @@
     "relatedChars": [
       "wanda-maximoff",
       "wanda-maximoff"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "wandavision",
+      "mainImpact": "黑暗神书把旺达的悲伤转化为跨宇宙掠夺动机，是奇异博士2的关键魔法诱因。",
+      "keyMoments": [
+        "旺达在西景镇事件后被黑暗神书影响。",
+        "黑暗神书告诉她孩子可能在其他宇宙存在。",
+        "万达格山的黑暗神书源头被摧毁。"
+      ],
+      "relatedCharacters": [
+        "wanda-maximoff",
+        "stephen-strange",
+        "wong",
+        "america-chavez"
+      ],
+      "currentStatus": "主宇宙可见的黑暗神书源头已被摧毁，但混沌魔法和旺达变体仍保留不确定性。"
+    }
   },
   {
     "id": "kamar-taj",
@@ -410,7 +585,21 @@
     "relatedChars": [
       "kang",
       "loki"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "loki",
+      "mainImpact": "TVA 把时间穿越从技术事件升级为治理体系，并把康变体引入舞台中央。",
+      "keyMoments": [
+        "洛基被 TVA 逮捕并得知自己只是时间变量。",
+        "TVA 成员发现自己也是被裁剪和欺骗的变体。",
+        "洛基最终承担时间线守护者职责。"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "kang"
+      ],
+      "currentStatus": "旧 TVA 秩序已经崩塌，洛基在时间尽头维持平衡，但康变体仍威胁现实。"
+    }
   },
   {
     "id": "asgard",
@@ -478,7 +667,23 @@
     "relatedChars": [
       "hank-pym",
       "scott-lang"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "ant-man-1",
+      "mainImpact": "量子领域既是缩小技术的边界，也是时间穿越、康和多元宇宙时代的入口。",
+      "keyMoments": [
+        "斯科特首次进入量子领域并成功返回。",
+        "蚁人2片尾斯科特被困量子领域，躲过响指。",
+        "蚁人3揭示量子领域中的文明和征服者康。"
+      ],
+      "relatedCharacters": [
+        "scott-lang",
+        "hank-pym",
+        "hope-van-dyne",
+        "kang"
+      ],
+      "currentStatus": "量子领域已与时间分支、康和多元宇宙战争深度绑定，不再只是蚁人个人设定。"
+    }
   },
   {
     "id": "nine-realms",
@@ -537,7 +742,21 @@
     "relatedChars": [
       "kang",
       "loki"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "loki",
+      "mainImpact": "神圣时间线揭示 MCU 之前的时间秩序并非自然存在，而是遗留之人裁剪出的控制结果。",
+      "keyMoments": [
+        "TVA 抓捕洛基并解释时间变异。",
+        "遗留之人说明他通过删除分支阻止更坏的康变体。",
+        "希尔维杀死遗留之人后，神圣时间线失去唯一控制者。"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "kang"
+      ],
+      "currentStatus": "神圣时间线已被大量分支突破，不再是单一现实秩序。"
+    }
   },
   {
     "id": "time-branch",
@@ -556,7 +775,23 @@
       "sacred-timeline",
       "multiverse",
       "tva"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "endgame",
+      "mainImpact": "时间分支解释了为什么回到过去不会简单覆盖现在，也为洛基和多元宇宙危机提供规则基础。",
+      "keyMoments": [
+        "终局时间劫案改变了过去取宝石的路径。",
+        "2012 洛基带走宇宙魔方形成独立分支。",
+        "TVA 将这些分支视为需要裁剪的时间变异。"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "steve-rogers",
+        "scott-lang",
+        "kang"
+      ],
+      "currentStatus": "遗留之人死亡后，时间分支大量生长，成为多元宇宙危机的直接来源。"
+    }
   },
   {
     "id": "the-snap",
@@ -575,7 +810,23 @@
     ],
     "relatedChars": [
       "thanos"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "infinity-war",
+      "mainImpact": "响指造成宇宙半数生命消失，并决定了终局前五年的社会创伤和人物状态。",
+      "keyMoments": [
+        "灭霸打响指，大量英雄化灰。",
+        "世界经历五年人口断层和社会失序。",
+        "终局中绿巨人响指带回化灰生命，但失去的五年无法抹除。"
+      ],
+      "relatedCharacters": [
+        "thanos",
+        "scott-lang",
+        "clint-barton",
+        "bruce-banner"
+      ],
+      "currentStatus": "化灰者已经归来，但烁灭造成的身份、社会和家庭裂缝仍影响英雄远征、秘密入侵等后续故事。"
+    }
   },
   {
     "id": "sokovia-accords",
@@ -595,7 +846,23 @@
     ],
     "relatedWorks": [
       "avengers-1"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "civil-war",
+      "mainImpact": "索科维亚协议把超级英雄行动从私人选择变成国际政治问题，是复仇者分裂的制度核心。",
+      "keyMoments": [
+        "联合国因多次平民伤亡推出协议。",
+        "托尼支持监管，史蒂夫反对机构可能被劫持。",
+        "泽莫利用协议冲突和巴基真相拆散复仇者。"
+      ],
+      "relatedCharacters": [
+        "tony-stark",
+        "steve-rogers",
+        "natasha-romanoff",
+        "sam-wilson"
+      ],
+      "currentStatus": "随着终局和旧复仇者退场，协议不再是显性焦点，但它塑造了新世界秩序对英雄的不信任。"
+    }
   },
   {
     "id": "multiverse",
@@ -618,7 +885,23 @@
     ],
     "relatedChars": [
       "kang"
-    ]
+    ],
+    "narrativeRole": {
+      "firstAppearance": "doctor-strange-1",
+      "mainImpact": "多元宇宙从魔法概念发展为阶段主线，解释变体、跨界角色和宇宙碰撞。",
+      "keyMoments": [
+        "斯特兰奇首次看见多元宇宙和黑暗次元。",
+        "洛基结尾遗留之人死亡，时间线分支大规模爆发。",
+        "英雄无归、奇异博士2和死侍跨界让不同宇宙角色进入主线。"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "stephen-strange",
+        "kang",
+        "deadpool"
+      ],
+      "currentStatus": "多元宇宙已经失控，没有单一 TVA 秩序能完全约束，正在向秘密战争汇集。"
+    }
   },
   {
     "id": "skrulls",

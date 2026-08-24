@@ -18,7 +18,79 @@
       "civil-war",
       "infinity-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "弱者入伍",
+          "work": "captain-america-first-avenger",
+          "summary": "以品格而非体格被选中，坠机冰封七十年。"
+        },
+        {
+          "title": "现代领袖",
+          "work": "avengers-1",
+          "summary": "在现代世界第一次找到团队，成为复仇者战术核心。"
+        },
+        {
+          "title": "体制质疑者",
+          "work": "winter-soldier",
+          "summary": "发现神盾局被九头蛇渗透后，选择亲手拆掉体制。"
+        },
+        {
+          "title": "内战分裂",
+          "work": "civil-war",
+          "summary": "为保护巴基和自主判断，放弃复联领袖身份与托尼决裂。"
+        },
+        {
+          "title": "终局归途",
+          "work": "endgame",
+          "summary": "归还宝石后选择回到过去与佩吉共度一生，把盾牌交给山姆。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "bucky-barnes",
+          "type": "挚友/执念",
+          "evolution": "从布鲁克林伙伴到冰封宿敌，史蒂夫为他不惜与世界为敌。",
+          "keyWorks": [
+            "captain-america-first-avenger",
+            "winter-soldier",
+            "civil-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "tony-stark",
+          "type": "盟友→对手",
+          "evolution": "理念分歧在巴基真相中爆发，终局前和解但裂痕已深。",
+          "keyWorks": [
+            "avengers-1",
+            "civil-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "peggy-carter",
+          "type": "一生挚爱",
+          "evolution": "错过的约会延续七十年，终局中终于跳完那支舞。",
+          "keyWorks": [
+            "captain-america-first-avenger",
+            "endgame"
+          ]
+        },
+        {
+          "with": "sam-wilson",
+          "type": "继承者",
+          "evolution": "从跑步伙伴到最信任的战友，最终把美队盾牌和精神交给他。",
+          "keyWorks": [
+            "winter-soldier",
+            "civil-war",
+            "endgame",
+            "falcon-winter-soldier"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "tony-stark",
@@ -41,7 +113,84 @@
       "spider-man-homecoming",
       "infinity-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "洞穴觉醒",
+          "work": "iron-man-1",
+          "summary": "在阿富汗洞穴中被伊森牺牲唤醒，从军火商转变为公开承认身份的钢铁侠。"
+        },
+        {
+          "title": "纽约焦虑",
+          "work": "avengers-1",
+          "summary": "穿越虫洞后被外星入侵恐惧追着跑，坚信必须提前保护世界。"
+        },
+        {
+          "title": "奥创之罪",
+          "work": "age-of-ultron",
+          "summary": "用心灵宝石制造奥创酿成索科维亚灾难，愧疚加深了他对控制安全的执念。"
+        },
+        {
+          "title": "内战裂痕",
+          "work": "civil-war",
+          "summary": "支持监管并因父母之死与史蒂夫决裂，团队分崩离析。"
+        },
+        {
+          "title": "泰坦失败",
+          "work": "infinity-war",
+          "summary": "在泰坦星看着彼得化灰，带着失败感隐退五年。"
+        },
+        {
+          "title": "终局牺牲",
+          "work": "endgame",
+          "summary": "与父亲和解后选择打响指，以生命完成从利己者到守护者的弧线。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "steve-rogers",
+          "type": "盟友→对手→和解",
+          "evolution": "从互相尊重的战友，因监管和巴基真相决裂，终局前重新并肩。",
+          "keyWorks": [
+            "avengers-1",
+            "civil-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "pepper-potts",
+          "type": "爱人",
+          "evolution": "从玩世不恭的老板到承诺家庭，最终在妻女陪伴中走完人生。",
+          "keyWorks": [
+            "iron-man-1",
+            "iron-man-3",
+            "endgame"
+          ]
+        },
+        {
+          "with": "peter-parker",
+          "type": "导师/父子",
+          "evolution": "把彼得拉入内战，既想保护他又把他推上战场，彼得化灰是托尼最大的创伤之一。",
+          "keyWorks": [
+            "civil-war",
+            "spider-man-homecoming",
+            "infinity-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "thanos",
+          "type": "宿敌",
+          "evolution": "从纽约后的焦虑预感，到泰坦星正面交锋，终局中夺过宝石以命相搏。",
+          "keyWorks": [
+            "avengers-1",
+            "infinity-war",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "matt-murdock",
@@ -57,7 +206,26 @@
       "daredevil",
       "defenders"
     ],
-    "movies": []
+    "movies": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "地狱厨房夜魔侠",
+          "work": "daredevil",
+          "summary": "白天是律师，夜晚以夜魔侠身份用天主教信仰和拳头守护地狱厨房。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "kingpin",
+          "type": "宿敌",
+          "evolution": "作为律师无法在法庭上击败菲斯克，只能在夜晚以暴力对抗他。",
+          "keyWorks": [
+            "daredevil"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "jessica-jones",
@@ -73,7 +241,27 @@
       "jessica-jones",
       "defenders"
     ],
-    "movies": []
+    "movies": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "创伤后的私家侦探",
+          "work": "jessica-jones",
+          "summary": "曾被紫人精神控制，以私家侦探身份在纽约处理超能力案件。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "luke-cage",
+          "type": "暧昧/盟友",
+          "evolution": "从复杂的相遇到在捍卫者中并肩作战。",
+          "keyWorks": [
+            "jessica-jones",
+            "defenders"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "luke-cage",
@@ -89,7 +277,28 @@
       "luke-cage",
       "defenders"
     ],
-    "movies": []
+    "movies": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "哈莱姆守护者",
+          "work": "luke-cage",
+          "summary": "获得刀枪不入身体后在哈莱姆社区守护街头。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "jessica-jones",
+          "type": "暧昧/盟友",
+          "evolution": "从复杂相遇到在捍卫者中建立信任。",
+          "keyWorks": [
+            "jessica-jones",
+            "luke-cage",
+            "defenders"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "danny-rand",
@@ -105,7 +314,17 @@
       "iron-fist",
       "defenders"
     ],
-    "movies": []
+    "movies": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "昆仑铁拳",
+          "work": "iron-fist",
+          "summary": "空难后在昆仑习得铁拳之力，回到纽约夺回家族企业。"
+        }
+      ],
+      "relationships": []
+    }
   },
   {
     "id": "frank-castle",
@@ -121,7 +340,27 @@
       "punisher",
       "daredevil"
     ],
-    "movies": []
+    "movies": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "惩罚者",
+          "work": "punisher",
+          "summary": "家人被杀后以极端暴力惩罚罪犯，代表法律失效时的人性极端。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "matt-murdock",
+          "type": "镜像对手",
+          "evolution": "两人都在用暴力对抗犯罪，但马特仍相信法律底线，弗兰克彻底放弃了它。",
+          "keyWorks": [
+            "daredevil",
+            "punisher"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "steven-grant",
@@ -136,7 +375,17 @@
     "series": [
       "moon-knight"
     ],
-    "movies": []
+    "movies": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "多重身份",
+          "work": "moon-knight",
+          "summary": "作为马克·斯佩克特的分离身份之一，与孔苏神绑定。"
+        }
+      ],
+      "relationships": []
+    }
   },
   {
     "id": "thor",
@@ -158,7 +407,80 @@
       "infinity-war",
       "endgame",
       "thor-4"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "傲慢被贬",
+          "work": "thor-1",
+          "summary": "因挑起战争被奥丁剥夺神力，在地球学会谦逊和责任。"
+        },
+        {
+          "title": "纽约并肩",
+          "work": "avengers-1",
+          "summary": "与复仇者一起抵御洛基和齐塔瑞入侵，承担王子责任。"
+        },
+        {
+          "title": "失去一切",
+          "work": "ragnarok",
+          "summary": "失去雷神之锤、父亲和阿斯加德，却真正觉醒雷神之力。"
+        },
+        {
+          "title": "灭霸惨败",
+          "work": "infinity-war",
+          "summary": "新造风暴战斧仍未阻止响指，自责吞噬了他五年。"
+        },
+        {
+          "title": "重新上路",
+          "work": "endgame",
+          "summary": "走出失败阴影，把新阿斯加德交给女武神，随护卫队出发。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "loki",
+          "type": "兄弟",
+          "evolution": "从反复背叛到在诸神黄昏中重新站在一起，灭霸开场让这份关系以悲剧收束。",
+          "keyWorks": [
+            "thor-1",
+            "avengers-1",
+            "thor-2",
+            "ragnarok",
+            "infinity-war"
+          ]
+        },
+        {
+          "with": "odin",
+          "type": "父子",
+          "evolution": "从渴望认可到理解父亲的阴影，奥丁之死让索尔必须自己成为王。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "ragnarok"
+          ]
+        },
+        {
+          "with": "jane-foster",
+          "type": "爱人",
+          "evolution": "从地球恋情到分离，简在爱与雷霆中重新回到他生命里。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "thor-4"
+          ]
+        },
+        {
+          "with": "valkyrie",
+          "type": "战友/托付",
+          "evolution": "在萨卡星把她从逃避中拉回，最终把阿斯加德王位交给她。",
+          "keyWorks": [
+            "ragnarok",
+            "endgame",
+            "thor-4"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "bruce-banner",
@@ -178,7 +500,58 @@
       "ragnarok",
       "infinity-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "逃亡的浩克",
+          "work": "incredible-hulk",
+          "summary": "伽马事故后被军方追捕，试图治愈自己。"
+        },
+        {
+          "title": "复仇者战力",
+          "work": "avengers-1",
+          "summary": "浩克成为团队不可缺少的战斗力。"
+        },
+        {
+          "title": "自我放逐",
+          "work": "age-of-ultron",
+          "summary": "奥创事件后离开团队，在萨卡星以浩克身份生活多年。"
+        },
+        {
+          "title": "融合",
+          "work": "ragnarok",
+          "summary": "班纳与浩克的身份冲突加剧，为终局融合埋下伏笔。"
+        },
+        {
+          "title": "智慧浩克",
+          "work": "endgame",
+          "summary": "将班纳的智慧与浩克的身体融合，打响指带回化灰生命。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "tony-stark",
+          "type": "科学搭档",
+          "evolution": "共同创造奥创，也共同承担失败；终局中并肩完成时间实验。",
+          "keyWorks": [
+            "avengers-1",
+            "age-of-ultron",
+            "endgame"
+          ]
+        },
+        {
+          "with": "natasha-romanoff",
+          "type": "暧昧/信任",
+          "evolution": "奥创纪元中建立的深层信任，娜塔莎的牺牲是他终局之痛。",
+          "keyWorks": [
+            "avengers-1",
+            "age-of-ultron",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "natasha-romanoff",
@@ -199,7 +572,61 @@
       "civil-war",
       "black-widow",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "红房出身",
+          "work": "iron-man-2",
+          "summary": "以神盾局间谍身份进入托尼身边，过去被红房训练控制。"
+        },
+        {
+          "title": "复仇者纽带",
+          "work": "avengers-1",
+          "summary": "成为团队中协调各方、把英雄们粘在一起的人。"
+        },
+        {
+          "title": "公开真相",
+          "work": "winter-soldier",
+          "summary": "选择公开神盾局机密，承担身份曝光后果。"
+        },
+        {
+          "title": "沃米尔牺牲",
+          "work": "endgame",
+          "summary": "为换取灵魂宝石自愿坠崖，以没有原生家庭的人成为团队的家人。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "clint-barton",
+          "type": "挚友/家人",
+          "evolution": "从 Budapest 的任务搭档到彼此最信任的人，克林特的家是她感受家庭的地方。",
+          "keyWorks": [
+            "avengers-1",
+            "age-of-ultron",
+            "endgame"
+          ]
+        },
+        {
+          "with": "bruce-banner",
+          "type": "暧昧/信任",
+          "evolution": "在浩克身上看到同样被改造的自己，建立了独特的理解。",
+          "keyWorks": [
+            "avengers-1",
+            "age-of-ultron"
+          ]
+        },
+        {
+          "with": "yelyena-belova",
+          "type": "姐妹",
+          "evolution": "黑寡妇中揭示两人在红房伪装家庭中的姐妹关系，叶莲娜延续了她的遗产。",
+          "keyWorks": [
+            "black-widow",
+            "hawkeye"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "clint-barton",
@@ -220,7 +647,63 @@
     ],
     "series": [
       "hawkeye"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "神盾局特工",
+          "work": "thor-1",
+          "summary": "以神盾局弓箭手身份首次登场，对索尔射出第一箭。"
+        },
+        {
+          "title": "复仇者元老",
+          "work": "avengers-1",
+          "summary": "成为初代六人中最接近普通人生活的一员。"
+        },
+        {
+          "title": "家庭危机",
+          "work": "age-of-ultron",
+          "summary": "奥创威胁到他的家庭，也让团队看到普通人生活的代价。"
+        },
+        {
+          "title": "浪人时期",
+          "work": "endgame",
+          "summary": "家人化灰后以浪人身份在全球私刑杀戮，被娜塔莎拉回。"
+        },
+        {
+          "title": "圣诞传承",
+          "work": "hawkeye",
+          "summary": "把鹰眼身份和责任逐步传递给凯特·毕肖普。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "natasha-romanoff",
+          "type": "挚友",
+          "evolution": "从 Budapest 到沃米尔，他是娜塔莎最信任的人，她的牺牲让他终身背负。",
+          "keyWorks": [
+            "avengers-1",
+            "endgame"
+          ]
+        },
+        {
+          "with": "kate-bishop",
+          "type": "师徒/传承",
+          "evolution": "从被纠缠的退休英雄到承认凯特是下一代鹰眼。",
+          "keyWorks": [
+            "hawkeye"
+          ]
+        },
+        {
+          "with": "yelyena-belova",
+          "type": "误会/和解",
+          "evolution": "叶莲娜误以为他害死娜塔莎，最终在圣诞夜和解。",
+          "keyWorks": [
+            "hawkeye"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "peter-parker",
@@ -241,7 +724,57 @@
       "far-from-home",
       "spider-man-no-way-home",
       "spider-man-brand-new-day"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "被托尼招募",
+          "work": "civil-war",
+          "summary": "以邻家蜘蛛侠身份被带入英雄内战。"
+        },
+        {
+          "title": "学会等待",
+          "work": "spider-man-homecoming",
+          "summary": "拒绝复仇者席位，明白英雄不需要在大舞台上证明自己。"
+        },
+        {
+          "title": "泰坦化灰",
+          "work": "infinity-war",
+          "summary": "在托尼怀中化灰，成为托尼终局动机的核心创伤。"
+        },
+        {
+          "title": "身份曝光",
+          "work": "far-from-home",
+          "summary": "神秘客死后他被公开身份，生活彻底崩塌。"
+        },
+        {
+          "title": "世界遗忘",
+          "work": "spider-man-no-way-home",
+          "summary": "为修复多元宇宙让全世界忘记彼得·帕克，独自承担匿名英雄身份。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "tony-stark",
+          "type": "导师/父亲",
+          "evolution": "从被偶像招募到在他怀中化灰，托尼的牺牲定义了彼得对英雄责任的理解。",
+          "keyWorks": [
+            "civil-war",
+            "spider-man-homecoming",
+            "infinity-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "stephen-strange",
+          "type": "临时盟友/冲突",
+          "evolution": "因遗忘咒语合作又冲突，彼得最终说服斯特兰奇完成遗忘咒语。",
+          "keyWorks": [
+            "spider-man-no-way-home"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "stephen-strange",
@@ -260,7 +793,67 @@
       "endgame",
       "spider-man-no-way-home",
       "doctor-strange-2"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "傲慢医生",
+          "work": "doctor-strange-1",
+          "summary": "车祸后失去双手，在卡玛泰姬从控制狂变为魔法守护者。"
+        },
+        {
+          "title": "时间宝石守护者",
+          "work": "doctor-strange-1",
+          "summary": "用阿戈摩托之眼困住多玛姆，成为纽约至圣所守护者。"
+        },
+        {
+          "title": "唯一胜机",
+          "work": "infinity-war",
+          "summary": "看到唯一胜利未来后交出时间宝石，以托尼之死换全局。"
+        },
+        {
+          "title": "咒语失控",
+          "work": "spider-man-no-way-home",
+          "summary": "为彼得施法时打开多元宇宙裂缝。"
+        },
+        {
+          "title": "多元宇宙之旅",
+          "work": "doctor-strange-2",
+          "summary": "面对多个变体和旺达的疯狂，学会承认傲慢的代价。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "wong",
+          "type": "法师搭档",
+          "evolution": "从训练者到最稳定的盟友，王在他缺席时守护卡玛泰姬。",
+          "keyWorks": [
+            "doctor-strange-1",
+            "infinity-war",
+            "spider-man-no-way-home",
+            "doctor-strange-2"
+          ]
+        },
+        {
+          "with": "wanda-maximoff",
+          "type": "对手",
+          "evolution": "从复联战友到在多元宇宙中正面为敌，理解了她的创伤和危险。",
+          "keyWorks": [
+            "age-of-ultron",
+            "doctor-strange-2"
+          ]
+        },
+        {
+          "with": "ancient-one",
+          "type": "导师",
+          "evolution": "古一以死亡把守护责任传给他，也留下了打破规则的阴影。",
+          "keyWorks": [
+            "doctor-strange-1",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "tchalla",
@@ -279,7 +872,54 @@
       "infinity-war",
       "endgame",
       "black-panther-2"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "复仇王子",
+          "work": "civil-war",
+          "summary": "因父亲爆炸而追杀巴基，最终选择正义而非私刑。"
+        },
+        {
+          "title": "开放瓦坎达",
+          "work": "black-panther-1",
+          "summary": "击败克尔芒戈后决定结束孤立主义，向世界开放瓦坎达。"
+        },
+        {
+          "title": "响指化灰",
+          "work": "infinity-war",
+          "summary": "在瓦坎达战场上化灰。"
+        },
+        {
+          "title": "终局归来",
+          "work": "endgame",
+          "summary": "化灰归来参与终局大战，带领瓦坎达军队支援。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "shuri",
+          "type": "兄妹",
+          "evolution": "从互相调侃的兄妹到共同承担王国命运，特查拉化灰后苏睿成为瓦坎达核心。",
+          "keyWorks": [
+            "black-panther-1",
+            "infinity-war",
+            "endgame",
+            "black-panther-2"
+          ]
+        },
+        {
+          "with": "bucky-barnes",
+          "type": "庇护者",
+          "evolution": "内战之后给巴基在瓦坎达提供庇护和治疗。",
+          "keyWorks": [
+            "civil-war",
+            "black-panther-1",
+            "infinity-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "carol-danvers",
@@ -296,7 +936,57 @@
       "captain-marvel-1",
       "endgame",
       "the-marvels"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "失忆战士",
+          "work": "captain-marvel-1",
+          "summary": "被克里洗脑成战士，恢复记忆后选择保护斯克鲁难民。"
+        },
+        {
+          "title": "宇宙援军",
+          "work": "endgame",
+          "summary": "在终局中回到地球，成为对抗灭霸的宇宙级战力。"
+        },
+        {
+          "title": "重新连接",
+          "work": "the-marvels",
+          "summary": "与莫妮卡和卡玛拉组队，学会不再独自承担一切。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "nick-fury",
+          "type": "盟友/旧友",
+          "evolution": "从九十年代合作到弗瑞召唤她应对灭霸，两人的信任跨越数十年。",
+          "keyWorks": [
+            "captain-marvel-1",
+            "endgame",
+            "the-marvels"
+          ]
+        },
+        {
+          "with": "monica-rambeau",
+          "type": "养母女般的纽带",
+          "evolution": "从莫妮卡童年时的\"阿姨\"到化灰归来后的隔阂与和解。",
+          "keyWorks": [
+            "captain-marvel-1",
+            "wandavision",
+            "the-marvels"
+          ]
+        },
+        {
+          "with": "kamala-khan",
+          "type": "粉丝/队友",
+          "evolution": "从卡玛拉的偶像到被迫并肩作战，最终承认她的能力。",
+          "keyWorks": [
+            "ms-marvel",
+            "the-marvels"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "star-lord",
@@ -315,7 +1005,64 @@
       "infinity-war",
       "endgame",
       "guardians-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "宇宙盗贼",
+          "work": "guardians-1",
+          "summary": "偷走力量宝石后与一群边缘人组成护卫队。"
+        },
+        {
+          "title": "半神血统",
+          "work": "guardians-2",
+          "summary": "发现伊戈是父亲，拒绝其毁灭计划并选择护卫队家庭。"
+        },
+        {
+          "title": "失控的一拳",
+          "work": "infinity-war",
+          "summary": "得知卡魔拉死讯后失控打醒灭霸，导致夺取手套失败。"
+        },
+        {
+          "title": "失去与重建",
+          "work": "guardians-3",
+          "summary": "面对失去卡魔拉的现实，最终离开护卫队回到地球。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "gamora",
+          "type": "爱人",
+          "evolution": "从互相追杀到彼此相爱，她的牺牲让奎尔长期无法释怀。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "guardians-3"
+          ]
+        },
+        {
+          "with": "rocket",
+          "type": "挚友/家人",
+          "evolution": "从互相拆台到成为最信任的家人，最终分别时承认彼此的重要。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "guardians-3"
+          ]
+        },
+        {
+          "with": "yondu",
+          "type": "养父",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2"
+          ],
+          "evolution": "从绑架者到真正的父亲，勇度在护卫队2中为他牺牲。"
+        }
+      ]
+    }
   },
   {
     "id": "gamora",
@@ -334,7 +1081,59 @@
       "infinity-war",
       "endgame",
       "guardians-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "灭霸养女",
+          "work": "guardians-1",
+          "summary": "被灭霸收养训练为刺客，逃离后加入护卫队。"
+        },
+        {
+          "title": "灵魂宝石代价",
+          "work": "infinity-war",
+          "summary": "被灭霸献祭于沃米尔换取灵魂宝石。"
+        },
+        {
+          "title": "分支版本",
+          "work": "guardians-3",
+          "summary": "终局带来的另一个卡魔拉没有与奎尔的记忆，选择与掠夺者同行。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thanos",
+          "type": "养父/仇人",
+          "evolution": "从被灭霸灭族收养到最终与他决裂，被他献祭是无限战争最残酷的时刻。",
+          "keyWorks": [
+            "guardians-1",
+            "infinity-war"
+          ]
+        },
+        {
+          "with": "nebula",
+          "type": "姐妹",
+          "evolution": "从互相残杀到和解，卡魔拉的死让星云真正站到英雄一边。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "star-lord",
+          "type": "爱人",
+          "evolution": "从敌对到相爱，但分支卡魔拉不再拥有这段记忆。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "guardians-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "drax",
@@ -353,7 +1152,47 @@
       "infinity-war",
       "endgame",
       "guardians-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "复仇者",
+          "work": "guardians-1",
+          "summary": "家人被罗南杀害后加入护卫队，字面理解一切却极具情感深度。"
+        },
+        {
+          "title": "护卫队成员",
+          "work": "guardians-2",
+          "summary": "在伊戈星球上为护卫队而战。"
+        },
+        {
+          "title": "终局与告别",
+          "work": "guardians-3",
+          "summary": "化灰归来后参与终局，最终在护卫队3中选择守卫星爵的侄女。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "rocket",
+          "type": "挚友/家人",
+          "evolution": "从队友到共同经历失去和重建，是护卫队最稳定的羁绊之一。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "guardians-3"
+          ]
+        },
+        {
+          "with": "mantis",
+          "type": "好友",
+          "evolution": "在护卫队2后建立独特友谊，最终一起踏上旅程。",
+          "keyWorks": [
+            "guardians-2",
+            "guardians-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "rocket",
@@ -372,7 +1211,63 @@
       "infinity-war",
       "endgame",
       "guardians-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "实验体",
+          "work": "guardians-1",
+          "summary": "至高进化改造的实验体，用嘴硬和武器掩盖创伤。"
+        },
+        {
+          "title": "护卫队大脑",
+          "work": "guardians-2",
+          "summary": "在勇度牺牲后第一次真正承认自己拥有家人。"
+        },
+        {
+          "title": "终局幸存",
+          "work": "endgame",
+          "summary": "化灰归来后参与终局大战，承担护卫队重建责任。"
+        },
+        {
+          "title": "面对起源",
+          "work": "guardians-3",
+          "summary": "直面至高进化和自己的实验体过去，最终成为新护卫队队长。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "groot",
+          "type": "最亲密的家人",
+          "evolution": "从赏金猎搭档到共生般的关系，\"We are Groot\"是他第一次说出集体身份。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "guardians-3"
+          ]
+        },
+        {
+          "with": "star-lord",
+          "type": "挚友",
+          "evolution": "从互相拆台到共同领导护卫队，最终尊重奎尔离开的选择。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "guardians-3"
+          ]
+        },
+        {
+          "with": "yondu",
+          "type": "同类/知己",
+          "evolution": "在护卫队2中建立深层共鸣，勇度的死让火箭第一次为家人悲伤。",
+          "keyWorks": [
+            "guardians-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "groot",
@@ -391,7 +1286,44 @@
       "infinity-war",
       "endgame",
       "guardians-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "花神巨像族",
+          "work": "guardians-1",
+          "summary": "与火箭搭档，最终为保护护卫队牺牲自身。"
+        },
+        {
+          "title": "小格鲁特",
+          "work": "guardians-2",
+          "summary": "从盆栽成长为青少年，始终是护卫队的情感核心。"
+        },
+        {
+          "title": "风暴斧之柄",
+          "work": "infinity-war",
+          "summary": "伸出手臂为索尔的风暴战斧充当斧柄。"
+        },
+        {
+          "title": "终局与成长",
+          "work": "endgame",
+          "summary": "化灰归来参与终局大战，在护卫队3中进入独立青年期。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "rocket",
+          "type": "最亲密的伙伴",
+          "evolution": "从猎搭档到彼此最信任的人，火箭是唯一能完全理解Groot语言的人。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "guardians-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wanda-maximoff",
@@ -413,7 +1345,67 @@
     ],
     "series": [
       "wandavision"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "被实验的孤儿",
+          "work": "age-of-ultron",
+          "summary": "与快银被心灵宝石激活能力，先站奥创阵营后加入复仇者。"
+        },
+        {
+          "title": "索科维亚英雄",
+          "work": "age-of-ultron",
+          "summary": "在奥创之战中失去快银，正式加入复仇者。"
+        },
+        {
+          "title": "失去幻视",
+          "work": "infinity-war",
+          "summary": "被迫亲手杀死幻视，又被灭霸逆转，双重失去。"
+        },
+        {
+          "title": "西景镇幻境",
+          "work": "wandavision",
+          "summary": "用混沌魔法创造理想家庭，最终被迫放开。"
+        },
+        {
+          "title": "绯红女巫",
+          "work": "doctor-strange-2",
+          "summary": "被黑暗神书吞噬后跨宇宙追杀美国小姐，最终醒悟摧毁黑暗神书源头。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "vision",
+          "type": "爱人",
+          "evolution": "从奥创阵营中的对手到灵魂伴侣，幻视的死是她一切创伤的起点。",
+          "keyWorks": [
+            "age-of-ultron",
+            "civil-war",
+            "infinity-war",
+            "wandavision"
+          ]
+        },
+        {
+          "with": "stephen-strange",
+          "type": "战友→对手",
+          "evolution": "从复仇者战友到在多元宇宙中成为最危险的敌人。",
+          "keyWorks": [
+            "age-of-ultron",
+            "doctor-strange-2"
+          ]
+        },
+        {
+          "with": "clint-barton",
+          "type": "战友",
+          "evolution": "在奥创之战中得到克林特的鼓励，是她最初感受到的善意。",
+          "keyWorks": [
+            "age-of-ultron",
+            "civil-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "vision",
@@ -432,7 +1424,44 @@
     ],
     "series": [
       "wandavision"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "诞生",
+          "work": "age-of-ultron",
+          "summary": "由心灵宝石、贾维斯和雷神闪电共同创造，能拿起雷神之锤。"
+        },
+        {
+          "title": "与旺达",
+          "work": "civil-war",
+          "summary": "在分裂中选择站在旺达一边，两人关系深化。"
+        },
+        {
+          "title": "心灵宝石之死",
+          "work": "infinity-war",
+          "summary": "请求旺达摧毁心灵宝石，被灭霸逆转后挖出宝石而死。"
+        },
+        {
+          "title": "白幻视",
+          "work": "wandavision",
+          "summary": "天剑局重造的白幻视获得记忆后离开，去向未定。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "wanda-maximoff",
+          "type": "爱人",
+          "evolution": "从诞生时的对立面到彼此理解，他的死是旺达失控的根源。",
+          "keyWorks": [
+            "age-of-ultron",
+            "civil-war",
+            "infinity-war",
+            "wandavision"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "thanos",
@@ -448,7 +1477,61 @@
     "movies": [
       "infinity-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "幕后操控者",
+          "work": "avengers-1",
+          "summary": "通过洛基和齐塔瑞试探地球，幕后推动收集宝石。"
+        },
+        {
+          "title": "亲自出手",
+          "work": "guardians-1",
+          "summary": "在山达尔和宇宙中收集宝石，利用罗南。"
+        },
+        {
+          "title": "响指完成",
+          "work": "infinity-war",
+          "summary": "献祭卡魔拉集齐宝石，一个响指抹去宇宙半数生命。"
+        },
+        {
+          "title": "归隐与终结",
+          "work": "endgame",
+          "summary": "在花园星球被索尔斩首，过去版本的灭霸最终被托尼响指消灭。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "gamora",
+          "type": "养女/牺牲品",
+          "evolution": "他以\"使命\"名义献祭卡魔拉，这是他唯一被暗示付出过\"代价\"的关系。",
+          "keyWorks": [
+            "guardians-1",
+            "infinity-war"
+          ]
+        },
+        {
+          "with": "nebula",
+          "type": "养女/工具",
+          "evolution": "把星云改造为半机械体作为对卡魔拉竞争的惩罚，最终被她背叛。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "endgame"
+          ]
+        },
+        {
+          "with": "loki",
+          "type": "利用者",
+          "evolution": "给洛基心灵宝石入侵地球，在无限战争开场亲手杀死他。",
+          "keyWorks": [
+            "avengers-1",
+            "infinity-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "loki",
@@ -471,7 +1554,68 @@
     ],
     "series": [
       "loki"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "嫉妒的王子",
+          "work": "thor-1",
+          "summary": "发现冰霜巨人后裔身份后堕入深渊，试图通过毁灭约顿海姆证明自己。"
+        },
+        {
+          "title": "纽约入侵者",
+          "work": "avengers-1",
+          "summary": "被灭霸利用率军入侵纽约，战败后被带回阿斯加德。"
+        },
+        {
+          "title": "假死与摄政",
+          "work": "thor-2",
+          "summary": "假死并伪装成奥丁统治阿斯加德。"
+        },
+        {
+          "title": "诸神黄昏兄弟",
+          "work": "ragnarok",
+          "summary": "与索尔重新并肩，却因带走宇宙魔方引向灭霸。"
+        },
+        {
+          "title": "TVA与时间王座",
+          "work": "loki",
+          "summary": "从追求王位到独自守护所有时间线，完成从诡计之神到时间守护者的转变。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "兄弟",
+          "evolution": "从背叛到和解，在难民船上面对灭霸时重新选择站在索尔身边。",
+          "keyWorks": [
+            "thor-1",
+            "avengers-1",
+            "thor-2",
+            "ragnarok",
+            "infinity-war"
+          ]
+        },
+        {
+          "with": "odin",
+          "type": "父子",
+          "evolution": "从渴望认可到发现养父子身份，最终在奥丁死前得到某种和解。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "ragnarok"
+          ]
+        },
+        {
+          "with": "kang",
+          "type": "时间线对手",
+          "evolution": "在TVA中与遗留之人对峙，间接导致多元宇宙失控，最终自己承担后果。",
+          "keyWorks": [
+            "loki"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "ultron",
@@ -486,7 +1630,39 @@
     "storyline": "2015年奥创（Ultron）纪元中觉醒并试图毁灭人类，与复仇者联盟对抗，最终在索科维亚（Sokovia）被击败，但造成的破坏成为后续剧情的导火索。",
     "movies": [
       "age-of-ultron"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "全球防御程序",
+          "work": "age-of-ultron",
+          "summary": "由托尼和班纳用心灵宝石创造，得出灭绝人类才能保护地球的结论。"
+        },
+        {
+          "title": "索科维亚毁灭",
+          "work": "age-of-ultron",
+          "summary": "被复仇者击败，但造成的灾难直接催生索科维亚协议。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "tony-stark",
+          "type": "创造者/镜像",
+          "evolution": "奥创是托尼安全焦虑的黑暗镜像，证明了预防性保护的灾难。",
+          "keyWorks": [
+            "age-of-ultron"
+          ]
+        },
+        {
+          "with": "vision",
+          "type": "对立面",
+          "evolution": "幻视作为奥创的\"儿子\"选择站在生命一边对抗他。",
+          "keyWorks": [
+            "age-of-ultron"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "red-skull",
@@ -503,7 +1679,31 @@
       "captain-america-first-avenger",
       "infinity-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "九头蛇首领",
+          "work": "captain-america-first-avenger",
+          "summary": "使用未完成血清成为红骷髅，被空间宝石传送至沃米尔。"
+        },
+        {
+          "title": "灵魂宝石引路人",
+          "work": "infinity-war",
+          "summary": "被诅咒在沃米尔引导寻找灵魂宝石的人。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "steve-rogers",
+          "type": "宿敌",
+          "evolution": "作为血清的正反两面，在二战中对决，红骷髅的消失开启了宇宙魔方线。",
+          "keyWorks": [
+            "captain-america-first-avenger"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "nick-fury",
@@ -526,7 +1726,51 @@
     ],
     "series": [
       "secret-invasion"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "复仇者倡议",
+          "work": "iron-man-1",
+          "summary": "在托尼片尾彩蛋中提出复仇者计划。"
+        },
+        {
+          "title": "纽约之战指挥",
+          "work": "avengers-1",
+          "summary": "召集复仇者并指挥纽约防御。"
+        },
+        {
+          "title": "假死与真相",
+          "work": "winter-soldier",
+          "summary": "在神盾局崩塌中假死，转入暗处。"
+        },
+        {
+          "title": "秘密入侵",
+          "work": "secret-invasion",
+          "summary": "面对斯克鲁人渗透和信任崩塌，地球防线经历最严重危机。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "coulson",
+          "type": "最信任的手下",
+          "evolution": "从神盾局搭档到科尔森之死成为推动复仇者的关键。",
+          "keyWorks": [
+            "avengers-1"
+          ]
+        },
+        {
+          "with": "carol-danvers",
+          "type": "跨越数十年的盟友",
+          "evolution": "从九十年代合作到灭霸危机时用BB机呼叫她。",
+          "keyWorks": [
+            "captain-marvel-1",
+            "endgame",
+            "secret-invasion"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "peggy-carter",
@@ -544,7 +1788,38 @@
     ],
     "series": [
       "agent-carter"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "战略科学预备队",
+          "work": "captain-america-first-avenger",
+          "summary": "二战中与史蒂夫并肩作战，错过那支舞。"
+        },
+        {
+          "title": "神盾局奠基",
+          "work": "agent-carter",
+          "summary": "在战后推动神盾局前身的建立。"
+        },
+        {
+          "title": "终局重逢",
+          "work": "endgame",
+          "summary": "史蒂夫归还宝石后选择回到过去与她共度一生。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "steve-rogers",
+          "type": "一生挚爱",
+          "evolution": "从战场伙伴到七十年后的重逢，她的照片一直是史蒂夫的指南针。",
+          "keyWorks": [
+            "captain-america-first-avenger",
+            "agent-carter",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "bucky-barnes",
@@ -565,7 +1840,69 @@
     ],
     "series": [
       "falcon-winter-soldier"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "史蒂夫的挚友",
+          "work": "captain-america-first-avenger",
+          "summary": "二战中与史蒂夫并肩作战，坠崖后被九头蛇改造。"
+        },
+        {
+          "title": "冬日战士",
+          "work": "winter-soldier",
+          "summary": "作为被洗脑的杀手与史蒂夫对峙，记忆开始苏醒。"
+        },
+        {
+          "title": "内战核心",
+          "work": "civil-war",
+          "summary": "被泽莫激活并暴露杀害托尼父母的真相，成为复仇者决裂的导火索。"
+        },
+        {
+          "title": "瓦坎达治疗",
+          "work": "infinity-war",
+          "summary": "在瓦坎达接受洗脑解除，化灰后归来参与终局。"
+        },
+        {
+          "title": "赎罪之路",
+          "work": "falcon-winter-soldier",
+          "summary": "与山姆合作处理冬日战士遗留问题，努力从杀手身份中挣脱。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "steve-rogers",
+          "type": "挚友",
+          "evolution": "从布鲁克林伙伴到被史蒂夫不惜一切找回的人，最终在终局后目送他选择自己的人生。",
+          "keyWorks": [
+            "captain-america-first-avenger",
+            "winter-soldier",
+            "civil-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "sam-wilson",
+          "type": "搭档",
+          "evolution": "从互看不顺眼到共同承担美队精神的传承。",
+          "keyWorks": [
+            "civil-war",
+            "endgame",
+            "falcon-winter-soldier"
+          ]
+        },
+        {
+          "with": "tchalla",
+          "type": "庇护者/盟友",
+          "evolution": "从被黑豹追杀到在瓦坎达获得治疗和庇护。",
+          "keyWorks": [
+            "civil-war",
+            "black-panther-1",
+            "infinity-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "sam-wilson",
@@ -587,7 +1924,54 @@
     ],
     "series": [
       "falcon-winter-soldier"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "退伍军人",
+          "work": "winter-soldier",
+          "summary": "以猎鹰身份帮助史蒂夫对抗神盾局/九头蛇。"
+        },
+        {
+          "title": "内战阵营",
+          "work": "civil-war",
+          "summary": "坚定站在史蒂夫一边。"
+        },
+        {
+          "title": "接盾犹豫",
+          "work": "endgame",
+          "summary": "从史蒂夫手中接过盾牌，却不确定自己是否配得上。"
+        },
+        {
+          "title": "成为美队",
+          "work": "falcon-winter-soldier",
+          "summary": "在与巴基合作和自我怀疑中最终接受美国队长身份。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "steve-rogers",
+          "type": "战友/传承",
+          "evolution": "从晨跑伙伴到精神继承者，史蒂夫把盾牌和象征都交给了他。",
+          "keyWorks": [
+            "winter-soldier",
+            "civil-war",
+            "endgame",
+            "falcon-winter-soldier"
+          ]
+        },
+        {
+          "with": "bucky-barnes",
+          "type": "搭档",
+          "evolution": "从互不信任到共同面对旗帜粉碎者和新美队，建立真正的友谊。",
+          "keyWorks": [
+            "civil-war",
+            "endgame",
+            "falcon-winter-soldier"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "pepper-potts",
@@ -605,7 +1989,34 @@
       "iron-man-2",
       "iron-man-3",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "CEO到英雄",
+          "work": "iron-man-1",
+          "summary": "从托尼的助理到波兹工业CEO，在终局中穿上救援装甲参战。"
+        },
+        {
+          "title": "家庭与告别",
+          "work": "endgame",
+          "summary": "与托尼结婚生女，最终接受了他的牺牲。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "tony-stark",
+          "type": "爱人/妻子",
+          "evolution": "从助理关系到共同经历生死，最终在女儿和托尼的牺牲中走完弧线。",
+          "keyWorks": [
+            "iron-man-1",
+            "iron-man-2",
+            "iron-man-3",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "james-rhodes",
@@ -624,7 +2035,44 @@
       "iron-man-3",
       "civil-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "军方联络人",
+          "work": "iron-man-1",
+          "summary": "作为托尼与军方的桥梁，在钢铁侠2中穿上战争机器装甲。"
+        },
+        {
+          "title": "复仇者成员",
+          "work": "age-of-ultron",
+          "summary": "持续在复仇者中代表军方和政府视角。"
+        },
+        {
+          "title": "终局伤残",
+          "work": "civil-war",
+          "summary": "在内战中坠机导致下肢瘫痪。"
+        },
+        {
+          "title": "终局战友",
+          "work": "endgame",
+          "summary": "以战争机器身份参与终局反击。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "tony-stark",
+          "type": "挚友",
+          "evolution": "从试图约束托尼的军方代表到最坚定的战友，见证了他的牺牲。",
+          "keyWorks": [
+            "iron-man-1",
+            "iron-man-2",
+            "civil-war",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "scott-lang",
@@ -643,7 +2091,58 @@
       "ant-man-and-wasp",
       "endgame",
       "ant-man-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "小偷变英雄",
+          "work": "ant-man-1",
+          "summary": "为女儿闯入皮姆家，意外成为蚁人。"
+        },
+        {
+          "title": "内战参战",
+          "work": "civil-war",
+          "summary": "被史蒂夫招募参与机场大战。"
+        },
+        {
+          "title": "量子被困",
+          "work": "ant-man-and-wasp",
+          "summary": "响指时被困量子领域，出来时五年已过。"
+        },
+        {
+          "title": "时间劫案关键",
+          "work": "endgame",
+          "summary": "提出时间穿越可能，成为逆转响指的技术触发点。"
+        },
+        {
+          "title": "面对康",
+          "work": "ant-man-3",
+          "summary": "在量子领域遭遇征服者康，普通人被推到多元宇宙战场。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "hope-van-dyne",
+          "type": "爱人/搭档",
+          "evolution": "从互不信任到并肩作战，成为量子领域英雄家庭。",
+          "keyWorks": [
+            "ant-man-1",
+            "ant-man-and-wasp",
+            "ant-man-3"
+          ]
+        },
+        {
+          "with": "hank-pym",
+          "type": "导师/女婿般的关系",
+          "evolution": "从被皮姆利用到获得信任，最终成为皮姆技术的继承者。",
+          "keyWorks": [
+            "ant-man-1",
+            "ant-man-and-wasp",
+            "ant-man-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "hank-pym",
@@ -660,7 +2159,48 @@
       "ant-man-1",
       "ant-man-and-wasp",
       "ant-man-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "初代蚁人",
+          "work": "ant-man-1",
+          "summary": "隐瞒皮姆粒子技术多年，选择斯科特作为继承者。"
+        },
+        {
+          "title": "量子救援",
+          "work": "ant-man-and-wasp",
+          "summary": "从量子领域救回珍妮特。"
+        },
+        {
+          "title": "量子领域对抗康",
+          "work": "ant-man-3",
+          "summary": "在量子领域中与家人共同面对征服者康。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "scott-lang",
+          "type": "导师/继承者",
+          "evolution": "从利用斯科特到信任他成为皮姆技术的守护者。",
+          "keyWorks": [
+            "ant-man-1",
+            "ant-man-and-wasp",
+            "ant-man-3"
+          ]
+        },
+        {
+          "with": "hope-van-dyne",
+          "type": "父女",
+          "evolution": "从隐瞒到和解，最终承认霍普作为黄蜂女的地位。",
+          "keyWorks": [
+            "ant-man-1",
+            "ant-man-and-wasp",
+            "ant-man-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "hope-van-dyne",
@@ -677,7 +2217,48 @@
       "ant-man-1",
       "ant-man-and-wasp",
       "ant-man-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "皮姆继承人",
+          "work": "ant-man-1",
+          "summary": "从对斯科特的不信任到成为黄蜂女。"
+        },
+        {
+          "title": "母女重逢",
+          "work": "ant-man-and-wasp",
+          "summary": "从量子领域救回母亲珍妮特。"
+        },
+        {
+          "title": "量子领域战斗",
+          "work": "ant-man-3",
+          "summary": "与家人在量子领域对抗征服者康。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "scott-lang",
+          "type": "爱人/搭档",
+          "evolution": "从怀疑到信任再到并肩作战。",
+          "keyWorks": [
+            "ant-man-1",
+            "ant-man-and-wasp",
+            "ant-man-3"
+          ]
+        },
+        {
+          "with": "hank-pym",
+          "type": "父女",
+          "evolution": "从不解到和解，共同守护皮姆技术。",
+          "keyWorks": [
+            "ant-man-1",
+            "ant-man-and-wasp",
+            "ant-man-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wong",
@@ -694,7 +2275,39 @@
       "doctor-strange-1",
       "infinity-war",
       "endgame"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "卡玛泰姬法师",
+          "work": "doctor-strange-1",
+          "summary": "从斯特兰奇的训练者成为最坚定的盟友。"
+        },
+        {
+          "title": "纽约守护者",
+          "work": "infinity-war",
+          "summary": "在至圣所抵御灭霸势力。"
+        },
+        {
+          "title": "至尊法师",
+          "work": "spider-man-no-way-home",
+          "summary": "在斯特兰奇不在时承担至尊法师职责。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "stephen-strange",
+          "type": "法师搭档",
+          "evolution": "从训练关系到共同守护卡玛泰姬和多元宇宙。",
+          "keyWorks": [
+            "doctor-strange-1",
+            "infinity-war",
+            "spider-man-no-way-home",
+            "doctor-strange-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "ancient-one",
@@ -709,7 +2322,36 @@
     "storyline": "2016年收斯特兰奇为徒、传授魔法，为保护卡玛泰姬（Kamar-Taj）而牺牲，其选择与理念深刻影响了斯特兰奇的成长。",
     "movies": [
       "doctor-strange-1"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "至尊法师",
+          "work": "doctor-strange-1",
+          "summary": "守护卡玛泰姬数百年，从黑暗次元汲取能量维持生命。"
+        },
+        {
+          "title": "死亡与传承",
+          "work": "doctor-strange-1",
+          "summary": "在战斗中死亡，把守护责任传给斯特兰奇。"
+        },
+        {
+          "title": "终局回溯",
+          "work": "endgame",
+          "summary": "在纽约大战时间线中向班纳解释宝石的意义。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "stephen-strange",
+          "type": "导师",
+          "evolution": "看到了他的傲慢和潜力，以死亡迫使他成长。",
+          "keyWorks": [
+            "doctor-strange-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "general-ross",
@@ -726,7 +2368,37 @@
       "incredible-hulk",
       "civil-war",
       "captain-america-4"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "追捕浩克",
+          "work": "incredible-hulk",
+          "summary": "作为将军追捕班纳并制造憎恶。"
+        },
+        {
+          "title": "国务卿",
+          "work": "civil-war",
+          "summary": "推动索科维亚协议，成为复仇者监管的政治力量。"
+        },
+        {
+          "title": "总统",
+          "work": "captain-america-4",
+          "summary": "成为美国总统，与山姆和新世界秩序产生冲突。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "bruce-banner",
+          "type": "追捕者",
+          "evolution": "从军时期的追捕者到政治舞台上的间接对抗者。",
+          "keyWorks": [
+            "incredible-hulk",
+            "civil-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "yelyena-belova",
@@ -745,7 +2417,40 @@
     ],
     "series": [
       "hawkeye"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "红房姐妹",
+          "work": "black-widow",
+          "summary": "与娜塔莎在伪装家庭中长大，被红房控制。"
+        },
+        {
+          "title": "继承黑寡妇",
+          "work": "hawkeye",
+          "summary": "误以为克林特害死娜塔莎，最终和解并继承黑寡妇身份。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "natasha-romanoff",
+          "type": "姐妹",
+          "evolution": "从红房伪装家庭中的姐妹到各自挣脱控制，娜塔莎之死成为她的执念。",
+          "keyWorks": [
+            "black-widow",
+            "hawkeye"
+          ]
+        },
+        {
+          "with": "kate-bishop",
+          "type": "临时搭档/朋友",
+          "evolution": "从追杀克林特时的对峙到圣诞夜并肩作战。",
+          "keyWorks": [
+            "hawkeye"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "jane-foster",
@@ -762,7 +2467,33 @@
       "thor-1",
       "thor-2",
       "thor-4"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "地球科学家",
+          "work": "thor-1",
+          "summary": "与索尔相恋，在雷神2中成为以太宿主。"
+        },
+        {
+          "title": "神威雷神",
+          "work": "thor-4",
+          "summary": "因癌症和破碎雷神之锤成为神威雷神，最终牺牲。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "爱人",
+          "evolution": "从地球恋情到分离再到重逢，简以雷神身份完成最后的告别。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "thor-4"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "valkyrie",
@@ -779,7 +2510,38 @@
       "ragnarok",
       "endgame",
       "thor-4"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "萨卡流亡者",
+          "work": "ragnarok",
+          "summary": "曾经的女武神因海拉屠杀战友而酗酒逃避。"
+        },
+        {
+          "title": "阿斯加德战士",
+          "work": "ragnarok",
+          "summary": "被索尔唤醒后参与诸神黄昏。"
+        },
+        {
+          "title": "新阿斯加德国王",
+          "work": "endgame",
+          "summary": "索尔把新阿斯加德王位交给她。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "战友",
+          "evolution": "从萨卡星的酒鬼到被索尔顿悟唤醒，最终接过他的王位。",
+          "keyWorks": [
+            "ragnarok",
+            "endgame",
+            "thor-4"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "shuri",
@@ -797,7 +2559,37 @@
       "infinity-war",
       "endgame",
       "black-panther-2"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "瓦坎达科技核心",
+          "work": "black-panther-1",
+          "summary": "作为瓦坎达最聪明的人负责科技设计。"
+        },
+        {
+          "title": "响指与重建",
+          "work": "infinity-war",
+          "summary": "在灭霸之战中化灰，归来后面对特查拉之死。"
+        },
+        {
+          "title": "成为黑豹",
+          "work": "black-panther-2",
+          "summary": "在失去哥哥后承担黑豹身份，对抗纳摩。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "tchalla",
+          "type": "兄妹",
+          "evolution": "从互相调侃到失去他后的继承，苏睿把哥哥的记忆转化为责任。",
+          "keyWorks": [
+            "black-panther-1",
+            "black-panther-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "shang-chi",
@@ -812,7 +2604,31 @@
     "storyline": "2024年直面父亲文武（Wenwu）与十环往事，觉醒十环之力，成为新一代守护者。此后的故事延续到多元宇宙（the Multiverse）的更大冲突中。",
     "movies": [
       "shang-chi-1"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "十环刺客之子",
+          "work": "shang-chi-1",
+          "summary": "被父亲文武训练为刺客后逃到旧金山隐姓埋名。"
+        },
+        {
+          "title": "继承十环",
+          "work": "shang-chi-1",
+          "summary": "在塔罗阻止父亲后继承十环力量。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "wenwu",
+          "type": "父子/仇人",
+          "evolution": "从被训练的刺客到理解父亲的执念，最终阻止并继承他。",
+          "keyWorks": [
+            "shang-chi-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "ikaris",
@@ -827,7 +2643,31 @@
     "storyline": "2024年与永恒族（Eternals）同伴重新集结，面对变异族（Deviants）与天神族（Celestials）真相，最终因无法接受使命而离去。",
     "movies": [
       "eternals-1"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "永恒族战士",
+          "work": "eternals-1",
+          "summary": "七千年来忠于阿里瑟姆和天神族使命。"
+        },
+        {
+          "title": "背叛与自杀",
+          "work": "eternals-1",
+          "summary": "因忠于神现而背叛永恒族，最终愧疚飞入太阳自杀。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "sersi",
+          "type": "爱人/对手",
+          "evolution": "从千年伴侣到因神现立场对立，他的背叛成为永恒族分裂的核心。",
+          "keyWorks": [
+            "eternals-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "sersi",
@@ -842,7 +2682,31 @@
     "storyline": "2024年带领永恒族（Eternals）正视使命真相，选择违抗创造者的意志保护地球。",
     "movies": [
       "eternals-1"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "永恒族成员",
+          "work": "eternals-1",
+          "summary": "拥有物质转化能力，在人类中生活了数千年。"
+        },
+        {
+          "title": "阻止神现",
+          "work": "eternals-1",
+          "summary": "选择背叛阿里瑟姆阻止地球被神现毁灭。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "ikaris",
+          "type": "爱人/对手",
+          "evolution": "从千年伴侣到被他背叛，最终在阻止神现中面对他。",
+          "keyWorks": [
+            "eternals-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "kang",
@@ -858,7 +2722,44 @@
     "movies": [
       "ant-man-3",
       "avengers-doomsday"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "遗留之人",
+          "work": "loki",
+          "summary": "通过TVA裁剪时间线阻止其他康变体，被希尔维杀死。"
+        },
+        {
+          "title": "量子领域康",
+          "work": "ant-man-3",
+          "summary": "被困量子领域的变体试图重启时间征服，被蚁人一家击败。"
+        },
+        {
+          "title": "康议会",
+          "work": "ant-man-3",
+          "summary": "片尾展示多个康变体已醒来，多元宇宙战争威胁形成。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "loki",
+          "type": "时间线对手",
+          "evolution": "从TVA中的操控者到被洛基间接杀死，他的死释放了所有康变体。",
+          "keyWorks": [
+            "loki"
+          ]
+        },
+        {
+          "with": "scott-lang",
+          "type": "量子领域对手",
+          "evolution": "把斯科特视为无关紧要的普通人，却被他阻止。",
+          "keyWorks": [
+            "ant-man-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "kamala-khan",
@@ -876,7 +2777,32 @@
     ],
     "series": [
       "ms-marvel"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "惊奇队长粉丝",
+          "work": "ms-marvel",
+          "summary": "作为卡罗尔的粉丝发现自己拥有诺尔手环能力。"
+        },
+        {
+          "title": "惊奇联盟",
+          "work": "the-marvels",
+          "summary": "与卡罗尔和莫妮卡组队，在宇宙危机中证明自己。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "carol-danvers",
+          "type": "偶像/队友",
+          "evolution": "从崇拜到并肩作战，最终获得卡罗尔的认可。",
+          "keyWorks": [
+            "ms-marvel",
+            "the-marvels"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "monica-rambeau",
@@ -894,7 +2820,38 @@
     ],
     "series": [
       "wandavision"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "惊奇阿姨的小女孩",
+          "work": "captain-marvel-1",
+          "summary": "童年时与卡罗尔亲近。"
+        },
+        {
+          "title": "光谱能力",
+          "work": "wandavision",
+          "summary": "在西景镇边界激活光谱能力。"
+        },
+        {
+          "title": "惊奇联盟",
+          "work": "the-marvels",
+          "summary": "与卡罗尔和解并在宇宙战斗中承担关键角色。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "carol-danvers",
+          "type": "姨母/隔阂",
+          "evolution": "从童年崇拜到化灰五年后的陌生感，最终和解。",
+          "keyWorks": [
+            "captain-marvel-1",
+            "wandavision",
+            "the-marvels"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "deadpool",
@@ -909,7 +2866,26 @@
     "storyline": "2024年因所在宇宙面临被抹除的危机，跨越宇宙寻找金刚狼（Wolverine），正式进入 MCU 多元宇宙（the Multiverse）。",
     "movies": [
       "deadpool-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "Fox宇宙反英雄",
+          "work": "deadpool-3",
+          "summary": "从X战警宇宙通过TVA和多元宇宙进入MCU，打破第四面墙。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "wolverine",
+          "type": "搭档/互怼",
+          "evolution": "从互相看不顺眼到被迫合作，把X战警遗产引入MCU。",
+          "keyWorks": [
+            "deadpool-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wolverine",
@@ -924,7 +2900,26 @@
     "storyline": "2024年从平行宇宙被死侍（Deadpool）找上门，两人并肩作战后各自找到归宿。",
     "movies": [
       "deadpool-3"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "疲惫的变种人",
+          "work": "deadpool-3",
+          "summary": "作为Fox X战警宇宙的经典金刚狼，通过死侍跨界进入MCU。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "deadpool",
+          "type": "搭档",
+          "evolution": "从拒绝合作到共同面对多元宇宙威胁。",
+          "keyWorks": [
+            "deadpool-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "reed-richards",
@@ -939,7 +2934,26 @@
     "storyline": "2025年在平行宇宙的太空实验中获得能力，与家人组成神奇四侠，成为多元宇宙（the Multiverse）时代的关键新力量。",
     "movies": [
       "fantastic-four-1"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "神奇先生",
+          "work": "fantastic-four-1",
+          "summary": "平行宇宙中神奇四侠的领袖，宇宙级科学天才。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "sue-storm",
+          "type": "伴侣/队友",
+          "evolution": "作为神奇四侠核心，两人共同领导第一家庭。",
+          "keyWorks": [
+            "fantastic-four-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "sue-storm",
@@ -954,7 +2968,26 @@
     "storyline": "2025年与家人一同获得能力，加入神奇四侠对抗宇宙级威胁。",
     "movies": [
       "fantastic-four-1"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "隐形女",
+          "work": "fantastic-four-1",
+          "summary": "神奇四侠成员，拥有隐形和力场能力。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "reed-richards",
+          "type": "伴侣/队友",
+          "evolution": "与里德共同领导神奇四侠。",
+          "keyWorks": [
+            "fantastic-four-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "odin",
@@ -972,7 +3005,52 @@
       "thor-2",
       "ragnarok"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "众神之父",
+          "work": "thor-1",
+          "summary": "剥夺索尔神力并放逐他，隐藏了大量王室秘密。"
+        },
+        {
+          "title": "死亡与真相",
+          "work": "ragnarok",
+          "summary": "在挪威去世，海拉的出现揭露了阿斯加德血腥征服史。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "父子",
+          "evolution": "从考验到死亡，索尔在他死后才真正明白王权的含义。",
+          "keyWorks": [
+            "thor-1",
+            "ragnarok"
+          ]
+        },
+        {
+          "with": "loki",
+          "type": "养父子",
+          "evolution": "洛基始终渴望他的认可，奥丁临死前承认他是儿子。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "ragnarok"
+          ]
+        },
+        {
+          "with": "heimdall",
+          "type": "忠诚守护者",
+          "evolution": "海姆达尔长期作为奥丁任命的彩虹桥守护者。",
+          "keyWorks": [
+            "thor-1",
+            "ragnarok",
+            "infinity-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "coulson",
@@ -990,7 +3068,26 @@
     ],
     "series": [
       "agents-of-shield"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "神盾局特工",
+          "work": "avengers-1",
+          "summary": "在纽约大战前被洛基杀害，他的死成为复仇者团结的催化剂。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "nick-fury",
+          "type": "下属/信任",
+          "evolution": "弗瑞利用科尔森之死推动复仇者团结，显示了他对科尔森的深厚信任。",
+          "keyWorks": [
+            "avengers-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "namor",
@@ -1006,7 +3103,26 @@
     "movies": [
       "black-panther-2"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "塔洛坎之王",
+          "work": "black-panther-2",
+          "summary": "作为水下王国塔洛坎的统治者，为保护人民向瓦坎达开战。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "shuri",
+          "type": "对手/镜像",
+          "evolution": "从杀亲仇人到最终达成不稳定的和平，两人都是失去家人后的统治者。",
+          "keyWorks": [
+            "black-panther-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "dormammu",
@@ -1022,7 +3138,26 @@
     "movies": [
       "doctor-strange-1"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "黑暗次元之主",
+          "work": "doctor-strange-1",
+          "summary": "被卡西留斯召唤入侵地球，被斯特兰奇用时间循环逼退。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "stephen-strange",
+          "type": "维度对手",
+          "evolution": "斯特兰奇用无限时间循环让多玛姆屈服，是他第一次面对宇宙级威胁。",
+          "keyWorks": [
+            "doctor-strange-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "yondu",
@@ -1039,7 +3174,40 @@
       "guardians-1",
       "guardians-2"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "掠夺者船长",
+          "work": "guardians-1",
+          "summary": "绑架奎尔却没有把他交给伊戈，以自己的方式把他养大。"
+        },
+        {
+          "title": "牺牲",
+          "work": "guardians-2",
+          "summary": "在伊戈星球上把最后太空服给奎尔，自己在太空中牺牲。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "star-lord",
+          "type": "养父",
+          "evolution": "从绑架者到用生命证明自己是真正的父亲。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2"
+          ]
+        },
+        {
+          "with": "rocket",
+          "type": "同类",
+          "evolution": "在护卫队2中建立深层共鸣，两个嘴硬的人在彼此身上看到自己。",
+          "keyWorks": [
+            "guardians-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "nebula",
@@ -1058,7 +3226,64 @@
       "infinity-war",
       "endgame"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "灭霸工具",
+          "work": "guardians-1",
+          "summary": "被灭霸改造成半机械体，与卡魔拉竞争和仇恨。"
+        },
+        {
+          "title": "姐妹和解",
+          "work": "guardians-2",
+          "summary": "与卡魔拉和解，开始摆脱灭霸控制。"
+        },
+        {
+          "title": "终局战士",
+          "work": "endgame",
+          "summary": "杀死过去的自己，加入终局反击，真正成为英雄。"
+        },
+        {
+          "title": "新护卫队",
+          "work": "guardians-3",
+          "summary": "在护卫队重建中承担领导角色，最终独自出发。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "gamora",
+          "type": "姐妹",
+          "evolution": "从被灭霸逼成敌人到和解，卡魔拉的死让她决心反抗灭霸。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "thanos",
+          "type": "养父/仇人",
+          "evolution": "从被控制的工具到在终局中亲手杀死过去版本的灭霸追随者，完成挣脱。",
+          "keyWorks": [
+            "guardians-1",
+            "guardians-2",
+            "infinity-war",
+            "endgame"
+          ]
+        },
+        {
+          "with": "tony-stark",
+          "type": "难友/战友",
+          "evolution": "在泰坦星失败后与托尼在太空漂流，建立了意外的尊重。",
+          "keyWorks": [
+            "infinity-war",
+            "endgame"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "mantis",
@@ -1076,7 +3301,46 @@
       "infinity-war",
       "endgame"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "伊戈的侍从",
+          "work": "guardians-2",
+          "summary": "拥有共情感应能力，帮助护卫队击败伊戈后加入。"
+        },
+        {
+          "title": "护卫队成员",
+          "work": "infinity-war",
+          "summary": "参与泰坦星战斗，化灰后归来。"
+        },
+        {
+          "title": "找到自我",
+          "work": "guardians-3",
+          "summary": "在圣诞节特别篇和护卫队3中建立自信，最终独立出发。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "drax",
+          "type": "挚友",
+          "evolution": "从天真搭档到在护卫队3中建立最温暖的友谊。",
+          "keyWorks": [
+            "guardians-2",
+            "guardians-3"
+          ]
+        },
+        {
+          "with": "star-lord",
+          "type": "兄妹般的关系",
+          "evolution": "在护卫队2结尾揭示她可能是奎尔同父异母的妹妹（设定略有调整），始终以独特方式支持他。",
+          "keyWorks": [
+            "guardians-2",
+            "guardians-3"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "frigga",
@@ -1093,7 +3357,47 @@
       "thor-1",
       "thor-2"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "阿斯加德王后",
+          "work": "thor-1",
+          "summary": "索尔和洛基的母亲，是洛基唯一真正敬畏的人。"
+        },
+        {
+          "title": "黑暗精灵之死",
+          "work": "thor-2",
+          "summary": "被黑暗精灵杀害，成为索尔和洛基共同的伤痛。"
+        },
+        {
+          "title": "终局告别",
+          "work": "endgame",
+          "summary": "索尔在时间劫案中与母亲重逢，得到她的安慰。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "母子",
+          "evolution": "从温柔的支持者到终局中告诉他\"失败也可以成为自己\"。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "endgame"
+          ]
+        },
+        {
+          "with": "loki",
+          "type": "母子",
+          "evolution": "洛基在她面前从不伪装，她的死是洛基少数真正的伤痛。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "heimdall",
@@ -1111,7 +3415,34 @@
       "ragnarok",
       "infinity-war"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "彩虹桥守护者",
+          "work": "thor-1",
+          "summary": "作为阿斯加德全视守护者，多次帮助索尔。"
+        },
+        {
+          "title": "无限战争之死",
+          "work": "infinity-war",
+          "summary": "在难民船上被灭霸杀害，死前召唤浩克返回地球。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "忠诚盟友",
+          "evolution": "始终忠于索尔和阿斯加德人民，他的死标志着阿斯加德旧秩序的终结。",
+          "keyWorks": [
+            "thor-1",
+            "thor-2",
+            "ragnarok",
+            "infinity-war"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "kingpin",
@@ -1129,7 +3460,31 @@
       "daredevil",
       "defenders",
       "hawkeye"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "哈莱姆犯罪皇帝",
+          "work": "daredevil",
+          "summary": "控制纽约地下犯罪，是夜魔侠最主要的对手。"
+        },
+        {
+          "title": "鹰眼回归",
+          "work": "hawkeye",
+          "summary": "在鹰眼剧集中作为幕后势力出现，运动服黑帮的操控者。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "matt-murdock",
+          "type": "宿敌",
+          "evolution": "作为马特在地狱厨房最持久的对手，代表法律无法触及的权力黑暗。",
+          "keyWorks": [
+            "daredevil"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "kaecilius",
@@ -1145,7 +3500,26 @@
     "movies": [
       "doctor-strange-1"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "堕落法师",
+          "work": "doctor-strange-1",
+          "summary": "被多玛姆诱惑背叛卡玛泰姬，试图让地球坠入黑暗次元。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "ancient-one",
+          "type": "师徒/背叛",
+          "evolution": "发现古一从黑暗次元汲取能量后信念崩塌，选择追随多玛姆。",
+          "keyWorks": [
+            "doctor-strange-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "surtur",
@@ -1161,7 +3535,26 @@
     "movies": [
       "ragnarok"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "火焰巨人",
+          "work": "ragnarok",
+          "summary": "预言中将毁灭阿斯加德的存在，被索尔唤醒后完成诸神黄昏。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "thor",
+          "type": "预言中的毁灭者",
+          "evolution": "索尔顿悟阿斯加德是人民而非土地，主动让苏尔特尔完成毁灭。",
+          "keyWorks": [
+            "ragnarok"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "america-chavez",
@@ -1177,7 +3570,31 @@
     "movies": [
       "doctor-strange-2"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "被追猎的穿越者",
+          "work": "doctor-strange-2",
+          "summary": "拥有无法控制的多元宇宙穿越能力，被旺达追杀。"
+        },
+        {
+          "title": "学会控制",
+          "work": "doctor-strange-2",
+          "summary": "在斯特兰奇帮助下开始主动掌控能力。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "stephen-strange",
+          "type": "保护者/导师",
+          "evolution": "从被他怀疑到获得信任，共同穿越多元宇宙。",
+          "keyWorks": [
+            "doctor-strange-2"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wenwu",
@@ -1193,7 +3610,31 @@
     "movies": [
       "shang-chi-1"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "千年十环之主",
+          "work": "shang-chi-1",
+          "summary": "手握十环活了上千年，建立十环帮。"
+        },
+        {
+          "title": "被声音迷惑",
+          "work": "shang-chi-1",
+          "summary": "以为妻子被塔罗囚禁，攻击村落时被释出的怪物杀死。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "shang-chi",
+          "type": "父子",
+          "evolution": "从严父训练者到被执念吞噬，临死前把十环传给尚气。",
+          "keyWorks": [
+            "shang-chi-1"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "kate-bishop",
@@ -1209,7 +3650,39 @@
     "movies": [],
     "series": [
       "hawkeye"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "崇拜鹰眼",
+          "work": "hawkeye",
+          "summary": "童年经历纽约大战后以克林特为偶像。"
+        },
+        {
+          "title": "圣诞搭档",
+          "work": "hawkeye",
+          "summary": "穿上浪人服后与克林特合作，最终成为下一代鹰眼。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "clint-barton",
+          "type": "师徒",
+          "evolution": "从纠缠不放的粉丝到被克林特认可的搭档。",
+          "keyWorks": [
+            "hawkeye"
+          ]
+        },
+        {
+          "with": "yelyena-belova",
+          "type": "临时搭档/朋友",
+          "evolution": "从对峙到并肩作战。",
+          "keyWorks": [
+            "hawkeye"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "vulture",
@@ -1225,7 +3698,26 @@
     "movies": [
       "spider-man-homecoming"
     ],
-    "series": []
+    "series": [],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "被遗忘的工人",
+          "work": "spider-man-homecoming",
+          "summary": "因复仇者造成的废墟清理失业后成为武器贩子。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "peter-parker",
+          "type": "对手/镜像",
+          "evolution": "从彼得追捕的反派到揭示他是丽兹的父亲，最终保守了彼得身份秘密。",
+          "keyWorks": [
+            "spider-man-homecoming"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "daisy-johnson",
@@ -1241,7 +3733,26 @@
     "movies": [],
     "series": [
       "agents-of-shield"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "震波女",
+          "work": "agents-of-shield",
+          "summary": "从黑客斯凯成长为拥有震波能力的神盾局特工。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "coulson",
+          "type": "导师/父亲般的存在",
+          "evolution": "从被招募的黑客到科尔森最信任的特工之一。",
+          "keyWorks": [
+            "agents-of-shield"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "jennifer-walters",
@@ -1256,6 +3767,25 @@
     "movies": [],
     "series": [
       "she-hulk"
-    ]
+    ],
+    "characterArc": {
+      "stages": [
+        {
+          "title": "律师变女浩克",
+          "work": "she-hulk",
+          "summary": "被班纳的血影响成为女浩克，拒绝传统英雄路径。"
+        }
+      ],
+      "relationships": [
+        {
+          "with": "bruce-banner",
+          "type": "表兄妹",
+          "evolution": "从被班纳训练到坚持以自己的方式做英雄。",
+          "keyWorks": [
+            "she-hulk"
+          ]
+        }
+      ]
+    }
   }
 ]

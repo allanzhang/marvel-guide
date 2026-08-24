@@ -1,0 +1,17 @@
+---
+import { eraById } from '../../lib/data.mjs';
+import RecapEvent from './RecapEvent.astro';
+
+const { era, index } = Astro.props;
+const eraInfo = eraById[era.eraId];
+---
+<section class="recap-era" id={`era-${era.eraId}`} style={eraInfo?.color ? `--era-accent:${eraInfo.color}` : ''}>
+  <header class="recap-era__head container-wide">
+    <span class="recap-era__num">ERA {String(index + 1).padStart(2, '0')}</span>
+    <h2 class="recap-era__title">{era.title}</h2>
+    <p class="recap-era__summary">{era.summary}</p>
+  </header>
+  <div class="recap-era__events container-wide">
+    {era.events.map((event) => <RecapEvent event={event} />)}
+  </div>
+</section>

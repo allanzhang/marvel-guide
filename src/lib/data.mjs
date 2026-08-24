@@ -8,6 +8,8 @@ export const movies = read('movies.json');
 export const series = read('series.json');
 export const characters = read('characters.json');
 export const concepts = read('concepts.json');
+export const recap = read('recap.json');
+export const faq = read('faq.json');
 
 export const charById = Object.fromEntries(characters.map((c) => [c.id, c]));
 export const eraById = Object.fromEntries(eras.map((e) => [e.id, e]));
@@ -23,6 +25,13 @@ export const conceptOrder = [
   ['place', '地点与领域', 'Places & Realms'],
   ['concept', '概念与事件', 'Concepts & Events'],
 ];
+
+export const recapStatusMeta = {
+  core: { label: '核心主线', en: 'Core Arc' },
+  supplementary: { label: '补充理解', en: 'Context' },
+  setup: { label: '伏笔/铺垫', en: 'Setup' },
+  upcoming: { label: '未上映前瞻', en: 'Upcoming' },
+};
 
 export const sortedEras = [...eras].sort((a, b) => a.startYear - b.startYear);
 export const sortedMovies = [...movies].sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));

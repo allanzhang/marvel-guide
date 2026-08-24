@@ -37,7 +37,7 @@ const priorityMeta = {
         >
           <!-- 篇章头图（全宽） -->
           <div class="era-hero full-bleed">
-            {era.backdropUrl && <img class="era-hero__bg" src={era.backdropUrl} alt="" aria-hidden="true" />}
+            {era.backdropUrl && <img class="era-hero__bg" src={pageUrl(era.backdropUrl)} alt="" aria-hidden="true" />}
             <div class="era-hero__shade"></div>
             <span class="era-hero__year-bg" aria-hidden="true">{era.startYear < 0 ? '远古' : Math.abs(era.startYear)}</span>
             <div class="era-hero__inner">

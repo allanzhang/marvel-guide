@@ -1,0 +1,118 @@
+---
+import Base from '../layouts/Base.astro';
+import { faq, workById, charById, conceptById, pageUrl, softenText } from '../lib/data.mjs';
+
+const categories = [
+  ['观看顺序', 'Order'],
+  ['时间与穿越', 'Time'],
+  ['多元宇宙', 'Multiverse'],
+  ['宝石与响指', 'Stones'],
+  ['人物去向', 'Characters'],
+  ['宇宙并入', 'Universes'],
+  ['未上映走向', 'What’s Next'],
+];
+const byCategory = new Map(categories.map(([name]) => [name, []]));
+for (const q of faq.questions) byCategory.get(q.category)?.push(q);
+---
+<Base title="常见疑问｜漫威电影世界图鉴" description="整理 MCU 中最容易混淆的时间穿越、多元宇宙、无限宝石、人物去向和未上映走向问题。">
+  <section class="faq-hero">
+    <div class="faq-hero__inner container-wide">
+      <p class="faq-hero__kicker">{faq.intro.kicker}</p>
+      <h1 class="faq-hero__title">{faq.intro.title}</h1>
+      <p class="faq-hero__lead">{faq.intro.lead}</p>
+    </div>
+  </section>
+
+  <nav class="faq-cats container-wide" aria-label="FAQ 分类">
+    {categories.map(([name, en]) => (
+      <a class="faq-cat" href={`#faq-${encodeURIComponent(name)}`}>
+        <span>{name}</span>
+        <em>{en}</em>
+      </a>
+    ))}
+  </nav>
+
+  <div class="faq-content container-wide">
+    {categories.map(([name, en], index) => (byCategory.get(name)?.length ? (
+      <section class="faq-group" id={`faq-${name}`}>
+        <header class="faq-group__head">
+          <span class="faq-group__num">Q{String(index + 1).padStart(2, '0')}</span>
+          <div>
+            <h2>{name}</h2>
+            <p>{en}</p>
+          </div>
+        </header>
+        <div class="faq-list">
+          {byCategory.get(name).map((q) => {
+            const works = (q.relatedWorks || []).map((id) => workById[id]).filter(Boolean);
+            const chars = (q.relatedCharacters || []).map((id) => charById[id]).filter(Boolean);
+            const concepts = (q.relatedConcepts || []).map((id) => conceptById[id]).filter(Boolean);
+            return (
+              <article class="faq-card">
+                <div class="faq-card__topline">{q.category}</div>
+                <h3 set:html={softenText(q.question)}></h3>
+                <p class="faq-card__short" set:html={softenText(q.shortAnswer)}></p>
+                <div class="faq-card__answer">
+                  {q.answer.map((p) => <p set:html={p}></p>)}
+                </div>
+                {(works.length || chars.length || concepts.length) && (
+                  <div class="faq-links">
+                    {works.map((w) => <a class="faq-link faq-link--work" href={pageUrl(`works/${w.id}`)} set:html={softenText(w.title)}></a>)}
+                    {chars.map((c) => <a class="faq-link" href={pageUrl(`characters/${c.id}`)} set:html={softenText(c.alias || c.name)}></a>)}
+                    {concepts.map((c) => <a class="faq-link faq-link--concept" href={pageUrl(`concepts/${c.id}`)} set:html={softenText(c.name)}></a>)}
+                  </div>
+                )}
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    ) : null))}
+  </div>
+</Base>
+
+<style>
+  .faq-hero {
+    background:
+      radial-gradient(80% 80% at 80% 10%, rgba(176,42,30,.28), transparent 55%),
+      linear-gradient(160deg, #111216 0%, #1b1c20 58%, #26232a 100%);
+    color: #fff;
+    padding: 96px 0 84px;
+  }
+  .faq-hero__inner { max-width: var(--w-wide); margin: 0 auto; padding: 0 48px; }
+  .faq-hero__kicker { color: rgba(255,255,255,.7); letter-spacing: .22em; text-transform: uppercase; font-size: var(--fs-tiny); font-weight: 700; }
+  .faq-hero__title { font-size: clamp(44px, 7vw, 88px); line-height: 1.05; margin: 18px 0 24px; }
+  .faq-hero__lead { max-width: 780px; color: rgba(255,255,255,.84); font-size: clamp(18px, 2vw, 22px); line-height: 1.9; }
+
+  .faq-cats { display: grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap: 12px; padding-top: 36px; }
+  .faq-cat { padding: 14px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow); }
+  .faq-cat span { display: block; font-weight: 700; }
+  .faq-cat em { display: block; margin-top: 4px; color: var(--ink-soft); font-size: var(--fs-tiny); font-style: normal; letter-spacing: .1em; text-transform: uppercase; }
+  .faq-cat:hover { border-color: rgba(176,42,30,.45); color: var(--accent); }
+
+  .faq-content { padding-top: 56px; display: grid; gap: 56px; }
+  .faq-group__head { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; border-bottom: 1px solid var(--line); padding-bottom: 18px; }
+  .faq-group__num { font-family: var(--font-serif); color: var(--accent); font-size: 28px; font-weight: 800; }
+  .faq-group__head h2 { font-size: clamp(28px, 3vw, 40px); }
+  .faq-group__head p { color: var(--ink-soft); letter-spacing: .12em; text-transform: uppercase; font-size: var(--fs-tiny); }
+  .faq-list { display: grid; gap: 18px; }
+  .faq-card { padding: clamp(24px, 3vw, 36px); background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: var(--radius); box-shadow: var(--shadow); scroll-margin-top: 92px; }
+  .faq-card__topline { color: var(--accent); font-size: var(--fs-tiny); letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin-bottom: 12px; }
+  .faq-card h3 { font-size: clamp(24px, 2.5vw, 34px); line-height: 1.35; margin-bottom: 16px; }
+  .faq-card__short { font-size: 19px; line-height: 1.85; color: var(--ink); padding-left: 16px; border-left: 3px solid rgba(176,42,30,.4); margin-bottom: 22px; }
+  .faq-card__answer { display: grid; gap: 12px; max-width: 900px; color: #303238; line-height: 1.95; }
+  .faq-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .faq-link { padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line); background: #faf9f6; color: var(--ink-soft); font-size: var(--fs-small); }
+  .faq-link--work { color: var(--accent); border-color: rgba(176,42,30,.25); background: rgba(176,42,30,.05); }
+  .faq-link--concept { background: #f3f5f7; }
+  .faq-link:hover { color: var(--accent); border-color: rgba(176,42,30,.45); }
+
+  @media (max-width: 1100px) { .faq-cats { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  @media (max-width: 820px) {
+    .faq-hero { padding: 72px 0 64px; }
+    .faq-hero__inner, .faq-cats, .faq-content { padding-left: 20px; padding-right: 20px; }
+    .faq-cats { grid-template-columns: 1fr 1fr; }
+    .faq-card { padding: 24px 20px; }
+  }
+  @media (max-width: 520px) { .faq-cats { grid-template-columns: 1fr; } }
+</style>

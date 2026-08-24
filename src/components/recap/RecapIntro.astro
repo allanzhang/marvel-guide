@@ -1,0 +1,20 @@
+---
+const { intro } = Astro.props;
+---
+<section class="recap-intro container-wide">
+  <p class="recap-intro__kicker">{intro.kicker}</p>
+  <h1 class="recap-intro__title" set:html={intro.title}></h1>
+  <p class="recap-intro__lead">{intro.audience}</p>
+  <div class="recap-intro__grid">
+    <article class="recap-notice">
+      <span class="recap-notice__label">剧透提示 · Spoiler Notice</span>
+      <p>{intro.spoilerNotice}</p>
+    </article>
+    <article class="recap-notice recap-notice--guide">
+      <span class="recap-notice__label">如何阅读 · How to Read</span>
+      <ol>
+        {intro.howToRead.map((item) => <li>{item}</li>)}
+      </ol>
+    </article>
+  </div>
+</section>

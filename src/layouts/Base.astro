@@ -1,7 +1,7 @@
 ---
 // 全站基础布局：head + 顶部导航 + 页脚
 import '../styles/global.css';
-const { title = '漫威电影世界图鉴', description = '面向非漫威迷的 MCU 剧情时序图鉴——顺着读就能看懂整个漫威电影世界。' } = Astro.props;
+const { title = '漫威电影世界图鉴', description = '把看过的 MCU 重新串起来：主线复盘、剧情时序、作品图鉴、人物弧线与概念解释。' } = Astro.props;
 const path = Astro.url.pathname;
 const SITE = import.meta.env.SITE || 'https://example.com';
 const BASE = import.meta.env.BASE_URL || '/';
@@ -9,9 +9,12 @@ const BASE = import.meta.env.BASE_URL || '/';
 const canonical = `${Astro.url.origin}${path === '/' ? '/' : path}`;
 const nav = [
   { href: `${BASE}`, label: '首页' },
+  { href: `${BASE}recap`, label: '主线复盘' },
   { href: `${BASE}timeline`, label: '时间线' },
+  { href: `${BASE}works`, label: '作品图鉴' },
   { href: `${BASE}characters`, label: '人物墙' },
   { href: `${BASE}concepts`, label: '概念库' },
+  { href: `${BASE}faq`, label: '常见疑问' },
 ];
 const isActive = (href) => (href === `${BASE}` ? path === `${BASE}` : path.startsWith(href));
 ---
@@ -54,7 +57,7 @@ const isActive = (href) => (href === `${BASE}` ? path === `${BASE}` : path.start
 
   <footer class="site-footer">
     <div class="inner">
-      <span>漫威（Marvel）电影世界图鉴 · 面向非漫威迷的剧情时序百科</span>
+      <span>漫威（Marvel）电影世界图鉴 · 主线复盘、剧情时序与人物概念索引</span>
       <span>内容整理自公开资料 · 仅供学习参考</span>
     </div>
   </footer>

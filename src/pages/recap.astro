@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import { recap, pageUrl } from '../lib/data.mjs';
+import RecapIntro from '../components/recap/RecapIntro.astro';
+import RecapToc from '../components/recap/RecapToc.astro';
+import RecapEra from '../components/recap/RecapEra.astro';
+
+const title = '主线复盘｜漫威电影世界图鉴';
+const description = '按五大篇章和跨作品大事件复盘 MCU 主线，把无限宝石、复仇者内战、响指、TVA、多元宇宙等剧情线索重新串起来。';
+---
+<Base title={title} description={description}>
+  <div id="recap-top"></div>
+  <RecapIntro intro={recap.intro} />
+  <RecapToc eras={recap.eras} />
+  {recap.eras.map((era, index) => <RecapEra era={era} index={index} />)}
+  <section class="recap-closure container-wide">
+    <h2>继续查漏补缺</h2>
+    <p>主线复盘负责把全局串起来；如果你想查具体作品、人物和设定，可以继续进入以下页面。</p>
+    <div class="recap-closure__links">
+      <a href={pageUrl('timeline')}>查看时间线 →</a>
+      <a href={pageUrl('characters')}>进入人物墙 →</a>
+      <a href={pageUrl('concepts')}>进入概念库 →</a>
+    </div>
+  </section>
+</Base>

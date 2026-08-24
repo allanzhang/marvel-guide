@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries, linkConcepts, pageUrl } from '../../lib/data.mjs';
+import { characters, eraById, posterUrl, portraitUrl, sortedMovies, sortedSeries, isSeries, linkConcepts, pageUrl, workById, charById, softenText } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return characters.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -11,6 +11,13 @@ const displayName = c.alias ? `${c.name} · ${c.alias}` : c.name;
 const cMovies = sortedMovies.filter((m) => c.movies.includes(m.id));
 const cSeries = sortedSeries.filter((s) => (c.series || []).includes(s.id));
 const cWorks = [...cMovies, ...cSeries].sort((a, b) => a.year - b.year || (a.order || 0) - (b.order || 0));
+const arc = c.characterArc || { stages: [], relationships: [] };
+const arcStages = (arc.stages || []).map((stage) => ({ ...stage, work: workById[stage.work] })).filter((s) => s.work);
+const arcRelationships = (arc.relationships || []).map((rel) => ({
+  ...rel,
+  character: charById[rel.with],
+  works: (rel.keyWorks || []).map((id) => workById[id]).filter(Boolean),
+})).filter((r) => r.character);
 const isCrossUniverse = c.universe && c.universe !== 'sacred';
 const universeLabel = {
   sacred: '神圣时间线',
@@ -58,6 +65,49 @@ const universeEn = {
       <h2 class="pd-section__title">他的故事线</h2>
       <p class="pd-section__text" set:html={linkConcepts(c.storyline)}></p>
     </section>
+
+    {arcStages.length > 0 && (
+      <section class="pd-arc">
+        <h2 class="pd-section__title">角色弧线</h2>
+        <ol class="pd-arc__timeline">
+          {arcStages.map((stage, i) => (
+            <li class="pd-arc__stage">
+              <div class="pd-arc__dot">{i + 1}</div>
+              <div class="pd-arc__content">
+                <h3 class="pd-arc__stage-title">{stage.title}</h3>
+                <a class="pd-arc__work" href={pageUrl(`works/${stage.work.id}`)} set:html={softenText(stage.work.title)}></a>
+                <p class="pd-arc__summary" set:html={linkConcepts(stage.summary)}></p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {arcRelationships.length > 0 && (
+      <section class="pd-arc">
+        <h2 class="pd-section__title">关系变化</h2>
+        <div class="pd-rel__grid">
+          {arcRelationships.map((rel) => (
+            <a class="pd-rel" href={pageUrl(`characters/${rel.with}`)}>
+              <div class="pd-rel__head">
+                <img class="pd-rel__avatar" src={portraitUrl(rel.with)} alt={rel.character.name} loading="lazy" />
+                <div>
+                  <span class="pd-rel__name" set:html={softenText(rel.character.alias || rel.character.name)}></span>
+                  <span class="pd-rel__type">{rel.type}</span>
+                </div>
+              </div>
+              <p class="pd-rel__evolution" set:html={linkConcepts(rel.evolution)}></p>
+              {rel.works.length > 0 && (
+                <div class="pd-rel__works">
+                  {rel.works.map((w) => <span class="pd-rel__work" set:html={softenText(w.title.split('（')[0])}></span>)}
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
   </div>
 
   <!-- 作品列表 -->
@@ -207,4 +257,60 @@ const universeEn = {
     .pd-hero__portrait { width: min(260px, 70vw); order: -1; }
     .pd-films__grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
   }
+  /* ===== 角色弧线 ===== */
+  .pd-arc { margin-bottom: 56px; }
+  .pd-arc__timeline { position: relative; padding-left: 8px; }
+  .pd-arc__timeline::before {
+    content: ''; position: absolute; left: 19px; top: 12px; bottom: 12px;
+    width: 2px; background: var(--line);
+  }
+  .pd-arc__stage {
+    position: relative; display: flex; gap: 20px; padding: 0 0 28px;
+  }
+  .pd-arc__stage:last-child { padding-bottom: 0; }
+  .pd-arc__dot {
+    flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
+    background: var(--accent); color: #fff; display: flex; align-items: center;
+    justify-content: center; font-family: var(--font-serif); font-weight: 700;
+    font-size: 15px; z-index: 1; box-shadow: 0 0 0 4px var(--paper);
+  }
+  .pd-arc__content { flex: 1; padding-top: 4px; }
+  .pd-arc__stage-title { font-family: var(--font-serif); font-size: 20px; margin-bottom: 4px; }
+  .pd-arc__work {
+    display: inline-block; font-size: var(--fs-small); color: var(--accent);
+    text-decoration: underline; text-underline-offset: 3px; margin-bottom: 8px;
+  }
+  .pd-arc__summary { font-size: var(--fs-body); line-height: 1.9; color: var(--ink-soft); }
+
+  /* ===== 关系变化 ===== */
+  .pd-rel__grid { display: grid; gap: 14px; }
+  .pd-rel {
+    display: block; padding: 20px 22px; background: #fff;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); transition: border-color 0.15s, transform 0.15s;
+  }
+  .pd-rel:hover { border-color: rgba(176,42,30,0.45); transform: translateY(-2px); }
+  .pd-rel__head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .pd-rel__avatar {
+    width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
+    border: 1px solid var(--line);
+  }
+  .pd-rel__name { display: block; font-weight: 700; font-size: 16px; color: var(--ink); }
+  .pd-rel__type {
+    display: inline-block; margin-top: 2px; font-size: var(--fs-tiny);
+    color: var(--accent); letter-spacing: 0.06em;
+  }
+  .pd-rel__evolution { font-size: var(--fs-body); line-height: 1.85; color: var(--ink-soft); margin-bottom: 10px; }
+  .pd-rel__works { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pd-rel__work {
+    font-size: var(--fs-tiny); padding: 3px 10px; border-radius: 999px;
+    background: var(--paper); border: 1px solid var(--line); color: var(--ink-soft);
+  }
+
+  @media (max-width: 820px) {
+    .pd-arc__dot { width: 34px; height: 34px; font-size: 13px; }
+    .pd-arc__timeline::before { left: 16px; }
+    .pd-rel { padding: 16px 18px; }
+  }
+
 </style>

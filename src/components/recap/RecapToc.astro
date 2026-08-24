@@ -1,0 +1,22 @@
+---
+const { eras } = Astro.props;
+---
+<nav class="recap-toc container-wide" aria-labelledby="recap-toc-title">
+  <div class="recap-toc__head">
+    <p class="recap-toc__kicker">CONTENTS</p>
+    <h2 id="recap-toc-title">大事件目录</h2>
+    <p>按五大篇章顺序复盘；点击可直接跳转到对应事件。</p>
+  </div>
+  <div class="recap-toc__grid">
+    {eras.map((era) => (
+      <section class="recap-toc__era">
+        <h3><a href={`#era-${era.eraId}`}>{era.title}</a></h3>
+        <ol>
+          {era.events.map((event) => (
+            <li><a href={`#${event.id}`}>{event.title}</a></li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+</nav>

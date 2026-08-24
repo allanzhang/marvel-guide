@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "intro": {
+    "title": "常见疑问",
+    "kicker": "MCU FAQ",
+    "lead": "这些问题不是“没看懂剧情”，而是 MCU 的时间线、多元宇宙、人物去向和阶段规则本身就容易混淆。这里用最短路径把它们串清楚。"
+  },
+  "questions": [
+    {
+      "id": "watch-order",
+      "category": "观看顺序",
+      "question": "MCU 应该按剧情顺序还是上映顺序看？",
+      "shortAnswer": "第一次系统补片更推荐上映顺序；复习主线和查因果时用剧情顺序更顺。",
+      "answer": [
+        "上映顺序能保留当年观众获得信息的节奏，例如先看复仇者集结，再逐步理解无限宝石；剧情顺序适合已经看过大部分作品的人，用来把历史因果重新串起来。",
+        "这个网站的主线复盘和时间线就是为“看过但没串起来”的场景设计：先用复盘建立骨架，再用时间线定位具体作品。"
+      ],
+      "relatedWorks": [
+        "captain-america-first-avenger",
+        "iron-man-1",
+        "avengers-1"
+      ],
+      "relatedCharacters": [],
+      "relatedConcepts": [
+        "infinity-stones"
+      ]
+    },
+    {
+      "id": "endgame-time-travel",
+      "category": "时间与穿越",
+      "question": "《终局之战》的时间穿越为什么不是“回到过去改变现在”？",
+      "shortAnswer": "因为它的规则是回到过去会产生分支，而不是简单覆盖原未来。",
+      "answer": [
+        "影片中班纳明确解释，改变过去不会自动洗掉现在；你回到的过去会成为你的未来，而原时间线仍存在。",
+        "因此复仇者选择“借宝石再归还”，尽量降低分支破坏。史蒂夫最后归还宝石，也是在维持这些时间线的完整性。"
+      ],
+      "relatedWorks": [
+        "endgame",
+        "ant-man-and-wasp"
+      ],
+      "relatedCharacters": [
+        "steve-rogers",
+        "bruce-banner",
+        "scott-lang"
+      ],
+      "relatedConcepts": [
+        "time-branch",
+        "quantum-realm",
+        "pym-particles"
+      ]
+    },
+    {
+      "id": "branch-vs-multiverse",
+      "category": "时间与穿越",
+      "question": "时间线分支和多元宇宙是一回事吗？",
+      "shortAnswer": "不完全一样：时间线分支是同一条历史产生偏差，多元宇宙是多个独立现实同时存在。",
+      "answer": [
+        "在洛基的设定里，遗留之人通过 TVA 裁剪分支，只保留一条神圣时间线。他死亡后，大量分支开始自由生长。",
+        "这些分支与原本存在的平行宇宙共同构成更大的多元宇宙。可以把分支理解为现实失控的起点，把多元宇宙理解为所有现实的总和。"
+      ],
+      "relatedWorks": [
+        "loki",
+        "endgame"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "kang"
+      ],
+      "relatedConcepts": [
+        "time-branch",
+        "sacred-timeline",
+        "multiverse",
+        "tva"
+      ]
+    },
+    {
+      "id": "multiverse-starts-when",
+      "category": "多元宇宙",
+      "question": "多元宇宙到底是从哪一刻真正打开的？",
+      "shortAnswer": "概念最早出现在奇异博士，但作为阶段主线真正失控，是在洛基结尾遗留之人死亡之后。",
+      "answer": [
+        "奇异博士第一次让观众看见多元宇宙和维度概念，但那时现实边界仍有魔法和时间宝石守护者维持。",
+        "洛基结尾希尔维杀死遗留之人，TVA 无法继续裁剪所有分支，多元宇宙才从奇观变成系统性危机。英雄无归和奇异博士2是这一失控在不同故事里的后果。"
+      ],
+      "relatedWorks": [
+        "doctor-strange-1",
+        "loki",
+        "spider-man-no-way-home",
+        "doctor-strange-2"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "stephen-strange",
+        "kang"
+      ],
+      "relatedConcepts": [
+        "multiverse",
+        "sacred-timeline",
+        "tva"
+      ]
+    },
+    {
+      "id": "tva-kang-he-who-remains",
+      "category": "多元宇宙",
+      "question": "TVA、神圣时间线、遗留之人和康变体是什么关系？",
+      "shortAnswer": "遗留之人是某个康变体，他通过 TVA 裁剪时间线，阻止其他更坏的康变体出现。",
+      "answer": [
+        "TVA 成员以为自己在守护抽象的时间秩序，实际上是在执行遗留之人的版本控制。神圣时间线不是天然真理，而是他为了排除竞争者制造的秩序。",
+        "遗留之人死亡后，康议会和更多变体开始活动。蚁人3里的征服者康就是其中一个危险变体。"
+      ],
+      "relatedWorks": [
+        "loki",
+        "ant-man-3"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "kang"
+      ],
+      "relatedConcepts": [
+        "tva",
+        "sacred-timeline",
+        "multiverse",
+        "time-branch"
+      ]
+    },
+    {
+      "id": "nwh-vs-mom",
+      "category": "多元宇宙",
+      "question": "《英雄无归》的咒语和《奇异博士2》的多元宇宙有什么区别？",
+      "shortAnswer": "前者是遗忘咒语失控导致“认识彼得的人”涌入，后者是主动在多个现实之间穿越。",
+      "answer": [
+        "英雄无归的裂缝有明确条件：其他宇宙中知道彼得·帕克是谁的人会被拉进主宇宙。它不是任意打开所有宇宙。",
+        "奇异博士2则通过美国小姐的能力和魔法穿越，展示不同宇宙的社会、英雄和规则。两者都属于多元宇宙失控，但触发机制和范围不同。"
+      ],
+      "relatedWorks": [
+        "spider-man-no-way-home",
+        "doctor-strange-2"
+      ],
+      "relatedCharacters": [
+        "peter-parker",
+        "stephen-strange",
+        "america-chavez",
+        "wong"
+      ],
+      "relatedConcepts": [
+        "multiverse"
+      ]
+    },
+    {
+      "id": "loki-throne",
+      "category": "多元宇宙",
+      "question": "洛基最后坐上时间王座后，多元宇宙为什么还会危险？",
+      "shortAnswer": "他在尽力维持时间线，但没有消灭所有康变体，也没有把现实重新压成一条线。",
+      "answer": [
+        "洛基的选择不是恢复旧 TVA 的暴力裁剪，而是在时间尽头承担所有分支的重量。这让他成为守护者，但不等于危机解除。",
+        "康议会已经醒来，死侍和神奇四侠等跨界变量也在进入舞台。秘密战争仍可能来自这些无法被单一守护者完全控制的现实碰撞。"
+      ],
+      "relatedWorks": [
+        "loki",
+        "ant-man-3",
+        "deadpool-3",
+        "avengers-secret-wars"
+      ],
+      "relatedCharacters": [
+        "loki",
+        "kang",
+        "deadpool"
+      ],
+      "relatedConcepts": [
+        "tva",
+        "multiverse",
+        "time-branch",
+        "sacred-timeline"
+      ]
+    },
+    {
+      "id": "infinity-stones-status",
+      "category": "宝石与响指",
+      "question": "六颗无限宝石分别是什么？后来还重要吗？",
+      "shortAnswer": "它们是空间、现实、力量、心灵、时间、灵魂六颗规则宝石；无限传奇后不再是主舞台中心，但仍影响时间和多元宇宙。",
+      "answer": [
+        "空间宝石控制传送，现实宝石改写物质，力量宝石释放能量，心灵宝石影响意识与生命，时间宝石操控时间，灵魂宝石涉及灵魂与牺牲。",
+        "主宇宙宝石在灭霸响指和终局后基本退出当前核心矛盾，但终局时间劫案和其他宇宙仍保留宝石故事的可能。"
+      ],
+      "relatedWorks": [
+        "captain-america-first-avenger",
+        "guardians-1",
+        "doctor-strange-1",
+        "infinity-war",
+        "endgame"
+      ],
+      "relatedCharacters": [
+        "thanos",
+        "vision",
+        "gamora"
+      ],
+      "relatedConcepts": [
+        "infinity-stones",
+        "space-stone",
+        "reality-stone",
+        "power-stone",
+        "mind-stone",
+        "time-stone",
+        "soul-stone"
+      ]
+    },
+    {
+      "id": "snap-aftermath",
+      "category": "宝石与响指",
+      "question": "响指和烁灭造成了哪些长期影响？",
+      "shortAnswer": "它不只是让一半人消失五年，还造成社会秩序、家庭关系、身份认同和英雄信任的长期裂缝。",
+      "answer": [
+        "化灰者归来时，世界已经向前走了五年。有人失去家庭、房产和社会位置，也有人在五年中建立了新秩序。",
+        "这种断层解释了猎鹰与冬兵中的旗帜粉碎者、英雄远征中的公众情绪，也让终局后的“回归”不可能是简单复原。"
+      ],
+      "relatedWorks": [
+        "infinity-war",
+        "endgame",
+        "far-from-home",
+        "falcon-winter-soldier"
+      ],
+      "relatedCharacters": [
+        "clint-barton",
+        "sam-wilson",
+        "bucky-barnes"
+      ],
+      "relatedConcepts": [
+        "the-snap"
+      ]
+    },
+    {
+      "id": "peter-forgotten",
+      "category": "人物去向",
+      "question": "彼得·帕克最后被全世界忘记了什么？",
+      "shortAnswer": "全世界忘记的是“彼得·帕克”这个人与蜘蛛侠身份的关联，而不是蜘蛛侠存在过。",
+      "answer": [
+        "最终咒语让所有人忘记彼得·帕克是谁，因此 MJ、内德和奇异博士都不再记得他本人。彼得制作的新战衣和蜘蛛侠行为仍存在于世界记忆中。",
+        "这意味着他从被导师、朋友和公众包围的位置，回到匿名、孤独、独自承担责任的状态。"
+      ],
+      "relatedWorks": [
+        "far-from-home",
+        "spider-man-no-way-home"
+      ],
+      "relatedCharacters": [
+        "peter-parker",
+        "stephen-strange"
+      ],
+      "relatedConcepts": [
+        "multiverse"
+      ]
+    },
+    {
+      "id": "wanda-status",
+      "category": "人物去向",
+      "question": "旺达到底死了吗？黑暗神书还存在吗？",
+      "shortAnswer": "主宇宙中万达格山崩塌后没有明确展示死亡；黑暗神书源头被摧毁，但多元宇宙仍保留变体可能。",
+      "answer": [
+        "奇异博士2结尾旺达意识到自己的行为吓到了孩子，随后摧毁万达格山上的黑暗神书源头。影片没有给出清晰的葬礼或确定死亡镜头。",
+        "在多元宇宙规则下，角色是否以变体形式回归始终保留空间。但就主宇宙剧情而言，她的绯红女巫阶段已经走到极端终点。"
+      ],
+      "relatedWorks": [
+        "wandavision",
+        "doctor-strange-2"
+      ],
+      "relatedCharacters": [
+        "wanda-maximoff",
+        "stephen-strange",
+        "wong"
+      ],
+      "relatedConcepts": [
+        "darkhold",
+        "chaos-magic",
+        "multiverse"
+      ]
+    },
+    {
+      "id": "original-avengers-return",
+      "category": "人物去向",
+      "question": "史蒂夫、托尼、娜塔莎这些初代复仇者之后还会不会回归？",
+      "shortAnswer": "托尼和娜塔莎在终局中已明确牺牲；史蒂夫的主宇宙故事已结束，但变体、闪回或其他宇宙形式仍有理论空间。",
+      "answer": [
+        "托尼打响指牺牲、娜塔莎在沃米尔牺牲，这两个结局在主宇宙中非常明确。史蒂夫选择回到过去生活，并把盾牌交给山姆。",
+        "多元宇宙当然允许变体或其他宇宙版本出现，但把这些当成主线回归会削弱终局的牺牲重量，需要谨慎看待未上映信息。"
+      ],
+      "relatedWorks": [
+        "endgame",
+        "falcon-winter-soldier"
+      ],
+      "relatedCharacters": [
+        "tony-stark",
+        "natasha-romanoff",
+        "steve-rogers",
+        "sam-wilson"
+      ],
+      "relatedConcepts": [
+        "multiverse"
+      ]
+    },
+    {
+      "id": "deadpool-mutants-mcu",
+      "category": "宇宙并入",
+      "question": "死侍和 X 战警现在算 MCU 吗？",
+      "shortAnswer": "通过多元宇宙，Fox X 战警角色已经被拉入 MCU 叙事，但主宇宙变种人体系仍未完全建立。",
+      "answer": [
+        "死侍与金刚狼使用 TVA 和多元宇宙框架，让旧 Fox 宇宙角色可以合法进入当前故事。",
+        "这并不等于所有旧 X 战警电影都立刻变成主宇宙正史；它更像是在秘密战争前打开了角色、宇宙和遗产进入的通道。"
+      ],
+      "relatedWorks": [
+        "deadpool-3",
+        "loki"
+      ],
+      "relatedCharacters": [
+        "deadpool",
+        "wolverine",
+        "loki"
+      ],
+      "relatedConcepts": [
+        "mutants",
+        "multiverse",
+        "tva"
+      ]
+    },
+    {
+      "id": "ff-mutants-entry",
+      "category": "宇宙并入",
+      "question": "神奇四侠和变种人会怎么进入 MCU？",
+      "shortAnswer": "目前最清晰的路径是多元宇宙并入，而不是强行让他们一直存在于主宇宙地球。",
+      "answer": [
+        "神奇四侠电影被设定在另一个平行宇宙风格世界，这让他们可以作为成熟团队进入更大的多元宇宙战场。",
+        "变种人则通过死侍、金刚狼和多元宇宙通道先引入概念，再在秘密战争前后逐步融入主宇宙。具体方式仍需等待后续作品确认。"
+      ],
+      "relatedWorks": [
+        "fantastic-four-1",
+        "deadpool-3",
+        "avengers-secret-wars"
+      ],
+      "relatedCharacters": [
+        "reed-richards",
+        "sue-storm",
+        "deadpool",
+        "wolverine"
+      ],
+      "relatedConcepts": [
+        "mutants",
+        "multiverse"
+      ]
+    },
+    {
+      "id": "kang-future-villain",
+      "category": "未上映走向",
+      "question": "康还是下一阶段主反派吗？哪些事情现在不能下定论？",
+      "shortAnswer": "康议会和康变体已经是明确威胁，但是否由某一个康承担最终反派位置，还要看毁灭日和秘密战争。",
+      "answer": [
+        "洛基和蚁人3已经把康变体、时间线失控和康议会建立成主线威胁。但现实中的创作调整和未上映剧情意味着，不能把预告片信息当成最终剧情。",
+        "可以确定的是：多元宇宙碰撞、变体、神奇四侠、变种人和老角色遗产都在向秘密战争汇集；不能确定的是具体谁生谁死、谁是最终反派、哪条时间线会被保留。"
+      ],
+      "relatedWorks": [
+        "loki",
+        "ant-man-3",
+        "avengers-doomsday",
+        "avengers-secret-wars"
+      ],
+      "relatedCharacters": [
+        "kang",
+        "loki",
+        "reed-richards"
+      ],
+      "relatedConcepts": [
+        "tva",
+        "multiverse",
+        "sacred-timeline",
+        "mutants"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+---
+import { charById, conceptById, enrichText, pageUrl, recapStatusMeta, softenText } from '../../lib/data.mjs';
+import RecapRelatedLinks from './RecapRelatedLinks.astro';
+
+const { event } = Astro.props;
+const status = recapStatusMeta[event.status] || { label: event.status, en: '' };
+const characterChanges = event.characterChanges.map((change) => ({
+  ...change,
+  name: charById[change.id]?.alias || charById[change.id]?.name || change.id,
+}));
+const conceptThreads = event.conceptThreads.map((thread) => ({
+  ...thread,
+  name: conceptById[thread.id]?.name || thread.id,
+}));
+---
+<article class="recap-event" id={event.id}>
+  <div class="recap-event__head">
+    <div class="recap-event__meta">
+      <span class={`recap-status recap-status--${event.status}`}>{status.label}<em>{status.en}</em></span>
+      <span class="recap-event__time">{event.timelineNote}</span>
+    </div>
+    <h3 class="recap-event__title" set:html={softenText(event.title)}></h3>
+    <p class="recap-event__one-line" set:html={enrichText(event.oneLine)}></p>
+  </div>
+
+  <div class="recap-event__body">
+    {event.body.map((paragraph) => <p set:html={enrichText(paragraph)}></p>)}
+  </div>
+
+  <section class="recap-event__section">
+    <h4>关键转折</h4>
+    <ul class="recap-bullets">
+      {event.turningPoints.map((point) => <li set:html={enrichText(point)}></li>)}
+    </ul>
+  </section>
+
+  <section class="recap-event__section">
+    <h4>人物变化</h4>
+    <div class="recap-change-list">
+      {characterChanges.map((change) => (
+        <a class="recap-change" href={pageUrl(`characters/${change.id}`)}>
+          <span class="recap-change__name" set:html={softenText(change.name)}></span>
+          <span class="recap-change__text" set:html={enrichText(change.summary)}></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="recap-event__section">
+    <h4>概念与伏笔</h4>
+    <div class="recap-change-list">
+      {conceptThreads.map((thread) => (
+        <a class="recap-change" href={pageUrl(`concepts/${thread.id}`)}>
+          <span class="recap-change__name" set:html={softenText(thread.name)}></span>
+          <span class="recap-change__text" set:html={enrichText(thread.summary)}></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <RecapRelatedLinks event={event} />
+
+  {event.extendedNotes && event.extendedNotes.length > 0 && (
+    <section class="recap-event__section recap-extended" aria-label="延伸线索">
+      {event.extendedNotes.map((note) => (
+        <details>
+          <summary>{note.title}</summary>
+          <div class="recap-extended__body">
+            {note.body.map((paragraph) => <p set:html={enrichText(paragraph)}></p>)}
+          </div>
+        </details>
+      ))}
+    </section>
+  )}
+
+  {event.status === 'upcoming' && (
+    <section class="recap-event__section recap-upcoming">
+      <div>
+        <h4>已知线索</h4>
+        <ul class="recap-bullets">
+          {event.knownThreads.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h4>待确认问题</h4>
+        <ul class="recap-bullets">
+          {event.openQuestions.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <a class="recap-backtop" href="#recap-top">返回目录 ↑</a>
+</article>
