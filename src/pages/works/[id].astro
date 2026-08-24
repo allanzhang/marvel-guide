@@ -11,7 +11,7 @@ const { w } = Astro.props;
 const era = eraById[w.eraId] || {};
 const eraColor = era.color || 'var(--accent)';
 const eraSoft = era.colorSoft || '#f5e6e3';
-const heroSrc = w.stills?.[0] || posterUrl(w.id);
+const heroSrc = w.stills?.[0] ? pageUrl(w.stills[0]) : posterUrl(w.id);
 const priorityMeta = {
   'must-watch': { label: '必看', en: 'MUST WATCH' },
   recommended: { label: '推荐观看', en: 'RECOMMENDED' },
@@ -101,7 +101,7 @@ const excerpt = (text) => {
         <div class="container-wide">
           <h2 class="wd-stills__title">剧照</h2>
           <div class:list={['wd-stills__grid', `wd-stills__grid--${w.stills.length}`]}>
-            {w.stills.map((src) => <img src={src} alt={`${w.title} 剧照`} loading="lazy" />)}
+            {w.stills.map((src) => <img src={pageUrl(src)} alt={`${w.title} 剧照`} loading="lazy" />)}
           </div>
         </div>
       </section>
