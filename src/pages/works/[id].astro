@@ -121,10 +121,10 @@ const storyStates = (w.aftermath?.characterStates || []).map((state) => ({
                   <b>本片之后</b>
                   <div class="wd-states__grid">
                     {storyStates.map((state) => (
-                      <a class="wd-state" href={pageUrl(`characters/${state.id}`)}>
-                        <span class="wd-state__name" set:html={softenText(state.name)}></span>
+                      <div class="wd-state">
+                        <a class="wd-state__name" href={pageUrl(`characters/${state.id}`)} set:html={softenText(state.name)}></a>
                         <span class="wd-state__text" set:html={enrichText(state.state)}></span>
-                      </a>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -362,7 +362,8 @@ const storyStates = (w.aftermath?.characterStates || []).map((state) => ({
   .wd-states__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
   .wd-state{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:border-color .15s,transform .15s}
   .wd-state:hover{border-color:rgba(176,42,30,.45);transform:translateY(-2px)}
-  .wd-state__name{display:block;font-weight:700;margin-bottom:6px;color:var(--ink)}
+  .wd-state__name{display:block;font-weight:700;margin-bottom:6px;color:var(--ink);text-decoration:none}
+  .wd-state__name:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
   .wd-state__text{display:block;color:var(--ink-soft);line-height:1.7;font-size:var(--fs-small)}
   @media (max-width:820px){.wd-story-role{padding:26px 20px}.wd-aftermath__grid{grid-template-columns:1fr}}
 
