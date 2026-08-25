@@ -86,14 +86,78 @@ const linkTerms = (() => {
   return [...byZh.values()].sort((a, b) => b.zh.length - a.zh.length);
 })();
 
+// 正文中的《作品名》链接到作品页。这里只匹配书名号内的完整作品名，
+// 避免把无书名号的角色词（如“惊奇队长”）误链到电影。
+const workTitleMap = new Map();
+{
+  const shortTitleCounts = new Map();
+  for (const w of Object.values(workById)) {
+    const zh = zhPart(w.title);
+    const short = zh.split(/[：:]/)[0];
+    // 同一部作品的全名和短名相同只计一次；这里统计的是“这个短名是否跨作品重名”。
+    const candidates = new Set([zh, short]);
+    for (const candidate of candidates) {
+      shortTitleCounts.set(candidate, (shortTitleCounts.get(candidate) || 0) + 1);
+    }
+  }
+  const firstWorkAliases = {
+    'captain-america-first-avenger': ['美国队长1'],
+    'thor-1': ['雷神1'],
+    'avengers-1': ['复仇者联盟1'],
+    'ant-man-1': ['蚁人1'],
+    'guardians-1': ['银河护卫队1'],
+    'spider-man-homecoming': ['蜘蛛侠1'],
+    'black-panther-1': ['黑豹1'],
+    'doctor-strange-1': ['奇异博士1'],
+    'iron-man-1': ['钢铁侠1'],
+    'fantastic-four-1': ['神奇四侠1']
+  };
+  for (const [id, aliases] of Object.entries(firstWorkAliases)) {
+    for (const alias of aliases) workTitleMap.set(alias, pageUrl(`works/${id}`));
+  }
+  for (const w of Object.values(workById)) {
+    const zh = zhPart(w.title);
+    const short = zh.split(/[：:]/)[0];
+    workTitleMap.set(zh, pageUrl(`works/${w.id}`));
+    if (short !== zh && shortTitleCounts.get(short) === 1) {
+      workTitleMap.set(short, pageUrl(`works/${w.id}`));
+    }
+  }
+}
+function linkWorks(text) {
+  return text.replace(/《([^》]+)》/g, (matched, title) => (
+    workTitleMap.has(title) ? `<a class="c-link" href="${workTitleMap.get(title)}">${matched}</a>` : matched
+  ));
+}
+
 export function linkConcepts(text) {
   if (!text) return text;
+  text = linkWorks(text);
   // 单遍扫描：在每一处只取「当前位置命中且最长的词」，连同其括号英文一起吞掉并前进。
   // 这样绝不会在已生成的锚点内部二次匹配，可避免「雷神之锤」被拆成「雷神」+「之锤」。
   // linkTerms 已按中文长度降序，故首个 startsWith 命中即是最长词。
   let out = '';
   let i = 0;
   outer: while (i < text.length) {
+    // 跳过已生成的 HTML 锚点（含其内部文本），避免《作品名》链接又被角色/概念词二次套链接。
+    if (text.startsWith('<a ', i)) {
+      const close = text.indexOf('</a>', i);
+      if (close !== -1) {
+        out += text.slice(i, close + 4);
+        i = close + 4;
+        continue;
+      }
+    }
+    if (text[i] === '<') {
+      const close = text.indexOf('>', i);
+      if (close === -1) {
+        out += text.slice(i);
+        break;
+      }
+      out += text.slice(i, close + 1);
+      i = close + 1;
+      continue;
+    }
     for (const { zh, en, href } of linkTerms) {
       if (!text.startsWith(zh, i)) continue;
       // 尝试吞掉紧邻的括号英文（形式与数据一致：全角括号 + 拉丁开头）

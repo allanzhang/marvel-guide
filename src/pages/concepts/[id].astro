@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { concepts, conceptById, charById, workById, linkConcepts, backdropUrl, pageUrl } from '../../lib/data.mjs';
+import { concepts, conceptById, charById, workById, linkConcepts, backdropUrl, posterUrl, portraitUrl, pageUrl } from '../../lib/data.mjs';
 
 export async function getStaticPaths() {
   return concepts.map((c) => ({ params: { id: c.id }, props: { c } }));
@@ -8,11 +8,12 @@ export async function getStaticPaths() {
 
 const { c } = Astro.props;
 const relatedConcepts = (c.related || []).map((id) => conceptById[id]).filter(Boolean);
-const relatedChars = (c.relatedChars || []).map((id) => charById[id]).filter(Boolean);
 const appearances = (c.appearances || []).map((id) => workById[id]).filter(Boolean);
 const narrative = c.narrativeRole;
-const narrativeChars = (narrative?.relatedCharacters || []).map((id) => charById[id]).filter(Boolean);
 const firstAppearanceWork = narrative ? workById[narrative.firstAppearance] : null;
+const relatedChars = [
+  ...new Set([...(c.relatedChars || []), ...(narrative?.relatedCharacters || [])])
+].map((id) => charById[id]).filter(Boolean);
 const cBackdrop = backdropUrl(c.id);
 ---
 
@@ -42,6 +43,20 @@ const cBackdrop = backdropUrl(c.id);
       <section class="cd-section cd-narrative">
         <h2 class="cd-section__title">剧情作用</h2>
         <p class="cd-section__text cd-narrative__impact" set:html={linkConcepts(narrative.mainImpact)}></p>
+        {narrative.keyMoments?.length > 0 && (
+          <div class="cd-narrative__moments">
+            <b>关键节点速览</b>
+            <ul>
+              {narrative.keyMoments.map((item) => <li set:html={linkConcepts(item)}></li>)}
+            </ul>
+          </div>
+        )}
+        {narrative.story?.length > 0 && (
+          <div class="cd-narrative__story">
+            <b>完整故事</b>
+            {narrative.story.map((paragraph) => <p set:html={linkConcepts(paragraph)}></p>)}
+          </div>
+        )}
         <div class="cd-narrative__grid">
           <div>
             <b>第一次推动剧情</b>
@@ -52,20 +67,6 @@ const cBackdrop = backdropUrl(c.id);
             <p set:html={linkConcepts(narrative.currentStatus)}></p>
           </div>
         </div>
-        <div class="cd-narrative__moments">
-          <b>关键节点</b>
-          <ul>
-            {narrative.keyMoments.map((item) => <li set:html={linkConcepts(item)}></li>)}
-          </ul>
-        </div>
-        {narrativeChars.length > 0 && (
-          <div class="cd-narrative__chars">
-            <b>相关人物</b>
-            <div>
-              {narrativeChars.map((character) => <a href={pageUrl(`characters/${character.id}`)}>{character.alias || character.name}</a>)}
-            </div>
-          </div>
-        )}
       </section>
     )}
   </div>
@@ -74,16 +75,32 @@ const cBackdrop = backdropUrl(c.id);
     <section class="cd-works">
       <div class="container-wide">
         <h2 class="cd-works__title">出现在</h2>
-        <div class="cd-works__chips">
+        <div class="cd-works__row">
           {appearances.map((w) => (
-            <a class="chip" href={pageUrl(`works/${w.id}`)}>{w.title}</a>
+            <a class="cd-poster" href={pageUrl(`works/${w.id}`)} title={w.title}>
+              <img src={posterUrl(w.id)} alt={w.title} loading="lazy" decoding="async" width="88" height="132" />
+              <span>{w.title}</span>
+            </a>
           ))}
         </div>
+        {relatedChars.length > 0 && (
+          <div class="cd-people">
+            <b>相关人物</b>
+            <div class="cd-people__row">
+              {relatedChars.map((r) => (
+                <a class="cd-person" href={pageUrl(`characters/${r.id}`)} title={r.alias || r.name}>
+                  <img src={portraitUrl(r.id)} alt={r.alias || r.name} loading="lazy" decoding="async" width="64" height="64" />
+                  <span>{r.alias || r.name}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )}
 
-  {(relatedConcepts.length > 0 || relatedChars.length > 0) && (
+  {relatedConcepts.length > 0 && (
     <section class="cd-related">
       <div class="container-wide">
         <h2 class="cd-related__title">相关词条</h2>
@@ -91,11 +108,6 @@ const cBackdrop = backdropUrl(c.id);
           {relatedConcepts.map((r) => (
             <a class="rlink" href={pageUrl(`concepts/${r.id}`)}>
               <span class="rlink__tag">概念</span>{r.name}
-            </a>
-          ))}
-          {relatedChars.map((r) => (
-            <a class="rlink" href={pageUrl(`characters/${r.id}`)}>
-              <span class="rlink__tag">人物</span>{r.alias || r.name}
             </a>
           ))}
         </div>
@@ -146,17 +158,42 @@ const cBackdrop = backdropUrl(c.id);
 
   .cd-works { margin-top: 48px; }
   .cd-works__title { font-size: var(--fs-section); margin-bottom: 8px; }
-  .cd-works__chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-  .chip {
-    font-size: var(--fs-small);
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    color: var(--ink);
-    background: #fff;
-    transition: border-color 0.15s, color 0.15s;
+  .cd-works__row {
+    display: flex;
+    gap: 22px;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding: 14px 4px 18px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
   }
-  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .cd-poster {
+    flex: 0 0 auto;
+    width: 88px;
+    color: var(--ink);
+    text-align: center;
+    scroll-snap-align: start;
+    transition: color 0.18s ease;
+  }
+  .cd-poster:hover { color: var(--accent); }
+  .cd-poster img {
+    display: block;
+    width: 88px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 24px rgba(20, 20, 24, 0.14);
+  }
+  .cd-poster span {
+    display: -webkit-box;
+    margin-top: 9px;
+    font-size: 11px;
+    line-height: 1.35;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
   .cd-related { margin-top: 56px; }
   .cd-related__title { font-size: var(--fs-section); margin-bottom: 20px; }
@@ -182,6 +219,50 @@ const cBackdrop = backdropUrl(c.id);
     border-radius: 999px;
     padding: 0 6px;
   }
+  .cd-people { margin-top: 30px; }
+  .cd-people b {
+    display: block;
+    margin-bottom: 14px;
+    color: var(--ink-soft);
+    font-size: var(--fs-small);
+    letter-spacing: 0.08em;
+  }
+  .cd-people__row {
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    padding: 8px 4px 12px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+  .cd-person {
+    flex: 0 0 auto;
+    width: 72px;
+    color: var(--ink);
+    text-align: center;
+    scroll-snap-align: start;
+    transition: color 0.18s ease;
+  }
+  .cd-person:hover { color: var(--accent); }
+  .cd-person img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 8px 18px rgba(20, 20, 24, 0.14);
+  }
+  .cd-person span {
+    display: -webkit-box;
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.3;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
   @media (max-width: 820px) {
     .cd-hero { height: 44vh; }
@@ -193,14 +274,13 @@ const cBackdrop = backdropUrl(c.id);
   .cd-narrative b{display:block;margin-bottom:8px;color:var(--ink-soft);font-size:var(--fs-small);letter-spacing:.08em}
   .cd-narrative a{display:inline-block;color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
   .cd-narrative p{color:var(--ink);line-height:1.8}
-  .cd-narrative__moments{margin-top:24px}
+  .cd-narrative__moments{margin-top:24px;padding:18px 20px;border-radius:var(--radius);background:rgba(176,42,30,.045);border:1px solid var(--line)}
   .cd-narrative__moments ul{display:grid;gap:10px;list-style:none;margin-top:10px}
   .cd-narrative__moments li{position:relative;padding-left:20px;line-height:1.85}
   .cd-narrative__moments li::before{content:'';position:absolute;left:0;top:.8em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
-  .cd-narrative__chars{margin-top:24px}
-  .cd-narrative__chars div{display:flex;gap:10px;flex-wrap:wrap}
-  .cd-narrative__chars a{padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-size:var(--fs-small);font-weight:400}
-  .cd-narrative__chars a:hover{border-color:var(--accent);color:var(--accent)}
-  @media (max-width:820px){.cd-narrative{padding:22px 18px}.cd-narrative__grid{grid-template-columns:1fr}}
+  .cd-narrative__story{margin-top:28px}
+  .cd-narrative__story p{margin-top:12px;color:var(--ink);line-height:2}
+  .cd-narrative__story p:first-of-type{margin-top:10px}
+  @media (max-width:820px){.cd-narrative{padding:22px 18px}.cd-narrative__grid{grid-template-columns:1fr}.cd-works__row{gap:16px}.cd-poster{width:76px}.cd-poster img{width:76px;height:114px}.cd-people__row{gap:18px}.cd-person{width:64px}.cd-person img{width:56px;height:56px}}
 
 </style>
