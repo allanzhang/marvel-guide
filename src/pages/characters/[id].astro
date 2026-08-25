@@ -40,7 +40,7 @@ const universeEn = {
     <div class="pd-hero__inner">
       <div class="pd-hero__text">
         {isCrossUniverse && <span class="pd-hero__universe">{universeLabel}{universeEn && <em class="pd-hero__universe-en"> · {universeEn}</em>}</span>}
-        <h1 class="pd-hero__name">{displayName}</h1>
+        <h1 class="pd-hero__name">{c.name}{c.alias && <span class="pd-hero__name-alias">{c.alias}</span>}</h1>
         <p class="pd-hero__tag">{c.tagline}</p>
       </div>
       <div class="pd-hero__portrait">
@@ -90,19 +90,21 @@ const universeEn = {
         <div class="pd-rel__grid">
           {arcRelationships.map((rel) => (
             <article class="pd-rel">
-              <a class="pd-rel__head" href={pageUrl(`characters/${rel.with}`)}>
-                <img class="pd-rel__avatar" src={portraitUrl(rel.with)} alt={rel.character.name} loading="lazy" />
-                <div>
-                  <span class="pd-rel__name" set:html={softenText(rel.character.alias || rel.character.name)}></span>
+              <div class="pd-rel__main">
+                <a class="cast pd-rel__cast" href={pageUrl(`characters/${rel.with}`)} title={rel.character.alias || rel.character.name}>
+                  <img src={portraitUrl(rel.with)} alt={rel.character.alias || rel.character.name} loading="lazy" />
+                  <span>{rel.character.alias || rel.character.name}</span>
+                </a>
+                <div class="pd-rel__body">
                   <span class="pd-rel__type">{rel.type}</span>
+                  <p class="pd-rel__evolution" set:html={linkConcepts(rel.evolution)}></p>
+                  {rel.works.length > 0 && (
+                    <div class="pd-rel__works">
+                      {rel.works.map((w) => <span class="pd-rel__work" set:html={softenText(w.title.split('（')[0])}></span>)}
+                    </div>
+                  )}
                 </div>
-              </a>
-              <p class="pd-rel__evolution" set:html={linkConcepts(rel.evolution)}></p>
-              {rel.works.length > 0 && (
-                <div class="pd-rel__works">
-                  {rel.works.map((w) => <span class="pd-rel__work" set:html={softenText(w.title.split('（')[0])}></span>)}
-                </div>
-              )}
+              </div>
             </article>
           ))}
         </div>
@@ -163,7 +165,7 @@ const universeEn = {
     justify-content: space-between;
     gap: 48px;
   }
-  .pd-hero__text { flex: 1; max-width: 640px; }
+  .pd-hero__text { flex: 1; max-width: 880px; }
   .pd-hero__portrait {
     flex-shrink: 0;
     width: min(340px, 34vw);
@@ -185,14 +187,22 @@ const universeEn = {
     border-radius: 999px;
     margin-bottom: 18px;
   }
-  .pd-hero__name { font-size: clamp(40px, 6vw, 88px); line-height: 1.1; }
+  .pd-hero__name { font-size: clamp(36px, 5vw, 72px); line-height: 1.15; }
+  .pd-hero__name-alias {
+    display: block;
+    margin-top: 10px;
+    font-size: clamp(20px, 2.4vw, 34px);
+    line-height: 1.3;
+    font-weight: 500;
+    opacity: 0.85;
+  }
   .pd-hero__tag { margin-top: 14px; font-size: var(--fs-sub); opacity: 0.92; }
 
   /* ===== 三段式 ===== */
-  .pd-body { padding-top: 72px; }
-  .pd-section { margin-bottom: 56px; }
+  .pd-body { padding-top: 64px; }
+  .pd-section { margin-bottom: 48px; }
   .pd-section__title {
-    font-size: var(--fs-section);
+    font-size: 26px;
     color: var(--accent);
     margin-bottom: 16px;
     display: flex;
@@ -210,23 +220,19 @@ const universeEn = {
   }
   .pd-section__text {
     font-size: var(--fs-body);
-    line-height: 2.1;
+    line-height: 1.8;
     color: var(--ink);
-    text-align: justify;
-    text-justify: inter-ideograph;
   }
 
   /* ===== 作品列表 ===== */
-  .pd-films { margin-top: 64px; }
-  .pd-films__title { font-size: var(--fs-section); margin-bottom: 8px; }
-  .pd-films__sub { color: var(--ink-soft); font-size: var(--fs-small); margin-bottom: 32px; }
+  .pd-films { margin-top: 56px; }
+  .pd-films__title { font-size: 26px; margin-bottom: 8px; }
+  .pd-films__sub { color: var(--ink-soft); font-size: var(--fs-small); margin-bottom: 24px; }
   .pd-films__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
   }
-  .film {
-
   @media (max-width: 820px) {
     .pd-hero { min-height: auto; padding: 48px 0 0; }
     .pd-hero__inner { flex-direction: column; gap: 32px; padding: 0 20px 40px; }
@@ -235,7 +241,7 @@ const universeEn = {
     .pd-films__grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
   }
   /* ===== 角色弧线 ===== */
-  .pd-arc { margin-bottom: 56px; }
+  .pd-arc { margin-bottom: 48px; }
   .pd-arc__timeline { position: relative; padding-left: 8px; }
   .pd-arc__timeline::before {
     content: ''; position: absolute; left: 19px; top: 12px; bottom: 12px;
@@ -257,28 +263,29 @@ const universeEn = {
     display: inline-block; font-size: var(--fs-small); color: var(--accent);
     text-decoration: underline; text-underline-offset: 3px; margin-bottom: 8px;
   }
-  .pd-arc__summary { font-size: var(--fs-body); line-height: 1.9; color: var(--ink-soft); }
+  .pd-arc__summary { font-size: var(--fs-body); line-height: 1.8; color: var(--ink-soft); }
 
   /* ===== 关系变化 ===== */
-  .pd-rel__grid { display: grid; gap: 14px; }
+  .pd-rel__grid { display: grid; gap: 16px; }
   .pd-rel {
-    display: block; padding: 20px 22px; background: #fff;
+    display: block; padding: 24px; background: #fff;
     border: 1px solid var(--line); border-radius: var(--radius);
     box-shadow: var(--shadow); transition: border-color 0.15s, transform 0.15s;
   }
   .pd-rel:hover { border-color: rgba(176,42,30,0.45); transform: translateY(-2px); }
-  .pd-rel__head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; color: var(--ink); text-decoration: none; }
-  .pd-rel__head:hover .pd-rel__name { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
-  .pd-rel__avatar {
-    width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
-    border: 1px solid var(--line);
+  .pd-rel__main { display: flex; gap: 24px; align-items: flex-start; }
+  .pd-rel__cast {
+    width: 168px; padding: 10px 10px 12px; flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(15, 18, 22, 0.1);
   }
-  .pd-rel__name { display: block; font-weight: 700; font-size: 16px; color: var(--ink); }
+  .pd-rel__body { flex: 1; min-width: 0; }
   .pd-rel__type {
-    display: inline-block; margin-top: 2px; font-size: var(--fs-tiny);
-    color: var(--accent); letter-spacing: 0.06em;
+    display: inline-block; margin-bottom: 10px; font-size: var(--fs-tiny);
+    font-weight: 600; color: var(--accent); letter-spacing: 0.06em;
+    padding: 3px 12px; border-radius: 999px;
+    background: rgba(176, 42, 30, 0.06); border: 1px solid rgba(176, 42, 30, 0.28);
   }
-  .pd-rel__evolution { font-size: var(--fs-body); line-height: 1.85; color: var(--ink-soft); margin-bottom: 10px; }
+  .pd-rel__evolution { font-size: var(--fs-body); line-height: 1.8; color: var(--ink); margin-bottom: 12px; }
   .pd-rel__works { display: flex; flex-wrap: wrap; gap: 6px; }
   .pd-rel__work {
     font-size: var(--fs-tiny); padding: 3px 10px; border-radius: 999px;
@@ -288,7 +295,10 @@ const universeEn = {
   @media (max-width: 820px) {
     .pd-arc__dot { width: 34px; height: 34px; font-size: 13px; }
     .pd-arc__timeline::before { left: 16px; }
-    .pd-rel { padding: 16px 18px; }
+    .pd-rel { padding: 18px; }
+    .pd-rel__main { flex-direction: column; align-items: center; gap: 18px; }
+    .pd-rel__cast { width: 168px; }
+    .pd-rel__body { text-align: left; }
   }
 
 </style>
