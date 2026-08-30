@@ -7,3 +7,8 @@ dist/
 
 .workbuddy/
 public/sitemap.xml
+
+# 开发过程文档（不发布）
+guide/
+docs/
+AGENTS.md
